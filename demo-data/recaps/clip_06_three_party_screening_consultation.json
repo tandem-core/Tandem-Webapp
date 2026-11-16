@@ -1,0 +1,93 @@
+{
+  "conversationId": "clip:06_three_party_screening_consultation",
+  "headline": "You came in about a mole, but the visit was about cervical screening. You said your last smear was painful and uncomfortable, and you have not yet decided whether to book the test.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Book your cervical screening (smear) test",
+      "detail": "Ask for a female nurse and a longer appointment so you have time to relax. You can book by phone or online. You got an invite letter, so the clinic can book it for you. You said you would think about it first. Someone in your family can make the call for you.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        72,
+        73,
+        74,
+        92,
+        97,
+        154
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "If you change your mind during the test, you can say no and ask to stop.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        124,
+        125
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Try to relax during the test. The more relaxed you are, the less unpleasant it is. Taking a little more time may help.",
+      "confidence": "check_this",
+      "evidence": [
+        114,
+        116,
+        118
+      ]
+    }
+  ],
+  "unchanged": [],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Whether you will have the smear test. You said you would think about it, and you did not decide during the visit. The doctor said the choice is yours but recommended the test.",
+      "resolvesWhen": "Your own decision.",
+      "evidence": [
+        81,
+        83,
+        102,
+        104,
+        106,
+        127,
+        128
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Whether you need a smear now. Your last one was only a few months ago. The usual gap between smears is five years. Because you got an invite letter, the clinic can book one.",
+      "resolvesWhen": null,
+      "evidence": [
+        86,
+        88,
+        89,
+        92,
+        97
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-07T00:23:08.921Z",
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "input_tokens": 6794,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3683,
+    "output_tokens_details": {
+      "thinking_tokens": 3150
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  }
+}

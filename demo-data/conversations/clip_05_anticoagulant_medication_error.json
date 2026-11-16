@@ -1,0 +1,494 @@
+{
+  "id": "clip:05_anticoagulant_medication_error",
+  "source": "clip",
+  "sourceId": "05_anticoagulant_medication_error",
+  "title": "Blood thinner dose mistake",
+  "recordedAt": "2026-10-06T15:00:00.000Z",
+  "durationSec": 259,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 0,
+      "end": 15.56,
+      "text": "Hi, my name's Adam, I'm a junior doctor. Could I check your full name and date of birth?"
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 15.56,
+      "end": 18.68,
+      "text": "Yeah, Harry Miles, 21st of the 10th, 1998."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 18.68,
+      "end": 20.64,
+      "text": "Great. And how's your knee, Harry?"
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 20.64,
+      "end": 26.72,
+      "text": "Yeah, yeah, it's all right. So I mean, I'm sure you're aware, but I snapped my ACL when"
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 26.72,
+      "end": 32.08,
+      "text": "I was playing a bit of football. And then I had some surgery on it to get it sort of"
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 32.08,
+      "end": 36.8,
+      "text": "reattached. Surgery went fine, but then a couple of days later it got quite swollen,"
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 36.8,
+      "end": 42.48,
+      "text": "it was really painful. Someone said that my blood levels were quite low, so I had to have"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 42.48,
+      "end": 48.18,
+      "text": "a blood transfusion after that. Sort of connecting dots and that, I'm assuming I had a bleed"
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 48.18,
+      "end": 54.32,
+      "text": "on my knee. But now it seems all fine now. I'm working with a physio, so hopefully I'll"
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 54.32,
+      "end": 56.32,
+      "text": "be back playing as soon as I can."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 56.32,
+      "end": 60.08,
+      "text": "Great. And do you understand why you had the bleed or has anyone spoken to you about"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 60.08,
+      "end": 62.04,
+      "text": "why you had the bleed?"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 62.04,
+      "end": 68.96,
+      "text": "No one specifically told me about why I was bleeding. I just assumed that with how I broke"
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 68.96,
+      "end": 78,
+      "text": "it, maybe the stress meant I wasn't healing as good as I could have, or I don't know,"
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 78,
+      "end": 81.039,
+      "text": "I don't know really, just sort of one of those things."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 81.039,
+      "end": 85.36,
+      "text": "Okay. Has anyone spoken to you about your medications?"
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 85.4,
+      "end": 89.92,
+      "text": "I know I was on a blood thinner for a little bit because I wasn't going to do as much sort"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 89.92,
+      "end": 94.44,
+      "text": "of moving around as I normally would, and I think that put me at risk of blood clots"
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 94.44,
+      "end": 96.16,
+      "text": "and things like that."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 96.16,
+      "end": 99.96,
+      "text": "Are you worried that you had a bleed?"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 99.96,
+      "end": 107.24,
+      "text": "I wasn't, but the way that you're sort of asking these questions, is there like a, have"
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 107.24,
+      "end": 110.84,
+      "text": "I got a diagnosis or is there like another reason?"
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 110.84,
+      "end": 115.44,
+      "text": "Just to reassure you, there isn't another diagnosis, you are recovering, but I'm going"
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 115.44,
+      "end": 118.64,
+      "text": "to explain a bit more about why we think you had the bleed."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 118.64,
+      "end": 122.04,
+      "text": "The reason I've been asking about all your medications is because one of the drugs you"
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 122.04,
+      "end": 126.84,
+      "text": "have prescribed, the anticoagulant, which is a blood thinner, was mistakenly prescribed"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 126.84,
+      "end": 133.56,
+      "text": "at a higher dose than you needed, and that might have caused or contributed to your bleed."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 133.56,
+      "end": 137.88,
+      "text": "I'm really sorry this happened."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 137.92,
+      "end": 145.4,
+      "text": "How does that happen? This shouldn't happen. It can't happen. If that had been another"
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 145.4,
+      "end": 148.2,
+      "text": "drug, I literally could have died."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 148.2,
+      "end": 153.6,
+      "text": "So I 100% agree with you, this shouldn't ever happen. Do you want me to explain what might"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 153.6,
+      "end": 154.6,
+      "text": "have happened?"
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 154.6,
+      "end": 155.6,
+      "text": "Yes, please."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 155.6,
+      "end": 159.359,
+      "text": "So this drug should have been prescribed as a lower dose for you to prevent blood clots"
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 159.359,
+      "end": 164.72,
+      "text": "from happening because you're less mobile after your surgery. We also use the drug to"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 164.72,
+      "end": 169.6,
+      "text": "treat blood clots, which needs a higher dose, and you were mistakenly prescribed the higher"
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 169.6,
+      "end": 170.6,
+      "text": "dose."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 170.6,
+      "end": 178.68,
+      "text": "I know it's a lot to take in. We sincerely apologise that one of the members of the team"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 178.68,
+      "end": 179.68,
+      "text": "prescribed the anticoagulant."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 179.68,
+      "end": 183.2,
+      "text": "Hang on a minute, don't go and try to lay the blame onto somebody else. You're all part"
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 183.2,
+      "end": 190.44,
+      "text": "of a team, okay? Somebody's got to be double checking doses, surely, of all things. So"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 190.44,
+      "end": 195.359,
+      "text": "don't come here acting like a messenger, okay? You're the whole team, okay? You're all taking"
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 195.359,
+      "end": 196.72,
+      "text": "responsibility for that."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 196.72,
+      "end": 204.04,
+      "text": "I 100% agree with you. It is all of our responsibilities to get this right. Do you have any more questions"
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 204.04,
+      "end": 205.72,
+      "text": "at this point?"
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 205.72,
+      "end": 209.52,
+      "text": "What happens now? What happens from here?"
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 209.52,
+      "end": 214.72,
+      "text": "So you'll continue your rehab. I've personally double checked your medications to make sure"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 214.72,
+      "end": 216.68,
+      "text": "all of your prescriptions are correct."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 216.68,
+      "end": 217.8,
+      "text": "Thanks."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 218.16,
+      "end": 221.68,
+      "text": "We've discussed this as a team because we want to prevent this happening again, and"
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 221.68,
+      "end": 225.96,
+      "text": "I've submitted a formal incident report as well, again for the same reason, so we can"
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 225.96,
+      "end": 227.8,
+      "text": "prevent this happening to anybody else."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 227.8,
+      "end": 232.32,
+      "text": "Well I'd like to put in a formal complaint as well for your department because this can't"
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 232.32,
+      "end": 236.08,
+      "text": "happen, and I think the more attention it gets, the less likely it will."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 236.08,
+      "end": 240.32,
+      "text": "I understand. I'll get you a form so you can make a formal complaint to the liaison service."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 240.32,
+      "end": 244.12,
+      "text": "Do you have any other questions?"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 244.12,
+      "end": 251.04,
+      "text": "No, I need some time to process this."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 251.04,
+      "end": 255.24,
+      "text": "I understand. If you think of any more questions then write them down and I'll come back and"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 255.24,
+      "end": 256.88,
+      "text": "speak to you later today."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 256.88,
+      "end": 258.95,
+      "text": "Thank you."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-07T00:22:36.591Z",
+  "notes": "Complex discussion about error, responsibility and follow-up; no exact drug/dose supplied"
+}

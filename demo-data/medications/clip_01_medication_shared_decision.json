@@ -1,0 +1,243 @@
+{
+  "conversationId": "clip:01_medication_shared_decision",
+  "generatedAt": "2026-11-06T21:44:30.469Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "Lenzaprazole",
+      "spellings": [
+        "Lenzaprazole",
+        "Lenzol-Prisol"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [
+        {
+          "rxcui": "17128",
+          "name": "lansoprazole",
+          "score": 7.595818042755127
+        },
+        {
+          "rxcui": "261620",
+          "name": "Primsol",
+          "score": 8.582024574279785
+        },
+        {
+          "rxcui": "1178271",
+          "name": "Primsol Oral Product",
+          "score": 8.387598037719727
+        },
+        {
+          "rxcui": "364572",
+          "name": "trimethoprim Oral Solution [Primsol]",
+          "score": 8.310201644897461
+        }
+      ],
+      "kind": "specific",
+      "nameState": "suggested",
+      "suggestion": {
+        "name": "lansoprazole",
+        "rxcui": "17128",
+        "basis": "spelling_and_context",
+        "reason": "Described as an acid reducer used for heartburn, and the spelling resembles a proton pump inhibitor name."
+      },
+      "role": "changed",
+      "roleDetail": "Patient is taking 30 mg daily; the plan chosen is to reduce to 15 mg daily for two weeks, then stop.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams daily",
+          "unclear": false,
+          "evidence": [
+            51
+          ]
+        },
+        {
+          "text": "15 milligram daily for two weeks",
+          "unclear": false,
+          "evidence": [
+            52
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        3,
+        6,
+        7,
+        13,
+        21,
+        22,
+        23,
+        28,
+        32,
+        51,
+        52
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "Renididine",
+      "spellings": [
+        "Renididine"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "suggested",
+      "suggestion": {
+        "name": "ranitidine",
+        "rxcui": "9143",
+        "basis": "context_only",
+        "reason": "Described as another acid reducer offered as the third option; the spelling resembles ranitidine."
+      },
+      "role": "not_chosen",
+      "roleDetail": "Offered as an alternative acid reducer to switch to, but the patient did not choose this option.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "Tums",
+      "spellings": [
+        "Tums"
+      ],
+      "rxnorm": {
+        "rxcui": "220508",
+        "name": "Tums",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Suggested as an over-the-counter acid reducer to consider if occasional or mild symptoms come back.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        59
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "Gaviscon",
+      "spellings": [
+        "Gaviscon"
+      ],
+      "rxnorm": {
+        "rxcui": "25655",
+        "name": "Gaviscon",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Suggested as an over-the-counter acid reducer to consider if occasional or mild symptoms come back.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        59
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "aspirin",
+      "spellings": [
+        "aspirin"
+      ],
+      "rxnorm": {
+        "rxcui": "1191",
+        "name": "aspirin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Asked whether the patient takes it as an over-the-counter anti-inflammatory; the patient said no.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        18,
+        19
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "ibuprofen",
+      "spellings": [
+        "ibuprofen"
+      ],
+      "rxnorm": {
+        "rxcui": "5640",
+        "name": "ibuprofen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Asked whether the patient takes it as an over-the-counter anti-inflammatory; the patient said no.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        18,
+        19
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-7",
+      "heardAs": "naprosyn",
+      "spellings": [
+        "naprosyn"
+      ],
+      "rxnorm": {
+        "rxcui": "203012",
+        "name": "Naprosyn",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Asked whether the patient takes it as an over-the-counter anti-inflammatory; the patient said no.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        18,
+        19
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

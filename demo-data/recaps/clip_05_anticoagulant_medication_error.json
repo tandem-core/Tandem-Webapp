@@ -1,0 +1,84 @@
+{
+  "conversationId": "clip:05_anticoagulant_medication_error",
+  "headline": "Adam told you that your blood thinner (anticoagulant) was prescribed by mistake at a higher dose than you needed, and that this may have contributed to your knee bleed after ACL surgery.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Get the complaint form from Adam",
+      "detail": "Adam will give you a form to make a formal complaint to the liaison service. A family member can help you fill it in.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        54
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Have your questions ready for Adam later today",
+      "detail": "Adam said they will come back and speak to you later today. If you think of more questions, write them down before then.",
+      "dueBy": "2026-10-06",
+      "when": "later today",
+      "status": "already_scheduled",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        57,
+        58
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Keep going with your rehab. You will continue the physio work on your knee.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        46
+      ]
+    }
+  ],
+  "unchanged": [],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "How the higher dose came to be prescribed by mistake was not fully explained to you.",
+      "resolvesWhen": null,
+      "evidence": [
+        28,
+        35,
+        36
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Whether the blood thinner caused your bleed is not confirmed. Adam said it might have caused or contributed to it.",
+      "resolvesWhen": null,
+      "evidence": [
+        25,
+        26
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-07T00:22:51.252Z",
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "input_tokens": 4239,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3592,
+    "output_tokens_details": {
+      "thinking_tokens": 3105
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  }
+}

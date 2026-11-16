@@ -1,0 +1,830 @@
+{
+  "id": "clip:03_prescription_refill_counseling",
+  "source": "clip",
+  "sourceId": "03_prescription_refill_counseling",
+  "title": "Blood pressure refill check",
+  "recordedAt": "2026-10-20T15:00:00.000Z",
+  "durationSec": 317,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 0.4499999999999993,
+      "end": 2.4499999999999993,
+      "text": "Hey, how can I help you today?"
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 2.4499999999999993,
+      "end": 6.449999999999999,
+      "text": "Oh, I'm just here to pick up my refill prescription. My name is Derek Jorgensen."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 6.449999999999999,
+      "end": 8.45,
+      "text": "Oh, okay. Looks like I got it right here for you."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 8.45,
+      "end": 10.45,
+      "text": "And that was the Ramipril, correct?"
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 10.45,
+      "end": 11.45,
+      "text": "Ramipril, yeah."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 11.45,
+      "end": 14.45,
+      "text": "Yeah, Ramipril. That's the 5 milligram strength."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 14.45,
+      "end": 15.45,
+      "text": "Sounds right, yeah."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 15.45,
+      "end": 17.45,
+      "text": "Sounds right. Okay, so I got that one right here for you."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 17.45,
+      "end": 18.45,
+      "text": "Okay."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 18.45,
+      "end": 22.45,
+      "text": "And since the last time you were in, have you had any problems with that medication?"
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 22.45,
+      "end": 24.45,
+      "text": "No, it seems to be going great, yeah."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 24.45,
+      "end": 25.45,
+      "text": "Okay, for sure."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 25.45,
+      "end": 33.45,
+      "text": "And have you had any changes in your prescription medication since the last time you came in?"
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 33.45,
+      "end": 34.45,
+      "text": "I don't think so, no."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 34.45,
+      "end": 35.45,
+      "text": "No."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 35.45,
+      "end": 36.45,
+      "text": "We've taken this and two other things."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 36.45,
+      "end": 41.45,
+      "text": "Yeah, it looks like on file we have the atorvastatin and the hydrochlorothiazide. Is that correct?"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 41.45,
+      "end": 42.45,
+      "text": "Yep, sounds right."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 42.45,
+      "end": 45.45,
+      "text": "That sounds right. The one, and what were you taking those two for?"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 45.45,
+      "end": 48.45,
+      "text": "I will have high blood pressure and high cholesterol, so yeah."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 48.45,
+      "end": 52.45,
+      "text": "Okay, and this one, was that also for the blood pressure?"
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 52.45,
+      "end": 53.45,
+      "text": "Yes."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 53.45,
+      "end": 54.45,
+      "text": "That was for the blood pressure as well."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 54.45,
+      "end": 61.45,
+      "text": "Okay, so if you don't mind, we just take a few minutes here to make sure that's still working safely for you and still working for you. Does that sound good?"
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 61.45,
+      "end": 62.45,
+      "text": "That'd be great, yeah."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 62.45,
+      "end": 65.45,
+      "text": "Okay, for sure. So do you take your blood pressure at home at all?"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 65.45,
+      "end": 71.45,
+      "text": "Yeah, I take it every morning. I get up and before I have my breakfast, I check it once."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 71.45,
+      "end": 75.45,
+      "text": "Check it once? Okay, and can you explain the process of how you check it?"
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 75.45,
+      "end": 81.45,
+      "text": "Oh, yeah, well, I think it was one of the pharmacists here told me to, they gave me a sheet on how to do it, so that's great."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 81.45,
+      "end": 95.45,
+      "text": "So I don't have any coffee or breakfast. I sit down and I make sure my feet are flat on the ground and I have been sitting, I sit there for a few minutes before I do it and I don't have my arm set up on a pillow and yeah."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 95.45,
+      "end": 101.45,
+      "text": "Okay, that's perfect. That sounds really great. And you mentioned you took it one time every morning?"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 101.45,
+      "end": 102.45,
+      "text": "Once a day, yeah."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 102.45,
+      "end": 115.45,
+      "text": "Once a day, okay. So just one recommendation I'd make to change. Everything you're doing sounds great, but I would recommend taking your blood pressure about three times rather than the one time, discarding that first value and just taking the average of the second two values."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 115.45,
+      "end": 116.45,
+      "text": "Okay."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 116.45,
+      "end": 119.45,
+      "text": "And then that way it gives us a little bit more accurate reading of your blood pressure."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 119.45,
+      "end": 120.45,
+      "text": "Okay."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 120.45,
+      "end": 122.45,
+      "text": "And what would you say your values normally are?"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 122.45,
+      "end": 134.45,
+      "text": "You know, usually like 130 over 75 or 80, but yeah, it's been a little higher lately, maybe more like 140 is the higher number."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 134.45,
+      "end": 140.45,
+      "text": "Okay. And sorry, I forgot to ask you earlier, do you take any over-the-counter medications that you can buy without a prescription?"
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 140.45,
+      "end": 146.45,
+      "text": "Over-the-counter? Well, not usually, but lately I've been taking something for my knees, like some pain medication."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 146.45,
+      "end": 148.45,
+      "text": "Oh, okay. And do you know what pain medication that was?"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 148.45,
+      "end": 149.45,
+      "text": "Ibuprofen."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 149.45,
+      "end": 150.45,
+      "text": "Ibuprofen?"
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 150.45,
+      "end": 151.45,
+      "text": "400 milligrams, yeah."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 151.45,
+      "end": 153.45,
+      "text": "Okay. And how often do you find you're taking that during the day?"
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 153.45,
+      "end": 154.45,
+      "text": "Two or three times."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 154.45,
+      "end": 156.45,
+      "text": "Two or three times? And that was for your knee pain?"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 156.45,
+      "end": 157.45,
+      "text": "Yeah."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 157.45,
+      "end": 158.45,
+      "text": "And did you go to the doctor for that one?"
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 158.45,
+      "end": 159.45,
+      "text": "Yeah."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 159.45,
+      "end": 160.45,
+      "text": "Yeah."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 160.45,
+      "end": 163.45,
+      "text": "And did the doctor suggest the ibuprofen?"
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 163.45,
+      "end": 170.45,
+      "text": "Well, she just said go to the pharmacy and get something for your knees. She said I have arthritis, osteoarthritis."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 170.45,
+      "end": 171.45,
+      "text": "Okay."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 171.45,
+      "end": 177.45,
+      "text": "She took some x-rays and so she said, and so I just picked it myself to be honest, yeah."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 177.45,
+      "end": 184.45,
+      "text": "Okay. So you said your blood pressure has been a little bit higher lately. How long have you been taking that ibuprofen for?"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 184.45,
+      "end": 189.45,
+      "text": "About a month maybe? Yeah. It's about a month ago the doctor said, yeah, you've got osteoarthritis."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 189.45,
+      "end": 201.45,
+      "text": "Okay. So about a month. So yeah, the ibuprofen can interact a little bit with the Ramipril and it can lead to a bit of an increase in your blood pressure if you use it for a longer period of time."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 201.45,
+      "end": 202.45,
+      "text": "Oh."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 202.45,
+      "end": 206.45,
+      "text": "So I recommend, have you ever tried Tylenol for your knee pain at all?"
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 206.45,
+      "end": 207.45,
+      "text": "No."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 207.45,
+      "end": 211.45,
+      "text": "No, for sure. So we can take a look into getting you some Tylenol on your way out today."
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 211.45,
+      "end": 216.45,
+      "text": "Sure. So then, yeah, because you know, now that you mentioned it, I think my blood pressure has been a little bit higher in the last few weeks."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 216.45,
+      "end": 225.45,
+      "text": "That might be the cause of it. So we could look into that and keep maintaining your blood pressure because the values you told me, they sound great. They sound like they're in the right range."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 225.45,
+      "end": 231.45,
+      "text": "So it sounds like we want to keep it, keep things the way they are. So we could look into that after we're done here."
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 231.45,
+      "end": 232.45,
+      "text": "That's great. Yeah."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 232.45,
+      "end": 235.45,
+      "text": "Yeah. And do you take any herbal supplements or natural products?"
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 235.45,
+      "end": 236.45,
+      "text": "No."
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 236.45,
+      "end": 237.45,
+      "text": "No."
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 237.45,
+      "end": 238.45,
+      "text": "Anything like that."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 238.45,
+      "end": 239.45,
+      "text": "Any allergies to any medication?"
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 239.45,
+      "end": 240.45,
+      "text": "No."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 240.45,
+      "end": 241.45,
+      "text": "No."
+    },
+    {
+      "idx": 73,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 241.45,
+      "end": 244.45,
+      "text": "And new medical conditions since last time you were in, other than the arthritis?"
+    },
+    {
+      "idx": 74,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 244.45,
+      "end": 245.45,
+      "text": "Yeah, just that."
+    },
+    {
+      "idx": 75,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 245.45,
+      "end": 246.45,
+      "text": "Just the arthritis?"
+    },
+    {
+      "idx": 76,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 246.45,
+      "end": 247.45,
+      "text": "Thank God, yeah."
+    },
+    {
+      "idx": 77,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 247.45,
+      "end": 253.45,
+      "text": "Yeah. And do you have, do you find that you have any side effects that you attribute to the Ramipril at all?"
+    },
+    {
+      "idx": 78,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 253.45,
+      "end": 255.45,
+      "text": "I don't think so, no."
+    },
+    {
+      "idx": 79,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 255.45,
+      "end": 257.45,
+      "text": "No. Any dizziness or lightheadedness at all?"
+    },
+    {
+      "idx": 80,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 257.45,
+      "end": 258.45,
+      "text": "No."
+    },
+    {
+      "idx": 81,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 258.45,
+      "end": 261.45,
+      "text": "No. Any lightheadedness from sitting to standing position?"
+    },
+    {
+      "idx": 82,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 261.45,
+      "end": 262.45,
+      "text": "No."
+    },
+    {
+      "idx": 83,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 262.45,
+      "end": 264.45,
+      "text": "No. Okay. I'm glad to hear that."
+    },
+    {
+      "idx": 84,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 264.45,
+      "end": 271.45,
+      "text": "And how often would you wake up in the morning and realize you forgot to take your medication the day before?"
+    },
+    {
+      "idx": 85,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 271.45,
+      "end": 276.45,
+      "text": "Not very often. Like I'm pretty, pretty good. Yeah. Yeah. I think that almost never happens."
+    },
+    {
+      "idx": 86,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 276.45,
+      "end": 277.45,
+      "text": "Never happens?"
+    },
+    {
+      "idx": 87,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 277.45,
+      "end": 278.45,
+      "text": "Pretty vigilant, yeah."
+    },
+    {
+      "idx": 88,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 278.45,
+      "end": 280.45,
+      "text": "Okay. That's great. I'm glad to hear that."
+    },
+    {
+      "idx": 89,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 280.45,
+      "end": 285.45,
+      "text": "And do you have any questions for me today about the Ramipril or any of the other medications?"
+    },
+    {
+      "idx": 90,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 285.45,
+      "end": 292.45,
+      "text": "Yeah. You know, the only thing when you said take my blood pressure three times. So should I take it like breakfast, lunch, supper or?"
+    },
+    {
+      "idx": 91,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 292.45,
+      "end": 298.45,
+      "text": "Oh, sorry. Yeah. So yeah, I would recommend taking it three times in a row. I know it might hurt your arm or..."
+    },
+    {
+      "idx": 92,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 298.45,
+      "end": 299.45,
+      "text": "Oh, like back to back."
+    },
+    {
+      "idx": 93,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 299.45,
+      "end": 302.45,
+      "text": "Back to back is what we, the best way to do it."
+    },
+    {
+      "idx": 94,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 302.45,
+      "end": 303.45,
+      "text": "And then ignore the first one."
+    },
+    {
+      "idx": 95,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 303.45,
+      "end": 306.45,
+      "text": "Right. Ignore the first one. Take the average of the second two."
+    },
+    {
+      "idx": 96,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 306.45,
+      "end": 308.45,
+      "text": "I'll do the second two. Okay. I can do that."
+    },
+    {
+      "idx": 97,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 308.45,
+      "end": 310.45,
+      "text": "Yeah, for sure. Any other questions for me today?"
+    },
+    {
+      "idx": 98,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 310.45,
+      "end": 311.45,
+      "text": "That's it. No, thank you."
+    },
+    {
+      "idx": 99,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 311.45,
+      "end": 313.45,
+      "text": "Well, if you think of anything, give us a call. We're always here."
+    },
+    {
+      "idx": 100,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 313.45,
+      "end": 315.45,
+      "text": "Okay. I'll go grab some Tylenol."
+    },
+    {
+      "idx": 101,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 315.45,
+      "end": 316.45,
+      "text": "Great. Sounds good."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-07T00:21:57.792Z",
+  "notes": "Medication interaction and specific blood pressure measurement advice"
+}

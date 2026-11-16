@@ -1,0 +1,1334 @@
+{
+  "id": "clip:06_three_party_screening_consultation",
+  "source": "clip",
+  "sourceId": "06_three_party_screening_consultation",
+  "title": "Cervical screening discussion",
+  "recordedAt": "2026-09-29T15:00:00.000Z",
+  "durationSec": 471,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 0,
+      "end": 16,
+      "text": "Hi, I'm Emma. I'm a second year medical student. Can I just check your name and date of birth,"
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 16,
+      "end": 24,
+      "text": "please? Yeah, I'm Erica. I'm Erica Smith. My date of birth is the 4th of April 1982."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 25,
+      "end": 26,
+      "text": "Nice to meet you."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 26,
+      "end": 27,
+      "text": "Nice to meet you too."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 27,
+      "end": 30,
+      "text": "Okay, so I'm just going to ask you a few questions. Is that alright?"
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 30,
+      "end": 31,
+      "text": "Yeah."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 31,
+      "end": 33,
+      "text": "Great, fantastic. So, what can I do for you today?"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 33,
+      "end": 37,
+      "text": "So, Anna booked the appointment for me. I've got a mole on my face."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 37,
+      "end": 39,
+      "text": "No, let me stop the fact there."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 39,
+      "end": 40,
+      "text": "Okay."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 40,
+      "end": 47,
+      "text": "So, the real reason why I brought Erica here today is because she needs a Smith."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 47,
+      "end": 48,
+      "text": "Oh my God."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 48,
+      "end": 50,
+      "text": "Not this again."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 50,
+      "end": 52,
+      "text": "I'm really sorry about this."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 52,
+      "end": 55,
+      "text": "No, I'm sorry. So, have you had a Smith test before?"
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 55,
+      "end": 58,
+      "text": "I have had one before, yes. I just..."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 58,
+      "end": 66,
+      "text": "So, I can't believe you've done this. You've booked an appointment and told me it was about something completely different."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 66,
+      "end": 68,
+      "text": "Is she even allowed to do this?"
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 68,
+      "end": 70,
+      "text": "Well, I'll just do whatever I want to."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 70,
+      "end": 75,
+      "text": "Okay. So, what are you particularly concerned about, given that you've booked this appointment for your sister?"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 75,
+      "end": 84,
+      "text": "Well, our mum... there's a primary issue with cancer. Our mum died and our aunt also has cervical cancer."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 84,
+      "end": 85,
+      "text": "I'm really sorry to hear that."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 85,
+      "end": 87,
+      "text": "Like, we need..."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 87,
+      "end": 90,
+      "text": "Well, our mum had breast cancer, not cervical cancer."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 90,
+      "end": 91,
+      "text": "Oh, it's cancer."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 91,
+      "end": 92,
+      "text": "Nonetheless, right?"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 92,
+      "end": 98,
+      "text": "Okay, yeah. They can be made. So, you said you've had a Smith test before. Can I just ask you, how did that go?"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 98,
+      "end": 103,
+      "text": "Well, since you're asking, it wasn't... didn't go very well, actually."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 103,
+      "end": 104,
+      "text": "Oh, really? I'm really sorry to hear that."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 104,
+      "end": 106,
+      "text": "Can you tell me a bit more about that?"
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 106,
+      "end": 108,
+      "text": "It was only a few months ago."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 108,
+      "end": 110,
+      "text": "Oh, okay."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 110,
+      "end": 114,
+      "text": "And to be honest, it was a really painful experience."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 114,
+      "end": 115,
+      "text": "Yeah."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 115,
+      "end": 117,
+      "text": "And... sorry."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 117,
+      "end": 120,
+      "text": "It's okay. Take your time."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 120,
+      "end": 122,
+      "text": "Why are you crying?"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 122,
+      "end": 124,
+      "text": "Can you just..."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 124,
+      "end": 127,
+      "text": "Like, honestly, it's no big deal."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 127,
+      "end": 132,
+      "text": "Maybe not to you, but you need to be more understanding."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 132,
+      "end": 134,
+      "text": "It's like a cry, maybe."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 134,
+      "end": 140,
+      "text": "Okay. So, Erica, if you're feeling alright, would you tell me a little bit about that?"
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 140,
+      "end": 141,
+      "text": "Yeah, yeah."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 141,
+      "end": 142,
+      "text": "Sorry."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 142,
+      "end": 143,
+      "text": "It's okay."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 143,
+      "end": 148,
+      "text": "So, it was really painful, but I just felt so undignified."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 148,
+      "end": 149,
+      "text": "Yeah."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 149,
+      "end": 155,
+      "text": "It was with, um... it was like a male nurse that did it on me."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 155,
+      "end": 160,
+      "text": "And, um, well, I don't know. I didn't think that would be a problem, but I guess I didn't realise it."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 160,
+      "end": 166,
+      "text": "I just really felt uncomfortable, so that the whole situation was just kind of..."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 166,
+      "end": 169,
+      "text": "It just made me never want to be in that position again."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 169,
+      "end": 175,
+      "text": "Yeah, it's not a comfortable experience, but the screening programme as a whole is really, really important."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 175,
+      "end": 178,
+      "text": "Do you know why we screen for cervical cancer?"
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 178,
+      "end": 180,
+      "text": "Um..."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 180,
+      "end": 185,
+      "text": "Okay, well, cervical cancer, it used to be a really big killer."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 185,
+      "end": 191,
+      "text": "And what the smear test does is it picks up some cells from the cervix, which then goes off to a lab,"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 191,
+      "end": 194,
+      "text": "and they check to see, first of all, if there's any signs of cancer,"
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 194,
+      "end": 197,
+      "text": "but also if there's any signs of what are called pre-cancerous cells,"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 197,
+      "end": 201,
+      "text": "which are cells that are okay but could go on to develop cancer."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 201,
+      "end": 207,
+      "text": "Now, if we pick those up, it means we can then treat the cancer early before it causes any problems,"
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 207,
+      "end": 211,
+      "text": "rather than moving it until later when it can do a lot more damage."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 211,
+      "end": 214,
+      "text": "So, does that sort of make sense?"
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 214,
+      "end": 215,
+      "text": "Yeah."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 215,
+      "end": 216,
+      "text": "Yeah, I think so."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 216,
+      "end": 218,
+      "text": "Can you see why it's so important?"
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 218,
+      "end": 220,
+      "text": "Yeah, I get why it's important, but..."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 220,
+      "end": 221,
+      "text": "Then why..."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 221,
+      "end": 226,
+      "text": "Well, I just said that. Are you not listening to what I'm saying?"
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 226,
+      "end": 230,
+      "text": "You seem silly. It's like talking to a bloody brick wall sometimes with you."
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 230,
+      "end": 232,
+      "text": "Excuse me, mate."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 232,
+      "end": 236,
+      "text": "It's not a comfortable experience, but it is really important."
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 236,
+      "end": 240,
+      "text": "You said that having a male nurse do the smear test was quite uncomfortable."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 240,
+      "end": 244,
+      "text": "As soon as we can put in place to try to make it a more comfortable experience for you,"
+    },
+    {
+      "idx": 73,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 244,
+      "end": 246,
+      "text": "so we can make sure we've got a female nurse,"
+    },
+    {
+      "idx": 74,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 246,
+      "end": 251,
+      "text": "we can book you in for an appointment that will give you a bit more time to get in and get comfortable."
+    },
+    {
+      "idx": 75,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 251,
+      "end": 253,
+      "text": "Does that sound better?"
+    },
+    {
+      "idx": 76,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 253,
+      "end": 259,
+      "text": "Yeah, that sounds better, but I could think about that."
+    },
+    {
+      "idx": 77,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 259,
+      "end": 262,
+      "text": "Yeah, fine. Thinking about it is a good place to start."
+    },
+    {
+      "idx": 78,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 262,
+      "end": 266,
+      "text": "Is there anything else you want to ask me? Anything else that we could do for you?"
+    },
+    {
+      "idx": 79,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 267,
+      "end": 270,
+      "text": "No, I don't think so."
+    },
+    {
+      "idx": 80,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 270,
+      "end": 272,
+      "text": "So you're going to do the smear then?"
+    },
+    {
+      "idx": 81,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 272,
+      "end": 274,
+      "text": "I'll think about it."
+    },
+    {
+      "idx": 82,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 274,
+      "end": 275,
+      "text": "You will do the smear."
+    },
+    {
+      "idx": 83,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 275,
+      "end": 276,
+      "text": "I'll think about it."
+    },
+    {
+      "idx": 84,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 276,
+      "end": 280,
+      "text": "Well, you know, we can book you in today if you're feeling comfortable."
+    },
+    {
+      "idx": 85,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 280,
+      "end": 283,
+      "text": "Can I just check? How long ago did you have your previous smear?"
+    },
+    {
+      "idx": 86,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 283,
+      "end": 288,
+      "text": "Oh, God. Literally a few months ago, but I can't tell you how many exactly."
+    },
+    {
+      "idx": 87,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 288,
+      "end": 289,
+      "text": "Okay."
+    },
+    {
+      "idx": 88,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 289,
+      "end": 295,
+      "text": "Normally the gap between the smear tests is five years,"
+    },
+    {
+      "idx": 89,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 295,
+      "end": 301,
+      "text": "and you come in slightly more regularly if they spot any signs that look a bit unusual."
+    },
+    {
+      "idx": 90,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 301,
+      "end": 305,
+      "text": "So you've got – we could book you in if you're particularly concerned,"
+    },
+    {
+      "idx": 91,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 305,
+      "end": 308,
+      "text": "but usually we do get a little bit longer."
+    },
+    {
+      "idx": 92,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 308,
+      "end": 310,
+      "text": "I've got a letter for it to invite me."
+    },
+    {
+      "idx": 93,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 310,
+      "end": 312,
+      "text": "Oh, you did get a letter for it to invite you in?"
+    },
+    {
+      "idx": 94,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 312,
+      "end": 315,
+      "text": "Yeah, I reckon which you've obviously seen them go in."
+    },
+    {
+      "idx": 95,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 315,
+      "end": 316,
+      "text": "Yeah, right."
+    },
+    {
+      "idx": 96,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 316,
+      "end": 317,
+      "text": "And that gives me a mistake."
+    },
+    {
+      "idx": 97,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 317,
+      "end": 319,
+      "text": "If you've had the letter, then we can definitely book you in."
+    },
+    {
+      "idx": 98,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 319,
+      "end": 320,
+      "text": "Okay."
+    },
+    {
+      "idx": 99,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 320,
+      "end": 322,
+      "text": "Okay. So would you like to do that today?"
+    },
+    {
+      "idx": 100,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 322,
+      "end": 323,
+      "text": "No."
+    },
+    {
+      "idx": 101,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 323,
+      "end": 324,
+      "text": "All right."
+    },
+    {
+      "idx": 102,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 324,
+      "end": 328,
+      "text": "I'm going to think about it. I will, because I understand what you're saying."
+    },
+    {
+      "idx": 103,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 328,
+      "end": 329,
+      "text": "Okay."
+    },
+    {
+      "idx": 104,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 331,
+      "end": 333,
+      "text": "So I'll think about it."
+    },
+    {
+      "idx": 105,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 333,
+      "end": 334,
+      "text": "Okay."
+    },
+    {
+      "idx": 106,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 334,
+      "end": 335,
+      "text": "I will do it."
+    },
+    {
+      "idx": 107,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 335,
+      "end": 336,
+      "text": "Yeah."
+    },
+    {
+      "idx": 108,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 336,
+      "end": 339,
+      "text": "While you're here today, while we all start talking,"
+    },
+    {
+      "idx": 109,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 339,
+      "end": 341,
+      "text": "is there anything else that you want to ask me about,"
+    },
+    {
+      "idx": 110,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 341,
+      "end": 345,
+      "text": "like the whole process, about science, that would make you feel more comfortable with it?"
+    },
+    {
+      "idx": 111,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 352,
+      "end": 356,
+      "text": "I guess there's no way to make it less painful as well."
+    },
+    {
+      "idx": 112,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 356,
+      "end": 360,
+      "text": "No, but usually it shouldn't be painful."
+    },
+    {
+      "idx": 113,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 360,
+      "end": 363,
+      "text": "It's usually quite uncomfortable."
+    },
+    {
+      "idx": 114,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 363,
+      "end": 366,
+      "text": "The more comfortable you are, the more relaxed you are."
+    },
+    {
+      "idx": 115,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 366,
+      "end": 367,
+      "text": "Right."
+    },
+    {
+      "idx": 116,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 367,
+      "end": 369,
+      "text": "And the less unpleasant it is."
+    },
+    {
+      "idx": 117,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 369,
+      "end": 373,
+      "text": "So you think maybe if I have more time, I should relax."
+    },
+    {
+      "idx": 118,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 373,
+      "end": 374,
+      "text": "Yeah, maybe a little bit more time."
+    },
+    {
+      "idx": 119,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 374,
+      "end": 375,
+      "text": "That might be a better time."
+    },
+    {
+      "idx": 120,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 375,
+      "end": 376,
+      "text": "I want you to relax."
+    },
+    {
+      "idx": 121,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 376,
+      "end": 378,
+      "text": "And if we get a female nursing, as you said,"
+    },
+    {
+      "idx": 122,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 378,
+      "end": 381,
+      "text": "that will make the whole experience a bit more comfortable for you."
+    },
+    {
+      "idx": 123,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 381,
+      "end": 384,
+      "text": "Is there anything else you want to add?"
+    },
+    {
+      "idx": 124,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 384,
+      "end": 389,
+      "text": "If I change my mind, like, while it's happening, can I just kind of stop?"
+    },
+    {
+      "idx": 125,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 389,
+      "end": 391,
+      "text": "Yeah, yeah, you can say no."
+    },
+    {
+      "idx": 126,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 391,
+      "end": 392,
+      "text": "At the end of the day, it's your body."
+    },
+    {
+      "idx": 127,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 392,
+      "end": 396,
+      "text": "And while I would strongly recommend that you get this test done,"
+    },
+    {
+      "idx": 128,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 396,
+      "end": 399,
+      "text": "at the end of the day, it's your body and it's your decision."
+    },
+    {
+      "idx": 129,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 399,
+      "end": 400,
+      "text": "You have one minute left."
+    },
+    {
+      "idx": 130,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 400,
+      "end": 401,
+      "text": "One minute left."
+    },
+    {
+      "idx": 131,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 401,
+      "end": 405,
+      "text": "Okay, so you said you're going to sort of have a think about it."
+    },
+    {
+      "idx": 132,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 405,
+      "end": 409,
+      "text": "Again, I would recommend it because if anything does come up,"
+    },
+    {
+      "idx": 133,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 409,
+      "end": 412,
+      "text": "as you, there's always a concern that something might,"
+    },
+    {
+      "idx": 134,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 412,
+      "end": 415,
+      "text": "if you've had the test, then we can sort of treat it earlier."
+    },
+    {
+      "idx": 135,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 415,
+      "end": 419,
+      "text": "But there's also a very, very strong chance that it will come back completely clear."
+    },
+    {
+      "idx": 136,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 419,
+      "end": 422,
+      "text": "And then you've got the peace of mind of not having to worry."
+    },
+    {
+      "idx": 137,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 422,
+      "end": 423,
+      "text": "This might happen."
+    },
+    {
+      "idx": 138,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 423,
+      "end": 424,
+      "text": "This might happen."
+    },
+    {
+      "idx": 139,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 424,
+      "end": 429,
+      "text": "So, just to sort of summarise, we came up with a mole and it turns out it wasn't a mole,"
+    },
+    {
+      "idx": 140,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 429,
+      "end": 431,
+      "text": "it was a sort of query about some tests."
+    },
+    {
+      "idx": 141,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 431,
+      "end": 433,
+      "text": "We've had a discussion about that."
+    },
+    {
+      "idx": 142,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 433,
+      "end": 437,
+      "text": "I hear that you've had a bad experience and we would not want to repeat that."
+    },
+    {
+      "idx": 143,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 437,
+      "end": 440,
+      "text": "But we talked through various ways that we're making it more comfortable,"
+    },
+    {
+      "idx": 144,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 440,
+      "end": 443,
+      "text": "so giving more time, having a feeling that it's there."
+    },
+    {
+      "idx": 145,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 443,
+      "end": 446,
+      "text": "Is there anything else that I can help you with?"
+    },
+    {
+      "idx": 146,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 446,
+      "end": 447,
+      "text": "No, that's everything."
+    },
+    {
+      "idx": 147,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 447,
+      "end": 448,
+      "text": "Thank you."
+    },
+    {
+      "idx": 148,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 448,
+      "end": 449,
+      "text": "Thank you."
+    },
+    {
+      "idx": 149,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 449,
+      "end": 450,
+      "text": "I'm sorry about that."
+    },
+    {
+      "idx": 150,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 450,
+      "end": 452,
+      "text": "No, don't need to apologise for it here for."
+    },
+    {
+      "idx": 151,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 452,
+      "end": 455,
+      "text": "Alright, so are you ready to put it in?"
+    },
+    {
+      "idx": 152,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 455,
+      "end": 456,
+      "text": "Yeah."
+    },
+    {
+      "idx": 153,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 456,
+      "end": 457,
+      "text": "Thank you."
+    },
+    {
+      "idx": 154,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 457,
+      "end": 459,
+      "text": "You can either book it by phone or online, but we're getting ready."
+    },
+    {
+      "idx": 155,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 459,
+      "end": 460,
+      "text": "Thank you so much."
+    },
+    {
+      "idx": 156,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 460,
+      "end": 462,
+      "text": "Anything else that can help you with?"
+    },
+    {
+      "idx": 157,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 462,
+      "end": 463,
+      "text": "Thank you."
+    },
+    {
+      "idx": 158,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 463,
+      "end": 465,
+      "text": "I've got what I came here for."
+    },
+    {
+      "idx": 159,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 465,
+      "end": 466,
+      "text": "Okay."
+    },
+    {
+      "idx": 160,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 466,
+      "end": 467,
+      "text": "Well, thanks very much for coming in."
+    },
+    {
+      "idx": 161,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 467,
+      "end": 468,
+      "text": "It's nice to meet you both."
+    },
+    {
+      "idx": 162,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 468,
+      "end": 469,
+      "text": "You too."
+    },
+    {
+      "idx": 163,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 469,
+      "end": 470,
+      "text": "Thank you."
+    },
+    {
+      "idx": 164,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 470,
+      "end": 470.75,
+      "text": "Thank you."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-07T00:22:51.254Z",
+  "notes": "Three speakers, conflict, consent, recommendation versus patient decision"
+}

@@ -1,0 +1,185 @@
+{
+  "conversationId": "clip:03_prescription_refill_counseling",
+  "generatedAt": "2026-11-06T21:44:26.910Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "Ramipril",
+      "spellings": [
+        "Ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Patient is picking up a refill of Ramipril, which he says is going well with no side effects and no changes.",
+      "doseStatements": [
+        {
+          "text": "5 milligram strength",
+          "unclear": false,
+          "evidence": [
+            5
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        57,
+        77,
+        89
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Patient is already taking atorvastatin for high cholesterol, with no change mentioned.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "hydrochlorothiazide",
+      "spellings": [
+        "hydrochlorothiazide"
+      ],
+      "rxnorm": {
+        "rxcui": "5487",
+        "name": "hydrochlorothiazide",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Patient is already taking hydrochlorothiazide for blood pressure, with no change mentioned.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        16,
+        17,
+        20,
+        21,
+        22
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "Ibuprofen",
+      "spellings": [
+        "Ibuprofen"
+      ],
+      "rxnorm": {
+        "rxcui": "5640",
+        "name": "ibuprofen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "Patient has been taking ibuprofen on his own for knee arthritis pain for about a month. The clinician warned it can interact with Ramipril and raise blood pressure, and suggested Tylenol instead, though no explicit stop instruction was given.",
+      "doseStatements": [
+        {
+          "text": "400 milligrams",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        },
+        {
+          "text": "Two or three times",
+          "unclear": false,
+          "evidence": [
+            45
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        39,
+        41,
+        42,
+        43,
+        45,
+        46,
+        47,
+        52,
+        54,
+        56,
+        57
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "Tylenol",
+      "spellings": [
+        "Tylenol"
+      ],
+      "rxnorm": {
+        "rxcui": "202433",
+        "name": "Tylenol",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "proposed",
+      "roleDetail": "Clinician suggested trying Tylenol for knee pain instead of ibuprofen; patient said he would go grab some before leaving.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        59,
+        61,
+        100
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

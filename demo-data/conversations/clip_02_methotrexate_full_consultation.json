@@ -1,0 +1,902 @@
+{
+  "id": "clip:02_methotrexate_full_consultation",
+  "source": "clip",
+  "sourceId": "02_methotrexate_full_consultation",
+  "title": "Starting methotrexate for arthritis",
+  "recordedAt": "2026-10-27T15:00:00.000Z",
+  "durationSec": null,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 0,
+      "end": 14.68,
+      "text": "Good morning, my name is Dr Srivastava. I'm one of the doctors here in the clinic. Nice"
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 14.68,
+      "end": 18.88,
+      "text": "to meet you. Hello, nice to meet you as well. Can I confirm your name and age please? Yeah,"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 18.88,
+      "end": 24.8,
+      "text": "it's Alice Harris and I'm 52. Okay, nice to meet you Alice. Hi. So, I understand you've"
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 24.8,
+      "end": 29.76,
+      "text": "been seeing the doctor recently and you're here to discuss a new diagnosis. That's right,"
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 30.08,
+      "end": 35.08,
+      "text": "yes please. So, this is the first time I've met you. So, just run me through how you've"
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 35.08,
+      "end": 41.24,
+      "text": "been feeling recently and the tests that you've had. Well, it's my joints really. I've been"
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 41.24,
+      "end": 51.08,
+      "text": "feeling really stiff in the mornings and I've been to and fro into the doctors and you know,"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 51.08,
+      "end": 56.52,
+      "text": "my hands especially have been getting quite swollen up and anyway, I've had some tests done"
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 57.16,
+      "end": 63.36,
+      "text": "and I've been told it's arthritis and then also been told that you're going to come and talk it"
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 63.36,
+      "end": 68.32,
+      "text": "through with me and just talk through as well what kind of treatment I'm going to have. Yeah,"
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 68.32,
+      "end": 73.56,
+      "text": "absolutely. So, I just want to confirm if you know what type of arthritis have you been told"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 73.56,
+      "end": 81.28,
+      "text": "that you have? Oh, I don't know actually. Okay, so you know based on the symptoms that you have"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 81.28,
+      "end": 86.68,
+      "text": "mentioned, the results of the blood tests and the x-rays, you have a specific type of arthritis"
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 86.68,
+      "end": 93.24,
+      "text": "called rheumatoid arthritis. Okay. Have you ever heard of that before? Yeah, I've heard of it."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 93.24,
+      "end": 101.6,
+      "text": "Okay, do you have any understanding of what it is? Is it to do with wear and tear? It's a good"
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 101.6,
+      "end": 108.12,
+      "text": "thought. That is a different type of arthritis. Okay, so what I plan to do today is we'll discuss"
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 108.16,
+      "end": 114.76,
+      "text": "what rheumatoid arthritis is and then there is a medication that your doctor will recommend that"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 114.76,
+      "end": 120.64,
+      "text": "you start. Yeah, yeah, yeah. Are you okay with that? Of course, yeah. So, rheumatoid arthritis,"
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 120.64,
+      "end": 127.36,
+      "text": "it is a specific type of arthritis that results from your immune system being overactive and"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 127.36,
+      "end": 133.6,
+      "text": "unexpectedly attacking parts of your joints. Okay, now in honesty the underlying cause for"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 133.6,
+      "end": 139.519,
+      "text": "this condition we don't fully understand. Right. Okay, but we have got a good understanding of how"
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 139.519,
+      "end": 147.88,
+      "text": "the illness can progress if we don't do anything about it. Okay. So, if we were to treat the joints"
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 147.88,
+      "end": 153.72,
+      "text": "can eventually become damaged. Yeah. And it's going to lead to deformities later in life. Okay."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 153.72,
+      "end": 160.64,
+      "text": "There are also some risks to your heart. There is an increased risk of stroke and increased risk to"
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 160.64,
+      "end": 166,
+      "text": "your bones more generally. Right. Okay, so it's really important that we think about starting"
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 166,
+      "end": 171.279,
+      "text": "some treatment for you. Yeah. Okay. Yeah, yeah. Okay. Did you have any questions about the"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 171.279,
+      "end": 179.079,
+      "text": "diagnosis itself? I don't know really. So, it's nothing to do with the wear and tear. It's about"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 179.079,
+      "end": 187.839,
+      "text": "my immune system. Yeah, that's right. And it can lead to problems with the heart. Crikey. And"
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 187.84,
+      "end": 194.52,
+      "text": "deformity. So, Alice, I've got a good understanding of why you've come to the doctors recently. Okay."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 194.52,
+      "end": 198.68,
+      "text": "Just a few background questions as well if that's okay. Okay. Yeah, yeah. So, do you have any other"
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 198.68,
+      "end": 204.44,
+      "text": "medical conditions that you see a doctor for? Well, yeah, I've got a problem with my thyroid"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 204.44,
+      "end": 211.76,
+      "text": "and also I do get migraine every now and again. Okay. A few lifestyle questions as well. Okay."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 211.76,
+      "end": 216.52,
+      "text": "Alice, can we ask everybody? Do you smoke at all? No, no, no. Okay. And what about alcohol"
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 216.52,
+      "end": 222.56,
+      "text": "consumption? No, I don't drink either. Okay. And do you take any recreational drugs? No. Like I said,"
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 222.56,
+      "end": 228.04,
+      "text": "we ask everyone. Okay. No, no, no. I definitely don't. Okay. Just a quick check. How are things"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 228.04,
+      "end": 235.2,
+      "text": "at home? Oh, yeah, good. Yeah. Good. Yeah, yeah, yeah. Yeah. Do you live with anybody? Well, just"
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 235.2,
+      "end": 241.92,
+      "text": "my partner now. My daughter left home, what was it, about three months ago now. She got flat of"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 241.92,
+      "end": 247.6,
+      "text": "her own. I see. Which is nice. Excellent. Yeah, yeah. And you and your partner, are you guys"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 247.6,
+      "end": 253.399,
+      "text": "independent? Do you need any support with anything? Oh, no, no, absolutely fine. It was just, it was"
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 253.399,
+      "end": 258.8,
+      "text": "just more, it's been getting quite difficult with me, you know, with the stiffness really."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 258.8,
+      "end": 269.28,
+      "text": "But, you know, once I'm kind of moving, I'm fine. Okay. But, but yeah, generally, we're both pretty"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 269.4,
+      "end": 275.84,
+      "text": "well and we're very happy together. Yeah. Okay, great. And what about work? Do you? Oh, yeah,"
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 275.84,
+      "end": 280.44,
+      "text": "I work in, I work as a school secretary. I see. And have your symptoms been affecting your work?"
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 280.44,
+      "end": 286.08,
+      "text": "That, actually, to be honest, it's my hands, because they do get quite swollen. Yeah. And"
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 286.08,
+      "end": 293.559,
+      "text": "they do get stiff. So sometimes it is getting to be a bit of a struggle. Yeah, I mean, that has been"
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 293.56,
+      "end": 299.6,
+      "text": "worrying me a bit. Okay, great. Yeah. And Alice, do you take any regular medications? Oh, yes, I do."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 299.6,
+      "end": 307.16,
+      "text": "I've got me tablets for the thyroid. And then it's just when I get migraine, I get ibuprofen,"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 307.16,
+      "end": 312.44,
+      "text": "that's when I need to. Okay. Do you know what the tablet for your thyroid is called? Yes, I do."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 312.44,
+      "end": 319.44,
+      "text": "Here it is. I can never say it properly, so I thought it would bring it. It's, is it levothyroxine?"
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 319.44,
+      "end": 324.84,
+      "text": "Levothyroxine, okay. 100 my grams. That's right, yeah. And what are you taking over the counter,"
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 324.84,
+      "end": 329.92,
+      "text": "you mentioned? Yeah, it's just the ibuprofen from my head. Okay, fine. And do you have any allergies"
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 329.92,
+      "end": 337.6,
+      "text": "to any medications? No. Okay. So, Alice, we've explained a little bit about rheumatoid arthritis,"
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 337.6,
+      "end": 343.64,
+      "text": "and the main thing to understand is it's related to your immune system being overactive. Yeah. So,"
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 343.68,
+      "end": 349.28,
+      "text": "the medication that we're going to recommend, okay, is called methotrexate. Okay. And this is"
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 349.28,
+      "end": 355.08,
+      "text": "a drug that suppresses the immune system in general terms. Okay. Right. So, the benefits"
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 355.08,
+      "end": 360.2,
+      "text": "it will bring you are reducing the frequency with which you have the flares of the joint"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 360.2,
+      "end": 365.68,
+      "text": "pain and swelling. Okay. And it will also reduce the risk to the other organs that I mentioned"
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 365.68,
+      "end": 371.56,
+      "text": "before, so the heart, reducing the risk of stroke. Okay. And to your bones as well. Yeah. Okay. Any"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 371.6,
+      "end": 378.16,
+      "text": "questions on how it works at this point? I mean, if I take this tablet, I mean, is it going to,"
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 378.16,
+      "end": 382.88,
+      "text": "like, cure it? Is it going to make it completely better? It's a great question, and unfortunately,"
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 382.88,
+      "end": 389.36,
+      "text": "no. We don't actually have any curative medications for this condition. So, I've got it for life,"
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 389.36,
+      "end": 394.88,
+      "text": "basically. Yeah. But what I will add is that even though it is a medication to take for life,"
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 394.88,
+      "end": 401.2,
+      "text": "many of our patients get really good control of their symptoms and can, you know, lead fairly"
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 401.2,
+      "end": 407.52,
+      "text": "normal lives, particularly things like work and activities of daily life. Is it inevitable,"
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 407.52,
+      "end": 412.76,
+      "text": "though, that it's going to get gradually worse, or are you saying that with this medication,"
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 412.76,
+      "end": 418.56,
+      "text": "we should be able to keep it under control? So, it is possible that we may need to switch"
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 418.56,
+      "end": 423.88,
+      "text": "medications at some point. Okay. I won't be able to predict for your case in particular. Right. But"
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 423.88,
+      "end": 429.48,
+      "text": "rest assured that if it isn't providing adequate effect, or if we need to add in some medications,"
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 429.48,
+      "end": 435.4,
+      "text": "that's something we can consider down the line. Okay. So, I'll just take this moment now to give"
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 435.4,
+      "end": 440.08,
+      "text": "you a practical idea of how we're going to give you the medication. Okay. Yeah. So, it comes as"
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 440.08,
+      "end": 445.44,
+      "text": "a tablet. Okay. You're going to take it once every week. Okay. Oh, okay. So, it's just the"
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 445.44,
+      "end": 450.2,
+      "text": "once? Just the once, yeah. And it'll be the same day and time each week as well. Yeah, yeah, yeah."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 450.2,
+      "end": 455.84,
+      "text": "We've already talked about it, but it will be indefinite. And at the beginning, before you"
+    },
+    {
+      "idx": 73,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 455.84,
+      "end": 461.039,
+      "text": "start, we need to do some monitoring tests first. Okay. Because there are some risks to starting"
+    },
+    {
+      "idx": 74,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 461.039,
+      "end": 467.28,
+      "text": "this medication. I see. Okay. So, number one, it can affect your liver. So, we will do a blood test"
+    },
+    {
+      "idx": 75,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 467.28,
+      "end": 473.679,
+      "text": "to check that first. Okay. And we'll also recommend that you don't have alcohol. Does that part make"
+    },
+    {
+      "idx": 76,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 473.679,
+      "end": 480.719,
+      "text": "sense? Yes, yes it does. Okay. Yeah, yeah, yeah. Number two, it can affect your lungs. So, before you start this"
+    },
+    {
+      "idx": 77,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 480.72,
+      "end": 487.68,
+      "text": "medication, we're going to send you for a chest x-ray. Okay. Okay. And as we sort of increase the dose"
+    },
+    {
+      "idx": 78,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 487.68,
+      "end": 494.36,
+      "text": "and it reaches the desired effect, the frequency of those blood tests will be less often. Okay. Okay."
+    },
+    {
+      "idx": 79,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 494.36,
+      "end": 501.2,
+      "text": "Okay. A few other risks I need to let you know about. So, anybody starting this medication, we"
+    },
+    {
+      "idx": 80,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 501.2,
+      "end": 510.4,
+      "text": "recommend against attempting to conceive. Is that in your mind? Oh, don't you worry. I'm way beyond that now. I see. Fair enough. Okay. One thing we"
+    },
+    {
+      "idx": 81,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 510.4,
+      "end": 516.28,
+      "text": "advise as well, Alice, whilst you're on methotrexate, we wouldn't recommend that you take medications"
+    },
+    {
+      "idx": 82,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 516.28,
+      "end": 522.28,
+      "text": "like ibuprofen or any similar anti-inflammatory medications. It increases the risk of an ulcer"
+    },
+    {
+      "idx": 83,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 522.28,
+      "end": 529,
+      "text": "in the stomach. Looking for bleeding. It's just that it's, well the ibuprofen is the only thing that seems to work."
+    },
+    {
+      "idx": 84,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 529,
+      "end": 535.92,
+      "text": "Okay. Now, totally appreciate that. There are a range of alternatives I can look into for you and"
+    },
+    {
+      "idx": 85,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 535.92,
+      "end": 544.76,
+      "text": "we'll see if we can find something that works. Okay. Okay. Yeah, yeah, yeah. Okay. Thank you. Okay. Yeah. And the final risk, okay, we mentioned that it's an"
+    },
+    {
+      "idx": 86,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 544.76,
+      "end": 552.12,
+      "text": "immunosuppressant medication. So, in the first few weeks and months you're on this, you need to take"
+    },
+    {
+      "idx": 87,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 552.12,
+      "end": 560.12,
+      "text": "any symptoms of infection very seriously. Okay. Okay. So, any coughs, colds, if you're bringing anything up, if you feel"
+    },
+    {
+      "idx": 88,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 560.32,
+      "end": 567.32,
+      "text": "particularly unwell, you need to go to A&E and also mention that you're on methotrexate. Okay. Yeah. Similarly, if you have any"
+    },
+    {
+      "idx": 89,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 568.32,
+      "end": 575.32,
+      "text": "unexpected bleeding, bruising, same thing. Right. Please take seriously and go to A&E and mention you're on methotrexate."
+    },
+    {
+      "idx": 90,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 575.32,
+      "end": 584.32,
+      "text": "Okay. So, I need to be quite diligent then in that respect. Yeah. Yeah, absolutely. Okay. Yeah. There are also some common"
+    },
+    {
+      "idx": 91,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 584.52,
+      "end": 591.52,
+      "text": "but not as serious side effects I'd like to make you aware of. Nausea, diarrhea and ulcers within the mouth can happen"
+    },
+    {
+      "idx": 92,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 592.52,
+      "end": 599.52,
+      "text": "with patients on methotrexate. If it is particularly bad or bothering you, please do seek medical advice for those as well."
+    },
+    {
+      "idx": 93,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 599.52,
+      "end": 606.52,
+      "text": "Right. Okay. Yes, I will. Great. Yeah. So, as we've gone through a lot today and like I say, we'll give you some written"
+    },
+    {
+      "idx": 94,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 606.52,
+      "end": 612.52,
+      "text": "information about the diagnosis and about the medication. But also, we'll arrange another appointment for you. Okay."
+    },
+    {
+      "idx": 95,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 612.72,
+      "end": 619.72,
+      "text": "So, you have time to think about any questions that you may have. Okay. That's good. There's quite a lot there. Yeah."
+    },
+    {
+      "idx": 96,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 619.72,
+      "end": 626.72,
+      "text": "Okay. Great. And the final thing is that we do recommend anybody who has rheumatoid arthritis to have an annual flu jab."
+    },
+    {
+      "idx": 97,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 627.72,
+      "end": 634.72,
+      "text": "Okay. So, I've got to have a flu jab. Ideally. Yeah, that's not a problem at all. No. Basically, I'll do whatever"
+    },
+    {
+      "idx": 98,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 634.92,
+      "end": 640.92,
+      "text": "I've got to do because, you know, I just want to get this under control. Of course. Of course. Okay."
+    },
+    {
+      "idx": 99,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 640.92,
+      "end": 647.92,
+      "text": "Is there anything else on your mind? It's just the fact that you were saying that I have to take this medication for life."
+    },
+    {
+      "idx": 100,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 652.92,
+      "end": 659.92,
+      "text": "I mean, is there a chance? I mean, I know you said that, you know, the medication might change but if it's the same medication"
+    },
+    {
+      "idx": 101,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 660.92,
+      "end": 667.92,
+      "text": "and you're saying about the immune system, I mean, could my system get used to it so then it like, stopped working?"
+    },
+    {
+      "idx": 102,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 667.92,
+      "end": 674.92,
+      "text": "Yeah, we do sometimes observe that patients on a medication that works for a while, it suddenly stops working."
+    },
+    {
+      "idx": 103,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 674.92,
+      "end": 680.92,
+      "text": "Okay. And in that case, you know, if you get symptoms, you seek advice from your doctor. Okay."
+    },
+    {
+      "idx": 104,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 680.92,
+      "end": 685.92,
+      "text": "And then there are a number of other medications that we can trial instead. Okay. Okay. Okay."
+    },
+    {
+      "idx": 105,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 686.92,
+      "end": 692.92,
+      "text": "And there's no reason why I can't like, continue to work. So this should help. Okay. Yeah."
+    },
+    {
+      "idx": 106,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 692.92,
+      "end": 699.92,
+      "text": "So you mentioned the hand swelling and pain is affecting your work. Yeah. This will be part of trying to reduce the frequency of those attacks."
+    },
+    {
+      "idx": 107,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 699.92,
+      "end": 706.92,
+      "text": "Okay. Thank you. Okay. So as we've gone through a lot today, like I say, we'll give you some written information about the diagnosis"
+    },
+    {
+      "idx": 108,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 706.92,
+      "end": 711.92,
+      "text": "and about the medication but also we'll arrange another appointment for you. Okay."
+    },
+    {
+      "idx": 109,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 711.92,
+      "end": 717.92,
+      "text": "So you have time to think about any questions that you may have. Okay. That's gone through quite a lot there. Yeah."
+    },
+    {
+      "idx": 110,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 717.92,
+      "end": 720.92,
+      "text": "Yeah. Okay. Great. Okay. Thank you."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-07T00:21:13.328Z",
+  "notes": "Weekly dosing, blood tests, chest X-ray, interactions and warning symptoms"
+}

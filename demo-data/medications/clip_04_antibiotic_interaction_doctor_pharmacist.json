@@ -1,0 +1,258 @@
+{
+  "conversationId": "clip:04_antibiotic_interaction_doctor_pharmacist",
+  "generatedAt": "2026-11-06T21:44:33.749Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "isiziromycin",
+      "spellings": [
+        "isiziromycin",
+        "Zitramycin",
+        "the mycin"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [
+        {
+          "rxcui": "202975",
+          "name": "Vibramycin",
+          "score": 7.697556495666504
+        },
+        {
+          "rxcui": "1186251",
+          "name": "Vibramycin Pill",
+          "score": 7.658421299934387
+        },
+        {
+          "rxcui": "1186250",
+          "name": "Vibramycin Oral Product",
+          "score": 7.624466102321865
+        },
+        {
+          "rxcui": "1094904",
+          "name": "Bio-Mycin",
+          "score": 12.529038228559495
+        },
+        {
+          "rxcui": "1174321",
+          "name": "Bio-Mycin Injectable Product",
+          "score": 11.749923298070838
+        },
+        {
+          "rxcui": "216159",
+          "name": "Coly Mycin M",
+          "score": 11.511518673622609
+        }
+      ],
+      "kind": "specific",
+      "nameState": "suggested",
+      "suggestion": {
+        "name": "azithromycin",
+        "rxcui": "18631",
+        "basis": "context_only",
+        "reason": "Prescribed for strep throat, and the pharmacist's warning about QT prolongation with risperidone matches azithromycin."
+      },
+      "role": "not_chosen",
+      "roleDetail": "The pharmacist advised against it because of a QT prolongation interaction with risperidone and chose a different antibiotic instead.",
+      "doseStatements": [
+        {
+          "text": "250 milligrams",
+          "unclear": false,
+          "evidence": [
+            7
+          ]
+        },
+        {
+          "text": "two tablets to be taken at once and then one tablet every day after",
+          "unclear": false,
+          "evidence": [
+            8
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        6,
+        7,
+        8,
+        33,
+        34,
+        36,
+        38
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "penicillin",
+      "spellings": [
+        "penicillin"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The patient has a true allergy to penicillin, which causes a severe reaction.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        11,
+        12,
+        41
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "cephalosporin",
+      "spellings": [
+        "cephalosporin",
+        "Sephadoxyl"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The patient has a true allergy to cephalosporins, so the pharmacist avoided them.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        13,
+        41,
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "Risperdal",
+      "spellings": [
+        "Risperdal",
+        "risperdol"
+      ],
+      "rxnorm": {
+        "rxcui": "152318",
+        "name": "Risperdal",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The patient is already taking Risperdal for schizophrenia, and the pharmacist noted it interacts with the azithromycin prescription.",
+      "doseStatements": [
+        {
+          "text": "4 milligrams, one tablet once a day",
+          "unclear": false,
+          "evidence": [
+            16
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        15,
+        16,
+        34
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "Ativan",
+      "spellings": [
+        "Ativan"
+      ],
+      "rxnorm": {
+        "rxcui": "202479",
+        "name": "Ativan",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The patient already takes Ativan as needed, given sublingually.",
+      "doseStatements": [
+        {
+          "text": "when needed",
+          "unclear": false,
+          "evidence": [
+            16
+          ]
+        },
+        {
+          "text": "one milligram sublingual",
+          "unclear": false,
+          "evidence": [
+            17
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        16,
+        17
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "clindamycin",
+      "spellings": [
+        "clindamycin"
+      ],
+      "rxnorm": {
+        "rxcui": "2582",
+        "name": "clindamycin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "Clindamycin was chosen as the replacement antibiotic for strep throat and a prescription was written, but the 300 mg dose was later restated as 500 mg and 300 mg.",
+      "doseStatements": [
+        {
+          "text": "300 milligrams, three times a day for 10 days",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        },
+        {
+          "text": "500 milligrams, 300 milligrams, three times for 10 days",
+          "unclear": true,
+          "evidence": [
+            47
+          ]
+        }
+      ],
+      "doseConflict": true,
+      "doseConflictNote": "Line 43 says \"300 milligrams, three times a day for 10 days\" but line 47 says \"500 milligrams, 300 milligrams, three times for 10 days\".",
+      "evidence": [
+        42,
+        43,
+        47
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "conversationId": "clip:01_medication_shared_decision",
+  "headline": "You and Dr. Smith agreed to lower your heartburn medicine (the one that sounded like 'Lenzaprazole') from 30 mg to 15 mg daily for two weeks, instead of stopping it right away.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Confirm the name of your heartburn medicine",
+      "detail": "The name was hard to hear in the recording. Listen to the part where the medicine that sounded like 'Lenzaprazole' is discussed, and confirm the exact name with your care team before you pick up the new prescription.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        3,
+        51
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Pick up the new prescription for the lower dose",
+      "detail": "Dr. Smith said they could write a prescription for 15 mg daily for two weeks. Take it to your pharmacy.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        52,
+        53
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Book a follow-up visit with Dr. Smith",
+      "detail": "Dr. Smith suggested booking a follow-up visit in about a month, even if your symptoms do not come back. If your heartburn or reflux returns and lasts more than a few days, let the office know and book a follow-up then.",
+      "dueBy": null,
+      "when": "in about a month's time",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        61,
+        62,
+        63,
+        64
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take the medicine that sounded like 'Lenzaprazole' at 15 mg daily for two weeks, instead of your current 30 mg daily.",
+      "confidence": "check_this",
+      "evidence": [
+        51,
+        52
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Watch for new reflux or heartburn, belly pain, or indigestion.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        55,
+        56
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "If your symptoms come back but are only occasional or mild, you could try an over-the-counter acid reducer such as Tums or Gaviscon.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        58,
+        59
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Avoiding meals two to three hours before bed, and raising the head of your bed, may help.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        60,
+        61
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "If symptoms come back and bother you for more than a few days, let the office know and book a follow-up appointment.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        61,
+        62
+      ]
+    }
+  ],
+  "unchanged": [],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Whether to stop the medicine altogether after the two weeks, and then use it only when needed.",
+      "resolvesWhen": "If your symptoms do not come back during the two weeks at the lower dose.",
+      "evidence": [
+        32,
+        33,
+        34
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-07T00:21:13.326Z",
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "input_tokens": 5350,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 4188,
+    "output_tokens_details": {
+      "thinking_tokens": 3271
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  }
+}

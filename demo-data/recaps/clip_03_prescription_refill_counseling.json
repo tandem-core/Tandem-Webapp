@@ -1,0 +1,82 @@
+{
+  "conversationId": "clip:03_prescription_refill_counseling",
+  "headline": "Your Ramipril refill was picked up and the doctor wants your blood pressure plan kept the same, but you should check your blood pressure three times in a row each morning and consider Tylenol for your knee, since ibuprofen can raise blood pressure.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Get Tylenol for your knee pain",
+      "detail": "The doctor suggested trying Tylenol for your knee pain, since ibuprofen can raise your blood pressure over time. You said you would pick some up on your way out today.",
+      "dueBy": "2026-10-20",
+      "when": "today, on your way out",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        59,
+        61,
+        100
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Check your blood pressure every morning before you have coffee or breakfast. Sit quietly for a few minutes with your feet flat on the floor. Take it three times in a row, back to back. Ignore the first reading and average the second and third readings.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        29,
+        30,
+        32,
+        34,
+        91,
+        93,
+        94,
+        95
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "The doctor said to keep things the way they are. Your blood pressure medicine plan, including Ramipril 5 milligrams, stays the same.",
+      "evidence": [
+        5,
+        63,
+        64
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "It was not said whether you should stop the ibuprofen 400 milligrams you take two or three times a day for your knee pain.",
+      "resolvesWhen": null,
+      "evidence": [
+        41,
+        43,
+        45,
+        57,
+        59
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-07T00:22:11.746Z",
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "input_tokens": 5680,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3104,
+    "output_tokens_details": {
+      "thinking_tokens": 2596
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "conversationId": "clip:02_methotrexate_full_consultation",
+  "headline": "You were told you have rheumatoid arthritis, and the doctor recommended starting methotrexate, a weekly tablet, once a liver blood test and a chest x-ray are done.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Get a liver blood test before you start methotrexate",
+      "detail": "The doctor said the clinic will do a blood test to check your liver before you start. No date was given, so ask the clinic to book it. Later, blood tests will be less often once the dose reaches the right level.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Get a chest x-ray before you start methotrexate",
+      "detail": "The doctor said you need a chest x-ray before you start. This checks for a lung risk from the medicine. No date was given, so ask the clinic to book it.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        76,
+        77
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Start methotrexate once a week, after your tests",
+      "detail": "The medicine comes as a tablet. You take it once a week, on the same day and at the same time each week. You will take it long term. Start only after the liver blood test and chest x-ray are done. The dose was not said in this recording.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        53,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Get a yearly flu jab",
+      "detail": "The doctor recommends an annual flu jab for anyone with rheumatoid arthritis. You said you will have it. A family member could help book it.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "id": "followUp-5",
+      "title": "Attend your next appointment with the doctor",
+      "detail": "The clinic will arrange another appointment so you have time to think about your questions. No date was given. They will also give you written information about the diagnosis and the medicine.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        94,
+        95,
+        107,
+        108,
+        109
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take methotrexate once a week, on the same day and at the same time each week.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        70,
+        71
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Do not drink alcohol while you are on methotrexate. The doctor said this is recommended.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        75,
+        76
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Do not take ibuprofen or similar anti-inflammatory medicines while on methotrexate. They raise the risk of a stomach ulcer and bleeding.",
+      "confidence": "check_this",
+      "evidence": [
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Do not try to conceive while on methotrexate. The doctor said this applies to anyone starting it.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        79,
+        80
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "Take any symptoms of infection seriously, such as coughs, colds or bringing anything up. If you feel particularly unwell, go to A&E and say you are on methotrexate.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "Take unexpected bleeding or bruising seriously. Go to A&E and say you are on methotrexate.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        88,
+        89
+      ]
+    },
+    {
+      "id": "instruction-7",
+      "text": "Nausea, diarrhoea and mouth ulcers can happen. If they are particularly bad or bothering you, seek medical advice.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        91,
+        92
+      ]
+    }
+  ],
+  "unchanged": [],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "The amount of your thyroid tablet, levothyroxine, was said as “100 my grams”. This may be a mis-hearing, so the amount is not confirmed. Listen to that part of the recording and check the dose with your care team.",
+      "resolvesWhen": "Your care team confirms the amount.",
+      "evidence": [
+        48,
+        49
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "You said ibuprofen is the only thing that works for your migraines, but the doctor advised against it while on methotrexate. The doctor said they can look at other options.",
+      "resolvesWhen": "The doctor finds an alternative that works for you.",
+      "evidence": [
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "id": "openQuestion-3",
+      "text": "The starting dose of methotrexate was not given. The dose will be raised gradually until it has the desired effect.",
+      "resolvesWhen": null,
+      "evidence": [
+        77,
+        78
+      ]
+    },
+    {
+      "id": "openQuestion-4",
+      "text": "Whether your arthritis will get worse over time. The doctor could not predict this for you. The medicine may need switching if it does not work well enough.",
+      "resolvesWhen": null,
+      "evidence": [
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "id": "openQuestion-5",
+      "text": "Whether methotrexate could stop working over time. The doctor said this sometimes happens. If it does, see your doctor, as there are other medicines to try.",
+      "resolvesWhen": null,
+      "evidence": [
+        101,
+        102,
+        103,
+        104
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-07T00:21:57.789Z",
+  "model": "claude-haiku-5-5",
+  "usage": {
+    "input_tokens": 7687,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 11531,
+    "output_tokens_details": {
+      "thinking_tokens": 9878
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "id": "clip:01_medication_shared_decision",
+  "source": "clip",
+  "sourceId": "01_medication_shared_decision",
+  "title": "Heartburn medicine review",
+  "recordedAt": "2026-11-03T15:00:00.000Z",
+  "durationSec": 427,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 0.44999999999999574,
+      "end": 3.249999999999993,
+      "text": "Good afternoon, Mrs. James. How can I help you today?"
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 4.050000000000004,
+      "end": 11.249999999999993,
+      "text": "Oh, hi, Dr. Smith. I was updating my medication list that I keep at home with all the changes"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 11.249999999999993,
+      "end": 16.93,
+      "text": "we made during my last appointment with you. And it got me wondering whether I still needed"
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 16.93,
+      "end": 21.889999999999993,
+      "text": "to take the Lenzaprazole. I'm not really sure why I'm taking it."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 22.93,
+      "end": 28.050000000000004,
+      "text": "OK, well, I'm so glad to hear that you keep an updated medication list at home. That's"
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 28.050000000000004,
+      "end": 32.529999999999994,
+      "text": "very important for all the healthcare providers who provide prescription for you so that they"
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 32.529999999999994,
+      "end": 38.37,
+      "text": "remain on the same page. But as far as the Lenzaprazole is concerned, it's usually used"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 38.37,
+      "end": 43.169999999999995,
+      "text": "to treat heartburn. Do you remember when it first may have been prescribed?"
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 43.57,
+      "end": 49.409,
+      "text": "Yes, I do remember it. It started a couple of years ago when I was in the hospital with"
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 49.409,
+      "end": 57.01,
+      "text": "pneumonia. Now that you mention it, I do remember having a few days of heartburn while I was there."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 58.049,
+      "end": 62.60999999999999,
+      "text": "OK, and what about more recently and right now? Have you had any more heartburn?"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 63.489,
+      "end": 67.72999999999999,
+      "text": "No, I haven't had any heartburn since I left the hospital."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 67.72999999999999,
+      "end": 74.04999999999998,
+      "text": "OK, so that's very good to hear. Just looking at your medical chart here, I don't see any other"
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 74.04999999999998,
+      "end": 79.32999999999998,
+      "text": "obvious reason why you would need to stay on the Lenzaprazole. But just to be sure, let me"
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 79.32999999999998,
+      "end": 86.53,
+      "text": "double check by asking you a few questions. So have you had a bleeding ulcer? No, never."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 87.32999999999998,
+      "end": 94.37,
+      "text": "OK, very good. And otherwise, have you had a scope or have you been told that you have severe"
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 94.37,
+      "end": 102.37,
+      "text": "esophagitis or something we call Barrett's esophagus? No. OK, that's also very good. So"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 103.81,
+      "end": 109.25,
+      "text": "looking at your medication list as well, I don't see any prescribed anti-inflammatories."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 109.25,
+      "end": 113.97,
+      "text": "Do you happen to take any anti-inflammatories that are over-the-counter products? And by this,"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 113.97,
+      "end": 123.81,
+      "text": "I mean either aspirin or ibuprofen or naprosyn. No. OK, so in this case,"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 123.81,
+      "end": 128.60999999999999,
+      "text": "so in that case, based on the information that I have and what you've just told me,"
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 128.60999999999999,
+      "end": 132.13,
+      "text": "I don't think there's any indication for you to stay on the Lenzaprazole."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 132.92999999999998,
+      "end": 138.04999999999998,
+      "text": "And in fact, sometimes the side effects with this medication, as with many others, outweigh the"
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 138.04999999999998,
+      "end": 143.89,
+      "text": "benefit. The side effects of Lenzaprazole include interfering with absorption of vitamins and"
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 143.89,
+      "end": 149.73,
+      "text": "minerals from your food. It may increase your risk of developing infections like pneumonia,"
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 150.29,
+      "end": 153.89,
+      "text": "and it gives you a small but increased risk of breaking a bone."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 157.01,
+      "end": 163.17,
+      "text": "Well, I was not aware of all that. What I'd really like to do is to do everything I can"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 163.17,
+      "end": 169.25,
+      "text": "do to avoid having pneumonia gain. OK, sounds like a good plan. So"
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 170.45,
+      "end": 174.85,
+      "text": "there are a few options that we could consider for how we might stop the Lenzaprazole."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 175.41,
+      "end": 181.81,
+      "text": "So the first option would be to stop it outright, but use it on demand, we say. So that would mean"
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 181.81,
+      "end": 187.57,
+      "text": "if you happen to develop more heartburn or reflux symptoms, you could then use it as needed."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 187.57,
+      "end": 192.85,
+      "text": "And then hopefully over time, your symptoms would then go away and you could stop it for good."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 193.64999999999998,
+      "end": 199.73000000000002,
+      "text": "The second option would be to simply decrease the medication to a lower dose for a couple of weeks"
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 199.73000000000002,
+      "end": 205.57,
+      "text": "and see how you do with that. And if your symptoms do not come back, we could then consider"
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 205.57,
+      "end": 211.32999999999998,
+      "text": "stopping it altogether and you could at that point use it on demand. The third option would be to"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 211.32999999999998,
+      "end": 219.57,
+      "text": "switch to a less powerful acid reducer and then see how you do over a couple of weeks"
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 220.76999999999998,
+      "end": 229.49,
+      "text": "and then stop that outright. That's a lot of options. I'm not sure which way would be best"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 229.49,
+      "end": 235.57,
+      "text": "for me to go. Could you tell me some of the pros and cons of each of those options?"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 236.13,
+      "end": 242.52999999999997,
+      "text": "OK, absolutely. So for the first option, that was the on demand use. So only taking it when"
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 242.52999999999997,
+      "end": 248.28999999999996,
+      "text": "you have symptoms. This generally results in taking fewer pills per week and possibly lower"
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 248.28999999999996,
+      "end": 255.49,
+      "text": "cost. But about one in 10 people may have their symptoms come back. But the second option,"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 255.49,
+      "end": 259.81,
+      "text": "which involved reducing the less off result to a lower dose and then stopping it."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 261.09,
+      "end": 266.05,
+      "text": "It does not usually result in symptoms coming back compared to continuing at your current dose."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 266.05,
+      "end": 271.65,
+      "text": "So that's good news. And lowering the dose can reduce the number of pills you take daily"
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 271.65,
+      "end": 275.40999999999997,
+      "text": "and sometimes reduces side effects and prevents rebound heartburn."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 276.28999999999996,
+      "end": 281.09,
+      "text": "For the third option, that was changing the medication to another acid reducer we call"
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 281.09,
+      "end": 287.09,
+      "text": "Renididine. About one in five people do have their symptoms come back with this option,"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 287.09,
+      "end": 292.929,
+      "text": "but it can also help prevent rebound heartburn. Do you think you have a preference for which"
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 292.929,
+      "end": 300.28999999999996,
+      "text": "option you'd like to choose? Well, I think I would prefer lowering the dose and then stopping it."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 300.929,
+      "end": 305.96999999999997,
+      "text": "I have a really busy couple of weeks coming up and I don't really want to have to risk"
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 306.53,
+      "end": 313.01,
+      "text": "having heartburn or reflux again. Okay, sounds like a good approach."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 313.57,
+      "end": 318.929,
+      "text": "So in that case, since you're taking 30 milligrams daily right now, the Lenzol-Prisol,"
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 318.929,
+      "end": 323.89,
+      "text": "what we could simply do is reduce it to 15 milligram daily for two weeks."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 323.89,
+      "end": 327.89,
+      "text": "And I could write a prescription for you and you could take that to your pharmacy."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 329.33,
+      "end": 333.169,
+      "text": "That sounds really good. Is there anything else I should look for?"
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 333.40999999999997,
+      "end": 337.57,
+      "text": "Okay, that's a great question. So you should probably keep an eye out for any"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 338.28999999999996,
+      "end": 344.21,
+      "text": "new reflux symptoms or heartburn, any abdominal pain or feelings of indigestion."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 345.96999999999997,
+      "end": 350.45,
+      "text": "And what should I do if my symptoms come back?"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 352.13,
+      "end": 357.65,
+      "text": "So again, good question. If your symptoms come back, but are only occasional or mild,"
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 358.45,
+      "end": 364.69,
+      "text": "you could consider taking an over-the-counter acid reducer, such as Tums or Gaviscon."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 365.40999999999997,
+      "end": 370.45,
+      "text": "Also, avoiding meals two to three hours before going to bed, as well as raising the head of the"
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 370.45,
+      "end": 375.81,
+      "text": "bed may help. If your symptoms come back and are bothering you for more than a few days,"
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 376.45,
+      "end": 381.57,
+      "text": "it would be a good idea to let me know and to book a follow-up appointment at that point."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 382.45,
+      "end": 388.13,
+      "text": "Otherwise, if your symptoms do not come back, I would still recommend that you consider booking"
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 388.13,
+      "end": 391.96999999999997,
+      "text": "a follow-up visit for me in about a month's time. Does that sound reasonable?"
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 393.09,
+      "end": 398.21,
+      "text": "Yes, thank you. I think the information you give me is very, very helpful. Thank you."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 399.01,
+      "end": 402.61,
+      "text": "Okay. Do you have any other questions for me at this point?"
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 402.61,
+      "end": 406.37,
+      "text": "No, not right now. Okay, sounds good."
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 406.37,
+      "end": 410.69,
+      "text": "So if you do have questions that come to mind, please don't hesitate to contact us here at the"
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 410.69,
+      "end": 416.28999999999996,
+      "text": "office. Thank you very much. That sounds very good and I appreciate your help."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 417.09,
+      "end": 420.77,
+      "text": "Oh, my pleasure, Mrs. James. Nice to see you again. Have a good day."
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER",
+      "speakerName": "Speaker",
+      "start": 421.57,
+      "end": 423.25,
+      "text": "Thank you. You're welcome."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-07T00:20:56.115Z",
+  "notes": "Best fit for Tandem: older adult, dose reduction, side effects, monitoring and follow-up"
+}

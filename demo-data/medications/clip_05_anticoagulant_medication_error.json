@@ -1,0 +1,59 @@
+{
+  "conversationId": "clip:05_anticoagulant_medication_error",
+  "generatedAt": "2026-11-06T22:00:39.193Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "anticoagulant",
+      "spellings": [
+        "anticoagulant",
+        "blood thinner"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "unclear",
+      "roleDetail": "Patient was on a blood thinner for a time; the anticoagulant was mistakenly prescribed at a higher dose than needed, and a lower dose was intended to prevent clots. No current plan for it was stated.",
+      "doseStatements": [
+        {
+          "text": "at a higher dose than you needed",
+          "unclear": false,
+          "evidence": [
+            25,
+            26
+          ]
+        },
+        {
+          "text": "a lower dose",
+          "unclear": false,
+          "evidence": [
+            33
+          ]
+        },
+        {
+          "text": "the higher dose",
+          "unclear": false,
+          "evidence": [
+            35,
+            36
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        16,
+        25,
+        26,
+        33,
+        35,
+        36,
+        38
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

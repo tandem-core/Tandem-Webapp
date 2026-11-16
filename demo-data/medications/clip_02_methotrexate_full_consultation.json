@@ -1,0 +1,153 @@
+{
+  "conversationId": "clip:02_methotrexate_full_consultation",
+  "generatedAt": "2026-11-06T21:44:25.813Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "levothyroxine",
+      "spellings": [
+        "levothyroxine"
+      ],
+      "rxnorm": {
+        "rxcui": "10582",
+        "name": "levothyroxine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Patient already takes levothyroxine for her thyroid and brought the tablet packet to the appointment; no change was discussed.",
+      "doseStatements": [
+        {
+          "text": "100 my grams",
+          "unclear": true,
+          "evidence": [
+            49
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "ibuprofen",
+      "spellings": [
+        "ibuprofen"
+      ],
+      "rxnorm": {
+        "rxcui": "5640",
+        "name": "ibuprofen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "Patient takes ibuprofen as needed for migraines; the doctor advised not to take it while on methotrexate because of the risk of stomach ulcers and bleeding.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        46,
+        50,
+        81,
+        82,
+        83
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "methotrexate",
+      "spellings": [
+        "methotrexate"
+      ],
+      "rxnorm": {
+        "rxcui": "6851",
+        "name": "methotrexate",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "Doctor recommends starting methotrexate tablets once a week for rheumatoid arthritis, after blood and chest x-ray checks; it is intended to continue indefinitely.",
+      "doseStatements": [
+        {
+          "text": "once every week",
+          "unclear": false,
+          "evidence": [
+            70
+          ]
+        },
+        {
+          "text": "Just the once",
+          "unclear": false,
+          "evidence": [
+            71
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        53,
+        54,
+        70,
+        71,
+        72,
+        77,
+        81,
+        88,
+        89
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "flu jab",
+      "spellings": [
+        "flu jab"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "proposed",
+      "roleDetail": "Doctor recommends an annual flu jab for anyone with rheumatoid arthritis; patient says she is willing to have one.",
+      "doseStatements": [
+        {
+          "text": "an annual flu jab",
+          "unclear": false,
+          "evidence": [
+            96
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "evidence": [
+        96,
+        97
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}
