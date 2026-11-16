@@ -28,7 +28,6 @@
 .medicine-answer.primary:hover { background: #aa4c33; }
 .medicine-answer:disabled { opacity: .5; cursor: default; }
 .medicine-answers input { width: 100%; border: 1px solid #d8c8bd; padding: 14px; border-radius: 12px; font-size: 17px; background: white; }
-.medicine-session-note { color: #74685e; font-size: 12px; line-height: 1.6; margin: 20px 4px 0; }
 .medicine-audio-error { margin-top: 10px; font-size: 14px; color: #a33f2a; }
 @media (max-width: 760px) {
   .medicine-check-row { flex-wrap: wrap; gap: 8px; }

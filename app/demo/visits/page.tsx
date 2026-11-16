@@ -1,6 +1,7 @@
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
 import MedicineNameCheck from "@/components/medicine-name-check";
+import { medicineExcerpts } from "@/lib/medicine-excerpts";
 
 function timestamp(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
@@ -23,8 +24,6 @@ export default function Visits() {
                 <h2>{conversation.title}</h2>
                 <p className="recording-meta">
                   <time dateTime={conversation.recordedAt}>{dateFormat.format(new Date(conversation.recordedAt))}</time>
-                  {conversation.durationSec != null && <> · {timestamp(conversation.durationSec)}</>}
-                  {" · "}{conversation.language}
                 </p>
               </div>
             </div>
@@ -33,15 +32,14 @@ export default function Visits() {
               <a href={audioUrl}>Download recording</a>
             </audio>
             <MedicineNameCheck
-              audioUrl={audioUrl}
               medicines={medications.filter((medicine) => medicine.nameState === "suggested" || medicine.nameState === "unclear").map((medicine) => {
-                const evidence = conversation.segments.find((segment) => medicine.evidence.includes(segment.idx));
+                const excerpt = medicineExcerpts[`${conversation.id}/${medicine.id}`];
                 return {
                   id: medicine.id,
                   heardAs: medicine.heardAs,
                   suggestedName: medicine.suggestion?.name ?? null,
-                  start: Math.max(0, (evidence?.start ?? 0) - 2),
-                  end: (evidence?.end ?? 15) + 3,
+                  audioUrl: excerpt.audioUrl,
+                  durationSec: excerpt.durationSec,
                 };
               })}
             />

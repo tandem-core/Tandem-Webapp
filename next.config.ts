@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
+      // Only the Tailwind entry uses this loader; CSS modules use Next's loader.
       "globals.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",

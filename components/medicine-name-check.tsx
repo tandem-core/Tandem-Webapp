@@ -7,13 +7,13 @@ export type UnclearMedicine = {
   id: string;
   heardAs: string;
   suggestedName: string | null;
-  start: number;
-  end: number;
+  audioUrl: string;
+  durationSec: number;
 };
 
 type Answer = { kind: "confirmed" | "corrected" | "unsure"; name: string };
 
-export default function MedicineNameCheck({ medicines, audioUrl }: { medicines: UnclearMedicine[]; audioUrl: string }) {
+export default function MedicineNameCheck({ medicines }: { medicines: UnclearMedicine[] }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const audio = useRef<HTMLAudioElement>(null);
   const [selected, setSelected] = useState<UnclearMedicine | null>(null);
@@ -48,7 +48,7 @@ export default function MedicineNameCheck({ medicines, audioUrl }: { medicines: 
     if (playing) { stopAudio(); return; }
     try {
       setAudioError("");
-      audio.current.currentTime = selected.start;
+      audio.current.currentTime = 0;
       await audio.current.play();
     } catch {
       setAudioError("The recording could not play. Please try again.");
@@ -73,7 +73,7 @@ export default function MedicineNameCheck({ medicines, audioUrl }: { medicines: 
       })}
       <dialog className={styles["medicine-dialog"]} ref={dialog} aria-labelledby="medicine-dialog-title" onClose={stopAudio}>
         <div className={styles["medicine-dialog-header"]}>
-          <button className={styles["medicine-back"]} aria-label="Back to visits" onClick={() => dialog.current?.close()}>‹</button>
+          <button className={styles["medicine-back"]} aria-label="Close without making a choice" onClick={() => dialog.current?.close()}>×</button>
           <h2 id="medicine-dialog-title">Check medicine name</h2>
         </div>
         {selected && <>
@@ -83,9 +83,9 @@ export default function MedicineNameCheck({ medicines, audioUrl }: { medicines: 
           {selected.suggestedName && <p className={styles["medicine-heard"]}>Heard in the recording as “{selected.heardAs}”.</p>}
           <button className={styles["medicine-listen"]} onClick={playExcerpt} aria-pressed={playing}>
             <span className={styles["medicine-play"]} aria-hidden="true">{playing ? "Ⅱ" : "▶"}</span>
-            {playing ? "Pause recording" : "Listen to the recording"} ({Math.floor(selected.start / 60)}:{String(Math.floor(selected.start % 60)).padStart(2, "0")})
+            {playing ? "Pause clip" : "Listen to the clip"} (0:{String(selected.durationSec).padStart(2, "0")})
           </button>
-          <audio key={selected.id} ref={audio} src={audioUrl} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} onTimeUpdate={() => { if (audio.current && audio.current.currentTime >= selected.end) stopAudio(); }} />
+          <audio key={selected.id} ref={audio} src={selected.audioUrl} preload="metadata" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={() => setPlaying(false)} />
           {audioError && <p className={styles["medicine-audio-error"]} role="alert">{audioError}</p>}
           {correcting ? (
             <form className={styles["medicine-answers"]} onSubmit={(event) => { event.preventDefault(); if (correction.trim()) answer("corrected", correction.trim()); }}>
@@ -102,7 +102,6 @@ export default function MedicineNameCheck({ medicines, audioUrl }: { medicines: 
               <button className={styles["medicine-answer"]} onClick={() => answer("unsure", "")}>I’m not sure</button>
             </div>
           )}
-          <p className={styles["medicine-session-note"]}>Your choices stay here until you leave or refresh this page.</p>
         </>}
       </dialog>
     </section>
