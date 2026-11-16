@@ -97,7 +97,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #93402b; outline-offs
 }
 
 .recordings-list { display: grid; gap: 24px; margin-top: 32px; }
-.recording-card { border: 1px solid #e5dbd5; border-radius: 20px; padding: 24px; background: #fffdfb; min-width: 0; }
+.recording-card { border: 1px solid #e5dbd5; border-radius: 20px; padding: 24px; background: #fffdfb; min-width: 0; scroll-margin-top: 24px; }
+.recording-card:target { outline: 2px solid #bf5a3e; outline-offset: 4px; }
 .recording-heading { display: flex; align-items: flex-start; gap: 14px; }
 .recording-icon { flex-shrink: 0; color: #bf5137; background: #f7ede6; padding: 10px; border-radius: 12px; }
 .recording-icon svg { width: 24px; height: 24px; }

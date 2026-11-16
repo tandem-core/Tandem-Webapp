@@ -2,6 +2,7 @@ import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
 import MedicineNameCheck from "@/components/medicine-name-check";
 import { medicineExcerpts } from "@/lib/medicine-excerpts";
+import ShareVisit from "@/components/share-visit";
 
 function timestamp(seconds: number) {
   return `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, "0")}`;
@@ -17,7 +18,7 @@ export default function Visits() {
       <h1>Visits</h1>
       <div className="recordings-list">
         {demoVisits.map(({ conversation, summary, medications, audioUrl }) => (
-          <article className="recording-card" key={conversation.id}>
+          <article className="recording-card" id={`visit-${conversation.sourceId}`} key={conversation.id}>
             <div className="recording-heading">
               <span className="recording-icon"><Icon name="visit" /></span>
               <div>
@@ -57,6 +58,7 @@ export default function Visits() {
                 ))}
               </div>
             </details>
+            <ShareVisit title={conversation.title} summary={summary} visitId={`visit-${conversation.sourceId}`} />
           </article>
         ))}
       </div>
