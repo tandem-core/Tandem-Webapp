@@ -24,11 +24,46 @@ const visitTitleOverrides: Record<string, string> = {
 
 export default function Demo() {
   const dialog = useRef<HTMLDialogElement>(null);
-  const [message, setMessage] = useState({ title: "", body: "" });
+  const [message, setMessage] = useState<{
+    title: string;
+    body: string;
+    isVisit?: boolean;
+    summary?: string;
+  }>({ title: "", body: "", isVisit: false });
+  const [isReading, setIsReading] = useState(false);
 
-  function showPreview(title: string, body: string) {
-    setMessage({ title, body });
+  function stopReading() {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    setIsReading(false);
+  }
+
+  function showPreview(title: string, body: string, isVisit = false, summary = "") {
+    stopReading();
+    setMessage({ title, body, isVisit, summary });
     dialog.current?.showModal();
+  }
+
+  function handleReadAloud() {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+
+    if (isReading) {
+      stopReading();
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    const textToRead = message.summary || message.body;
+    if (!textToRead) return;
+
+    const utterance = new SpeechSynthesisUtterance(textToRead);
+    utterance.rate = 0.95;
+    utterance.onend = () => setIsReading(false);
+    utterance.onerror = () => setIsReading(false);
+
+    setIsReading(true);
+    window.speechSynthesis.speak(utterance);
   }
 
   return (
@@ -59,7 +94,7 @@ export default function Demo() {
                 <button
                   key={conversation.id}
                   className="visit-card"
-                  onClick={() => showPreview(title, previewBody)}
+                  onClick={() => showPreview(title, previewBody, true, summary)}
                 >
                   <span className="visit-copy">
                     <span className="visit-title">{title}</span>
@@ -72,9 +107,22 @@ export default function Demo() {
           </div>
         </section>
       </main>
-      <dialog ref={dialog} className="preview-dialog" aria-labelledby="preview-title">
+      <dialog ref={dialog} className="preview-dialog" aria-labelledby="preview-title" onClose={stopReading}>
         <h2 id="preview-title">{message.title}</h2><p>{message.body}</p>
-        <form method="dialog"><button className="dialog-close">Got it</button></form>
+        <div className="preview-dialog-actions">
+          {message.isVisit && (
+            <button
+              type="button"
+              className={`read-aloud-button${isReading ? " reading" : ""}`}
+              onClick={handleReadAloud}
+              aria-label={isReading ? "Stop reading summary aloud" : "Read visit summary aloud"}
+            >
+              <Icon name="volume" />
+              <span>{isReading ? "Stop reading" : "Read aloud"}</span>
+            </button>
+          )}
+          <form method="dialog"><button className="dialog-close">Got it</button></form>
+        </div>
       </dialog>
     </>
   );

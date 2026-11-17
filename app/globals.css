@@ -60,6 +60,12 @@ button:focus-visible, a:focus-visible { outline: 3px solid #93402b; outline-offs
 .preview-dialog::backdrop { background: #28221f66; }
 .preview-dialog h2 { font-size: 24px; font-weight: 700; margin-bottom: 14px; }
 .preview-dialog p { font-size: 17px; line-height: 1.6; }
+.preview-dialog-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.preview-dialog-actions .dialog-close { margin-top: 0; }
+.read-aloud-button { display: inline-flex; align-items: center; gap: 8px; background: #f7ede6; color: #bf5137; border: 1.5px solid #ead5ca; border-radius: 12px; padding: 11px 18px; font-size: 15px; font-weight: 600; transition: background .15s, border-color .15s, color .15s; }
+.read-aloud-button:hover { background: #f1e1d6; }
+.read-aloud-button.reading { background: #bf5137; color: #fff; border-color: #bf5137; }
+.read-aloud-button svg { width: 20px; height: 20px; flex-shrink: 0; }
 .dialog-close { margin-top: 24px; background: #bc4d32; color: white; border: 0; border-radius: 12px; padding: 12px 22px; font-weight: 600; }
 .landing-page { background: #fff; color: #171717; min-height: 100svh; }
 .landing-button { background: #171717; color: #fff; }
