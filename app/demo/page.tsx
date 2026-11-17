@@ -2,7 +2,25 @@
 
 import { useRef, useState } from "react";
 import Icon from "@/components/demo-icon";
+import { demoVisits } from "@/lib/demo-visits";
 
+const visitDateFormat = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  timeZone: "UTC",
+});
+
+const visitClinicians: Record<string, string> = {
+  "clip:01_medication_shared_decision": "Dr. Smith",
+  "clip:02_methotrexate_full_consultation": "Dr. Srivastava",
+  "clip:03_prescription_refill_counseling": "Pharmacist",
+  "clip:05_anticoagulant_medication_error": "Dr. Adam",
+  "clip:06_three_party_screening_consultation": "Emma",
+};
+
+const visitTitleOverrides: Record<string, string> = {
+  "clip:01_medication_shared_decision": "Heartburn medicine review",
+};
 
 export default function Demo() {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -27,10 +45,31 @@ export default function Demo() {
         </div>
         <section className="visits-section" id="visits" aria-labelledby="visits-heading">
           <h2 id="visits-heading"><Icon name="visit" />Your visits</h2>
-          <button className="visit-card" onClick={() => showPreview("Heartburn medicine review", "Nov 3 · Dr. Smith. This is a sample visit. Visit summaries will be added in a future step.")}>
-            <span className="visit-copy"><span className="visit-title">Heartburn medicine review</span><span className="visit-date">Nov 3 · Dr. Smith</span></span>
-            <Icon name="chevron" />
-          </button>
+          <div className="visits-list">
+            {demoVisits.map(({ conversation, summary }) => {
+              const title = visitTitleOverrides[conversation.id] ?? conversation.title;
+              const clinician = visitClinicians[conversation.id];
+              const formattedDate = visitDateFormat.format(new Date(conversation.recordedAt));
+              const dateText = clinician ? `${formattedDate} · ${clinician}` : formattedDate;
+              const previewBody = summary
+                ? `${dateText}. ${summary}`
+                : `${dateText}. This is a sample visit. Visit summaries will be added in a future step.`;
+
+              return (
+                <button
+                  key={conversation.id}
+                  className="visit-card"
+                  onClick={() => showPreview(title, previewBody)}
+                >
+                  <span className="visit-copy">
+                    <span className="visit-title">{title}</span>
+                    <span className="visit-date">{dateText}</span>
+                  </span>
+                  <Icon name="chevron" />
+                </button>
+              );
+            })}
+          </div>
         </section>
       </main>
       <dialog ref={dialog} className="preview-dialog" aria-labelledby="preview-title">

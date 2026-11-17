@@ -41,6 +41,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #93402b; outline-offs
 .visits-section { margin-top: 38px; scroll-margin-top: 24px; }
 .visits-section h2 { margin: 0 8px 18px; display: flex; align-items: center; gap: 12px; font-size: 21px; line-height: 1.4; font-weight: 700; }
 .visits-section h2 svg { width: 23px; height: 26px; }
+.visits-list { display: grid; gap: 12px; }
 .visit-card { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; border: 1.5px solid #e5dbd5; border-radius: 21px; background: transparent; padding: 16px 18px; text-align: left; }
 .visit-card:hover { background: #f6eee8; }
 .visit-copy { display: grid; gap: 7px; }
