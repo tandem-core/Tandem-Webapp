@@ -8,6 +8,7 @@ const links = [
   { href: "/demo", label: "Home", icon: "home" },
   { href: "/demo/visits", label: "Visits", icon: "visit" },
   { href: "/demo/prescriptions", label: "Prescriptions", icon: "prescription" },
+  { href: "/demo/settings", label: "Settings", icon: "settings" },
 ] as const;
 
 export default function DemoSidebar() {
