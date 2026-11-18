@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "pipeline:serve": "python3 backend/server.py",
+    "pipeline:test": "python3 -m unittest discover -s backend -p \"test_*.py\"",
+    "pipeline:replay": "python3 backend/pipeline.py --demo-all --replay",
+    "pipeline:live": "python3 backend/pipeline.py --demo-all"
   },
   "dependencies": {
     "next": "16.4.6",

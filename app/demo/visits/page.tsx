@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
 import MedicineNameCheck from "@/components/medicine-name-check";
@@ -16,6 +17,7 @@ export default function Visits() {
   return (
     <main className="home-content" id="main-content">
       <h1>Visits</h1>
+      <Link href="/demo/process" className="read-aloud-button" style={{ marginTop: 20 }}>Process a recording</Link>
       <div className="recordings-list">
         {demoVisits.map(({ conversation, summary, medications, audioUrl }) => (
           <article className="recording-card" id={`visit-${conversation.sourceId}`} key={conversation.id}>

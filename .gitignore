@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local recording database and private audio
+/.tandem-data/
+__pycache__/
+*.pyc
