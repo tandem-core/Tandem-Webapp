@@ -53,6 +53,19 @@ export default function Demo() {
     dialog.current?.showModal();
   }
 
+  function handleDialogClick(event: React.MouseEvent<HTMLDialogElement>) {
+    if (!dialog.current || event.target !== dialog.current) return;
+    const rect = dialog.current.getBoundingClientRect();
+    const isInside =
+      event.clientX >= rect.left &&
+      event.clientX <= rect.right &&
+      event.clientY >= rect.top &&
+      event.clientY <= rect.bottom;
+    if (!isInside) {
+      dialog.current.close();
+    }
+  }
+
   function handleReadAloud() {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
 
@@ -123,7 +136,22 @@ export default function Demo() {
           </div>
         </section>
       </main>
-      <dialog ref={dialog} className="preview-dialog" aria-labelledby="preview-title" onClose={stopReading}>
+      <dialog
+        ref={dialog}
+        className="preview-dialog"
+        aria-labelledby="preview-title"
+        onClose={stopReading}
+        onClick={handleDialogClick}
+      >
+        <button
+          type="button"
+          className="dialog-dismiss"
+          onClick={() => dialog.current?.close()}
+          aria-label="Dismiss"
+          title="Dismiss"
+        >
+          ×
+        </button>
         <h2 id="preview-title">{message.title}</h2>
         <p>{message.body}</p>
         {message.isVisit && (
