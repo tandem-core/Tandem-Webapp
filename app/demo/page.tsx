@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
+import ShareVisit from "@/components/share-visit";
 
 const visitDateFormat = new Intl.DateTimeFormat("en-US", {
   month: "short",
@@ -29,6 +30,7 @@ export default function Demo() {
     body: string;
     isVisit?: boolean;
     summary?: string;
+    visitId?: string;
   }>({ title: "", body: "", isVisit: false });
   const [isReading, setIsReading] = useState(false);
 
@@ -39,9 +41,15 @@ export default function Demo() {
     setIsReading(false);
   }
 
-  function showPreview(title: string, body: string, isVisit = false, summary = "") {
+  function showPreview(
+    title: string,
+    body: string,
+    isVisit = false,
+    summary = "",
+    visitId = ""
+  ) {
     stopReading();
-    setMessage({ title, body, isVisit, summary });
+    setMessage({ title, body, isVisit, summary, visitId });
     dialog.current?.showModal();
   }
 
@@ -94,7 +102,15 @@ export default function Demo() {
                 <button
                   key={conversation.id}
                   className="visit-card"
-                  onClick={() => showPreview(title, previewBody, true, summary)}
+                  onClick={() =>
+                    showPreview(
+                      title,
+                      previewBody,
+                      true,
+                      summary,
+                      `visit-${conversation.sourceId}`
+                    )
+                  }
                 >
                   <span className="visit-copy">
                     <span className="visit-title">{title}</span>
@@ -108,7 +124,15 @@ export default function Demo() {
         </section>
       </main>
       <dialog ref={dialog} className="preview-dialog" aria-labelledby="preview-title" onClose={stopReading}>
-        <h2 id="preview-title">{message.title}</h2><p>{message.body}</p>
+        <h2 id="preview-title">{message.title}</h2>
+        <p>{message.body}</p>
+        {message.isVisit && (
+          <ShareVisit
+            title={message.title}
+            summary={message.summary || message.body}
+            visitId={message.visitId || ""}
+          />
+        )}
         <div className="preview-dialog-actions">
           {message.isVisit && (
             <button
