@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
 import ShareVisit from "@/components/share-visit";
+import VisitTodos from "@/components/visit-todos";
 
 const visitDateFormat = new Intl.DateTimeFormat("en-US", {
   month: "short",
@@ -92,9 +93,7 @@ export default function Demo() {
       <main className="home-content" id="main-content">
         <h1>Good morning,<br />Mary.</h1>
         <div className="home-actions">
-          <button className="action-card record-action" onClick={() => showPreview("Record a visit", "Visit recording is coming next. This preview does not record audio.")}>
-            <span className="microphone-circle"><Icon name="mic" /></span><span>Record a visit</span>
-          </button>
+          <VisitTodos />
           <button className="action-card ask-action" onClick={() => showPreview("Ask Tandem", "A place to ask questions about your visits is coming soon.")}>
             <span className="chat-icon"><Icon name="chat" /></span><span>Ask Tandem</span>
           </button>
