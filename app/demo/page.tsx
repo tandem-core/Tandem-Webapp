@@ -91,7 +91,7 @@ export default function Demo() {
   return (
     <>
       <main className="home-content" id="main-content">
-        <h1>Good morning,<br />Mary.</h1>
+        <h1 className="home-greeting">Good morning, <span style={{ color: "#dc3c44" }}>Mary</span></h1>
         <div className="home-actions">
           <VisitTodos />
           <button className="action-card ask-action" onClick={() => showPreview("Ask Tandem", "A place to ask questions about your visits is coming soon.")}>

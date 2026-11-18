@@ -10,6 +10,9 @@
 .completed { text-decoration: line-through; color: #74685e; }
 .title { display: block; font-size: 17px; font-weight: 650; line-height: 1.5; }
 .detail { display: block; margin-top: 5px; color: #74685e; font-size: 15px; line-height: 1.65; }
+.timing { display: block; margin-top: 8px; color: #85533f; font-size: 13px; font-weight: 600; line-height: 1.6; }
+.taskSource { display: inline-block; margin: 8px 0 0 34px; color: #ab432b; font-size: 13px; line-height: 1.6; }
+.taskSource:hover { text-decoration: underline; }
 .link { display: inline-flex; gap: 8px; color: #ab432b; font-size: 14px; font-weight: 600; line-height: 1.6; }
 .link:hover { text-decoration: underline; }
 @media (max-width: 760px) {

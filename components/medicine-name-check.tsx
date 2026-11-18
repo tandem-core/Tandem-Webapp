@@ -11,9 +11,9 @@ export type UnclearMedicine = {
   durationSec: number;
 };
 
-type Answer = { kind: "confirmed" | "corrected" | "unsure"; name: string };
+export type Answer = { kind: "confirmed" | "corrected" | "unsure"; name: string };
 
-export default function MedicineNameCheck({ medicines }: { medicines: UnclearMedicine[] }) {
+export default function MedicineNameCheck({ medicines, onAnswer }: { medicines: UnclearMedicine[]; onAnswer?: (answer: Answer) => void }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const audio = useRef<HTMLAudioElement>(null);
   const [selected, setSelected] = useState<UnclearMedicine | null>(null);
@@ -39,6 +39,7 @@ export default function MedicineNameCheck({ medicines }: { medicines: UnclearMed
   function answer(kind: Answer["kind"], name: string) {
     if (!selected) return;
     setAnswers((previous) => ({ ...previous, [selected.id]: { kind, name } }));
+    onAnswer?.({ kind, name });
     stopAudio();
     dialog.current?.close();
   }

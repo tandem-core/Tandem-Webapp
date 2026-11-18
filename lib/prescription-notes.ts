@@ -1,0 +1,20 @@
+// Patient-facing descriptions of recorded discussions, preserving uncertainty.
+export const prescriptionNotes: Record<string, string> = {
+  "clip:01_medication_shared_decision/med-1": "You and Dr. Smith agreed to try a lower dose of your heartburn medicine for two weeks, reducing from 30 mg to 15 mg daily. You discussed possibly stopping afterward if symptoms do not return. Confirm the medicine’s name with your care team.",
+  "clip:01_medication_shared_decision/med-2": "You discussed this alternative acid reducer, but chose the lower-dose trial of your existing medicine instead.",
+  "clip:01_medication_shared_decision/med-3": "Your doctor suggested Tums as an over-the-counter option if occasional or mild heartburn returns. No dose was recorded.",
+  "clip:01_medication_shared_decision/med-4": "Your doctor suggested Gaviscon as an over-the-counter option if occasional or mild heartburn returns. No dose was recorded.",
+  "clip:01_medication_shared_decision/med-5": "You were asked whether you take aspirin as an over-the-counter anti-inflammatory. You said you do not.",
+  "clip:01_medication_shared_decision/med-6": "You were asked whether you take ibuprofen as an over-the-counter anti-inflammatory. You said you do not.",
+  "clip:01_medication_shared_decision/med-7": "You were asked whether you take Naprosyn as an over-the-counter anti-inflammatory. You said you do not.",
+  "clip:02_methotrexate_full_consultation/med-1": "You reported taking levothyroxine for your thyroid and brought the tablet packet to your appointment. No change was discussed. The dose was unclear in the recording.",
+  "clip:02_methotrexate_full_consultation/med-2": "You reported taking ibuprofen as needed for migraines. Your doctor advised against taking it while on methotrexate because of the risk of stomach ulcers and bleeding.",
+  "clip:02_methotrexate_full_consultation/med-3": "Your doctor recommended starting methotrexate tablets once a week for rheumatoid arthritis, after blood tests and a chest X-ray. Long-term treatment was discussed; the tablet strength was not recorded.",
+  "clip:02_methotrexate_full_consultation/med-4": "Your doctor recommended an annual flu vaccination because you have rheumatoid arthritis. You said you were willing to have one.",
+  "clip:03_prescription_refill_counseling/med-1": "You were picking up a refill of your prescribed Ramipril, 5 mg strength. You reported no side effects or changes.",
+  "clip:03_prescription_refill_counseling/med-2": "You reported taking atorvastatin for high cholesterol. No change or dose was mentioned at this visit.",
+  "clip:03_prescription_refill_counseling/med-3": "You reported taking hydrochlorothiazide for blood pressure. No change or dose was mentioned at this visit.",
+  "clip:03_prescription_refill_counseling/med-4": "You reported taking ibuprofen for knee arthritis pain. Your pharmacist warned that it can interact with Ramipril and raise blood pressure, and suggested Tylenol instead. An explicit instruction to stop was not recorded.",
+  "clip:03_prescription_refill_counseling/med-5": "Your pharmacist suggested Tylenol for knee pain instead of ibuprofen. You said you would pick some up before leaving. No dose was recorded.",
+  "clip:05_anticoagulant_medication_error/med-1": "You discussed having been prescribed a higher blood thinner dose than intended after surgery. The medicine’s exact name and your current treatment plan were not stated.",
+};
