@@ -30,7 +30,7 @@ export const demoTodos = demoVisits.flatMap(({ conversation }) => {
     tasks.unshift({
       id: `${conversation.id}/lower-dose-trial`,
       title: "Two-week lower-dose trial",
-      detail: "Follow the lower-dose plan agreed with Dr. Smith for your heartburn medicine. Confirm the medicine’s name with your care team—it was unclear in the recording.",
+      detail: "Follow the lower-dose plan agreed with Dr. Smith for your heartburn medicine. Tandem could not verify the medicine’s name. Confirm it with your care team.",
       dueBy: null,
       approximate: false,
       when: "For two weeks, as agreed at your visit",

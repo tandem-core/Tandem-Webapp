@@ -8,6 +8,8 @@ import PrescriptionName from "@/components/prescription-name";
 import { medicineExcerpts } from "@/lib/medicine-excerpts";
 import { prescriptionNotes } from "@/lib/prescription-notes";
 import { doseExcerpts } from "@/lib/dose-excerpts";
+import { usePrescriptionSearch } from "@/components/prescription-search";
+import { matchesPrescription } from "@/lib/prescription-search";
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
   month: "long", day: "numeric", year: "numeric", timeZone: "UTC",
@@ -34,15 +36,9 @@ const entries = demoVisits.flatMap(({ conversation, medications }) => medication
 );
 
 export default function Prescriptions() {
-  const [query, setQuery] = useState("");
+  const { query, setQuery } = usePrescriptionSearch();
   const [order, setOrder] = useState("newest");
-  const search = query.trim().toLowerCase();
-  const filtered = entries.filter(({ medicine, conversation, key }) => [
-    medicine.heardAs, medicine.rxnorm?.name, medicine.suggestion?.name,
-    roleLabels[medicine.role], prescriptionNotes[key], conversation.title,
-    dateFormat.format(new Date(conversation.recordedAt)),
-    ...medicine.doseStatements.map((dose) => dose.text),
-  ].filter(Boolean).join(" ").toLowerCase().includes(search)).sort((a, b) => {
+  const filtered = entries.filter(({ medicine }) => matchesPrescription(medicine, query)).sort((a, b) => {
     const byDate = b.conversation.recordedAt.localeCompare(a.conversation.recordedAt);
     const byPriority = (priority[a.medicine.role] ?? 6) - (priority[b.medicine.role] ?? 6);
     return order === "changes" ? byPriority || byDate : (order === "oldest" ? -byDate : byDate) || byPriority;
@@ -52,10 +48,10 @@ export default function Prescriptions() {
     <main className="home-content" id="main-content">
       <div className={styles.pageHeading}>
         <h1>Prescriptions</h1>
-        <div className={styles.search}>
-          <label htmlFor="prescription-search">Search prescriptions</label>
-          <input id="prescription-search" type="search" placeholder="Name, dose, or visit…" value={query} onChange={(event) => setQuery(event.target.value)} />
-        </div>
+      </div>
+      <div className={styles.search}>
+        <label htmlFor="prescription-search">Search prescriptions</label>
+        <input id="prescription-search" type="search" placeholder="Medicine name or dose…" value={query} onChange={(event) => setQuery(event.target.value)} />
       </div>
       <p className={styles.intro}>Medicines and recommendations mentioned in your visits. These are visit notes, not a verified list of current prescriptions. Confirm with your doctor if you are unsure.</p>
       <div className={styles.toolbar}>
@@ -86,7 +82,7 @@ export default function Prescriptions() {
               </div>
               <Link className={styles.visitReference} href={`/demo/visits#visit-${conversation.sourceId}`}>
                 <time dateTime={conversation.recordedAt}>{dateFormat.format(new Date(conversation.recordedAt))}</time>
-                <span>{conversation.title} <span aria-hidden="true">→</span></span>
+                <span>{conversation.title}<span aria-hidden="true">{ "\u00a0→" }</span></span>
               </Link>
             </div>
             <p className={styles.detail}>{prescriptionNotes[key]}</p>
@@ -106,7 +102,7 @@ export default function Prescriptions() {
       </ul>
       {!filtered.length && <div className={styles.empty}>
         <h2>No matching prescriptions</h2>
-        <p>Try a medicine name, dose, or visit title.</p>
+        <p>Try a medicine name or dose.</p>
         <button type="button" onClick={() => setQuery("")}>Clear search</button>
       </div>}
     </main>

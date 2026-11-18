@@ -7,7 +7,7 @@ export const prescriptionNotes: Record<string, string> = {
   "clip:01_medication_shared_decision/med-5": "You were asked whether you take aspirin as an over-the-counter anti-inflammatory. You said you do not.",
   "clip:01_medication_shared_decision/med-6": "You were asked whether you take ibuprofen as an over-the-counter anti-inflammatory. You said you do not.",
   "clip:01_medication_shared_decision/med-7": "You were asked whether you take Naprosyn as an over-the-counter anti-inflammatory. You said you do not.",
-  "clip:02_methotrexate_full_consultation/med-1": "You reported taking levothyroxine for your thyroid and brought the tablet packet to your appointment. No change was discussed. The dose was unclear in the recording.",
+  "clip:02_methotrexate_full_consultation/med-1": "You reported taking levothyroxine for your thyroid and brought the tablet packet to your appointment. No change was discussed. Tandem could not verify the dose.",
   "clip:02_methotrexate_full_consultation/med-2": "You reported taking ibuprofen as needed for migraines. Your doctor advised against taking it while on methotrexate because of the risk of stomach ulcers and bleeding.",
   "clip:02_methotrexate_full_consultation/med-3": "Your doctor recommended starting methotrexate tablets once a week for rheumatoid arthritis, after blood tests and a chest X-ray. Long-term treatment was discussed; the tablet strength was not recorded.",
   "clip:02_methotrexate_full_consultation/med-4": "Your doctor recommended an annual flu vaccination because you have rheumatoid arthritis. You said you were willing to have one.",

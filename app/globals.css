@@ -20,7 +20,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button { font: inherit; cursor: pointer; }
 a { color: inherit; text-decoration: none; }
 button:focus-visible, a:focus-visible { outline: 3px solid #93402b; outline-offset: 5px; }
-.app-shell { --sidebar-width: 244px; min-height: 100svh; width: 100%; }
+.app-shell { --sidebar-width: 340px; min-height: 100svh; width: 100%; }
 .demo-sidebar { position: fixed; inset: 0 auto 0 0; z-index: 10; width: var(--sidebar-width); height: 100dvh; overflow-y: auto; padding: 42px 18px; background: #fdfaf7; border-right: 1px solid #e9ded5; }
 .demo-sidebar .wordmark { display: block; margin: 0 18px; }
 .sidebar-nav { display: flex; flex-direction: column; gap: 12px; margin-top: 48px; }
@@ -52,6 +52,15 @@ button:focus-visible, a:focus-visible { outline: 3px solid #93402b; outline-offs
 .visit-card > svg { width: 27px; height: 27px; color: #b6ada6; flex-shrink: 0; }
 .sidebar-nav .nav-item { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 16px; min-height: 56px; padding: 14px 18px; border-radius: 10px; color: #625952; font-size: 17px; transition: background .15s; }
 .nav-item svg { width: 25px; height: 25px; flex-shrink: 0; }
+.sidebar-search { display: grid; gap: 8px; padding: 12px 18px; }
+.sidebar-search label { font-size: 13px; color: #74685e; }
+.sidebar-search input { width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid #dfd1c6; border-radius: 10px; background: #fffdfb; color: var(--foreground); font: inherit; font-size: 14px; }
+.sidebar-search input:focus-visible { outline: 3px solid #93402b; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .sidebar-search { padding: 8px 0; }
+  .sidebar-search label { font-size: 10px; overflow-wrap: anywhere; }
+  .sidebar-search input { font-size: 12px; padding: 8px 3px; }
+}
 .nav-item:hover { background: #ece1d8; }
 .sidebar-nav .nav-item.active { color: #ab432b; background: #f4e7de; font-weight: 650; }
 .empty-state { display: flex; flex-direction: column; align-items: center; text-align: center; margin-top: 40px; padding: 72px 20px; border: 1px dashed #dfd1c6; border-radius: 24px; }

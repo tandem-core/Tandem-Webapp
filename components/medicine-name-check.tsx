@@ -78,7 +78,7 @@ export default function MedicineNameCheck({ medicines, onAnswer }: { medicines: 
           <h2 id="medicine-dialog-title">Check medicine name</h2>
         </div>
         {selected && <>
-          <div className={styles["medicine-warning"]}><span aria-hidden="true">⚠</span><p>We couldn’t clearly hear this medicine’s name.</p></div>
+          <div className={styles["medicine-warning"]}><span aria-hidden="true">⚠</span><p>Tandem could not verify this medicine’s name.</p></div>
           <p className={styles["medicine-field-label"]}>{selected.suggestedName ? "Possible medicine name" : "What Tandem heard"}</p>
           <div className={styles["medicine-name"]}>{selected.suggestedName || selected.heardAs}</div>
           {selected.suggestedName && <p className={styles["medicine-heard"]}>Heard in the recording as “{selected.heardAs}”.</p>}
