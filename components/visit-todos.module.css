@@ -1,4 +1,9 @@
 .card { min-width: 0; padding: 24px; border: 1px solid #ead5ca; border-radius: 24px; background: #fffdfb; }
+.fullPage { margin-top: 32px; }
+.empty { margin: 24px 0; color: #74685e; font-size: 15px; line-height: 1.6; }
+.completedSection { margin-top: 24px; padding-top: 20px; border-top: 1px solid #ece3dc; }
+.completedSection summary { cursor: pointer; font-size: 17px; font-weight: 600; padding: 4px 0; }
+.completedSection summary:focus-visible { outline: 3px solid #93402b; outline-offset: 5px; }
 .heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
 .heading h2 { margin: 0; font-size: 21px; font-weight: 650; line-height: 1.4; }
 .progress { color: #85533f; background: #f7ede6; border-radius: 8px; padding: 4px 10px; font-size: 13px; }

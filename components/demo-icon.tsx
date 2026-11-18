@@ -1,4 +1,4 @@
-export default function Icon({ name, className = "" }: { name: "mic" | "chat" | "visit" | "home" | "chevron" | "prescription" | "volume" | "settings"; className?: string }) {
+export default function Icon({ name, className = "" }: { name: "mic" | "chat" | "visit" | "home" | "chevron" | "prescription" | "volume" | "settings" | "todo"; className?: string }) {
   return (
     <svg className={className} viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       {name === "mic" && <><rect x="11" y="3" width="10" height="18" rx="5" /><path d="M6.5 15v2a9.5 9.5 0 0 0 19 0v-2M16 26.5V31M11 31h10" /></>}
@@ -7,6 +7,7 @@ export default function Icon({ name, className = "" }: { name: "mic" | "chat" | 
       {name === "home" && <><path d="m3 14 13-11 13 11M6 12v17h7V19h6v10h7V12" /></>}
       {name === "prescription" && <><path d="m12 25 13-13a7.1 7.1 0 0 0-10-10L2 15a7.1 7.1 0 0 0 10 10Z" transform="translate(2 2)" /><path d="m11 11 10 10" /></>}
       {name === "chevron" && <path d="m12 7 9 9-9 9" />}
+      {name === "todo" && <><rect x="4" y="4" width="24" height="24" rx="4" /><path d="m9 15 5 5 9-10" /></>}
       {name === "settings" && <><path d="m13 3-1 4-3 2-4-1-3 5 3 3v3l-2 3 3 5 4-1 3 2 1 3h6l1-4 3-2 4 1 3-5-3-3v-3l2-3-3-5-4 1-3-2-1-3Z" transform="translate(1 -1) scale(.94)" /><circle cx="16" cy="16" r="4" /></>}
       {name === "volume" && (
         <>

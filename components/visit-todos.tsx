@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
+import { demoVisits } from "@/lib/demo-visits";
 import { demoTodos as todos } from "@/lib/demo-todos";
 import styles from "./visit-todos.module.css";
 
@@ -28,40 +29,51 @@ function readCompleted(value: string): string[] {
   } catch { return []; }
 }
 
-export default function VisitTodos() {
+  function toggle(id: string, checked: boolean) {
+    const current = readCompleted(snapshot());
+    fallback = JSON.stringify(checked ? [...new Set([...current, id])] : current.filter((item) => item !== id));
+    try { localStorage.setItem(storageKey, fallback); } catch { /* Keep in memory when storage is unavailable. */ }
+    window.dispatchEvent(new Event(changeEvent));
+  }
+
+export default function VisitTodos({ allVisits = false }: { allVisits?: boolean }) {
   const stored = useSyncExternalStore(subscribe, snapshot, () => "[]");
   const completed = readCompleted(stored);
-  const completedCount = todos.filter(({ id }) => completed.includes(id)).length;
+  const latestVisit = demoVisits[0];
+  const visible = allVisits ? todos : todos.filter((task) => task.visitHref === `/demo/visits#visit-${latestVisit.conversation.sourceId}`);
+  const active = visible.filter(({ id }) => !completed.includes(id));
+  const done = visible.filter(({ id }) => completed.includes(id));
+
+
+  function renderTask({ id, title, detail, visitTitle, recordedAt, visitHref, dueBy, approximate, when }: (typeof todos)[number]) {
+    const checked = completed.includes(id);
+    return <li key={id}>
+      <label className={styles.todo}>
+        <input type="checkbox" checked={checked} onChange={(event) => toggle(id, event.currentTarget.checked)} />
+        <span>
+          <span className={`${styles.title}${checked ? ` ${styles.completed}` : ""}`}>{title}</span>
+          <span className={styles.detail}>{detail}</span>
+          {(dueBy || when) && <span className={styles.timing}>{dueBy ? `${approximate ? "Around" : "Visit target:"} ${dateFormat.format(new Date(`${dueBy}T00:00:00Z`))}${approximate ? " · approximate follow-up timing" : ""}` : when}</span>}
+        </span>
+      </label>
+      {allVisits && <Link className={styles.taskSource} href={visitHref}>{dateFormat.format(new Date(recordedAt))} · {visitTitle} <span aria-hidden="true">→</span></Link>}
+    </li>;
+  }
 
   return (
-    <section className={styles.card} aria-labelledby="visit-todos-heading">
+    <section className={`${styles.card}${allVisits ? ` ${styles.fullPage}` : ""}`} aria-labelledby="visit-todos-heading">
       <div className={styles.heading}>
-        <h2 id="visit-todos-heading">Your to-dos</h2>
-        <span className={styles.progress} aria-live="polite">{completedCount} of {todos.length} done</span>
+        <h2 id="visit-todos-heading">{allVisits ? "Outstanding" : "Action items from your last visit"}</h2>
+        <span className={styles.progress} role="status">{active.length} remaining</span>
       </div>
-      <p className={styles.source}>Next steps from all your visits. Older tasks stay here until you mark them done.</p>
-      <ul className={styles.list}>
-        {todos.map(({ id, title, detail, visitTitle, recordedAt, visitHref, dueBy, approximate, when }) => (
-          <li key={id}>
-            <label className={styles.todo}>
-              <input type="checkbox" checked={completed.includes(id)} onChange={(event) => {
-                const checked = event.currentTarget.checked;
-                const current = readCompleted(snapshot());
-                fallback = JSON.stringify(checked ? [...new Set([...current, id])] : current.filter((item) => item !== id));
-                try { localStorage.setItem(storageKey, fallback); } catch { /* Keep in memory when storage is unavailable. */ }
-                window.dispatchEvent(new Event(changeEvent));
-              }} />
-              <span>
-                <span className={`${styles.title}${completed.includes(id) ? ` ${styles.completed}` : ""}`}>{title}</span>
-                <span className={styles.detail}>{detail}</span>
-                {(dueBy || when) && <span className={styles.timing}>{dueBy ? `${approximate ? "Around" : "Visit target:"} ${dateFormat.format(new Date(`${dueBy}T00:00:00Z`))}${approximate ? " · approximate follow-up timing" : ""}` : when}</span>}
-              </span>
-            </label>
-            <Link className={styles.taskSource} href={visitHref}>{dateFormat.format(new Date(recordedAt))} · {visitTitle} <span aria-hidden="true">→</span></Link>
-          </li>
-        ))}
-      </ul>
-      <Link className={styles.link} href="/demo/visits">View all visits <span aria-hidden="true">→</span></Link>
+      <p className={styles.source}>{allVisits ? "Next steps from all your visits." : `${latestVisit.conversation.title} · ${dateFormat.format(new Date(latestVisit.conversation.recordedAt))}`}</p>
+      {active.length ? <ul className={styles.list}>{active.map(renderTask)}</ul> : <p className={styles.empty}>{allVisits ? "You’re all caught up." : "No outstanding action items from your last visit."}</p>}
+      {allVisits && <details className={styles.completedSection}>
+        <summary>Completed ({done.length})</summary>
+        <p className={styles.source}>Uncheck a task to move it back to Outstanding.</p>
+        {done.length ? <ul className={styles.list}>{done.map(renderTask)}</ul> : <p className={styles.empty}>No completed action items yet.</p>}
+      </details>}
+      {!allVisits && <Link className={styles.link} href="/demo/todos">See all action items <span aria-hidden="true">→</span></Link>}
     </section>
   );
 }

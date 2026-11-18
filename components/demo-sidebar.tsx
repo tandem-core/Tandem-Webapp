@@ -7,6 +7,7 @@ import Icon from "@/components/demo-icon";
 const links = [
   { href: "/demo", label: "Home", icon: "home" },
   { href: "/demo/visits", label: "Visits", icon: "visit" },
+  { href: "/demo/todos", label: "Action items", icon: "todo" },
   { href: "/demo/prescriptions", label: "Prescriptions", icon: "prescription" },
   { href: "/demo/settings", label: "Settings", icon: "settings" },
 ] as const;

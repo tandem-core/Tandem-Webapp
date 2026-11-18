@@ -1,4 +1,6 @@
-import Icon from "@/components/demo-icon";
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { demoVisits } from "@/lib/demo-visits";
 import styles from "./prescriptions.module.css";
@@ -22,74 +24,91 @@ const roleLabels: Record<string, string> = {
   unclear: "Plan needs confirmation",
 };
 
-// Keep treatment starts, dose changes, and existing prescribed medicines.
-// Retain the heartburn alternative as an explicitly unchosen option.
-const prescriptionVisits = demoVisits
-  .map((visit) => ({
-    ...visit,
-    medications: visit.medications.filter((medicine) =>
-      ["started", "changed", "existing"].includes(medicine.role) ||
-      (visit.conversation.id === "clip:01_medication_shared_decision" && medicine.role === "not_chosen")
-    ).sort((a, b) => {
-      const priority: Record<string, number> = { started: 0, changed: 1, existing: 2, not_chosen: 3 };
-      return (priority[a.role] ?? 4) - (priority[b.role] ?? 4);
-    }),
-  }));
+const priority: Record<string, number> = { started: 0, changed: 1, proposed: 2, discussed: 3, existing: 4, not_chosen: 5 };
+const entries = demoVisits.flatMap(({ conversation, medications }) => medications
+  .filter((medicine) => ["started", "changed", "existing"].includes(medicine.role) ||
+    (medicine.role === "proposed" && medicine.kind === "specific") ||
+    (conversation.id === "clip:01_medication_shared_decision" &&
+      (medicine.role === "not_chosen" || ["Tums", "Gaviscon"].includes(medicine.heardAs))))
+  .map((medicine) => ({ conversation, medicine, key: `${conversation.id}/${medicine.id}` }))
+);
 
 export default function Prescriptions() {
+  const [query, setQuery] = useState("");
+  const [order, setOrder] = useState("newest");
+  const search = query.trim().toLowerCase();
+  const filtered = entries.filter(({ medicine, conversation, key }) => [
+    medicine.heardAs, medicine.rxnorm?.name, medicine.suggestion?.name,
+    roleLabels[medicine.role], prescriptionNotes[key], conversation.title,
+    dateFormat.format(new Date(conversation.recordedAt)),
+    ...medicine.doseStatements.map((dose) => dose.text),
+  ].filter(Boolean).join(" ").toLowerCase().includes(search)).sort((a, b) => {
+    const byDate = b.conversation.recordedAt.localeCompare(a.conversation.recordedAt);
+    const byPriority = (priority[a.medicine.role] ?? 6) - (priority[b.medicine.role] ?? 6);
+    return order === "changes" ? byPriority || byDate : (order === "oldest" ? -byDate : byDate) || byPriority;
+  });
+
   return (
     <main className="home-content" id="main-content">
-      <h1>Prescriptions</h1>
-      <p className={styles.intro}>Medicines and recommendations mentioned in your visits. These are visit notes, not a verified list of current prescriptions. Confirm with your doctor if you are unsure.</p>
-      <div className={styles.visits}>
-        {prescriptionVisits.map(({ conversation, medications }) => (
-          <section className={styles.card} key={conversation.id} aria-labelledby={`medicines-${conversation.sourceId}`}>
-            <div className={styles.heading}>
-              <span className={styles.icon}><Icon name="prescription" /></span>
-              <div>
-                <time className={styles.date} dateTime={conversation.recordedAt}>{dateFormat.format(new Date(conversation.recordedAt))}</time>
-                <h2 id={`medicines-${conversation.sourceId}`}>{conversation.title}</h2>
-              </div>
-            </div>
-            {medications.length ? <ul className={styles.medicines}>
-              {medications.map((medicine) => {
-                const unclearName = medicine.nameState === "suggested" || medicine.nameState === "unclear";
-                const excerpt = medicineExcerpts[`${conversation.id}/${medicine.id}`];
-                const label = roleLabels[medicine.role] ?? "Mentioned at this visit";
-                const badgeClassName = medicine.role === "changed" ? styles.changed : medicine.role === "started" ? styles.started : "";
-                const doseExcerpt = doseExcerpts[`${conversation.id}/${medicine.id}`];
-                return (
-                  <li className={styles.medicine} key={medicine.id}>
-                    {unclearName && excerpt ? <PrescriptionName label={label} badgeClassName={badgeClassName} medicine={{
-                      id: `${conversation.sourceId}-${medicine.id}`,
-                      heardAs: medicine.heardAs,
-                      suggestedName: medicine.suggestion?.name ?? null,
-                      audioUrl: excerpt.audioUrl,
-                      durationSec: excerpt.durationSec,
-                    }} /> : <div className={styles.medicineHeading}>
-                      <h3>{medicine.rxnorm?.name ?? medicine.heardAs}</h3>
-                      <span className={`${styles.badge} ${badgeClassName}`}>{label}</span>
-                    </div>}
-                    <p className={styles.detail}>{prescriptionNotes[`${conversation.id}/${medicine.id}`] ?? "This medicine was mentioned in your visit. Review the visit notes for details."}</p>
-                    {medicine.doseStatements.length > 0 && <div className={styles.doses}>
-                      <h4>Dosing mentioned in the recording</h4>
-                      <ul>{medicine.doseStatements.map((dose, index) => <li key={index}>“{dose.text}”{dose.unclear ? " — unclear; confirm with your care team" : ""}</li>)}</ul>
-                      {doseExcerpt && <>
-                        <p className={styles.audioLabel}>{conversation.sourceId === "03_prescription_refill_counseling" ? "Pharmacist’s" : "Doctor’s"} audio · verify dosing ({doseExcerpt.durationSec}s clip)</p>
-                        <audio className={styles.audio} controls preload="metadata" aria-label={`Verify dosing for ${medicine.heardAs} from ${conversation.title}`}>
-                          <source src={doseExcerpt.audioUrl} type="audio/mpeg" />
-                          <a href={doseExcerpt.audioUrl}>Listen to dosing clip</a>
-                        </audio>
-                      </>}
-                    </div>}
-                  </li>
-                );
-              })}
-            </ul> : <p className={styles.noMedicines}>No prescriptions recorded for this visit.</p>}
-            <Link className={styles.link} href={`/demo/visits#visit-${conversation.sourceId}`}>View visit notes <span aria-hidden="true">→</span></Link>
-          </section>
-        ))}
+      <div className={styles.pageHeading}>
+        <h1>Prescriptions</h1>
+        <div className={styles.search}>
+          <label htmlFor="prescription-search">Search prescriptions</label>
+          <input id="prescription-search" type="search" placeholder="Name, dose, or visit…" value={query} onChange={(event) => setQuery(event.target.value)} />
+        </div>
       </div>
+      <p className={styles.intro}>Medicines and recommendations mentioned in your visits. These are visit notes, not a verified list of current prescriptions. Confirm with your doctor if you are unsure.</p>
+      <div className={styles.toolbar}>
+        <p role="status">{filtered.length} {filtered.length === 1 ? "medicine" : "medicines"}</p>
+        <label htmlFor="prescription-order">Sort by <select id="prescription-order" value={order} onChange={(event) => setOrder(event.target.value)}>
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="changes">New medicines &amp; changes first</option>
+        </select></label>
+      </div>
+      <ul className={styles.entries}>
+        {filtered.map(({ conversation, medicine, key }) => {
+          const unclearName = medicine.nameState === "suggested" || medicine.nameState === "unclear";
+          const excerpt = medicineExcerpts[key];
+          const doseExcerpt = doseExcerpts[key];
+          const label = medicine.role === "proposed" || medicine.role === "discussed" ? "Suggested to try · over the counter" : roleLabels[medicine.role];
+          const badgeClassName = medicine.role === "changed" ? styles.changed : medicine.role === "started" ? styles.started : "";
+          return <li className={styles.card} key={key}>
+            <div className={styles.entryHeading}>
+              <div className={styles.name}>
+                {unclearName && excerpt ? <PrescriptionName label={label} badgeClassName={badgeClassName} medicine={{
+                  id: `${conversation.sourceId}-${medicine.id}`, heardAs: medicine.heardAs,
+                  suggestedName: medicine.suggestion?.name ?? null, audioUrl: excerpt.audioUrl, durationSec: excerpt.durationSec,
+                }} /> : <div className={styles.medicineHeading}>
+                  <h2>{medicine.rxnorm?.name ?? medicine.heardAs}</h2>
+                  <span className={`${styles.badge} ${badgeClassName}`}>{label}</span>
+                </div>}
+              </div>
+              <Link className={styles.visitReference} href={`/demo/visits#visit-${conversation.sourceId}`}>
+                <time dateTime={conversation.recordedAt}>{dateFormat.format(new Date(conversation.recordedAt))}</time>
+                <span>{conversation.title} <span aria-hidden="true">→</span></span>
+              </Link>
+            </div>
+            <p className={styles.detail}>{prescriptionNotes[key]}</p>
+            {medicine.doseStatements.length > 0 && <div className={styles.doses}>
+              <h3>Dosing mentioned in the recording</h3>
+              <ul>{medicine.doseStatements.map((dose, index) => <li key={index}>“{dose.text}”{dose.unclear ? " — unclear; confirm with your care team" : ""}</li>)}</ul>
+              {doseExcerpt && <>
+                <p className={styles.audioLabel}>{conversation.sourceId === "03_prescription_refill_counseling" ? "Pharmacist’s" : "Doctor’s"} audio · verify dosing ({doseExcerpt.durationSec}s clip)</p>
+                <audio className={styles.audio} controls preload="metadata" aria-label={`Verify dosing for ${medicine.heardAs} from ${conversation.title}`}>
+                  <source src={doseExcerpt.audioUrl} type="audio/mpeg" />
+                  <a href={doseExcerpt.audioUrl}>Listen to dosing clip</a>
+                </audio>
+              </>}
+            </div>}
+          </li>;
+        })}
+      </ul>
+      {!filtered.length && <div className={styles.empty}>
+        <h2>No matching prescriptions</h2>
+        <p>Try a medicine name, dose, or visit title.</p>
+        <button type="button" onClick={() => setQuery("")}>Clear search</button>
+      </div>}
     </main>
   );
 }
