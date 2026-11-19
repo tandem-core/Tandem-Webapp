@@ -1,45 +1,45 @@
-.intro { margin-top: 16px; color: #74685e; font-size: 16px; line-height: 1.7; }
+.intro { margin-top: 16px; color: #74685e; font-size: 18px; line-height: 1.7; }
 .pageHeading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
 .search { display: grid; gap: 6px; width: 100%; margin-top: 20px; }
-.search label { font-size: 13px; color: #74685e; }
-.search input, .toolbar select { min-width: 0; max-width: 100%; border: 1px solid #dfd1c6; border-radius: 10px; padding: 10px 12px; font: inherit; background: #fffdfb; color: var(--foreground); }
+.search label { font-size: 16px; color: #74685e; font-weight: 500; }
+.search input, .toolbar select { min-width: 0; max-width: 100%; border: 1px solid #dfd1c6; border-radius: 12px; padding: 12px 14px; min-height: 48px; font: inherit; font-size: 16px; background: #fffdfb; color: var(--foreground); }
 .search input { width: 100%; }
 .search input:focus-visible, .toolbar select:focus-visible { outline: 3px solid #93402b; outline-offset: 3px; }
-.toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 28px; font-size: 13px; color: #74685e; }
-.toolbar label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 28px; font-size: 16px; color: #74685e; }
+.toolbar label { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .entries { display: grid; gap: 20px; padding: 0; margin-top: 20px; list-style: none; }
 .entryHeading { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; justify-content: space-between; }
 .name { flex: 1; min-width: 0; }
-.visitReference { display: grid; gap: 4px; max-width: 100%; font-size: 13px; line-height: 1.6; color: #ab432b; }
+.visitReference { display: grid; gap: 4px; max-width: 100%; font-size: 15px; min-height: 44px; line-height: 1.6; color: #ab432b; }
 .visitReference > span { text-wrap: balance; }
 .visitReference time { color: #74685e; }
 .visitReference:hover span { text-decoration: underline; }
-.empty { margin-top: 24px; padding: 32px 20px; border: 1px dashed #dfd1c6; border-radius: 20px; text-align: center; }
-.empty h2 { font-weight: 650; font-size: 20px; }
-.empty p { margin-top: 8px; color: #74685e; }
-.empty button { margin-top: 20px; border: 1px solid #ead5ca; border-radius: 10px; padding: 10px 16px; background: #f7ede6; color: #ab432b; }
+.empty { margin-top: 24px; padding: 36px 20px; border: 1px dashed #dfd1c6; border-radius: 20px; text-align: center; }
+.empty h2 { font-weight: 650; font-size: 22px; }
+.empty p { margin-top: 8px; font-size: 17px; color: #74685e; }
+.empty button { margin-top: 20px; border: 1px solid #ead5ca; border-radius: 12px; min-height: 48px; padding: 12px 20px; font-size: 16px; font-weight: 600; background: #f7ede6; color: #ab432b; cursor: pointer; }
 .visits { display: grid; gap: 24px; margin-top: 32px; }
-.card { min-width: 0; border: 1px solid #e5dbd5; border-radius: 20px; padding: 24px; background: #fffdfb; }
-.heading { display: flex; align-items: flex-start; gap: 14px; }
-.heading h2 { margin-top: 5px; font-size: 20px; font-weight: 650; line-height: 1.4; }
-.icon { flex-shrink: 0; padding: 10px; border-radius: 12px; color: #bf5137; background: #f7ede6; }
-.icon svg { width: 24px; height: 24px; }
-.date { font-size: 14px; color: #74685e; line-height: 1.5; }
+.card { min-width: 0; border: 1px solid #e5dbd5; border-radius: 22px; padding: 26px; background: #fffdfb; }
+.heading { display: flex; align-items: flex-start; gap: 16px; }
+.heading h2 { margin-top: 5px; font-size: 22px; font-weight: 650; line-height: 1.4; }
+.icon { flex-shrink: 0; padding: 12px; border-radius: 14px; color: #bf5137; background: #f7ede6; }
+.icon svg { width: 26px; height: 26px; }
+.date { font-size: 16px; color: #74685e; line-height: 1.5; }
 .medicines { padding: 0; margin-top: 24px; list-style: none; }
-.medicine { padding: 20px 0; border-top: 1px solid #ece3dc; }
-.medicineHeading { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
-.medicineHeading h2, .medicineHeading h3 { font-size: 17px; font-weight: 650; line-height: 1.5; overflow-wrap: anywhere; }
-.badge { padding: 3px 8px; border-radius: 8px; color: #85533f; background: #f7ede6; font-size: 12px; line-height: 1.6; }
+.medicine { padding: 22px 0; border-top: 1px solid #ece3dc; }
+.medicineHeading { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.medicineHeading h2, .medicineHeading h3 { font-size: 19px; font-weight: 650; line-height: 1.5; overflow-wrap: anywhere; }
+.badge { padding: 4px 10px; border-radius: 8px; color: #85533f; background: #f7ede6; font-size: 14px; font-weight: 600; line-height: 1.6; }
 .badge.changed { background: #ffe2a8; color: #754000; font-weight: 650; }
 .badge.started { background: #d8eee1; color: #205b3b; font-weight: 650; }
-.audioLabel { margin-top: 14px; font-weight: 600; color: #85533f; }
-.audio { display: block; width: 100%; height: 40px; margin-top: 8px; }
-.detail, .noMedicines { margin-top: 10px; color: #625952; font-size: 15px; line-height: 1.75; }
-.confirm { margin-top: 10px; color: #85541c; font-size: 14px; line-height: 1.6; }
-.doses { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: #faf4ee; font-size: 14px; line-height: 1.7; }
+.audioLabel { margin-top: 14px; font-size: 16px; font-weight: 600; color: #85533f; }
+.audio { display: block; width: 100%; height: 46px; margin-top: 8px; }
+.detail, .noMedicines { margin-top: 10px; color: #625952; font-size: 17px; line-height: 1.75; }
+.confirm { margin-top: 10px; color: #85541c; font-size: 15px; line-height: 1.6; }
+.doses { margin-top: 14px; padding: 14px 16px; border-radius: 12px; background: #faf4ee; font-size: 16px; line-height: 1.7; }
 .doses h3, .doses h4 { font-weight: 600; }
 .doses ul { list-style: disc; padding-left: 20px; margin-top: 4px; }
-.link { display: inline-flex; gap: 8px; margin-top: 16px; color: #ab432b; font-size: 14px; font-weight: 600; line-height: 1.6; }
+.link { display: inline-flex; align-items: center; gap: 8px; margin-top: 16px; color: #ab432b; font-size: 16px; font-weight: 600; min-height: 44px; line-height: 1.6; }
 .link:hover { text-decoration: underline; }
 @media (max-width: 760px) {
   .search { width: 100%; }
@@ -47,6 +47,6 @@
   .name, .visitReference { width: 100%; max-width: none; }
   .card { padding: 20px 16px; }
   .heading { gap: 10px; }
-  .heading h2 { font-size: 18px; }
+  .heading h2 { font-size: 20px; }
   .icon { display: none; }
 }
