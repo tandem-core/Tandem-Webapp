@@ -1,0 +1,8 @@
+.intro { margin-top: 16px; font-size: 16px; color: #74685e; line-height: 1.7; }
+.banner { display: flex; align-items: center; gap: 16px; padding: 20px; margin: 28px 0 24px; border: 1px solid #ead5ca; border-radius: 20px; background: #f7ede6; }
+.banner h2 { font-size: 18px; font-weight: 650; }
+.banner p { margin-top: 4px; color: #74685e; font-size: 14px; line-height: 1.6; }
+.avatar { flex-shrink: 0; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #fffdfb; color: #ab432b; font-weight: 650; }
+.link { display: inline-flex; gap: 8px; margin-top: 24px; color: #ab432b; font-size: 15px; font-weight: 600; }
+.link:hover { text-decoration: underline; }
+@media (max-width: 760px) { .banner { align-items: flex-start; padding: 16px; gap: 12px; } .avatar { width: 36px; height: 36px; font-size: 13px; } }

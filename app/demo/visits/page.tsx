@@ -1,3 +1,4 @@
+import { ParentVisitRequests } from "@/components/visit-requests";
 import Link from "next/link";
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
@@ -18,6 +19,7 @@ export default function Visits() {
     <main className="home-content" id="main-content">
       <h1>Visits</h1>
       <Link href="/demo/process" className="read-aloud-button" style={{ marginTop: 20 }}>Process a recording</Link>
+      <ParentVisitRequests />
       <div className="recordings-list">
         {demoVisits.map(({ conversation, summary, medications, audioUrl }) => (
           <article className="recording-card" id={`visit-${conversation.sourceId}`} key={conversation.id}>

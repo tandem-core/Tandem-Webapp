@@ -5,7 +5,7 @@ import styles from "@/app/demo/settings/settings.module.css";
 
 export default function FamilyMembers() {
   const [members, setMembers] = useState([
-    { id: "martin", name: "Martin Doe", relationship: "Son", email: "martin.doe@gmail.com" },
+    { id: "lisa", name: "Lisa Doe", relationship: "Daughter", email: "lisa.doe@gmail.com" },
   ]);
   const [adding, setAdding] = useState(false);
   const [message, setMessage] = useState("");

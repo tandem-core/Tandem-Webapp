@@ -20,6 +20,12 @@ export default function Home() {
         >
           Demo
         </Link>
+        <Link
+          href="/family-demo"
+          className="rounded-full border border-current px-5 py-3 font-medium transition-colors hover:bg-black/5 dark:hover:bg-white/10"
+        >
+          Family Demo
+        </Link>
       </div>
     </main>
   );

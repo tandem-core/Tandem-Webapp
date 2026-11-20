@@ -61,3 +61,17 @@ npm run pipeline:live    # all five recordings through the actual AI services
 Local data lives in ignored `.tandem-data/`: `tandem.sqlite`, original uploads, and generated clips. Tables are `jobs` (status, model, prompt version, audio hash, result), `transcript_segments`, `medications`, and `action_items`. Medication/dose evidence references identify persisted transcript segments. Model results are drafts; evidence validation checks structure and references, not medical truth. Patient/clinician identity and dates are not inferred from recording content. The prepared recordings contain different demo patients and must not be combined into a real patient record.
 
 The service binds to `127.0.0.1:8765`. The Next.js bridge is intentionally disabled in production: this is a local, single-user prototype. A hosted version needs a separately deployed Python worker, private object storage, authenticated patient ownership, durable job processing, and a shared production database before enabling uploads. SQLite is used here to let you test immediately without provisioning a database.
+
+## Family demo
+
+The landing page includes **Family Demo** (`/family-demo`) beneath the parent **Demo**. Lisa Doe sees Mary Doe as her parent. Two visits are shared initially: the heartburn review and arthritis consultation. The family pages derive visit files, prescriptions, and action items from the same share selection. Unshared visit titles/dates can be requested, but their recordings and clinical notes are omitted until approved.
+
+To try the request flow in the same browser:
+
+1. Open **Family Demo → Visits → Request a visit** and request an unshared visit.
+2. Switch to **Demo → Home** or **Visits**. Mary sees **Lisa Doe requested a visit** and can approve or decline it.
+3. Return to Family Demo. An approved visit appears with its files, prescriptions, and action items. Declined requests keep the files hidden and can be requested again.
+
+Family-facing recaps use Mary's name instead of addressing Lisa as the patient. Transcript quotations retain the original words. Family pages are read-only for patient profile, medicine confirmation, and action-item completion; the Completed dropdown reflects Mary's saved browser state.
+
+This is public demo behavior, not an authenticated permission system. Requests persist in browser local storage, and approvals use a demo cookie; they do not synchronize across devices or accounts. Seed shares and profile are in `lib/family-demo-config.ts`, server-side filtering is in `lib/family-demo.ts`. Production sharing will need authenticated parent/family identities, database-backed grants, and private file access. Check scope and request behavior with `node scripts/check-family-demo.mjs`.

@@ -1,0 +1,17 @@
+.section { margin-top: 28px; padding: 24px; border: 1px solid #ead5ca; border-radius: 20px; background: #fffdfb; }
+.section h2 { font-size: 21px; font-weight: 650; }
+.description { margin-top: 8px; font-size: 15px; line-height: 1.7; color: #74685e; }
+.row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #ece3dc; }
+.row > div:first-child { flex: 1; min-width: 150px; }
+.row h3 { font-size: 17px; line-height: 1.5; font-weight: 650; }
+.row p { margin-top: 6px; color: #74685e; font-size: 14px; line-height: 1.7; }
+.row button { padding: 10px 16px; min-height: 44px; border: 1px solid #bc4d32; border-radius: 10px; background: #bc4d32; color: white; font-weight: 600; }
+.row button:disabled { cursor: default; background: #f7ede6; border-color: #ead5ca; color: #74685e; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.row .secondary { background: transparent; color: #ab432b; border-color: #ead5ca; }
+.link { display: inline-block; margin-top: 6px; color: #ab432b; font-size: 14px; }
+.link:hover { text-decoration: underline; }
+.history { margin-top: 20px; font-size: 14px; line-height: 1.7; color: #74685e; }
+.history summary { cursor: pointer; color: #ab432b; font-weight: 600; }
+.history summary:focus-visible { outline: 3px solid #93402b; outline-offset: 4px; }
+@media (max-width: 760px) { .section { padding: 16px; } }

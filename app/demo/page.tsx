@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import Icon from "@/components/demo-icon";
 import { demoVisits } from "@/lib/demo-visits";
 import ShareVisit from "@/components/share-visit";
+import { ParentVisitRequests } from "@/components/visit-requests";
 import VisitTodos from "@/components/visit-todos";
 
 const visitDateFormat = new Intl.DateTimeFormat("en-US", {
@@ -94,6 +95,7 @@ export default function Demo() {
         <h1 className="home-greeting">Good morning, <span style={{ color: "#dc3c44" }}>Mary</span></h1>
         <div className="home-actions">
           <VisitTodos />
+          <ParentVisitRequests />
           <button className="action-card ask-action" onClick={() => showPreview("Ask Tandem", "A place to ask questions about your visits is coming soon.")}>
             <span className="chat-icon"><Icon name="chat" /></span><span>Ask Tandem</span>
           </button>
