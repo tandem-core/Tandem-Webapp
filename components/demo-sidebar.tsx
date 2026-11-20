@@ -26,7 +26,7 @@ export default function DemoSidebar({ family = false }: { family?: boolean }) {
           </Link>;
         })}
       </nav>
-      {family && <p style={{ margin: "28px 18px", color: "#74685e", fontSize: 13, lineHeight: 1.6 }}>Family demo<br />Lisa · Mary’s daughter</p>}
+      {family && <p style={{ margin: "28px 18px", color: "#74685e", fontSize: 16, lineHeight: 1.6 }}>Family demo<br />Lisa · Mary’s daughter</p>}
     </aside>
   );
 }
