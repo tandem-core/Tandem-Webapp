@@ -1,3 +1,4 @@
+import { SchedulingHelpAlerts } from "@/components/scheduling-help";
 import Link from "next/link";
 import Icon from "@/components/demo-icon";
 import ActionItemsList from "@/components/action-items-list";
@@ -11,6 +12,7 @@ export default async function FamilyHome() {
   return <main className="home-content" id="main-content">
     <h1 className="home-greeting">Hello, <span style={{ color: "#dc3c44" }}>Lisa</span></h1>
     <p className={styles.intro}>Stay in the loop with your parent, Mary Doe.</p>
+    <SchedulingHelpAlerts tasks={sharedActionItems} />
     <section className={styles.banner} aria-label="Sharing overview">
       <span className={styles.avatar} aria-hidden="true">MD</span>
       <div><h2>Shared by Mary</h2><p>Only visits and files Mary has shared with you appear here.</p></div>

@@ -1,0 +1,17 @@
+.alerts { display: grid; gap: 18px; margin: 24px 0; }
+.alert { padding: 24px; border: 1px solid #e1b769; border-left: 5px solid #ba7523; border-radius: 20px; background: #fff4da; }
+.heading { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.indicator { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #9c581b; color: white; font-weight: 700; }
+.badge { color: #754000; font-weight: 650; font-size: 15px; }
+.alert h2 { font-size: 22px; font-weight: 650; line-height: 1.4; }
+.alert h3 { font-size: 18px; font-weight: 650; margin-top: 14px; line-height: 1.5; }
+.context { color: #62513a; font-size: 17px; margin-top: 10px; line-height: 1.7; }
+.timing { color: #754000; font-size: 16px; margin-top: 6px; line-height: 1.6; }
+.link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; color: #854427; font-size: 16px; font-weight: 600; }
+.link:hover { text-decoration: underline; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.actions button, .parentControl button { min-height: 48px; padding: 12px 18px; border: 1px solid #bc4d32; border-radius: 12px; background: #bc4d32; color: white; font: inherit; font-size: 16px; font-weight: 600; }
+.parentControl { margin: 12px 0 0 48px; }
+.parentControl p { color: #85533f; font-size: 16px; line-height: 1.6; margin-bottom: 8px; }
+.parentControl .secondary { border-color: #ead5ca; color: #ab432b; background: #f7ede6; }
+@media (max-width: 760px) { .alert { padding: 18px 16px; } .parentControl { margin-left: 0; } }

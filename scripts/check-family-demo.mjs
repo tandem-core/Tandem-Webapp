@@ -79,3 +79,20 @@ requests.requestVisit('05_anticoagulant_medication_error', 'Blood Thinner Dose M
 assert.equal(requests.useVisitRequests().length, 3);
 console.log('Request checks passed: pending state, duplicate prevention, approval grants, decline isolation, and re-request.');
 console.log('Family checks passed: scoped visits, action items, prescriptions, empty shares, and unchanged parent records.');
+
+const scheduling = load(path.join(root, 'lib/scheduling-help.ts'));
+const followUp = 'clip:01_medication_shared_decision/followUp-3';
+assert.equal(scheduling.useSchedulingHelp()[0].taskId, followUp);
+assert.equal(scheduling.useSchedulingHelp()[0].status, 'requested');
+scheduling.requestSchedulingHelp(followUp);
+assert.equal(scheduling.useSchedulingHelp().length, 1);
+scheduling.updateSchedulingHelp(followUp, 'helping');
+assert.equal(scheduling.useSchedulingHelp()[0].status, 'helping');
+scheduling.updateSchedulingHelp(followUp, 'handled');
+assert.equal(scheduling.useSchedulingHelp()[0].status, 'handled');
+scheduling.requestSchedulingHelp(followUp);
+assert.equal(scheduling.useSchedulingHelp().length, 1);
+assert.equal(scheduling.useSchedulingHelp()[0].status, 'requested');
+scheduling.cancelSchedulingHelp(followUp);
+assert.equal(scheduling.useSchedulingHelp().length, 0);
+console.log('Scheduling checks passed: seeded alert, duplicate prevention, acknowledgment, resolution, re-request, and cancellation.');

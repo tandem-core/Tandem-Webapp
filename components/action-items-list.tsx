@@ -1,6 +1,7 @@
 "use client";
 
 import { familyVoice } from "@/lib/family-demo-config";
+import { SchedulingHelpButton } from "@/components/scheduling-help";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import type { demoVisits } from "@/lib/demo-visits";
@@ -58,6 +59,7 @@ export default function ActionItemsList({ allVisits = false, tasks, latest, fami
           {(dueBy || when) && <span className={styles.timing}>{dueBy ? `${approximate ? "Around" : "Visit target:"} ${dateFormat.format(new Date(`${dueBy}T00:00:00Z`))}${approximate ? " · approximate follow-up timing" : ""}` : when}</span>}
         </span>
       </label>
+      {!family && !checked && <SchedulingHelpButton task={tasks.find((task) => task.id === id)!} />}
       {allVisits && <Link className={styles.taskSource} href={visitHref}>{dateFormat.format(new Date(recordedAt))} · {visitTitle} <span aria-hidden="true">→</span></Link>}
     </li>;
   }
