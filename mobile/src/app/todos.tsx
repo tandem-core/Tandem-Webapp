@@ -10,7 +10,7 @@ export default function Todos() {
         <Text style={styles.pageTitle} accessibilityRole="header">
           To-dos
         </Text>
-        <Text style={styles.body}>Things to do after your appointments will show up here soon.</Text>
+        <Text style={styles.muted}>Coming soon.</Text>
       </ScrollView>
     </SafeAreaView>
   );

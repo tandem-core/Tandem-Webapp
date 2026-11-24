@@ -17,14 +17,13 @@ export function AppointmentCard({ visit }: { visit: VisitSummary }) {
         <View style={styles.tile}>
           <Text style={styles.tileMonth}>{month.slice(0, 3).toUpperCase()}</Text>
           <Text style={styles.tileDay}>{day}</Text>
-          <Text style={styles.tileWeekday}>{weekday.slice(0, 3)}</Text>
         </View>
         <View style={{ flex: 1, gap: 6 }}>
           <Text style={styles.title}>{visit.title}</Text>
           {visit.medicationsToCheck > 0 && (
             <View style={styles.flag}>
               <Ionicons name="alert-circle" size={20} color={colors.amber} />
-              <Text style={styles.flagText}>Something to check</Text>
+              <Text style={styles.flagText}>Check</Text>
             </View>
           )}
         </View>
@@ -87,8 +86,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     paddingVertical: 2,
   },
-  tileDay: { fontSize: 30, fontWeight: '800', color: colors.text },
-  tileWeekday: { fontSize: 15, color: colors.muted, paddingBottom: 4 },
+  tileDay: { fontSize: 30, fontWeight: '800', color: colors.text, paddingVertical: 4 },
   title: { fontSize: text.body, fontWeight: '700', color: colors.text },
   flag: {
     flexDirection: 'row',

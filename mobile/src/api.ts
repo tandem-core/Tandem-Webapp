@@ -71,7 +71,7 @@ export function useLoad<T>(load: () => Promise<T>) {
     let live = true;
     load()
       .then((d) => live && setData(d))
-      .catch(() => live && setError("We couldn't load this. Check your internet connection and try again."));
+      .catch(() => live && setError("Couldn't load. Check your internet."));
     return () => {
       live = false;
     };

@@ -44,7 +44,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
   const length = status.duration || visit.segments.at(-1)?.end || 0;
   const markers = markerPositions(moments.map((m) => m.start), length);
   const current = status.currentTime > 0 ? moments.findLast((m) => m.start <= status.currentTime + 0.5) : undefined;
-  const { month, day, weekday } = dateParts(visit.recordedAt);
+  const { month, day } = dateParts(visit.recordedAt);
 
   const playAt = (seconds: number) => {
     player.seekTo(seconds);
@@ -58,20 +58,24 @@ function AppointmentView({ visit }: { visit: Visit }) {
           {visit.title}
         </Text>
         <Text style={ui.muted}>
-          {weekday}, {month} {day} · {Math.max(1, Math.round(length / 60))} min
+          {month.slice(0, 3)} {day}
         </Text>
 
         {labelChecks(visit).map((med) => (
-          <LabelCheck key={med.id} slug={visit.slug} med={med} onHear={() => playAt(startOf(med.evidence) ?? 0)} />
+          <LabelCheck key={med.id} slug={visit.slug} med={med} start={startOf(med.evidence)} onHear={playAt} />
         ))}
-        {otherChecks(visit).map((med) => (
-          <View key={med.id} style={s.check}>
-            <CheckHeader onHear={() => playAt(startOf(med.evidence) ?? 0)} />
-            <Text style={[ui.body, { fontWeight: '700' }]}>{checkReason(med)}</Text>
-            <Text style={ui.muted}>{med.roleDetail}</Text>
-            <Text style={ui.body}>Ask your pharmacist or care team before changing anything.</Text>
-          </View>
-        ))}
+        {otherChecks(visit).map((med) => {
+          const start = startOf(med.evidence);
+          return (
+            <View key={med.id} style={s.check}>
+              <View style={[s.row, { alignItems: 'flex-start' }]}>
+                <Text style={[ui.body, { fontWeight: '700', flex: 1 }]}>{checkReason(med)}</Text>
+                {start !== undefined && <HearButton at={start} onHear={playAt} />}
+              </View>
+              <Text style={ui.body}>Ask your pharmacist before changing anything.</Text>
+            </View>
+          );
+        })}
 
         <View style={s.row}>
           <Text style={ui.heading}>Summary</Text>
@@ -93,7 +97,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
         <Group title="What stayed the same" items={visit.unchanged.map((i) => ({ id: i.id, main: i.text, start: startOf(i.evidence) }))} onHear={playAt} />
         <Group
           title="Questions to ask"
-          items={visit.openQuestions.map((q) => ({ id: q.id, main: q.text, sub: q.resolvesWhen, bold: true, start: startOf(q.evidence) }))}
+          items={visit.openQuestions.map((q) => ({ id: q.id, main: q.text, bold: true, start: startOf(q.evidence) }))}
           onHear={playAt}
         />
       </ScrollView>
@@ -108,7 +112,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
             <Ionicons name={status.playing ? 'pause' : 'play'} size={30} color="#fff" />
           </Pressable>
           <Text style={[ui.body, { flex: 1, fontWeight: '600' }]} numberOfLines={1}>
-            {!status.isLoaded ? 'Loading recording…' : current ? `${moments.indexOf(current) + 1} · ${current.title}` : 'Recording'}
+            {!status.isLoaded ? 'Loading…' : current ? `${moments.indexOf(current) + 1} · ${current.title}` : 'Recording'}
           </Text>
           <Text style={s.time}>
             {clock(status.currentTime)} / {clock(length)}
@@ -128,7 +132,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
   );
 }
 
-function LabelCheck({ slug, med, onHear }: { slug: string; med: Medication; onHear: () => void }) {
+function LabelCheck({ slug, med, start, onHear }: { slug: string; med: Medication; start?: number; onHear: (seconds: number) => void }) {
   const [answer, setAnswer] = useState(med.ownerAnswer?.answer ?? null);
   const [failed, setFailed] = useState(false);
   const dose = doseOf(med);
@@ -151,11 +155,13 @@ function LabelCheck({ slug, med, onHear }: { slug: string; med: Medication; onHe
 
   return (
     <View style={s.check}>
-      <CheckHeader onHear={onHear} />
-      <Text style={[ui.heading, { marginTop: 0 }]}>
-        Does your label say {med.suggestion?.name}
-        {dose ? ` ${dose}` : ''}?
-      </Text>
+      <View style={[s.row, { alignItems: 'flex-start' }]}>
+        <Text style={[ui.heading, { marginTop: 0, flex: 1 }]}>
+          Does your label say {med.suggestion?.name}
+          {dose ? ` ${dose}` : ''}?
+        </Text>
+        {start !== undefined && <HearButton at={start} onHear={onHear} />}
+      </View>
       <View style={s.row}>
         {choices.map(([value, label]) => (
           <Pressable
@@ -168,11 +174,11 @@ function LabelCheck({ slug, med, onHear }: { slug: string; med: Medication; onHe
           </Pressable>
         ))}
       </View>
-      {answer === 'yes' && <Text style={[ui.body, { color: colors.green }]}>Thank you. Your answer is saved.</Text>}
+      {answer === 'yes' && <Text style={[ui.body, { color: colors.green }]}>Saved.</Text>}
       {(answer === 'no' || answer === 'unsure') && (
         <Text style={[ui.body, { fontWeight: '700' }]}>Please check with your pharmacist before changing anything.</Text>
       )}
-      {failed && <Text style={[ui.body, { color: colors.accent }]}>We couldn&apos;t save your answer. Please try again.</Text>}
+      {failed && <Text style={[ui.body, { color: colors.accent }]}>Not saved. Please try again.</Text>}
     </View>
   );
 }
@@ -210,37 +216,25 @@ function Group({ title, items, onHear }: { title: string; items: GroupItem[]; on
           <View style={{ flex: 1, gap: 4 }}>
             <Text style={[ui.body, item.bold && { fontWeight: '700' }]}>{item.main}</Text>
             {item.sub && <Text style={ui.muted}>{item.sub}</Text>}
-            {item.start !== undefined && (
-              <Pressable
-                onPress={() => onHear(item.start!)}
-                style={s.hearSmall}
-                accessibilityRole="button"
-                accessibilityLabel={`Hear it, at ${clock(item.start)}`}>
-                <Ionicons name="play" size={16} color={colors.accent} />
-                <Text style={s.hearText}>Hear it · {clock(item.start)}</Text>
-              </Pressable>
-            )}
+            {item.start !== undefined && <HearButton at={item.start} onHear={onHear} />}
           </View>
         </View>
       ))}
       {items.length > COLLAPSED && (
         <Pressable onPress={() => setAll(!all)} style={s.link} accessibilityRole="button">
-          <Text style={s.linkText}>{all ? 'Show less' : `Show all ${items.length}`}</Text>
+          <Text style={s.linkText}>{all ? 'Show less' : 'Show all'}</Text>
         </Pressable>
       )}
     </View>
   );
 }
 
-function CheckHeader({ onHear }: { onHear: () => void }) {
+function HearButton({ at, onHear }: { at: number; onHear: (seconds: number) => void }) {
   return (
-    <View style={s.row}>
-      <Text style={[ui.body, { flex: 1, fontWeight: '700', color: colors.amber }]}>Please check</Text>
-      <Pressable onPress={onHear} style={s.hear} accessibilityRole="button" accessibilityLabel="Hear this part of the recording">
-        <Ionicons name="play" size={18} color={colors.accent} />
-        <Text style={s.linkText}>Hear it</Text>
-      </Pressable>
-    </View>
+    <Pressable onPress={() => onHear(at)} style={s.hear} accessibilityRole="button" accessibilityLabel={`Hear it, at ${clock(at)}`}>
+      <Ionicons name="play" size={18} color={colors.accent} />
+      <Text style={s.hearText}>{clock(at)}</Text>
+    </Pressable>
   );
 }
 
@@ -252,7 +246,7 @@ const s = StyleSheet.create({
   link: { minHeight: touch, justifyContent: 'center' },
   linkText: { fontSize: text.body, color: colors.accent, fontWeight: '700' },
   check: { backgroundColor: colors.amberSoft, borderRadius: 18, padding: 18, gap: 12 },
-  hear: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 48, paddingHorizontal: 8 },
+  hear: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 48, minWidth: 48, alignSelf: 'flex-start' },
   choice: {
     flex: 1,
     minHeight: touch,
@@ -271,7 +265,6 @@ const s = StyleSheet.create({
   item: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, paddingTop: 10, paddingHorizontal: 4, borderRadius: 12 },
   itemNow: { backgroundColor: colors.accentSoft },
   bullet: { width: 10, height: 10, borderRadius: 5, backgroundColor: colors.accent, marginTop: 10, marginHorizontal: 4 },
-  hearSmall: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 44, alignSelf: 'flex-start' },
   hearText: { fontSize: text.small, color: colors.accent, fontWeight: '700', fontVariant: ['tabular-nums'] },
   num: {
     width: 34,

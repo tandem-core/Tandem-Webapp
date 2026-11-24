@@ -24,8 +24,11 @@ export default function Home() {
         <LoadState loading={loading} error={error} onRetry={reload} />
         {data?.visits.slice(0, 2).map((v) => <AppointmentCard key={v.slug} visit={v} />)}
         {data && (
-          <Link href="/appointments" style={[styles.body, { color: colors.accent, fontWeight: '700', paddingVertical: 12 }]}>
-            See all appointments
+          <Link
+            href="/appointments"
+            accessibilityLabel="See all appointments"
+            style={[styles.body, { color: colors.accent, fontWeight: '700', paddingVertical: 12 }]}>
+            See all
           </Link>
         )}
       </ScrollView>

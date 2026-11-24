@@ -10,8 +10,7 @@ export default function Prescriptions() {
         <Text style={styles.pageTitle} accessibilityRole="header">
           Prescriptions
         </Text>
-        <Text style={styles.body}>Medicines discussed at your appointments will show up here soon.</Text>
-        <Text style={styles.muted}>Your prescription label and your pharmacist have the final word.</Text>
+        <Text style={styles.muted}>Coming soon.</Text>
       </ScrollView>
     </SafeAreaView>
   );

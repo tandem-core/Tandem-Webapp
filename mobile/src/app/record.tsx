@@ -10,8 +10,7 @@ export default function Record() {
         <Text style={styles.pageTitle} accessibilityRole="header">
           Record
         </Text>
-        <Text style={styles.body}>Use your Tandem device to record an appointment.</Text>
-        <Text style={styles.muted}>Recording with this phone is coming soon.</Text>
+        <Text style={styles.muted}>Coming soon.</Text>
       </ScrollView>
     </SafeAreaView>
   );

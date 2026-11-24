@@ -57,6 +57,6 @@ export function otherChecks(visit: Visit) {
 }
 
 export function checkReason(med: Medication) {
-  if (med.doseNeedsCheck) return `The amount for ${med.nameResolved ? med.heardAs : `“${med.heardAs}”`} wasn’t clear in the recording.`;
-  return `The name “${med.heardAs}” was hard to hear.`;
+  if (med.doseNeedsCheck) return `Unclear amount for ${med.nameResolved ? med.heardAs : `“${med.heardAs}”`}`;
+  return `Unclear name: “${med.heardAs}”`;
 }
