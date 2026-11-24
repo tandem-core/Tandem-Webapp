@@ -1,0 +1,99 @@
+{
+  "notes": "Expected medication-check results for the imported test clips (npm run import-clips). Names are matched against spellings, RxNorm name, and suggestion, lowercase substring. Based on the Whisper transcripts; not yet verified against the audio. Clip 04's clindamycin amount was misspoken and corrected (\"five hundred milligram. Three hundred. Oh, three hundred\", per Deepgram); Whisper dropped the \"Oh\". Either a conflict or a correction flag passes.",
+  "clips": {
+    "clip:01_medication_shared_decision": {
+      "meds": [
+        {
+          "match": "lansoprazole",
+          "needsReview": true,
+          "suggestion": "lansoprazole",
+          "doseConflict": false,
+          "doseMentions": [
+            "30",
+            "15"
+          ]
+        }
+      ],
+      "noReviewFor": [
+        "ibuprofen",
+        "aspirin"
+      ]
+    },
+    "clip:02_methotrexate_full_consultation": {
+      "meds": [
+        {
+          "match": "methotrexate",
+          "needsReview": false,
+          "doseMentions": [
+            "week"
+          ]
+        },
+        {
+          "match": "levothyroxine",
+          "needsReview": true,
+          "unclearDose": true
+        }
+      ],
+      "noReviewFor": [
+        "ibuprofen",
+        "flu"
+      ]
+    },
+    "clip:03_prescription_refill_counseling": {
+      "meds": [
+        {
+          "match": "ramipril",
+          "needsReview": false
+        },
+        {
+          "match": "ibuprofen",
+          "needsReview": false,
+          "doseMentions": [
+            "400"
+          ]
+        }
+      ],
+      "noReviewFor": [
+        "atorvastatin",
+        "hydrochlorothiazide"
+      ]
+    },
+    "clip:04_antibiotic_interaction_doctor_pharmacist": {
+      "meds": [
+        {
+          "match": "azithromycin",
+          "needsReview": true,
+          "suggestion": "azithromycin",
+          "role": [
+            "not_chosen",
+            "stopped",
+            "avoid"
+          ]
+        },
+        {
+          "match": "clindamycin",
+          "needsReview": true,
+          "role": [
+            "started"
+          ],
+          "doseFlagged": true
+        },
+        {
+          "match": "risperdal",
+          "needsReview": false
+        }
+      ],
+      "noReviewFor": [
+        "penicillin",
+        "amoxicillin"
+      ]
+    },
+    "clip:05_anticoagulant_medication_error": {
+      "meds": [],
+      "noReviewFor": [
+        "anticoagulant",
+        "blood thinner"
+      ]
+    }
+  }
+}

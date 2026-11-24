@@ -1,0 +1,127 @@
+[
+  {
+    "key": "did the doctor change my medication",
+    "heard": "Did the doctor change my medication?",
+    "at": "2026-11-23T12:00:00.000Z",
+    "actions": [
+      {
+        "type": "speak",
+        "text": "Dr. Smith suggested reducing your heartburn medication to 15 milligrams daily for two weeks to see if your symptoms stay away.",
+        "url": null
+      },
+      {
+        "type": "play",
+        "slug": "clip_01_medication_shared_decision",
+        "start": 318.9,
+        "end": 324.0,
+        "speaker": "Dr. Smith",
+        "text": "What we could simply do is reduce it to 15 milligram daily for two weeks.",
+        "url": "/api/audio/clip_01_medication_shared_decision/clip?start=318.9&end=324"
+      },
+      {
+        "type": "listen",
+        "expect": "question"
+      }
+    ]
+  },
+  {
+    "key": "what did the doctor say about my heartburn medicine",
+    "heard": "What did the doctor say about my heartburn medicine?",
+    "at": "2026-11-23T12:00:00.000Z",
+    "actions": [
+      {
+        "type": "speak",
+        "text": "Dr. Smith suggested reducing your dose to 15 milligrams daily for two weeks.",
+        "url": null
+      },
+      {
+        "type": "play",
+        "slug": "clip_01_medication_shared_decision",
+        "start": 318.9,
+        "end": 324.0,
+        "speaker": "Dr. Smith",
+        "text": "What we could simply do is reduce it to 15 milligram daily for two weeks.",
+        "url": "/api/audio/clip_01_medication_shared_decision/clip?start=318.9&end=324"
+      },
+      {
+        "type": "listen",
+        "expect": "question"
+      }
+    ]
+  },
+  {
+    "key": "when is my next appointment",
+    "heard": "When is my next appointment?",
+    "at": "2026-11-23T12:00:00.000Z",
+    "actions": [
+      {
+        "type": "speak",
+        "text": "The doctor asked to see you back for a follow-up visit in about a month's time.",
+        "url": null
+      },
+      {
+        "type": "play",
+        "slug": "clip_01_medication_shared_decision",
+        "start": 388.1,
+        "end": 392.5,
+        "speaker": "Dr. Smith",
+        "text": "A follow-up visit for me in about a month's time. Does that sound reasonable?",
+        "url": "/api/audio/clip_01_medication_shared_decision/clip?start=388.1&end=392.5"
+      },
+      {
+        "type": "listen",
+        "expect": "question"
+      }
+    ]
+  },
+  {
+    "key": "what can i take if the heartburn comes back",
+    "heard": "What can I take if the heartburn comes back?",
+    "at": "2026-11-23T12:00:00.000Z",
+    "actions": [
+      {
+        "type": "speak",
+        "text": "Dr. Smith advised that if you develop more heartburn or reflux symptoms, you could use it as needed.",
+        "url": null
+      },
+      {
+        "type": "play",
+        "slug": "clip_01_medication_shared_decision",
+        "start": 181.8,
+        "end": 187.6,
+        "speaker": "Dr. Smith",
+        "text": "If you happen to develop more heartburn or reflux symptoms, you could then use it as needed.",
+        "url": "/api/audio/clip_01_medication_shared_decision/clip?start=181.8&end=187.6"
+      },
+      {
+        "type": "listen",
+        "expect": "question"
+      }
+    ]
+  },
+  {
+    "key": "did they change my blood pressure pill",
+    "heard": "Did they change my blood pressure pill?",
+    "at": "2026-11-23T12:00:00.000Z",
+    "actions": [
+      {
+        "type": "speak",
+        "text": "No, the pharmacist confirmed your blood pressure medication stays the same at 5 milligrams.",
+        "url": null
+      },
+      {
+        "type": "play",
+        "slug": "clip_03_prescription_refill_counseling",
+        "start": 46.96,
+        "end": 61.73,
+        "speaker": "Pharmacist",
+        "text": "We're not going to change your medication today. We'll keep your ramipril at five milligrams daily.",
+        "url": "/api/audio/clip_03_prescription_refill_counseling/clip?start=46.96&end=61.73"
+      },
+      {
+        "type": "listen",
+        "expect": "question"
+      }
+    ]
+  }
+]

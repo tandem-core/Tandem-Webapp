@@ -2,26 +2,36 @@
   "name": "tandem-web",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "seed": "node scripts/seed-demo.mjs",
+    "ask": "node scripts/ask.mjs",
+    "import-clips": "node scripts/import-clips.mjs",
+    "atom-bridge": "node scripts/atom-bridge.mjs",
+    "atom-sim": "node scripts/atom-sim.mjs",
     "pipeline:serve": "python3 backend/server.py",
     "pipeline:test": "python3 -m unittest discover -s backend -p \"test_*.py\"",
     "pipeline:replay": "python3 backend/pipeline.py --demo-all --replay",
     "pipeline:live": "python3 backend/pipeline.py --demo-all"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "ffmpeg-static": "^5.3.0",
     "next": "16.4.6",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "ws": "^8.23.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/ws": "^8.18.2",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
     "tailwindcss": "4.3.3",

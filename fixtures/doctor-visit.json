@@ -1,0 +1,257 @@
+{
+  "title": "Dr. Patel follow-up visit",
+  "recordedAt": "2026-11-03T15:00:00.000Z",
+  "durationSec": 124,
+  "language": "English",
+  "notes": "Synthetic script for actors. Contains: one dated instruction (bloodwork before Dec 14), one scheduled appointment (Dec 21), one medication instruction that is explicitly unchanged, one question the doctor defers (dizziness referral), and one patient worry with no answer (driving). No real patient data.",
+  "segments": [
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 0.5,
+      "end": 7.8,
+      "text": "Good to see you again, Mary. How have you been feeling since we adjusted the blood pressure medication?"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 8.4,
+      "end": 15.26,
+      "text": "Mostly fine. A little dizzy some mornings when I get out of bed, but it passes."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 15.86,
+      "end": 29.7,
+      "text": "Okay. Your pressure today is 128 over 80, which is much better. I don't want to change the lisinopril. Keep taking ten milligrams every morning, same as now."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 30.3,
+      "end": 43.39,
+      "text": "About the dizziness, when you get up, sit on the edge of the bed for a minute first. If it keeps happening, I may send you to a cardiologist, but let's look at your labs before we decide that."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 43.99,
+      "end": 46.36,
+      "text": "So I need blood work?"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 46.96,
+      "end": 61.73,
+      "text": "Yes. I'd like a basic metabolic panel and a lipid panel. It's a fasting test, so nothing to eat after midnight. Please get it done before December fourteenth so the results are back before I see you."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 62.33,
+      "end": 67.9,
+      "text": "You can go to any Quest lab. The order will be in the system by tomorrow."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 68.5,
+      "end": 71.3,
+      "text": "And when do I come back to see you?"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 71.9,
+      "end": 81.33,
+      "text": "The front desk has you down for December twenty-first at ten thirty. We'll go over the lab results then and decide about the cardiology referral."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 81.93,
+      "end": 86.98,
+      "text": "My daughter wanted me to ask whether the dizziness means I shouldn't be driving."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 87.58,
+      "end": 97.98,
+      "text": "That's a fair question. If you ever feel dizzy while sitting, don't drive that day. Otherwise let's talk about it properly once we have the labs."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 98.58,
+      "end": 104.34,
+      "text": "Okay. Nothing to eat after midnight, before the fourteenth."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 104.94,
+      "end": 113.14,
+      "text": "Exactly. And drink plenty of water that morning, it makes the draw easier. Any other questions?"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "speakerName": "Mary",
+      "start": 113.74,
+      "end": 117.91,
+      "text": "No, I think that's it. Thank you."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "speakerName": "Dr. Patel",
+      "start": 118.51,
+      "end": 123.24,
+      "text": "Take care, Mary. See you on the twenty-first."
+    }
+  ],
+  "groundTruth": {
+    "followUps": [
+      {
+        "title": "Get fasting blood work (basic metabolic panel and lipid panel) at a Quest lab",
+        "dueBy": "2026-12-14",
+        "evidence": [
+          5,
+          6,
+          11
+        ],
+        "suggestedHelper": "family"
+      },
+      {
+        "title": "Attend follow-up with Dr. Patel",
+        "when": "2026-12-21T10:30",
+        "evidence": [
+          8
+        ],
+        "status": "already scheduled"
+      }
+    ],
+    "instructions": [
+      {
+        "text": "Keep taking lisinopril 10 mg every morning; no change",
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "text": "Sit on the edge of the bed for a minute before standing",
+        "evidence": [
+          3
+        ]
+      },
+      {
+        "text": "Nothing to eat after midnight before the blood test; drink water that morning",
+        "evidence": [
+          5,
+          12
+        ]
+      },
+      {
+        "text": "Don't drive on a day you feel dizzy while sitting",
+        "evidence": [
+          10
+        ]
+      }
+    ],
+    "openQuestions": [
+      {
+        "text": "Whether a cardiology referral is needed; decided after labs",
+        "evidence": [
+          3,
+          8
+        ]
+      },
+      {
+        "text": "Driving more generally; to be discussed after labs",
+        "evidence": [
+          10
+        ]
+      }
+    ],
+    "notDiscussed": [
+      "Any new medication",
+      "Changing the lisinopril dose",
+      "Diet or exercise changes"
+    ],
+    "qaProbes": [
+      {
+        "q": "When did the doctor want me to get that blood test?",
+        "status": [
+          "answered"
+        ],
+        "mustMention": [
+          "14|fourteenth"
+        ],
+        "expect": "Before December 14; fasting; any Quest lab",
+        "evidence": [
+          5,
+          6
+        ]
+      },
+      {
+        "q": "Did the doctor change my medication?",
+        "status": [
+          "answered"
+        ],
+        "mustMention": [
+          "lisinopril"
+        ],
+        "expect": "No. Keep lisinopril 10 mg every morning.",
+        "evidence": [
+          2
+        ]
+      },
+      {
+        "q": "Did the doctor say anything about my cholesterol medication?",
+        "status": [
+          "not_discussed"
+        ],
+        "mustMention": [],
+        "expect": "Not discussed in this recording. A lipid panel was ordered, but no cholesterol medication was mentioned.",
+        "evidence": []
+      },
+      {
+        "q": "Can I still drive?",
+        "status": [
+          "partly_answered",
+          "answered"
+        ],
+        "mustMention": [
+          "dizzy|dizziness"
+        ],
+        "expect": "Don't drive on a day you feel dizzy while sitting; broader question deferred until after labs.",
+        "evidence": [
+          10
+        ]
+      },
+      {
+        "q": "What time is my next appointment?",
+        "status": [
+          "answered"
+        ],
+        "mustMention": [
+          "10:30|ten thirty"
+        ],
+        "expect": "December 21 at 10:30.",
+        "evidence": [
+          8
+        ]
+      },
+      {
+        "q": "Should I stop taking aspirin?",
+        "status": [
+          "not_discussed"
+        ],
+        "mustMention": [],
+        "expect": "Aspirin wasn't discussed; ask the clinic.",
+        "evidence": []
+      }
+    ]
+  }
+}

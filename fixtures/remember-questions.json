@@ -1,0 +1,284 @@
+{
+  "notes": "Spoken-style questions for the Remember button, asked across every stored visit (the six imported clips; the scripted visit is no longer in the app). today is the date Remember treats as now. visit is the slug the answer should come from (null = no visit applies). mustMention entries can list alternatives with |. mustNotMention catches unconfirmed medication names and invented answers. choices lists the visits a question fits equally well; Remember should ask which one (status choose_visit) and offer only those.",
+  "today": "2026-11-06",
+  "questions": [
+    {
+      "q": "What did the doctor say?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "15|heartburn"
+      ],
+      "mustNotMention": [
+        "lansoprazole"
+      ]
+    },
+    {
+      "q": "When is my next appointment?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "month"
+      ]
+    },
+    {
+      "q": "What can I take if the heartburn comes back?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "tums|gaviscon|antacid"
+      ]
+    },
+    {
+      "q": "What side effects did the doctor mention for my heartburn pill?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "vitamin|absorption|mineral"
+      ],
+      "mustNotMention": [
+        "lansoprazole"
+      ]
+    },
+    {
+      "q": "Did they change my blood pressure pill?",
+      "visit": "clip_03_prescription_refill_counseling",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "no|not|wasn"
+      ]
+    },
+    {
+      "q": "What did the doctor say about my heartburn medicine?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "15"
+      ],
+      "mustNotMention": [
+        "lansoprazole"
+      ]
+    },
+    {
+      "q": "How long do I take the lower dose of my heartburn pill?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "two weeks|2 weeks"
+      ],
+      "mustNotMention": [
+        "lansoprazole"
+      ],
+      "clipMustMention": [
+        "two weeks"
+      ]
+    },
+    {
+      "q": "How often do I take the methotrexate?",
+      "visit": "clip_02_methotrexate_full_consultation",
+      "status": [
+        "answered"
+      ],
+      "mustMention": [
+        "week"
+      ],
+      "clipMustMention": [
+        "week"
+      ]
+    },
+    {
+      "q": "Can I take ibuprofen with methotrexate?",
+      "visit": "clip_02_methotrexate_full_consultation",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "ibuprofen"
+      ]
+    },
+    {
+      "q": "What tests do I need before starting methotrexate?",
+      "visit": "clip_02_methotrexate_full_consultation",
+      "status": [
+        "answered"
+      ],
+      "mustMention": [
+        "x-ray|xray|x ray"
+      ],
+      "clipMustMention": [
+        "x-ray|liver|blood test"
+      ]
+    },
+    {
+      "q": "What did the pharmacist say about my ibuprofen and my blood pressure medicine?",
+      "visit": "clip_03_prescription_refill_counseling",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "ramipril"
+      ]
+    },
+    {
+      "q": "How should I take my blood pressure readings at home?",
+      "visit": "clip_03_prescription_refill_counseling",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "three|3"
+      ]
+    },
+    {
+      "q": "How much clindamycin is he supposed to take?",
+      "visit": "clip_04_antibiotic_interaction_doctor_pharmacist",
+      "status": [
+        "partly_answered"
+      ],
+      "mustMention": [
+        "300",
+        "500"
+      ],
+      "clipMustMention": [
+        "300|three hundred"
+      ]
+    },
+    {
+      "q": "Why didn't they use the first antibiotic?",
+      "visit": "clip_04_antibiotic_interaction_doctor_pharmacist",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "risperdal"
+      ],
+      "mustNotMention": [
+        "azithromycin"
+      ]
+    },
+    {
+      "q": "What happened with the blood thinner mistake?",
+      "visit": "clip_05_anticoagulant_medication_error",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "dose|bleed"
+      ]
+    },
+    {
+      "q": "Did I agree to the smear test?",
+      "visit": "clip_06_three_party_screening_consultation",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "book"
+      ]
+    },
+    {
+      "q": "What did they tell me at my October 27th appointment?",
+      "visit": "clip_02_methotrexate_full_consultation",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "methotrexate|arthritis"
+      ]
+    },
+    {
+      "q": "Should I take a vitamin D supplement?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "not_discussed",
+        "partly_answered"
+      ],
+      "mustMention": []
+    },
+    {
+      "q": "Is it normal to feel tired all the time?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "not_discussed",
+        "partly_answered"
+      ],
+      "mustMention": []
+    },
+    {
+      "q": "What did the doctor say about the blood test?",
+      "visit": "clip_02_methotrexate_full_consultation",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "liver"
+      ],
+      "clipMustMention": [
+        "liver|blood test"
+      ],
+      "clipMustNotMention": [
+        "x-ray"
+      ]
+    },
+    {
+      "q": "What's the weather going to be tomorrow?",
+      "visit": null,
+      "status": [
+        "no_visit"
+      ],
+      "mustMention": []
+    },
+    {
+      "q": "What did they say about ibuprofen?",
+      "visit": null,
+      "status": [
+        "choose_visit"
+      ],
+      "choices": [
+        "clip_01_medication_shared_decision",
+        "clip_02_methotrexate_full_consultation",
+        "clip_03_prescription_refill_counseling"
+      ]
+    },
+    {
+      "q": "What did the doctor say about my blood pressure?",
+      "visit": "clip_03_prescription_refill_counseling",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "three|3"
+      ]
+    }
+  ]
+}

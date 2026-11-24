@@ -1,0 +1,7 @@
+{
+  "owner": { "name": "Mary" },
+  "helpers": [
+    { "id": "lisa", "name": "Lisa", "relation": "daughter" },
+    { "id": "david", "name": "David", "relation": "son" }
+  ]
+}
