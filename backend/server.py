@@ -2,6 +2,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
+import os
 from pathlib import Path
 import re
 from urllib.parse import urlparse, parse_qs
@@ -66,6 +67,8 @@ class Handler(BaseHTTPRequestHandler):
             params = parse_qs(parsed.query)
             mode = params.get('mode', ['live'])[0]
             source = params.get('demo', [None])[0]
+            if mode == 'live' and not os.environ.get('OPENAI_API_KEY'):
+                return self.reply(503, {'error': 'Add OPENAI_API_KEY to .env.local and restart the Python service for fresh AI processing.'})
             body = self.rfile.read(length)
             if source:
                 if source not in {p.stem for p in (ROOT / 'demo-data/audio').glob('*.mp3')}:
