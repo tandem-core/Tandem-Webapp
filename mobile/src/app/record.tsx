@@ -74,11 +74,7 @@ export default function Record() {
                 </Pressable>
               </View>
             </View>
-            {stage.name === 'denied' ? (
-              <Text style={[s.sub, { color: colors.accent }]}>Tandem needs the microphone. Allow it in settings.</Text>
-            ) : (
-              <Text style={s.sub}>Ask everyone first.</Text>
-            )}
+            {stage.name === 'denied' && <Text style={[s.sub, { color: colors.accent }]}>Tandem needs the microphone. Allow it in settings.</Text>}
           </View>
         )}
 
