@@ -64,6 +64,28 @@ export const answerMedication = (slug: string, medId: string, answer: Answer) =>
     body: JSON.stringify({ answer }),
   });
 
+// One turn of Joel's voice conversation (app/api/voice/turn, lib/voice.mjs), typed instead of spoken.
+export type TurnAction =
+  | { type: 'speak'; text: string; url: string | null }
+  | { type: 'play'; url: string; text: string; speaker: string; visit: string }
+  | { type: 'listen'; expect: 'question' | 'yes_no' | 'choice' };
+
+export type Turn = {
+  sessionId: string;
+  heard: string;
+  expect: 'question' | 'yes_no' | 'choice';
+  actions: TurnAction[];
+  result: { status: string; options?: { slug: string; title: string; recordedAt: string }[] } | null;
+  fromCache?: boolean;
+};
+
+export const askTurn = (body: { event: 'question' | 'choose'; text?: string; slug?: string; sessionId?: string }) =>
+  request<Turn>('/api/voice/turn', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+
 /** Loads data once, with a reload function for retry and pull-to-refresh. */
 export function useLoad<T>(load: () => Promise<T>) {
   const [data, setData] = useState<T | null>(null);

@@ -1,5 +1,5 @@
 // Plain helpers with no React Native imports, so `npm test` can run them in Node.
-import type { Medication, Visit } from './api';
+import type { Medication, Turn, Visit } from './api';
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -59,6 +59,16 @@ export function otherChecks(visit: Visit) {
 export function checkReason(med: Medication) {
   if (med.doseNeedsCheck) return `Unclear amount for ${med.nameResolved ? med.heardAs : `“${med.heardAs}”`}`;
   return `Unclear name: “${med.heardAs}”`;
+}
+
+/**
+ * The words to show for an Ask answer. When the server can't reach its AI it says
+ * "check the internet connection", which is wrong here: the phone just reached the
+ * server. A saved (cached) answer is still shown as the server words it.
+ */
+export function answerOf(turn: Turn) {
+  if (!turn.result && !turn.fromCache) return 'Answers aren’t available right now.';
+  return turn.actions.flatMap((a) => (a.type === 'speak' ? [a.text] : [])).join(' ');
 }
 
 /** Summaries speak to Mary ("your medicine"); Lisa reads them about Mary. Same rules as familyVoice in lib/family-demo-config.ts. */

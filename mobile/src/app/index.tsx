@@ -1,11 +1,24 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Link } from 'expo-router';
-import { RefreshControl, ScrollView, Text, View } from 'react-native';
+import { Pressable, RefreshControl, ScrollView, Text, View, ViewStyle } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { getHome, useLoad } from '@/api';
 import { useDemo } from '@/demo';
-import { colors } from '@/theme';
+import { colors, touch } from '@/theme';
 import { AppointmentCard, LoadState, styles, ViewerSwitch } from '@/ui';
+
+const askBar: ViewStyle = {
+  flexDirection: 'row',
+  alignItems: 'center',
+  gap: 12,
+  minHeight: touch + 8,
+  paddingHorizontal: 16,
+  borderRadius: 18,
+  backgroundColor: colors.card,
+  borderWidth: 1,
+  borderColor: colors.border,
+};
 
 function greeting() {
   const h = new Date().getHours();
@@ -29,6 +42,14 @@ export default function Home() {
           </View>
           <ViewerSwitch />
         </View>
+        {!lisa && (
+          <Link href="/ask" asChild>
+            <Pressable style={askBar} accessibilityRole="button" accessibilityLabel="Ask about your appointments">
+              <Ionicons name="chatbubble-ellipses-outline" size={26} color={colors.accent} />
+              <Text style={[styles.body, { color: colors.muted, flex: 1 }]}>Ask about your appointments</Text>
+            </Pressable>
+          </Link>
+        )}
         <Text style={styles.heading}>{lisa ? 'Shared by Mary' : 'Recent appointments'}</Text>
         <LoadState loading={loading} error={error} onRetry={reload} />
         {visits.slice(0, 2).map((v) => (

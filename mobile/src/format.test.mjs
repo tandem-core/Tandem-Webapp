@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, clock, doseOf, labelChecks, markerPositions, otherChecks } from './format.ts';
+import { aboutMary, answerOf, clock, doseOf, labelChecks, markerPositions, otherChecks } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -35,6 +35,15 @@ test('labelChecks skips medicines only mentioned, turned down, or without a sugg
   assert.deepEqual(labelChecks(visit).map((m) => m.id), ['a']);
   // Medicines without a suggested name still need a check if Mary takes them.
   assert.deepEqual(otherChecks(visit).map((m) => m.id), ['d']);
+});
+
+test('answerOf replaces the misleading offline line but keeps real and saved answers', () => {
+  const offline = { actions: [{ type: 'speak', text: "I can't reach Tandem right now. Please check the internet connection." }], result: null, fromCache: false };
+  assert.equal(answerOf(offline), 'Answers aren’t available right now.');
+  const saved = { actions: [{ type: 'speak', text: 'Saved.' }, { type: 'speak', text: 'Take 15 mg.' }], result: null, fromCache: true };
+  assert.equal(answerOf(saved), 'Saved. Take 15 mg.');
+  const live = { actions: [{ type: 'speak', text: 'Take 15 mg.' }, { type: 'play', text: 'quote' }, { type: 'listen' }], result: { status: 'answered' } };
+  assert.equal(answerOf(live), 'Take 15 mg.');
 });
 
 test('aboutMary rewords a summary for Lisa', () => {

@@ -51,6 +51,8 @@ export default function Layout() {
           }}
         />
       ))}
+      {/* Opened from Home, not a tab. (href: null would also drop the route in this SDK.) */}
+      <Tabs.Screen name="ask" options={{ tabBarItemStyle: { display: 'none' }, tabBarButton: () => null }} />
     </Tabs>
   );
 }
