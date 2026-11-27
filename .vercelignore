@@ -1,0 +1,3 @@
+# The phone web export keeps its icon font under assets/node_modules; upload it.
+!public/phone/assets/node_modules
+!public/phone/assets/node_modules/**
