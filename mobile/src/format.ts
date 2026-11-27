@@ -68,7 +68,12 @@ export function checkReason(med: Medication) {
  */
 export function answerOf(turn: Turn) {
   if (!turn.result && !turn.fromCache) return 'Answers aren’t available right now.';
-  return turn.actions.flatMap((a) => (a.type === 'speak' ? [a.text] : [])).join(' ');
+  // The spoken lead-in and sign-off are for listeners; on screen, the date and "Hear it" say the same.
+  return turn.actions
+    .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
+    .join(' ')
+    .replace(/^From your (?:\w+, )?(\w+ \d+) recording\.\s*/, '$1: ')
+    .replace(/\s*Here's what was said\.$/, '');
 }
 
 /** "Summary, Recording", or "Nothing". */
@@ -91,4 +96,21 @@ export function aboutMary(text: string) {
     .replace(/\byou do\b/gi, 'Mary does')
     .replace(/\byour\b/gi, 'Mary’s')
     .replace(/\byou\b/gi, 'Mary');
+}
+
+/**
+ * The shortest opening of a server sentence that leaves nothing important out: what is
+ * cut must have no numbers, nothing in quotes and none of `names` (medicines). Cuts
+ * happen only at a sentence end or a comma. Returns the whole text when nothing can go.
+ */
+export function brief(text: string, names: string[] = []) {
+  const lower = names.filter(Boolean).map((n) => n.toLowerCase());
+  const safeToHide = (rest: string) => !/\d|["“”'‘’]/.test(rest) && !lower.some((n) => rest.toLowerCase().includes(n));
+  // Sentence ends (not after a title such as "Dr.") and commas.
+  const cuts = [...text.matchAll(/(?<!\b(?:Dr|Mr|Mrs|Ms|St))[.!?](?=\s)|,(?=\s)/g)].map((m) => m.index!);
+  for (const at of cuts) {
+    const rest = text.slice(at + 1).trim();
+    if (text.slice(0, at).split(/\s+/).length >= 6 && safeToHide(rest)) return { short: text.slice(0, at) + '.', rest };
+  }
+  return { short: text, rest: '' };
 }

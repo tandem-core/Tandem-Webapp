@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router, useFocusEffect } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { NOTHING, Parts, setSharing, useDemo } from '@/demo';
@@ -33,7 +33,6 @@ export default function Sharing() {
         <Text style={ui.pageTitle} accessibilityRole="header">
           What Lisa sees
         </Text>
-        <Text style={ui.muted}>Shared after every appointment.</Text>
         {OPTIONS.map(([key, name, example]) => {
           const on = parts[key];
           return (
@@ -45,10 +44,7 @@ export default function Sharing() {
               aria-checked={on}
               accessibilityLabel={`${name}: ${example}`}>
               <Ionicons name={on ? 'checkbox' : 'square-outline'} size={26} color={on ? colors.accent : '#b3a89f'} />
-              <View style={{ flex: 1, gap: 2 }}>
-                <Text style={ui.title}>{name}</Text>
-                <Text style={ui.muted}>{example}</Text>
-              </View>
+              <Text style={[ui.title, { flex: 1 }]}>{name}</Text>
             </Pressable>
           );
         })}

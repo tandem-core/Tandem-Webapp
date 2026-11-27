@@ -5,16 +5,15 @@ import { ActivityIndicator, Modal, Pressable, StyleSheet, Text, View } from 'rea
 
 import { VisitSummary } from '@/api';
 import { setViewer, useDemo, Viewer } from '@/demo';
-import { aboutMary, dateParts } from '@/format';
+import { dateParts } from '@/format';
 import { colors, text, touch } from '@/theme';
 
 function DateTile({ iso }: { iso: string }) {
-  const { month, day, weekday } = dateParts(iso);
+  const { month, day } = dateParts(iso);
   return (
     <View style={styles.tile}>
       <Text style={styles.tileMonth}>{month.slice(0, 3).toUpperCase()}</Text>
       <Text style={styles.tileDay}>{day}</Text>
-      <Text style={styles.tileWeekday}>{weekday.slice(0, 3)}</Text>
     </View>
   );
 }
@@ -34,18 +33,13 @@ export function AppointmentCard({ visit, lisa = false, isNew = false }: { visit:
         <DateTile iso={visit.recordedAt} />
         <View style={{ flex: 1, gap: 3 }}>
           <Text style={styles.title}>{visit.title}</Text>
-          {visit.headline ? (
-            <Text style={styles.cardLine} numberOfLines={2}>
-              {lisa ? aboutMary(visit.headline) : visit.headline}
-            </Text>
-          ) : null}
           {(checks > 0 || isNew) && (
             <View style={{ flexDirection: 'row', gap: 6, marginTop: 4 }}>
               {isNew && <Text style={[styles.pill, styles.pillNew]}>New</Text>}
               {checks > 0 && (
                 <View style={[styles.pill, styles.pillRow]}>
                   <Ionicons name="alert-circle" size={16} color="#d99428" />
-                  <Text style={styles.pillAmber}>{flag}</Text>
+                  <Text style={styles.pillAmber}>Check</Text>
                 </View>
               )}
             </View>
@@ -89,7 +83,6 @@ export function ViewerSwitch() {
       <Modal visible={open} transparent animationType="fade" onRequestClose={() => setOpen(false)}>
         <Pressable style={styles.scrim} onPress={() => setOpen(false)} accessibilityLabel="Close">
           <View style={styles.sheet}>
-            <Text style={[styles.muted, { paddingHorizontal: 4 }]}>Show the app as</Text>
             {PEOPLE.map(([id, name, letter]) => (
               <Pressable
                 key={id}
@@ -163,7 +156,6 @@ export const styles = StyleSheet.create({
     borderColor: colors.border,
   },
   cardNew: { borderColor: colors.accent, borderWidth: 1.5 },
-  cardLine: { fontSize: 14.5, lineHeight: 20, color: '#5b524b' },
   tile: {
     width: 58,
     alignSelf: 'flex-start',
@@ -185,8 +177,7 @@ export const styles = StyleSheet.create({
     paddingTop: 3,
     paddingBottom: 2,
   },
-  tileDay: { fontSize: 26, lineHeight: 30, fontWeight: '800', letterSpacing: -0.8, color: colors.text, paddingTop: 4 },
-  tileWeekday: { fontSize: 12, fontWeight: '600', color: colors.muted, paddingBottom: 5 },
+  tileDay: { fontSize: 26, lineHeight: 30, fontWeight: '800', letterSpacing: -0.8, color: colors.text, paddingVertical: 4 },
   title: { fontSize: text.body, lineHeight: 22, fontWeight: '700', color: colors.text },
   pill: { alignSelf: 'flex-start', borderRadius: 12, paddingHorizontal: 9, paddingVertical: 3, fontSize: 13, fontWeight: '700', overflow: 'hidden' },
   pillNew: { backgroundColor: colors.accent, color: '#fff' },

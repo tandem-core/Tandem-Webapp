@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, clock, doseOf, isNewForLisa, labelChecks, markerPositions, otherChecks } from './format.ts';
+import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, labelChecks, markerPositions, otherChecks } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -44,6 +44,8 @@ test('answerOf replaces the misleading offline line but keeps real and saved ans
   assert.equal(answerOf(saved), 'Saved. Take 15 mg.');
   const live = { actions: [{ type: 'speak', text: 'Take 15 mg.' }, { type: 'play', text: 'quote' }, { type: 'listen' }], result: { status: 'answered' } };
   assert.equal(answerOf(live), 'Take 15 mg.');
+  const spoken = { actions: [{ type: 'speak', text: "From your Tuesday, November 3 recording. Take 15 mg daily. Here's what was said." }], result: { status: 'answered' } };
+  assert.equal(answerOf(spoken), 'November 3: Take 15 mg daily.');
 });
 
 test('isNewForLisa flags appointments recorded after sharing began, until Lisa opens them', () => {
@@ -67,4 +69,15 @@ test('clock formats seconds as m:ss', () => {
 test('markerPositions keeps close moments apart', () => {
   assert.deepEqual(markerPositions([10, 150, 155], 300), [10 / 3, 50, 58]);
   assert.deepEqual(markerPositions([290, 299], 300), [92, 100]);
+});
+
+test('brief hides only a tail with no numbers, quotes or medicine names', () => {
+  const headline = "You and Dr. Smith agreed to lower your heartburn medicine (the one that sounded like 'Lenzaprazole') from 30 mg to 15 mg daily for two weeks, instead of stopping it right away.";
+  assert.deepEqual(brief(headline), {
+    short: "You and Dr. Smith agreed to lower your heartburn medicine (the one that sounded like 'Lenzaprazole') from 30 mg to 15 mg daily for two weeks.",
+    rest: 'instead of stopping it right away.',
+  });
+  assert.equal(brief('Take it daily. Stop if you feel dizzy. Call about the 2 pm test.').rest, '');
+  assert.equal(brief('Keep taking it as before, and avoid ibuprofen for now.', ['ibuprofen']).rest, '');
+  assert.equal(brief('Keep taking your blood pressure pills, and rest well this week.').short, 'Keep taking your blood pressure pills.');
 });

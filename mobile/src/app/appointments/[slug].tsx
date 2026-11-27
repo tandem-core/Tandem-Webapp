@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Answer, answerMedication, API_URL, getVisit, Medication, useLoad, Visit } from '@/api';
 import { markSeen, NOTHING, Parts, sharesAnything, useDemo } from '@/demo';
-import { aboutMary, checkReason, clock, dateParts, doseOf, labelChecks, markerPositions, otherChecks } from '@/format';
+import { aboutMary, brief, checkReason, clock, doseOf, labelChecks, markerPositions, otherChecks } from '@/format';
 import { colors } from '@/theme';
 import { BackButton, LoadState, styles as ui } from '@/ui';
 
@@ -62,8 +62,6 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
     length,
   );
   const current = status.currentTime > 0 ? moments.findLast((m) => m.start <= status.currentTime + 0.5) : undefined;
-  const { month, day } = dateParts(visit.recordedAt);
-  const minutes = Math.round((visit.segments.at(-1)?.end ?? 0) / 60);
   const notShared = (['summary', 'transcript', 'recording'] as const).filter((p) => !parts[p]);
 
   const playAt = (seconds: number) => {
@@ -76,10 +74,6 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
       <ScrollView contentContainerStyle={[ui.content, { paddingTop: 0 }, parts.recording && { paddingBottom: 120 }]}>
         <Text style={s.title} accessibilityRole="header">
           {visit.title}
-        </Text>
-        <Text style={s.meta}>
-          {month} {day}
-          {minutes > 0 ? ` · ${minutes} min` : ''}
         </Text>
         {lisa && notShared.length > 0 && (
           <View style={s.locked}>
@@ -98,25 +92,19 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
               return (
                 <View key={med.id} style={s.check}>
                   <View style={s.checkHead}>
-                    <Text style={s.checkLabel}>Please check</Text>
+                    <Text style={[s.checkQuestion, { flex: 1 }]}>{checkReason(med)}</Text>
                     {start !== undefined && <HearButton at={start} onHear={playAt} />}
                   </View>
-                  <Text style={s.checkQuestion}>{checkReason(med)}</Text>
-                  <Text style={ui.muted}>
-                    {lisa ? 'Mary should ask her pharmacist before changing anything.' : 'Ask your pharmacist before changing anything.'}
-                  </Text>
+                  <Text style={ui.muted}>{lisa ? 'Mary should ask her pharmacist first.' : 'Ask your pharmacist before changing anything.'}</Text>
                 </View>
               );
             })}
 
-            <View style={s.labelRow}>
-              <Text style={s.section}>Summary</Text>
-              <Text style={s.ai}>{visit.reviewed ? 'AI-generated' : 'AI-generated · not reviewed'}</Text>
-            </View>
-            <Text style={s.para}>{say(visit.headline ?? '')}</Text>
+            <Brief text={say(visit.headline ?? '')} names={visit.medications.flatMap((m) => [m.heardAs, m.suggestion?.name ?? ''])} />
 
             <Group
-              title="What to do"
+              title="To do"
+              folded
               items={[
                 ...moments.map((m, i) => ({
                   id: m.id,
@@ -133,13 +121,15 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
               onHear={playAt}
             />
             <Group
-              title={lisa ? 'What Mary was told' : 'What you were told'}
+              title="Instructions"
+              folded
               items={visit.instructions.map((i) => ({ id: i.id, main: say(i.text), start: at(i.evidence) }))}
               onHear={playAt}
             />
-            <Group title="What stayed the same" items={visit.unchanged.map((i) => ({ id: i.id, main: say(i.text), start: at(i.evidence) }))} onHear={playAt} />
+            <Group title="Unchanged" folded items={visit.unchanged.map((i) => ({ id: i.id, main: say(i.text), start: at(i.evidence) }))} onHear={playAt} />
             <Group
-              title="Questions to ask"
+              title="Questions"
+              folded
               items={visit.openQuestions.map((q) => ({ id: q.id, main: say(q.text), bold: true, start: at(q.evidence) }))}
               onHear={playAt}
             />
@@ -160,7 +150,7 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
               <Ionicons name={status.playing ? 'pause' : 'play'} size={20} color={colors.text} style={!status.playing && { marginLeft: 2 }} />
             </Pressable>
             <Text style={s.playerTitle} numberOfLines={1}>
-              {!status.isLoaded ? 'Loading…' : current ? `${moments.indexOf(current) + 1} · ${say(current.title)}` : 'Recording'}
+              {!status.isLoaded ? 'Loading…' : current ? `${moments.indexOf(current) + 1} · ${say(current.title)}` : ''}
             </Text>
             <Text style={s.playerTime}>
               {clock(status.currentTime)} / {clock(length)}
@@ -181,6 +171,21 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
   );
 }
 
+/** The first part of a long summary, with the rest (never a medicine or a number) behind "More". */
+function Brief({ text, names }: { text: string; names: string[] }) {
+  const [all, setAll] = useState(false);
+  const { short, rest } = brief(text, names);
+  return (
+    <Text style={[s.para, { marginTop: 6 }]}>
+      {all || !rest ? text : short}
+      {rest ? (
+        <Text style={s.moreText} onPress={() => setAll(!all)} accessibilityRole="button">
+          {all ? ' Less' : ' More'}
+        </Text>
+      ) : null}
+    </Text>
+  );
+}
 /** The word-for-word transcript, folded away until asked for. */
 function Transcript({ segments, onHear }: { segments: Visit['segments']; onHear?: (seconds: number) => void }) {
   const [open, setOpen] = useState(false);
@@ -235,9 +240,9 @@ function LabelCheck({ slug, med, lisa, start, onHear }: { slug: string; med: Med
     ['no', 'No'],
     ['unsure', 'Not sure'],
   ];
-  const head = (
+  const head = (text: string) => (
     <View style={s.checkHead}>
-      <Text style={s.checkLabel}>{lisa ? 'Label check' : 'Please check'}</Text>
+      <Text style={[s.checkQuestion, { flex: 1 }]}>{text}</Text>
       {start !== undefined && <HearButton at={start} onHear={onHear} />}
     </View>
   );
@@ -246,19 +251,15 @@ function LabelCheck({ slug, med, lisa, start, onHear }: { slug: string; med: Med
   if (lisa)
     return (
       <View style={s.check}>
-        {head}
-        <Text style={s.checkQuestion}>{name}</Text>
-        <Text style={ui.body}>{answer ? `Mary said: ${choices.find(([v]) => v === answer)![1]}` : 'Mary hasn’t answered yet.'}</Text>
-        {(answer === 'no' || answer === 'unsure') && (
-          <Text style={[ui.body, { fontWeight: '700' }]}>Mary should check with her pharmacist before changing anything.</Text>
-        )}
+        {head(name)}
+        <Text style={ui.body}>{answer ? `Mary: ${choices.find(([v]) => v === answer)![1]}` : 'Not checked yet'}</Text>
+        {(answer === 'no' || answer === 'unsure') && <Text style={[ui.body, { fontWeight: '700' }]}>Mary should ask her pharmacist first.</Text>}
       </View>
     );
 
   return (
     <View style={s.check}>
-      {head}
-      <Text style={s.checkQuestion}>Does your label say {name}?</Text>
+      {head(`Does your label say ${name}?`)}
       <View style={[s.row, { gap: 8, marginTop: 4 }]}>
         {choices.map(([value, label]) => (
           <Pressable
@@ -272,10 +273,8 @@ function LabelCheck({ slug, med, lisa, start, onHear }: { slug: string; med: Med
         ))}
       </View>
       {answer === 'yes' && <Text style={[ui.body, { color: colors.green, fontWeight: '600' }]}>Saved.</Text>}
-      {(answer === 'no' || answer === 'unsure') && (
-        <Text style={[ui.body, { fontWeight: '700' }]}>Please check with your pharmacist before changing anything.</Text>
-      )}
-      {failed && <Text style={[ui.body, { color: colors.accent }]}>Not saved. Please try again.</Text>}
+      {(answer === 'no' || answer === 'unsure') && <Text style={[ui.body, { fontWeight: '700' }]}>Ask your pharmacist before changing anything.</Text>}
+      {failed && <Text style={[ui.body, { color: colors.accent }]}>Not saved. Try again.</Text>}
     </View>
   );
 }
@@ -284,39 +283,48 @@ type GroupItem = { id: string; main: string; sub?: string | null; bold?: boolean
 
 const COLLAPSED = 3;
 
-/** A labelled list of short items. Hidden when empty; long lists start collapsed. */
-function Group({ title, items, onHear }: { title: string; items: GroupItem[]; onHear: (seconds: number) => void }) {
+/** A labelled list of short items. Hidden when empty; long lists show a few, folded ones start closed. */
+function Group({ title, items, folded = false, onHear }: { title: string; items: GroupItem[]; folded?: boolean; onHear: (seconds: number) => void }) {
   const [all, setAll] = useState(false);
+  const [open, setOpen] = useState(!folded);
   if (items.length === 0) return null;
   const shown = all ? items : items.slice(0, COLLAPSED);
   return (
     <View style={{ marginTop: 6 }}>
-      <Text style={[s.section, { marginBottom: 8 }]} accessibilityRole="header">
-        {title}
-      </Text>
-      <View style={s.list}>
-        {shown.map((item, i) => (
-          <View key={item.id} style={[s.item, i > 0 && s.divider]}>
-            {item.number ? <Text style={[s.num, item.flag && s.numFlag, item.now && s.numNow]}>{item.number}</Text> : <View style={s.bullet} />}
-            <View style={{ flex: 1, gap: 2 }}>
-              <Text style={[s.itemText, !item.bold && s.itemPlain]}>{item.main}</Text>
-              {item.sub && <Text style={s.itemSub}>{item.sub}</Text>}
-              {/* Long sentences keep the full width; the time goes under them. */}
-              {!item.bold && item.start !== undefined && (
-                <View style={{ alignSelf: 'flex-start', marginTop: 4 }}>
-                  <HearButton at={item.start} onHear={onHear} />
-                </View>
-              )}
+      <Pressable
+        onPress={() => folded && setOpen(!open)}
+        disabled={!folded}
+        style={s.fold}
+        accessibilityRole={folded ? 'button' : 'header'}
+        aria-expanded={folded ? open : undefined}>
+        <Text style={[s.section, { flex: 1 }]}>{title}</Text>
+        {folded && <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={20} color={colors.muted} />}
+      </Pressable>
+      {open && (
+        <View style={s.list}>
+          {shown.map((item, i) => (
+            <View key={item.id} style={[s.item, i > 0 && s.divider]}>
+              {item.number ? <Text style={[s.num, item.flag && s.numFlag, item.now && s.numNow]}>{item.number}</Text> : <View style={s.bullet} />}
+              <View style={{ flex: 1, gap: 2 }}>
+                <Text style={[s.itemText, !item.bold && s.itemPlain]}>{item.main}</Text>
+                {item.sub && <Text style={s.itemSub}>{item.sub}</Text>}
+                {/* Long sentences keep the full width; the time goes under them. */}
+                {!item.bold && item.start !== undefined && (
+                  <View style={{ alignSelf: 'flex-start', marginTop: 4 }}>
+                    <HearButton at={item.start} onHear={onHear} />
+                  </View>
+                )}
+              </View>
+              {item.bold && item.start !== undefined && <HearButton at={item.start} onHear={onHear} />}
             </View>
-            {item.bold && item.start !== undefined && <HearButton at={item.start} onHear={onHear} />}
-          </View>
-        ))}
-        {items.length > COLLAPSED && (
-          <Pressable onPress={() => setAll(!all)} style={[s.more, s.divider]} accessibilityRole="button">
-            <Text style={s.moreText}>{all ? 'Show less' : `Show all ${items.length}`}</Text>
-          </Pressable>
-        )}
-      </View>
+          ))}
+          {items.length > COLLAPSED && (
+            <Pressable onPress={() => setAll(!all)} style={[s.more, s.divider]} accessibilityRole="button">
+              <Text style={s.moreText}>{all ? 'Less' : 'More'}</Text>
+            </Pressable>
+          )}
+        </View>
+      )}
     </View>
   );
 }
@@ -333,7 +341,6 @@ function HearButton({ at, onHear }: { at: number; onHear: (seconds: number) => v
 const s = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   title: { fontSize: 26, lineHeight: 31, fontWeight: '800', letterSpacing: -0.6, color: colors.text, marginTop: 2 },
-  meta: { fontSize: 15.5, color: colors.muted, marginTop: -4 },
   locked: { flexDirection: 'row', alignItems: 'center', gap: 10, padding: 12, borderRadius: 16, backgroundColor: '#f1ece8' },
   check: {
     backgroundColor: colors.amberSoft,
@@ -346,7 +353,6 @@ const s = StyleSheet.create({
     marginTop: 4,
   },
   checkHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', minHeight: 28 },
-  checkLabel: { fontSize: 13.5, fontWeight: '800', color: colors.amber },
   checkQuestion: { fontSize: 16.5, lineHeight: 22, fontWeight: '700', color: colors.text },
   choice: {
     flex: 1,
@@ -360,18 +366,7 @@ const s = StyleSheet.create({
   },
   choiceOn: { backgroundColor: colors.accent, borderColor: colors.accent },
   choiceText: { fontSize: 15.5, fontWeight: '700', color: '#6e4a14' },
-  labelRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginTop: 10 },
   section: { fontSize: 17, fontWeight: '800', color: colors.text },
-  ai: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: '#7c6a5e',
-    backgroundColor: '#efe5dd',
-    borderRadius: 6,
-    paddingHorizontal: 7,
-    paddingVertical: 2,
-    overflow: 'hidden',
-  },
   para: { fontSize: 16, lineHeight: 24, color: colors.body },
   list: { backgroundColor: colors.card, borderRadius: 18, borderWidth: 1, borderColor: colors.border, paddingHorizontal: 14 },
   divider: { borderTopWidth: 1, borderTopColor: '#f0e8e1' },

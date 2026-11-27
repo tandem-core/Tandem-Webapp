@@ -74,11 +74,10 @@ export default function Record() {
                 </Pressable>
               </View>
             </View>
-            <Text style={s.label}>Tap to start</Text>
             {stage.name === 'denied' ? (
               <Text style={[s.sub, { color: colors.accent }]}>Tandem needs the microphone. Allow it in settings.</Text>
             ) : (
-              <Text style={s.sub}>Ask everyone in the room before you record.</Text>
+              <Text style={s.sub}>Ask everyone first.</Text>
             )}
           </View>
         )}
@@ -97,7 +96,6 @@ export default function Record() {
               <Text style={s.label}>Recording</Text>
             </View>
             <Text style={s.timer}>{clock(elapsed / 1000)}</Text>
-            <Text style={s.sub}>Tap to stop</Text>
           </View>
         )}
 
@@ -105,7 +103,6 @@ export default function Record() {
           <View style={s.center} accessibilityLiveRegion="polite">
             <ActivityIndicator size="large" color={colors.accent} />
             <Text style={s.label}>Preparing…</Text>
-            <Text style={s.sub}>This can take a few minutes.</Text>
           </View>
         )}
 
@@ -117,7 +114,7 @@ export default function Record() {
             </View>
             <AppointmentCard visit={stage.visit} />
             <Pressable onPress={() => setStage({ name: 'idle' })} style={ui.secondary} accessibilityRole="button">
-              <Text style={ui.secondaryText}>Record another</Text>
+              <Text style={ui.secondaryText}>New recording</Text>
             </Pressable>
           </View>
         )}
@@ -126,7 +123,6 @@ export default function Record() {
           <View style={s.center} accessibilityLiveRegion="polite">
             <Ionicons name="alert-circle" size={48} color="#d99428" />
             <Text style={s.label}>Couldn’t prepare</Text>
-            <Text style={s.sub}>Tandem can’t prepare recordings right now.</Text>
             <View style={{ alignSelf: 'stretch', gap: 10, marginTop: 8 }}>
               {stage.canRetry && stage.uri !== '' && (
                 <Pressable onPress={() => send(stage.uri)} style={ui.button} accessibilityRole="button">

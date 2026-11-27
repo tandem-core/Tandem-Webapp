@@ -10,7 +10,7 @@ import { answerOf, dateParts } from '@/format';
 import { colors } from '@/theme';
 import { BackButton, styles as ui } from '@/ui';
 
-const SUGGESTIONS = ['What’s my new dose?', 'When’s my follow-up?'];
+const SUGGESTIONS = ['My new dose?', 'Next visit?'];
 
 type Entry = { question: string; turn?: Turn; failed?: string };
 
@@ -51,7 +51,7 @@ export default function Ask() {
       setEntries((e) => [...e.slice(0, -1), { question: turn.heard || shown, turn }]);
       if (speak) say(turn);
     } catch (err) {
-      const failed = err instanceof RecordingError && err.code !== 'offline' ? 'Spoken questions aren’t available right now. Please type.' : 'Couldn’t send. Check your internet.';
+      const failed = err instanceof RecordingError && err.code !== 'offline' ? 'Voice isn’t working. Please type.' : 'Couldn’t send. Check your internet.';
       setEntries((e) => [...e.slice(0, -1), { question: shown, failed }]);
     } finally {
       setBusy(false);
@@ -119,9 +119,7 @@ export default function Ask() {
                     a.type === 'play' ? (
                       <Pressable key={j} onPress={() => play(a.url)} style={s.clip} accessibilityRole="button" accessibilityLabel={`Hear it: ${a.text}`}>
                         <Ionicons name="play" size={14} color={colors.accentDark} />
-                        <Text style={[ui.muted, { flex: 1, fontSize: 14.5 }]} numberOfLines={2}>
-                          “{a.text}”
-                        </Text>
+                        <Text style={[ui.muted, { flex: 1, color: colors.accentDark, fontWeight: '700' }]}>Hear it</Text>
                       </Pressable>
                     ) : null,
                   )}
@@ -152,13 +150,13 @@ export default function Ask() {
         </ScrollView>
         <View style={s.bar}>
           {listening ? (
-            <Text style={[s.input, { lineHeight: 45, color: colors.accent, fontWeight: '700' }]}>Listening… tap to send</Text>
+            <Text style={[s.input, { lineHeight: 45, color: colors.accent, fontWeight: '700' }]}>Listening…</Text>
           ) : (
             <TextInput
               value={draft}
               onChangeText={setDraft}
               onSubmitEditing={() => ask(draft)}
-              placeholder="Ask about your appointments"
+              placeholder="Ask a question"
               placeholderTextColor={colors.muted}
               style={s.input}
               returnKeyType="send"

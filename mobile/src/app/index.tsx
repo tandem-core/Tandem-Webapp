@@ -9,11 +9,6 @@ import { isNewForLisa, partsLabel } from '@/format';
 import { colors } from '@/theme';
 import { AppointmentCard, LoadState, styles, ViewerSwitch } from '@/ui';
 
-function greeting() {
-  const h = new Date().getHours();
-  return h < 12 ? 'Good morning,' : h < 18 ? 'Good afternoon,' : 'Good evening,';
-}
-
 export default function Home() {
   const { data, error, loading, reload } = useHome();
   const { viewer, sharing, sharingSince, seen } = useDemo();
@@ -26,12 +21,9 @@ export default function Home() {
     <SafeAreaView style={styles.screen} edges={['top']}>
       <ScrollView contentContainerStyle={styles.content} refreshControl={<RefreshControl refreshing={false} onRefresh={reload} />}>
         <View style={s.header}>
-          <View style={{ flex: 1 }}>
-            <Text style={s.hello}>{greeting()}</Text>
-            <Text style={s.name} accessibilityRole="header">
-              {lisa ? 'Lisa' : (data?.owner.name ?? ' ')}
-            </Text>
-          </View>
+          <Text style={[s.name, { flex: 1 }]} accessibilityRole="header">
+            Hi, {lisa ? 'Lisa' : (data?.owner.name ?? '')}
+          </Text>
           <ViewerSwitch />
         </View>
         {!lisa && (
@@ -40,7 +32,7 @@ export default function Home() {
               <Pressable style={s.ask} accessibilityRole="button" accessibilityLabel="Ask about your appointments">
                 <Ionicons name="chatbox-outline" size={22} color={colors.accent} />
                 <Text style={s.askText} numberOfLines={1}>
-                  Ask about your appointments
+                  Ask a question
                 </Text>
                 <View style={s.mic}>
                   <Ionicons name="mic-outline" size={22} color="#fff" />
@@ -50,14 +42,14 @@ export default function Home() {
             <Link href="/sharing" asChild>
               <Pressable style={s.row} accessibilityRole="button" accessibilityLabel={sharing ? `Lisa sees: ${partsLabel(sharing)}. Change` : 'Choose what Lisa sees'}>
                 <Ionicons name="people-outline" size={22} color={colors.accentDark} />
-                <Text style={s.rowText}>{sharing ? `Lisa sees: ${partsLabel(sharing)}` : 'Choose what Lisa sees'}</Text>
+                <Text style={s.rowText}>{sharing ? 'Sharing with Lisa' : 'Share with Lisa'}</Text>
                 <Ionicons name="chevron-forward" size={18} color="#b3a89f" />
               </Pressable>
             </Link>
           </>
         )}
         <View style={styles.sectionHead}>
-          <Text style={[styles.heading, { marginTop: 0 }]}>{lisa ? 'Shared by Mary' : 'Recent appointments'}</Text>
+          <Text style={[styles.heading, { marginTop: 0 }]}>{lisa ? 'From Mary' : 'Recent'}</Text>
           {shown.length > 0 && (
             <Link href="/appointments" accessibilityLabel="See all appointments" style={styles.seeAll}>
               See all
@@ -75,8 +67,7 @@ export default function Home() {
 }
 
 const s = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'flex-start', marginTop: 4, marginBottom: 6 },
-  hello: { fontSize: 17, color: colors.muted, fontWeight: '500' },
+  header: { flexDirection: 'row', alignItems: 'center', marginTop: 4, marginBottom: 6 },
   name: { fontSize: 32, lineHeight: 38, fontWeight: '800', letterSpacing: -1, color: colors.text },
   ask: {
     flexDirection: 'row',
