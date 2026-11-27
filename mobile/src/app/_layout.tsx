@@ -1,8 +1,9 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import { ComponentProps } from 'react';
-import { Text } from 'react-native';
+import { Platform, Text } from 'react-native';
 
+import { useDemo } from '@/demo';
 import { colors } from '@/theme';
 
 type IconName = ComponentProps<typeof Ionicons>['name'];
@@ -16,6 +17,7 @@ const TABS: [route: string, title: string, icon: IconName][] = [
 ];
 
 export default function Layout() {
+  const { viewer } = useDemo();
   return (
     <Tabs
       screenOptions={{
@@ -25,6 +27,7 @@ export default function Layout() {
         tabBarInactiveTintColor: colors.muted,
         tabBarStyle: { paddingTop: 6, backgroundColor: '#fff' },
         tabBarItemStyle: { paddingHorizontal: 2 },
+        tabBarLabelStyle: { fontSize: 13, fontWeight: '600' },
       }}>
       {TABS.map(([name, title, icon]) => (
         <Tabs.Screen
@@ -32,13 +35,19 @@ export default function Layout() {
           name={name}
           options={{
             title,
+            // Lisa doesn't record Mary's appointments.
+            href: viewer === 'lisa' && name === 'record' ? null : undefined,
             tabBarIcon: ({ color }) => <Ionicons name={icon} size={30} color={color as string} />,
             // Five tabs on a narrow phone: shrink long labels a little instead of cutting them off.
-            tabBarLabel: ({ color }) => (
-              <Text numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75} style={{ color, fontSize: 14, fontWeight: '600' }}>
-                {title}
-              </Text>
-            ),
+            // Web can't shrink text to fit, so it keeps the standard label.
+            tabBarLabel:
+              Platform.OS === 'web'
+                ? undefined
+                : ({ color }) => (
+                    <Text numberOfLines={1} adjustsFontSizeToFit minimumFontScale={0.75} style={{ color, fontSize: 14, fontWeight: '600' }}>
+                      {title}
+                    </Text>
+                  ),
           }}
         />
       ))}

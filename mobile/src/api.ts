@@ -11,6 +11,7 @@ export type VisitSummary = {
   title: string;
   recordedAt: string;
   headline: string | null;
+  reviewed: boolean;
   medicationsToCheck: number;
 };
 

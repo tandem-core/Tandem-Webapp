@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { clock, doseOf, labelChecks, markerPositions, otherChecks } from './format.ts';
+import { aboutMary, clock, doseOf, labelChecks, markerPositions, otherChecks } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -35,6 +35,10 @@ test('labelChecks skips medicines only mentioned, turned down, or without a sugg
   assert.deepEqual(labelChecks(visit).map((m) => m.id), ['a']);
   // Medicines without a suggested name still need a check if Mary takes them.
   assert.deepEqual(otherChecks(visit).map((m) => m.id), ['d']);
+});
+
+test('aboutMary rewords a summary for Lisa', () => {
+  assert.equal(aboutMary('You and Dr. Smith agreed to lower your dose. You were told you have arthritis.'), 'Mary and Dr. Smith agreed to lower Mary’s dose. Mary was told Mary has arthritis.');
 });
 
 test('clock formats seconds as m:ss', () => {

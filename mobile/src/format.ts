@@ -60,3 +60,14 @@ export function checkReason(med: Medication) {
   if (med.doseNeedsCheck) return `Unclear amount for ${med.nameResolved ? med.heardAs : `“${med.heardAs}”`}`;
   return `Unclear name: “${med.heardAs}”`;
 }
+
+/** Summaries speak to Mary ("your medicine"); Lisa reads them about Mary. Same rules as familyVoice in lib/family-demo-config.ts. */
+export function aboutMary(text: string) {
+  return text
+    .replace(/\byou were\b/gi, 'Mary was')
+    .replace(/\byou are\b/gi, 'Mary is')
+    .replace(/\byou have\b/gi, 'Mary has')
+    .replace(/\byou do\b/gi, 'Mary does')
+    .replace(/\byour\b/gi, 'Mary’s')
+    .replace(/\byou\b/gi, 'Mary');
+}

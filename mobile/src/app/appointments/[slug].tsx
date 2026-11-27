@@ -2,11 +2,12 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useAudioPlayer, useAudioPlayerStatus } from 'expo-audio';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Answer, answerMedication, API_URL, getVisit, Medication, useLoad, Visit } from '@/api';
-import { checkReason, clock, dateParts, doseOf, labelChecks, markerPositions, otherChecks } from '@/format';
+import { setShared, useDemo } from '@/demo';
+import { aboutMary, checkReason, clock, dateParts, doseOf, labelChecks, markerPositions, otherChecks } from '@/format';
 import { colors, text, touch } from '@/theme';
 import { LoadState, styles as ui } from '@/ui';
 
@@ -14,6 +15,8 @@ export default function AppointmentScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const load = useCallback(() => getVisit(slug), [slug]);
   const { data, error, loading, reload } = useLoad(load);
+  const { viewer, shared } = useDemo();
+  const hidden = viewer === 'lisa' && !shared.includes(slug);
 
   return (
     <SafeAreaView style={ui.screen} edges={['top']}>
@@ -25,15 +28,22 @@ export default function AppointmentScreen() {
         <Ionicons name="chevron-back" size={28} color={colors.accent} />
         <Text style={s.backText}>Appointments</Text>
       </Pressable>
-      <LoadState loading={loading} error={error} onRetry={reload} />
-      {data && <AppointmentView visit={data} />}
+      {hidden ? (
+        <Text style={[ui.body, { padding: 20 }]}>Mary hasn’t shared this.</Text>
+      ) : (
+        <>
+          <LoadState loading={loading} error={error} onRetry={reload} />
+          {data && <AppointmentView visit={data} lisa={viewer === 'lisa'} shared={shared.includes(slug)} />}
+        </>
+      )}
     </SafeAreaView>
   );
 }
 
-function AppointmentView({ visit }: { visit: Visit }) {
+function AppointmentView({ visit, lisa, shared }: { visit: Visit; lisa: boolean; shared: boolean }) {
   const player = useAudioPlayer({ uri: API_URL + visit.audioUrl });
   const status = useAudioPlayerStatus(player);
+  const say = lisa ? aboutMary : (t: string) => t;
 
   const startOf = (evidence: number[]) => visit.segments.find((seg) => seg.idx === evidence[0])?.start;
   const moments = visit.followUps
@@ -60,9 +70,16 @@ function AppointmentView({ visit }: { visit: Visit }) {
         <Text style={ui.muted}>
           {month.slice(0, 3)} {day}
         </Text>
+        {!lisa && (
+          <Pressable onPress={() => setShared(visit.slug, !shared)} style={s.shareRow} accessibilityRole="switch" accessibilityState={{ checked: shared }}>
+            <Ionicons name="people" size={24} color={colors.muted} />
+            <Text style={[ui.body, { flex: 1 }]}>Share with Lisa</Text>
+            <Switch value={shared} onValueChange={(on) => setShared(visit.slug, on)} trackColor={{ true: colors.accent }} accessibilityLabel="Share with Lisa" />
+          </Pressable>
+        )}
 
         {labelChecks(visit).map((med) => (
-          <LabelCheck key={med.id} slug={visit.slug} med={med} start={startOf(med.evidence)} onHear={playAt} />
+          <LabelCheck key={med.id} slug={visit.slug} med={med} lisa={lisa} start={startOf(med.evidence)} onHear={playAt} />
         ))}
         {otherChecks(visit).map((med) => {
           const start = startOf(med.evidence);
@@ -72,32 +89,32 @@ function AppointmentView({ visit }: { visit: Visit }) {
                 <Text style={[ui.body, { fontWeight: '700', flex: 1 }]}>{checkReason(med)}</Text>
                 {start !== undefined && <HearButton at={start} onHear={playAt} />}
               </View>
-              <Text style={ui.body}>Ask your pharmacist before changing anything.</Text>
+              <Text style={ui.body}>{lisa ? 'Mary should ask her pharmacist before changing anything.' : 'Ask your pharmacist before changing anything.'}</Text>
             </View>
           );
         })}
 
         <View style={s.row}>
           <Text style={ui.heading}>Summary</Text>
-          <Text style={s.aiBadge}>AI-generated</Text>
+          <Text style={s.aiBadge}>{visit.reviewed ? 'AI-generated' : 'AI-generated · not reviewed'}</Text>
         </View>
-        <Text style={s.headline}>{visit.headline}</Text>
+        <Text style={s.headline}>{say(visit.headline ?? '')}</Text>
 
         <Group
           title="What to do"
           items={[
-            ...moments.map((m, i) => ({ id: m.id, main: m.title, sub: m.when, bold: true, number: i + 1, flag: m.uncheckedMedication, now: current?.id === m.id, start: m.start })),
+            ...moments.map((m, i) => ({ id: m.id, main: say(m.title), sub: m.when, bold: true, number: i + 1, flag: m.uncheckedMedication, now: current?.id === m.id, start: m.start })),
             ...visit.followUps
               .filter((f) => startOf(f.evidence) === undefined)
-              .map((f) => ({ id: f.id, main: f.title, sub: f.when, bold: true })),
+              .map((f) => ({ id: f.id, main: say(f.title), sub: f.when, bold: true })),
           ]}
           onHear={playAt}
         />
-        <Group title="What you were told" items={visit.instructions.map((i) => ({ id: i.id, main: i.text, start: startOf(i.evidence) }))} onHear={playAt} />
-        <Group title="What stayed the same" items={visit.unchanged.map((i) => ({ id: i.id, main: i.text, start: startOf(i.evidence) }))} onHear={playAt} />
+        <Group title={lisa ? 'What Mary was told' : 'What you were told'} items={visit.instructions.map((i) => ({ id: i.id, main: say(i.text), start: startOf(i.evidence) }))} onHear={playAt} />
+        <Group title="What stayed the same" items={visit.unchanged.map((i) => ({ id: i.id, main: say(i.text), start: startOf(i.evidence) }))} onHear={playAt} />
         <Group
           title="Questions to ask"
-          items={visit.openQuestions.map((q) => ({ id: q.id, main: q.text, bold: true, start: startOf(q.evidence) }))}
+          items={visit.openQuestions.map((q) => ({ id: q.id, main: say(q.text), bold: true, start: startOf(q.evidence) }))}
           onHear={playAt}
         />
       </ScrollView>
@@ -112,7 +129,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
             <Ionicons name={status.playing ? 'pause' : 'play'} size={30} color="#fff" />
           </Pressable>
           <Text style={[ui.body, { flex: 1, fontWeight: '600' }]} numberOfLines={1}>
-            {!status.isLoaded ? 'Loading…' : current ? `${moments.indexOf(current) + 1} · ${current.title}` : 'Recording'}
+            {!status.isLoaded ? 'Loading…' : current ? `${moments.indexOf(current) + 1} · ${say(current.title)}` : 'Recording'}
           </Text>
           <Text style={s.time}>
             {clock(status.currentTime)} / {clock(length)}
@@ -132,7 +149,7 @@ function AppointmentView({ visit }: { visit: Visit }) {
   );
 }
 
-function LabelCheck({ slug, med, start, onHear }: { slug: string; med: Medication; start?: number; onHear: (seconds: number) => void }) {
+function LabelCheck({ slug, med, lisa, start, onHear }: { slug: string; med: Medication; lisa: boolean; start?: number; onHear: (seconds: number) => void }) {
   const [answer, setAnswer] = useState(med.ownerAnswer?.answer ?? null);
   const [failed, setFailed] = useState(false);
   const dose = doseOf(med);
@@ -152,6 +169,24 @@ function LabelCheck({ slug, med, start, onHear }: { slug: string; med: Medicatio
     ['no', 'No'],
     ['unsure', 'Not sure'],
   ];
+
+  // Medicine checks are Mary's to answer; Lisa sees where things stand.
+  if (lisa)
+    return (
+      <View style={s.check}>
+        <View style={[s.row, { alignItems: 'flex-start' }]}>
+          <Text style={[ui.heading, { marginTop: 0, flex: 1 }]}>
+            Label check: {med.suggestion?.name}
+            {dose ? ` ${dose}` : ''}
+          </Text>
+          {start !== undefined && <HearButton at={start} onHear={onHear} />}
+        </View>
+        <Text style={ui.body}>{answer ? `Mary said: ${choices.find(([v]) => v === answer)![1]}` : 'Mary hasn’t answered yet.'}</Text>
+        {(answer === 'no' || answer === 'unsure') && (
+          <Text style={[ui.body, { fontWeight: '700' }]}>Mary should check with her pharmacist before changing anything.</Text>
+        )}
+      </View>
+    );
 
   return (
     <View style={s.check}>
@@ -242,6 +277,17 @@ const s = StyleSheet.create({
   back: { flexDirection: 'row', alignItems: 'center', minHeight: touch, paddingHorizontal: 12 },
   backText: { fontSize: text.body, color: colors.accent, fontWeight: '600' },
   row: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  shareRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    minHeight: touch,
+    paddingHorizontal: 14,
+    borderRadius: 14,
+    backgroundColor: colors.card,
+    borderWidth: 1,
+    borderColor: colors.border,
+  },
   aiBadge: { marginTop: 14, fontSize: 15, color: colors.muted },
   link: { minHeight: touch, justifyContent: 'center' },
   linkText: { fontSize: text.body, color: colors.accent, fontWeight: '700' },

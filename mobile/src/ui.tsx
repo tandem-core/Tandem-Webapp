@@ -1,10 +1,22 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Link } from 'expo-router';
-import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { ActivityIndicator, Modal, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { VisitSummary } from '@/api';
+import { setViewer, useDemo, Viewer } from '@/demo';
 import { dateParts } from '@/format';
 import { colors, text, touch } from '@/theme';
+
+function DateTile({ iso }: { iso: string }) {
+  const { month, day } = dateParts(iso);
+  return (
+    <View style={styles.tile}>
+      <Text style={styles.tileMonth}>{month.slice(0, 3).toUpperCase()}</Text>
+      <Text style={styles.tileDay}>{day}</Text>
+    </View>
+  );
+}
 
 export function AppointmentCard({ visit }: { visit: VisitSummary }) {
   const { month, day, weekday } = dateParts(visit.recordedAt);
@@ -14,10 +26,7 @@ export function AppointmentCard({ visit }: { visit: VisitSummary }) {
         style={styles.card}
         accessibilityRole="button"
         accessibilityLabel={`${visit.title}, ${weekday} ${month} ${day}${visit.medicationsToCheck ? ', something to check' : ''}`}>
-        <View style={styles.tile}>
-          <Text style={styles.tileMonth}>{month.slice(0, 3).toUpperCase()}</Text>
-          <Text style={styles.tileDay}>{day}</Text>
-        </View>
+        <DateTile iso={visit.recordedAt} />
         <View style={{ flex: 1, gap: 6 }}>
           <Text style={styles.title}>{visit.title}</Text>
           {visit.medicationsToCheck > 0 && (
@@ -30,6 +39,59 @@ export function AppointmentCard({ visit }: { visit: VisitSummary }) {
         <Ionicons name="chevron-forward" size={26} color={colors.muted} />
       </Pressable>
     </Link>
+  );
+}
+
+/** An appointment Mary hasn't shared: Lisa sees only its title and date. */
+export function NotSharedCard({ visit }: { visit: VisitSummary }) {
+  return (
+    <View style={[styles.card, { opacity: 0.6 }]} accessible accessibilityLabel={`${visit.title}, not shared`}>
+      <DateTile iso={visit.recordedAt} />
+      <Text style={[styles.title, { flex: 1 }]}>{visit.title}</Text>
+      <Ionicons name="lock-closed" size={24} color={colors.muted} />
+    </View>
+  );
+}
+
+const PEOPLE: [Viewer, string, string][] = [
+  ['mary', 'Mary', 'M'],
+  ['lisa', 'Lisa', 'L'],
+];
+
+/** Demo switch between Mary's own view and Lisa's caregiver view. */
+export function ViewerSwitch() {
+  const { viewer } = useDemo();
+  const [open, setOpen] = useState(false);
+  const initial = PEOPLE.find(([id]) => id === viewer)![2];
+  return (
+    <>
+      <Pressable onPress={() => setOpen(true)} style={styles.avatar} accessibilityRole="button" accessibilityLabel="Switch person">
+        <Text style={styles.avatarText}>{initial}</Text>
+      </Pressable>
+      <Modal visible={open} transparent animationType="fade" onRequestClose={() => setOpen(false)}>
+        <Pressable style={styles.scrim} onPress={() => setOpen(false)} accessibilityLabel="Close">
+          <View style={styles.sheet}>
+            {PEOPLE.map(([id, name, letter]) => (
+              <Pressable
+                key={id}
+                onPress={() => {
+                  setViewer(id);
+                  setOpen(false);
+                }}
+                style={styles.person}
+                accessibilityRole="radio"
+                accessibilityState={{ selected: viewer === id }}>
+                <View style={styles.avatar}>
+                  <Text style={styles.avatarText}>{letter}</Text>
+                </View>
+                <Text style={[styles.title, { flex: 1 }]}>{name}</Text>
+                {viewer === id && <Ionicons name="checkmark" size={28} color={colors.accent} />}
+              </Pressable>
+            ))}
+          </View>
+        </Pressable>
+      </Modal>
+    </>
   );
 }
 
@@ -99,4 +161,16 @@ export const styles = StyleSheet.create({
     paddingVertical: 4,
   },
   flagText: { fontSize: text.small, color: colors.amber, fontWeight: '600' },
+  avatar: {
+    width: touch,
+    height: touch,
+    borderRadius: touch / 2,
+    backgroundColor: colors.accentSoft,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  avatarText: { fontSize: text.heading, fontWeight: '700', color: colors.accent },
+  scrim: { flex: 1, backgroundColor: 'rgba(0,0,0,0.35)', justifyContent: 'flex-end' },
+  sheet: { backgroundColor: colors.background, borderTopLeftRadius: 24, borderTopRightRadius: 24, padding: 20, paddingBottom: 40, gap: 8 },
+  person: { flexDirection: 'row', alignItems: 'center', gap: 16, minHeight: 72, paddingHorizontal: 8, borderRadius: 16, backgroundColor: colors.card },
 });
