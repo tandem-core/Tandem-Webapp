@@ -1,8 +1,10 @@
 // Calls the Tandem web API. Shapes come from lib/summaries.mjs in the web app.
 import { useEffect, useState } from 'react';
+import { Platform } from 'react-native';
 
-// `npm run web` points this at a local CORS proxy; see scripts/web.mjs.
-export const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'https://tandemweb.vercel.app';
+// The web build is served by the Next.js site at /phone, so it calls the API on the
+// same site. `npm run web` overrides this with a local CORS proxy (scripts/web.mjs).
+export const API_URL = process.env.EXPO_PUBLIC_API_URL ?? (Platform.OS === 'web' ? '' : 'https://tandemweb.vercel.app');
 
 export type VisitSummary = {
   slug: string;

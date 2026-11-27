@@ -14,6 +14,8 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     // The Expo phone app has its own TypeScript and lint setup.
     "mobile/**",
+    // Its generated web build.
+    "public/phone/**",
   ]),
 ]);
 

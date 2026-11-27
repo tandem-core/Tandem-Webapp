@@ -37,7 +37,8 @@
     "ios": "expo start --ios",
     "web": "node scripts/web.mjs",
     "lint": "expo lint",
-    "test": "node --test src/format.test.mjs"
+    "test": "node --test src/format.test.mjs",
+    "export:web": "expo export --platform web --output-dir ../public/phone --clear"
   },
   "private": true
 }
