@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [{ source: "/phone/:path*", destination: "/phone/index.html" }];
   },
+  // Testing track: ship the ffmpeg binary with the API routes that convert audio
+  // (speech-to-text input and clips). Left unbundled so it finds its own binary.
+  serverExternalPackages: ["ffmpeg-static"],
+  outputFileTracingIncludes: { "/api/**": ["./node_modules/ffmpeg-static/ffmpeg"] },
   turbopack: {
     rules: {
       // Only the Tailwind entry uses this loader; CSS modules use Next's loader.
