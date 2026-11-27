@@ -12,7 +12,7 @@ import { BackButton, styles as ui } from '@/ui';
 
 const SUGGESTIONS = ['My new dose?', 'Next visit?'];
 
-type Entry = { question: string; turn?: Turn; failed?: string };
+type Entry = { question: string; turn?: Turn; failed?: string; readOnly?: boolean };
 
 export default function Ask() {
   const [entries, setEntries] = useState<Entry[]>([]);
@@ -32,11 +32,16 @@ export default function Ask() {
   };
   // The server's voice when it has one, otherwise the phone's. The written answer stays on
   // screen. With the server's voice only the first line (the answer) plays.
-  const say = (turn: Turn) => {
+  const say = async (turn: Turn) => {
     const speak = turn.actions.find((a) => a.type === 'speak');
     const url = speak?.type === 'speak' ? speak.url : null;
-    if (url) play(url);
-    else Speech.speak(answerOf(turn), { rate: 0.9 });
+    if (!url) return Speech.speak(answerOf(turn), { rate: 0.9 });
+    if (!url.includes('check=1')) return play(url);
+    // Checked speech: the server refuses audio that skipped a number or name, so fetch it
+    // first and only play what passed.
+    const res = await fetch(API_URL + url).catch(() => null);
+    if (!res?.ok) return setEntries((e) => e.map((x) => (x.turn === turn ? { ...x, readOnly: true } : x)));
+    play(Platform.OS === 'web' ? URL.createObjectURL(await res.blob()) : url);
   };
 
   const run = async (shown: string, get: () => Promise<Turn>, speak = false) => {
@@ -115,6 +120,7 @@ export default function Ask() {
                       <Ionicons name="volume-high-outline" size={22} color={colors.accent} />
                     </Pressable>
                   </View>
+                  {entry.readOnly && <Text style={ui.muted}>Read the answer on screen.</Text>}
                   {entry.turn.actions.map((a, j) =>
                     a.type === 'play' ? (
                       <Pressable key={j} onPress={() => play(a.url)} style={s.clip} accessibilityRole="button" accessibilityLabel={`Hear it: ${a.text}`}>
