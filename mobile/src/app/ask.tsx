@@ -1,6 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { requestRecordingPermissionsAsync, setAudioModeAsync, useAudioPlayer, useAudioRecorder } from 'expo-audio';
-import { router } from 'expo-router';
 import * as Speech from 'expo-speech';
 import { ComponentRef, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
@@ -8,8 +7,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { API_URL, askSpoken, askTurn, RECORDING, RecordingError, Turn } from '@/api';
 import { answerOf, dateParts } from '@/format';
-import { colors, text, touch } from '@/theme';
-import { styles as ui } from '@/ui';
+import { colors } from '@/theme';
+import { BackButton, styles as ui } from '@/ui';
 
 const SUGGESTIONS = ['What’s my new dose?', 'When’s my follow-up?'];
 
@@ -84,21 +83,21 @@ export default function Ask() {
 
   return (
     <SafeAreaView style={ui.screen} edges={['top']}>
-      <Pressable onPress={() => router.back()} style={s.back} accessibilityRole="button" accessibilityLabel="Back">
-        <Ionicons name="chevron-back" size={28} color={colors.accent} />
-        <Text style={s.backText}>Home</Text>
-      </Pressable>
+      <BackButton label="Home" fallback="/" />
       <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         <ScrollView ref={scroll} contentContainerStyle={ui.content}>
           <Text style={ui.pageTitle} accessibilityRole="header">
             Ask
           </Text>
-          {entries.length === 0 &&
-            SUGGESTIONS.map((q) => (
-              <Pressable key={q} onPress={() => ask(q)} style={s.chip} accessibilityRole="button">
-                <Text style={s.chipText}>{q}</Text>
-              </Pressable>
-            ))}
+          {entries.length === 0 && (
+            <View style={s.chips}>
+              {SUGGESTIONS.map((q) => (
+                <Pressable key={q} onPress={() => ask(q)} style={s.chip} accessibilityRole="button">
+                  <Text style={s.chipText}>{q}</Text>
+                </Pressable>
+              ))}
+            </View>
+          )}
           {entries.map((entry, i) => (
             <View key={i} style={{ gap: 10 }}>
               <Text style={s.question}>{entry.question}</Text>
@@ -113,14 +112,14 @@ export default function Ask() {
                       style={s.icon}
                       accessibilityRole="button"
                       accessibilityLabel="Read aloud">
-                      <Ionicons name="volume-high" size={26} color={colors.accent} />
+                      <Ionicons name="volume-high-outline" size={22} color={colors.accent} />
                     </Pressable>
                   </View>
                   {entry.turn.actions.map((a, j) =>
                     a.type === 'play' ? (
                       <Pressable key={j} onPress={() => play(a.url)} style={s.clip} accessibilityRole="button" accessibilityLabel={`Hear it: ${a.text}`}>
-                        <Ionicons name="play" size={20} color={colors.accent} />
-                        <Text style={[ui.muted, { flex: 1 }]} numberOfLines={2}>
+                        <Ionicons name="play" size={14} color={colors.accentDark} />
+                        <Text style={[ui.muted, { flex: 1, fontSize: 14.5 }]} numberOfLines={2}>
                           “{a.text}”
                         </Text>
                       </Pressable>
@@ -153,7 +152,7 @@ export default function Ask() {
         </ScrollView>
         <View style={s.bar}>
           {listening ? (
-            <Text style={[s.input, { lineHeight: touch, color: colors.accent, fontWeight: '700' }]}>Listening… tap to send</Text>
+            <Text style={[s.input, { lineHeight: 45, color: colors.accent, fontWeight: '700' }]}>Listening… tap to send</Text>
           ) : (
             <TextInput
               value={draft}
@@ -168,7 +167,7 @@ export default function Ask() {
           )}
           {draft.trim() && !listening ? (
             <Pressable onPress={() => ask(draft)} disabled={busy} style={[s.send, busy && { opacity: 0.4 }]} accessibilityRole="button" accessibilityLabel="Send">
-              <Ionicons name="arrow-up" size={28} color="#fff" />
+              <Ionicons name="arrow-up" size={22} color="#fff" />
             </Pressable>
           ) : (
             <Pressable
@@ -177,7 +176,7 @@ export default function Ask() {
               style={[s.send, busy && { opacity: 0.4 }]}
               accessibilityRole="button"
               accessibilityLabel={listening ? 'Send spoken question' : 'Speak a question'}>
-              <Ionicons name={listening ? 'stop' : 'mic'} size={28} color="#fff" />
+              <Ionicons name={listening ? 'stop' : 'mic-outline'} size={22} color="#fff" />
             </Pressable>
           )}
         </View>
@@ -187,26 +186,27 @@ export default function Ask() {
 }
 
 const s = StyleSheet.create({
-  back: { flexDirection: 'row', alignItems: 'center', minHeight: touch, paddingHorizontal: 12 },
-  backText: { fontSize: text.body, color: colors.accent, fontWeight: '600' },
-  chip: { minHeight: touch, justifyContent: 'center', paddingHorizontal: 18, borderRadius: 16, borderWidth: 2, borderColor: colors.accent, backgroundColor: '#fff' },
-  chipText: { fontSize: text.body, color: colors.accent, fontWeight: '700' },
+  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  chip: { minHeight: 44, justifyContent: 'center', paddingHorizontal: 14, borderRadius: 22, backgroundColor: '#f3e9e2' },
+  chipText: { fontSize: 15.5, color: '#7a4a38', fontWeight: '600' },
   question: {
     alignSelf: 'flex-end',
     maxWidth: '85%',
-    fontSize: text.body,
+    fontSize: 16,
+    lineHeight: 22,
     color: '#fff',
     backgroundColor: colors.accent,
     borderRadius: 18,
-    paddingHorizontal: 16,
-    paddingVertical: 10,
+    borderBottomRightRadius: 6,
+    paddingHorizontal: 14,
+    paddingVertical: 9,
     overflow: 'hidden',
   },
-  answerBox: { backgroundColor: colors.card, borderRadius: 18, borderWidth: 1, borderColor: colors.border, padding: 16, gap: 8 },
-  answer: { fontSize: text.body, lineHeight: 28, color: colors.text },
-  icon: { width: touch, height: touch, alignItems: 'center', justifyContent: 'center', marginTop: -12, marginRight: -12 },
-  clip: { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: touch },
-  bar: { flexDirection: 'row', alignItems: 'center', gap: 10, padding: 12, borderTopWidth: 1, borderColor: colors.border, backgroundColor: '#fff' },
-  input: { flex: 1, minHeight: touch, fontSize: text.body, color: colors.text, paddingHorizontal: 16, borderRadius: 16, backgroundColor: colors.background },
-  send: { width: touch, height: touch, borderRadius: touch / 2, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center' },
+  answerBox: { backgroundColor: colors.card, borderRadius: 18, borderBottomLeftRadius: 6, borderWidth: 1, borderColor: colors.border, padding: 14, gap: 6 },
+  answer: { fontSize: 16, lineHeight: 24, color: colors.body },
+  icon: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center', marginTop: -10, marginRight: -10 },
+  clip: { flexDirection: 'row', alignItems: 'center', gap: 10, minHeight: 44, paddingHorizontal: 10, borderRadius: 12, backgroundColor: colors.accentSoft },
+  bar: { flexDirection: 'row', alignItems: 'center', gap: 8, paddingHorizontal: 12, paddingVertical: 8, borderTopWidth: 1, borderColor: '#eee6de', backgroundColor: '#fff' },
+  input: { flex: 1, height: 48, fontSize: 16, color: colors.text, paddingHorizontal: 16, borderRadius: 24, borderWidth: 1.5, borderColor: '#e3d5ca', backgroundColor: '#fff' },
+  send: { width: 46, height: 46, borderRadius: 23, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center' },
 });

@@ -5,8 +5,8 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { NOTHING, Parts, setSharing, useDemo } from '@/demo';
-import { colors, text, touch } from '@/theme';
-import { styles as ui } from '@/ui';
+import { colors } from '@/theme';
+import { BackButton, styles as ui } from '@/ui';
 
 const OPTIONS: [keyof Parts, string, string][] = [
   ['summary', 'Summary', 'What was decided and what to do next'],
@@ -28,10 +28,7 @@ export default function Sharing() {
 
   return (
     <SafeAreaView style={ui.screen} edges={['top']}>
-      <Pressable onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} style={s.back} accessibilityRole="button" accessibilityLabel="Back">
-        <Ionicons name="chevron-back" size={28} color={colors.accent} />
-        <Text style={s.backText}>Home</Text>
-      </Pressable>
+      <BackButton label="Home" fallback="/" />
       <ScrollView contentContainerStyle={ui.content}>
         <Text style={ui.pageTitle} accessibilityRole="header">
           What Lisa sees
@@ -47,9 +44,9 @@ export default function Sharing() {
               accessibilityRole="checkbox"
               aria-checked={on}
               accessibilityLabel={`${name}: ${example}`}>
-              <Ionicons name={on ? 'checkbox' : 'square-outline'} size={32} color={on ? colors.accent : colors.muted} />
+              <Ionicons name={on ? 'checkbox' : 'square-outline'} size={26} color={on ? colors.accent : '#b3a89f'} />
               <View style={{ flex: 1, gap: 2 }}>
-                <Text style={[ui.body, { fontWeight: '700' }]}>{name}</Text>
+                <Text style={ui.title}>{name}</Text>
                 <Text style={ui.muted}>{example}</Text>
               </View>
             </Pressable>
@@ -64,16 +61,15 @@ export default function Sharing() {
 }
 
 const s = StyleSheet.create({
-  back: { flexDirection: 'row', alignItems: 'center', minHeight: touch, paddingHorizontal: 12 },
-  backText: { fontSize: text.body, color: colors.accent, fontWeight: '600' },
   option: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 14,
-    minHeight: 76,
-    padding: 14,
+    gap: 12,
+    minHeight: 64,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
     borderRadius: 16,
-    borderWidth: 2,
+    borderWidth: 1.5,
     borderColor: colors.border,
     backgroundColor: colors.card,
   },
