@@ -1,52 +1,85 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useAudioPlayer } from 'expo-audio';
+import { requestRecordingPermissionsAsync, setAudioModeAsync, useAudioPlayer, useAudioRecorder } from 'expo-audio';
 import { router } from 'expo-router';
 import * as Speech from 'expo-speech';
 import { ComponentRef, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { API_URL, askTurn, Turn } from '@/api';
+import { API_URL, askSpoken, askTurn, RECORDING, RecordingError, Turn } from '@/api';
 import { answerOf, dateParts } from '@/format';
 import { colors, text, touch } from '@/theme';
 import { styles as ui } from '@/ui';
 
 const SUGGESTIONS = ['What’s my new dose?', 'When’s my follow-up?'];
 
-type Entry = { question: string; turn?: Turn; failed?: boolean };
+type Entry = { question: string; turn?: Turn; failed?: string };
 
 export default function Ask() {
   const [entries, setEntries] = useState<Entry[]>([]);
   const [draft, setDraft] = useState('');
   const [busy, setBusy] = useState(false);
+  const [listening, setListening] = useState(false);
   const session = useRef<string | undefined>(undefined);
   const scroll = useRef<ComponentRef<typeof ScrollView>>(null);
   const player = useAudioPlayer(null);
+  const recorder = useAudioRecorder(RECORDING);
   const last = entries.at(-1)?.turn;
 
-  const send = async (shown: string, body: { event: 'question' | 'choose'; text?: string; slug?: string }) => {
-    if (busy || !shown.trim()) return;
+  const play = (url: string) => {
     Speech.stop();
+    player.replace({ uri: url.startsWith('/') ? API_URL + url : url });
+    player.play();
+  };
+  // The server's voice when it has one, otherwise the phone's. The written answer stays on
+  // screen. With the server's voice only the first line (the answer) plays.
+  const say = (turn: Turn) => {
+    const speak = turn.actions.find((a) => a.type === 'speak');
+    const url = speak?.type === 'speak' ? speak.url : null;
+    if (url) play(url);
+    else Speech.speak(answerOf(turn), { rate: 0.9 });
+  };
+
+  const run = async (shown: string, get: () => Promise<Turn>, speak = false) => {
+    Speech.stop();
+    player.pause();
     setBusy(true);
     setDraft('');
     setEntries((e) => [...e, { question: shown }]);
     try {
-      const turn = await askTurn({ ...body, sessionId: session.current });
+      const turn = await get();
       session.current = turn.sessionId;
-      setEntries((e) => [...e.slice(0, -1), { question: shown, turn }]);
-    } catch {
-      setEntries((e) => [...e.slice(0, -1), { question: shown, failed: true }]);
+      setEntries((e) => [...e.slice(0, -1), { question: turn.heard || shown, turn }]);
+      if (speak) say(turn);
+    } catch (err) {
+      const failed = err instanceof RecordingError && err.code !== 'offline' ? 'Spoken questions aren’t available right now. Please type.' : 'Couldn’t send. Check your internet.';
+      setEntries((e) => [...e.slice(0, -1), { question: shown, failed }]);
     } finally {
       setBusy(false);
       setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 100);
     }
   };
+  const send = (shown: string, body: { event: 'question' | 'choose'; text?: string; slug?: string }) => {
+    if (!busy && shown.trim()) run(shown, () => askTurn({ ...body, sessionId: session.current }));
+  };
   const ask = (q: string) => send(q, { event: 'question', text: q });
 
-  const playClip = (url: string) => {
+  const talk = async () => {
+    if (listening) {
+      setListening(false);
+      await recorder.stop();
+      await setAudioModeAsync({ allowsRecording: false, playsInSilentMode: true });
+      const uri = recorder.uri;
+      if (uri) run('Spoken question', () => askSpoken(uri, session.current), true);
+      return;
+    }
+    if (busy || !(await requestRecordingPermissionsAsync()).granted) return;
     Speech.stop();
-    player.replace({ uri: url.startsWith('/') ? API_URL + url : url });
-    player.play();
+    player.pause();
+    await setAudioModeAsync({ allowsRecording: true, playsInSilentMode: true });
+    await recorder.prepareToRecordAsync();
+    recorder.record();
+    setListening(true);
   };
 
   return (
@@ -69,14 +102,14 @@ export default function Ask() {
           {entries.map((entry, i) => (
             <View key={i} style={{ gap: 10 }}>
               <Text style={s.question}>{entry.question}</Text>
-              {entry.failed && <Text style={s.answer}>Couldn’t send. Check your internet.</Text>}
+              {entry.failed && <Text style={s.answer}>{entry.failed}</Text>}
               {!entry.turn && !entry.failed && <Text style={[s.answer, { color: colors.muted }]}>…</Text>}
               {entry.turn && (
                 <View style={s.answerBox}>
                   <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 8 }}>
                     <Text style={[s.answer, { flex: 1 }]}>{answerOf(entry.turn)}</Text>
                     <Pressable
-                      onPress={() => Speech.speak(answerOf(entry.turn!), { rate: 0.9 })}
+                      onPress={() => say(entry.turn!)}
                       style={s.icon}
                       accessibilityRole="button"
                       accessibilityLabel="Read aloud">
@@ -85,7 +118,7 @@ export default function Ask() {
                   </View>
                   {entry.turn.actions.map((a, j) =>
                     a.type === 'play' ? (
-                      <Pressable key={j} onPress={() => playClip(a.url)} style={s.clip} accessibilityRole="button" accessibilityLabel={`Hear it: ${a.text}`}>
+                      <Pressable key={j} onPress={() => play(a.url)} style={s.clip} accessibilityRole="button" accessibilityLabel={`Hear it: ${a.text}`}>
                         <Ionicons name="play" size={20} color={colors.accent} />
                         <Text style={[ui.muted, { flex: 1 }]} numberOfLines={2}>
                           “{a.text}”
@@ -119,19 +152,34 @@ export default function Ask() {
           )}
         </ScrollView>
         <View style={s.bar}>
-          <TextInput
-            value={draft}
-            onChangeText={setDraft}
-            onSubmitEditing={() => ask(draft)}
-            placeholder="Ask about your appointments"
-            placeholderTextColor={colors.muted}
-            style={s.input}
-            returnKeyType="send"
-            accessibilityLabel="Your question"
-          />
-          <Pressable onPress={() => ask(draft)} disabled={busy || !draft.trim()} style={[s.send, (busy || !draft.trim()) && { opacity: 0.4 }]} accessibilityRole="button" accessibilityLabel="Send">
-            <Ionicons name="arrow-up" size={28} color="#fff" />
-          </Pressable>
+          {listening ? (
+            <Text style={[s.input, { lineHeight: touch, color: colors.accent, fontWeight: '700' }]}>Listening… tap to send</Text>
+          ) : (
+            <TextInput
+              value={draft}
+              onChangeText={setDraft}
+              onSubmitEditing={() => ask(draft)}
+              placeholder="Ask about your appointments"
+              placeholderTextColor={colors.muted}
+              style={s.input}
+              returnKeyType="send"
+              accessibilityLabel="Your question"
+            />
+          )}
+          {draft.trim() && !listening ? (
+            <Pressable onPress={() => ask(draft)} disabled={busy} style={[s.send, busy && { opacity: 0.4 }]} accessibilityRole="button" accessibilityLabel="Send">
+              <Ionicons name="arrow-up" size={28} color="#fff" />
+            </Pressable>
+          ) : (
+            <Pressable
+              onPress={talk}
+              disabled={busy}
+              style={[s.send, busy && { opacity: 0.4 }]}
+              accessibilityRole="button"
+              accessibilityLabel={listening ? 'Send spoken question' : 'Speak a question'}>
+              <Ionicons name={listening ? 'stop' : 'mic'} size={28} color="#fff" />
+            </Pressable>
+          )}
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>

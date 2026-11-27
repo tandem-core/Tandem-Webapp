@@ -1,22 +1,16 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { RecordingPresets, requestRecordingPermissionsAsync, setAudioModeAsync, useAudioRecorder, useAudioRecorderState } from 'expo-audio';
+import { requestRecordingPermissionsAsync, setAudioModeAsync, useAudioRecorder, useAudioRecorderState } from 'expo-audio';
 import { useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { RecordingError, uploadRecording, VisitSummary } from '@/api';
+import { RECORDING, RecordingError, uploadRecording, VisitSummary } from '@/api';
 import { clock } from '@/format';
 import { colors, text, touch } from '@/theme';
 import { AppointmentCard, styles as ui } from '@/ui';
 
 // Mono speech at 48 kbps. Vercel accepts uploads up to about 4.5 MB, so recordings stop
 // at 10 minutes. shortcut: longer appointments need direct upload to storage.
-const OPTIONS = {
-  ...RecordingPresets.HIGH_QUALITY,
-  numberOfChannels: 1,
-  bitRate: 48000,
-  web: { mimeType: 'audio/webm', bitsPerSecond: 48000 },
-};
 const MAX_MS = 10 * 60 * 1000;
 
 type Stage =
@@ -28,7 +22,7 @@ type Stage =
   | { name: 'failed'; uri: string; canRetry: boolean };
 
 export default function Record() {
-  const recorder = useAudioRecorder(OPTIONS);
+  const recorder = useAudioRecorder(RECORDING);
   const recorderState = useAudioRecorderState(recorder, 500);
   const [stage, setStage] = useState<Stage>({ name: 'idle' });
   const limit = useRef<ReturnType<typeof setTimeout>>(undefined);

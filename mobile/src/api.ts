@@ -1,4 +1,5 @@
 // Calls the Tandem web API. Shapes come from lib/summaries.mjs in the web app.
+import { RecordingPresets } from 'expo-audio';
 import { useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useState } from 'react';
 import { Platform } from 'react-native';
@@ -103,7 +104,15 @@ export class RecordingError extends Error {
   }
 }
 
-export async function uploadRecording(uri: string): Promise<VisitSummary> {
+// Mono speech at 48 kbps, for appointments and spoken questions.
+export const RECORDING = {
+  ...RecordingPresets.HIGH_QUALITY,
+  numberOfChannels: 1,
+  bitRate: 48000,
+  web: { mimeType: 'audio/webm', bitsPerSecond: 48000 },
+};
+
+async function audioForm(uri: string) {
   const form = new FormData();
   if (Platform.OS === 'web') {
     // The browser records webm; send the plain type so the server stores it as .webm.
@@ -112,6 +121,23 @@ export async function uploadRecording(uri: string): Promise<VisitSummary> {
   } else {
     form.append('audio', { uri, name: 'recording.m4a', type: 'audio/mp4' } as unknown as Blob);
   }
+  return form;
+}
+
+/** A spoken question, sent to the same voice turn route as the device uses. */
+export async function askSpoken(uri: string, sessionId?: string): Promise<Turn> {
+  const form = await audioForm(uri);
+  form.append('event', 'question');
+  if (sessionId) form.append('sessionId', sessionId);
+  const res = await fetch(API_URL + '/api/voice/turn', { method: 'POST', body: form }).catch(() => null);
+  if (!res) throw new RecordingError('offline');
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new RecordingError(body?.error?.code ?? String(res.status));
+  return body;
+}
+
+export async function uploadRecording(uri: string): Promise<VisitSummary> {
+  const form = await audioForm(uri);
   const res = await fetch(API_URL + '/api/recordings', { method: 'POST', body: form }).catch(() => null);
   if (!res) throw new RecordingError('offline');
   const body = await res.json().catch(() => null);
