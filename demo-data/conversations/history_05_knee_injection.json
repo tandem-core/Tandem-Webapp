@@ -1,0 +1,469 @@
+{
+  "id": "history:05_knee_injection",
+  "source": "history",
+  "sourceId": "05_knee_injection",
+  "title": "Knee injection follow-up",
+  "recordedAt": "2025-10-14T18:00:00.000Z",
+  "durationSec": 173,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 2.04,
+      "text": "Hello again, Mary. It's been 3 months."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.16,
+      "end": 2.939,
+      "text": "How's the right knee?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 3.36,
+      "end": 6.08,
+      "text": "Hello, Dr. Okafor. Better than it was."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 6.36,
+      "end": 12.12,
+      "text": "The exercises help, but the stairs are still hard, and the last couple of weeks, it's been aching at night."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.52,
+      "end": 15.56,
+      "text": "Are you still doing the home exercises since the therapy finished?"
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16.16,
+      "end": 19.519,
+      "text": "Most days. The leg raises and the one with the chair."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 20.4,
+      "end": 22.28,
+      "text": "I'm not so good about the stretching."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 22.8,
+      "end": 23.719,
+      "text": "Most days is good."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 24.6,
+      "end": 28.665,
+      "text": "On a scale of 0 to 10, how bad is the pain on a typical day?"
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 29.145,
+      "end": 31.585,
+      "text": "About a 6. At night, maybe a 7."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 32.065,
+      "end": 33.824,
+      "text": "And how are you taking the acetaminophen?"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 34.225,
+      "end": 38.065,
+      "text": "2 in the morning and 2 at night, sometimes 2- 2 at lunch as well."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 38.545,
+      "end": 43.824,
+      "text": "That's within the limit, as long as it's no more than 6 tablets, which is 3,000 milligrams, in a day."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 44.305,
+      "end": 45.345,
+      "text": "I've never gone over."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 46.225,
+      "end": 48.984,
+      "text": "Lisa counts them for me, a little box."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 49.265,
+      "end": 50.969,
+      "text": "Good. Let me examine the knee."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 51.49,
+      "end": 56.389,
+      "text": "There's a little fluid in the joint and some tenderness on the inside, but no redness or warmth."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 56.77,
+      "end": 58.369,
+      "text": "You're bending it better than in July."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 58.89,
+      "end": 60.89,
+      "text": "Last time we talked about a steroid injection."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 61.17,
+      "end": 62.85,
+      "text": "I think now is a reasonable time."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 63.21,
+      "end": 68.13,
+      "text": "It's a corticosteroid called triamcinolone, injected directly into the knee joint."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 68.81,
+      "end": 72.33,
+      "text": "It should calm the inflammation and ease the pain for a few months."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 72.81,
+      "end": 73.649,
+      "text": "Does it hurt?"
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 74.67,
+      "end": 76.194,
+      "text": "A sting for a few seconds."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 76.675,
+      "end": 77.955,
+      "text": "We numb the skin first."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 78.675,
+      "end": 81.514,
+      "text": "Some people have a bit of extra soreness for a day or two afterward."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 81.915,
+      "end": 83.175,
+      "text": "Will it affect my blood pressure?"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 83.355,
+      "end": 86.034,
+      "text": "Dr. Smith is very particular about that."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 86.635,
+      "end": 89.394,
+      "text": "They stopped one of my pills last month."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 89.675,
+      "end": 90.554,
+      "text": "That's a good question."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 90.995,
+      "end": 94.815,
+      "text": "A single injection into the joint has only a small effect on the rest of the body."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 95.435,
+      "end": 97.815,
+      "text": "Your blood pressure might go up a little for a day or two."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 98.435,
+      "end": 100.579,
+      "text": "Keep taking your blood pressure medicine as normal."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 100.94,
+      "end": 102.499,
+      "text": "All right, let's do it."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 102.9,
+      "end": 105.159,
+      "text": "Okay, Mary, lie back and relax your leg."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 105.74,
+      "end": 109.799,
+      "text": "Cold spray first, small pinch now, and that's done."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 110.34,
+      "end": 111.22,
+      "text": "You did very well."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 111.66,
+      "end": 112.62,
+      "text": "That wasn't bad at all."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 113.46,
+      "end": 115.52,
+      "text": "For the next 48 hours, take it easy."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 116.06,
+      "end": 120.299,
+      "text": "No long walks. Use ice for 15 minutes a few times a day if it's sore."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 120.74,
+      "end": 122.46,
+      "text": "After that, go back to your exercises."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 123.085,
+      "end": 124.464,
+      "text": "Please continue the exercises."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 124.805,
+      "end": 129.045,
+      "text": "They're still the most important part of the treatment, even if the injection makes it feel much better."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 129.525,
+      "end": 130.564,
+      "text": "I'll keep doing them."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 131.445,
+      "end": 132.404,
+      "text": "Even the stretching."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 132.845,
+      "end": 137.365,
+      "text": "Keep using acetaminophen as before, up to two tablets three times a day if you need it."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 137.765,
+      "end": 138.945,
+      "text": "You may find you need less."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 139.485,
+      "end": 140.784,
+      "text": "Watch for signs of infection."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 141.325,
+      "end": 147.749,
+      "text": "If the knee becomes hot, red, very swollen, or you get a fever in the next few days, call us right away."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 148.27,
+      "end": 151.309,
+      "text": "Hot, red, fever."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 152.91,
+      "end": 153.269,
+      "text": "Call."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 153.51,
+      "end": 156.99,
+      "text": "These injections can be repeated, but not more often than every 3 months."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 157.47,
+      "end": 161.669,
+      "text": "I'll see you in 4 months, around February, to see how long this one lasted."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 162.07,
+      "end": 166.71,
+      "text": "February. Okay. Any other questions I should ask, do you think?"
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 167.15,
+      "end": 167.949,
+      "text": "You've covered it well."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 168.39,
+      "end": 171.669,
+      "text": "Just keep moving. A short walk every day is good for that knee."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 171.99,
+      "end": 172.829,
+      "text": "Thank you, doctor."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:53:05.861Z"
+}

@@ -1,0 +1,461 @@
+{
+  "id": "history:09_pharmacy_refill_call",
+  "source": "history",
+  "sourceId": "09_pharmacy_refill_call",
+  "title": "Pharmacy refill call",
+  "recordedAt": "2026-02-17T17:30:00.000Z",
+  "durationSec": 191,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 2.68,
+      "text": "Elm Street Pharmacy, this is Sam, the pharmacist."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.76,
+      "end": 3.479,
+      "text": "How can I help you?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 3.92,
+      "end": 5.779,
+      "text": "Hello, Sam, it's Mary James."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 5.94,
+      "end": 12.28,
+      "text": "I need a refill on my blood pressure pill, and I have a question, if you have a minute."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.72,
+      "end": 13.72,
+      "text": "Of course. Hi, Mary."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 13.84,
+      "end": 15.52,
+      "text": "Can you confirm your address for me?"
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16,
+      "end": 17.08,
+      "text": "14 Bursch Lane."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 17.84,
+      "end": 20.159,
+      "text": "Thanks. Which medicine do you need?"
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 20.6,
+      "end": 23.12,
+      "text": "The ramipril, the 10."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 23.4,
+      "end": 24.719,
+      "text": "I've got 4 left."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 25.24,
+      "end": 29.147,
+      "text": "I see ramipril 10 milligram capsules, one once a day from Dr."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 29.228,
+      "end": 33.068,
+      "text": "Smith. You have refills left, so I'll get that ready."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 33.787,
+      "end": 37.107,
+      "text": "And I see the atorvastatin is due next week too."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 37.348,
+      "end": 40.387,
+      "text": "Oh yes, do that one as well, the cholesterol one."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 40.828,
+      "end": 43.587,
+      "text": "Atorvastatin 20 milligrams, one at bedtime."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 43.668,
+      "end": 46.348,
+      "text": "I'll do both. They'll be ready after 3 o'clock today."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 46.867,
+      "end": 48.387,
+      "text": "Lisa will pick them up after work."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 48.828,
+      "end": 53.815,
+      "text": "And the lansoprazole, you got a 90-day supply last month, so you're fine on that for a while."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 54.376,
+      "end": 55.896,
+      "text": "That's the one for the heartburn."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 56.136,
+      "end": 57.495,
+      "text": "It's working, thank goodness."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 58.016,
+      "end": 58.616,
+      "text": "Glad to hear it."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 58.656,
+      "end": 59.456,
+      "text": "What was your question?"
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 59.896,
+      "end": 63.936,
+      "text": "I've got a terrible cold, stuffy nose, I can't breathe at night."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 64.536,
+      "end": 70.215,
+      "text": "Lisa bought me a cold and sinus tablet, a daytime one, and I wanted to check before I take it."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 70.616,
+      "end": 73.643,
+      "text": "Good thinking. Can you read me the active ingredients on the box?"
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 73.884,
+      "end": 75.283,
+      "text": "It'll be on the back near the top."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 75.524,
+      "end": 76.444,
+      "text": "Hold on, my glasses."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 77.084,
+      "end": 82.584,
+      "text": "Acetaminophen 325 milligrams and phenol..."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 84.084,
+      "end": 87.563,
+      "text": "no, pseudoephedrine. Pseudoephedrine 30 milligrams."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 88.003,
+      "end": 90.563,
+      "text": "Okay. I'd recommend you don't take that one."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 91.684,
+      "end": 93.803,
+      "text": "Pseudoephedrine is a decongestant."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 94.444,
+      "end": 102.072,
+      "text": "It narrows the blood vessels, so it can raise your blood pressure and your heart rate, and it works against your ramipril."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 102.472,
+      "end": 103.951,
+      "text": "Oh dear, I'm glad I asked."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 104.352,
+      "end": 105.951,
+      "text": "It also has acetaminophen in it."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 106.032,
+      "end": 108.352,
+      "text": "You take acetaminophen for your knee, right?"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 108.832,
+      "end": 112.671,
+      "text": "Yes, 2 tablets up to 3 times a day, mostly just morning and night now."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 113.512,
+      "end": 118.792,
+      "text": "So if you took both, you could go over the 3,000 milligram daily limit Dr."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 118.872,
+      "end": 121.3,
+      "text": "Smith gave you without realizing."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 122.06,
+      "end": 123.86,
+      "text": "That's another reason to skip it."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 124.22,
+      "end": 124.939,
+      "text": "So what can I take?"
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 125.02,
+      "end": 125.619,
+      "text": "I'm miserable."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 126.06,
+      "end": 133.18,
+      "text": "For the stuffy nose, a saltwater nasal spray, saline, is safe, and you can use it as often as you like."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 134.419,
+      "end": 139.66,
+      "text": "Steam from a hot shower helps too, and honey in warm water or tea for the throat."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 139.94,
+      "end": 146.567,
+      "text": "For aches or a fever, keep using your regular acetaminophen, staying under 3,000 milligrams a day in total."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 147.168,
+      "end": 148.988,
+      "text": "Saline spray, is that over the counter?"
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 149.328,
+      "end": 155.608,
+      "text": "Yes. I'll put one in the bag with your prescriptions so Lisa can pick it all up at once."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 156.127,
+      "end": 159.647,
+      "text": "Thank you. And the cold tablets, should I bring them back?"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 160.127,
+      "end": 163.927,
+      "text": "If the box is unopened, bring it in and we'll see what we can do."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 165.368,
+      "end": 171.076,
+      "text": "In general, before buying any cold or allergy medicine, check with us first."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 172.076,
+      "end": 173.995,
+      "text": "Many of them have decongestants in them."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 174.476,
+      "end": 176.276,
+      "text": "I will. I'll tell Lisa too."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 176.796,
+      "end": 184.576,
+      "text": "One more thing. If you get a fever over 101, any trouble breathing, or the cold isn't getting better after 10 days, call Dr."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 184.676,
+      "end": 185.395,
+      "text": "Smith's office."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 185.716,
+      "end": 187.695,
+      "text": "10 days. Okay. Thank you, Sam."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 187.996,
+      "end": 188.996,
+      "text": "You're always so helpful."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 189.436,
+      "end": 191.476,
+      "text": "You're welcome, Mary. Feel better soon."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:55:59.920Z"
+}

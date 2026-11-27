@@ -1,0 +1,172 @@
+{
+  "conversationId": "history:09_pharmacy_refill_call",
+  "headline": "Sam at Elm Street Pharmacy arranged your two refills and recommended saltwater nasal spray instead of the daytime cold and sinus tablet.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Pick up your refills and nasal spray",
+      "detail": "Lisa plans to pick up your bag at Elm Street Pharmacy after work. It will contain ramipril 10 mg capsules (one a day), atorvastatin 20 mg (one at bedtime), and an over-the-counter saltwater nasal spray.",
+      "dueBy": null,
+      "when": "Ready after 3 p.m. today (February 17, 2026)",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        0,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        44,
+        45
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Bring in the cold tablets if the box is unopened",
+      "detail": "Bring the unopened box to Elm Street Pharmacy so Sam can see what the pharmacy can do.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        0,
+        46,
+        47
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Skip the daytime cold and sinus tablet. Its pseudoephedrine (30 mg) can raise your blood pressure and heart rate and work against your ramipril. It also contains acetaminophen (325 mg), which could put you over your daily limit if you take it with your regular acetaminophen.",
+      "confidence": "check_this",
+      "evidence": [
+        23,
+        27,
+        28,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Use the saltwater nasal spray for your stuffy nose as often as you like.",
+      "confidence": "check_this",
+      "evidence": [
+        41
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Steam from a hot shower can help your stuffy nose. Try honey in warm water or tea for your throat.",
+      "confidence": "check_this",
+      "evidence": [
+        41,
+        42
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "For aches or fever, use your regular acetaminophen. Keep your total under 3,000 mg a day.",
+      "confidence": "check_this",
+      "evidence": [
+        34,
+        35,
+        36,
+        37,
+        43
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "Check with the pharmacy before buying any cold or allergy medicine.",
+      "confidence": "check_this",
+      "evidence": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "Call Dr. Smith’s office if you get a fever over 101 degrees, have any trouble breathing, or your cold isn’t getting better after 10 days.",
+      "confidence": "check_this",
+      "evidence": [
+        51,
+        52,
+        53
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "You don’t need a lansoprazole refill now. You got a 90-day supply in January 2026.",
+      "evidence": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "You can keep using your regular acetaminophen.",
+      "evidence": [
+        34,
+        35,
+        43
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Can the pharmacy take back your cold and sinus tablets?",
+      "resolvesWhen": "If the box is unopened, bring it in so the pharmacy can see what it can do.",
+      "evidence": [
+        46,
+        47
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:56:31.157Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2551,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1688,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 186,
+      "engine_ttlt_ms": 15104,
+      "pre_inference_ms": 152,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 507,
+      "service_ttlt_ms": 15406,
+      "user_visible_ttft_ms": 355
+    },
+    "prompt_tokens": 2458,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2455,
+      "cached_tokens": 0
+    },
+    "total_tokens": 5009
+  }
+}

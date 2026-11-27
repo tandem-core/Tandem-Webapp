@@ -1,0 +1,319 @@
+{
+  "conversationId": "history:03_cholesterol_results",
+  "generatedAt": "2026-11-27T21:51:09.206Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to keep taking ramipril at the current dose because kidney function and potassium were fine.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            9
+          ]
+        },
+        {
+          "text": "10 milligrams in the morning",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        9,
+        43
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin",
+        "Atorvastatin",
+        "Ator-"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The doctor started atorvastatin at bedtime for high cholesterol and asked Mary to call if she develops unexplained muscle pain or weakness.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams, one tablet at night",
+          "unclear": false,
+          "evidence": [
+            17
+          ]
+        },
+        {
+          "text": "At night",
+          "unclear": false,
+          "evidence": [
+            18
+          ]
+        },
+        {
+          "text": "20",
+          "unclear": false,
+          "evidence": [
+            20
+          ]
+        },
+        {
+          "text": "20 milligrams once a day at bedtime",
+          "unclear": false,
+          "evidence": [
+            21
+          ]
+        },
+        {
+          "text": "20 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            41
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        41,
+        52,
+        53,
+        54
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D",
+        "vitamin D3",
+        "Vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The doctor recommended starting over-the-counter vitamin D3 once a day with a meal because Mary's vitamin D level was low.",
+      "doseStatements": [
+        {
+          "text": "1,000 international units once a day",
+          "unclear": false,
+          "evidence": [
+            32
+          ]
+        },
+        {
+          "text": "1,000",
+          "unclear": false,
+          "evidence": [
+            34
+          ]
+        },
+        {
+          "text": "1000 IU international units is a standard daily amount",
+          "unclear": false,
+          "evidence": [
+            36
+          ]
+        },
+        {
+          "text": "1000 IU or 25 micrograms",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        },
+        {
+          "text": "One a day with a meal",
+          "unclear": false,
+          "evidence": [
+            38
+          ]
+        },
+        {
+          "text": "1000 once a day",
+          "unclear": false,
+          "evidence": [
+            40
+          ]
+        },
+        {
+          "text": "1,000 units a day",
+          "unclear": false,
+          "evidence": [
+            42
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        29,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to keep taking amlodipine once a day at the same dose.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        43
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to keep using acetaminophen as needed for the knee.",
+      "doseStatements": [
+        {
+          "text": "as needed for the knee",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        43
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The doctor confirmed that Mary should not take naproxen.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        44,
+        45
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

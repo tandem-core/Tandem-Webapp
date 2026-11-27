@@ -1,0 +1,189 @@
+{
+  "conversationId": "history:05_knee_injection",
+  "generatedAt": "2026-11-27T21:53:17.092Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor told Mary to keep taking acetaminophen as before, as needed, without exceeding the daily limit.",
+      "doseStatements": [
+        {
+          "text": "2 in the morning and 2 at night, sometimes 2- 2 at lunch as well.",
+          "unclear": false,
+          "evidence": [
+            11
+          ]
+        },
+        {
+          "text": "no more than 6 tablets, which is 3,000 milligrams, in a day.",
+          "unclear": false,
+          "evidence": [
+            12
+          ]
+        },
+        {
+          "text": "up to two tablets three times a day if you need it.",
+          "unclear": false,
+          "evidence": [
+            45
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        45,
+        46
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "triamcinolone",
+      "spellings": [
+        "triamcinolone"
+      ],
+      "rxnorm": {
+        "rxcui": "10759",
+        "name": "triamcinolone",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "Mary agreed to a triamcinolone injection, and the doctor gave it in her right knee to ease pain and inflammation.",
+      "doseStatements": [
+        {
+          "text": "A single injection into the joint",
+          "unclear": false,
+          "evidence": [
+            30
+          ]
+        },
+        {
+          "text": "not more often than every 3 months.",
+          "unclear": false,
+          "evidence": [
+            51
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        18,
+        19,
+        20,
+        21,
+        26,
+        30,
+        31,
+        33,
+        35,
+        42,
+        51,
+        52
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "one of my pills",
+      "spellings": [
+        "one of my pills"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "Mary said that one of her pills had been stopped last month, but she did not name it.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        28
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "blood pressure medicine",
+      "spellings": [
+        "blood pressure medicine"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor told Mary to keep taking her unnamed blood pressure medicine as usual.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        32
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "Cold spray",
+      "spellings": [
+        "Cold spray"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The doctor used an unnamed cold spray to numb the skin before the knee injection.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        24,
+        35
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

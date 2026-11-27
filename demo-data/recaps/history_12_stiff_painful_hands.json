@@ -1,0 +1,254 @@
+{
+  "conversationId": "history:12_stiff_painful_hands",
+  "headline": "At your 3-month check, your doctor said the stiffness and swelling in both hands could be rheumatoid arthritis and ordered blood tests, hand X-rays, and an urgent rheumatology referral.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Get your blood tests",
+      "detail": "Go to the lab downstairs. You do not need to fast. The tests include rheumatoid factor, anti-CCP antibodies, inflammation markers, a blood count, and kidney and liver tests.",
+      "dueBy": "2026-09-10",
+      "when": "Today, September 10",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        19,
+        20,
+        21,
+        22,
+        52
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Get X-rays of both hands",
+      "detail": "Go to the X-ray department downstairs.",
+      "dueBy": "2026-09-10",
+      "when": "Today, September 10",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Arrange your rheumatology visit",
+      "detail": "Your doctor is making an urgent referral. No appointment was booked during the visit.",
+      "dueBy": "2026-10-01",
+      "when": "Within 2 to 3 weeks (September 24 to October 1)",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Pick up your Ramipril",
+      "detail": "Your doctor said the prescription with refills would be sent to Elm Street Pharmacy on September 10. Sam can go over it with you when you pick it up.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        39,
+        41,
+        42
+      ]
+    },
+    {
+      "id": "followUp-5",
+      "title": "Book a follow-up with your doctor",
+      "detail": "Book the visit for after you have seen rheumatology.",
+      "dueBy": null,
+      "when": "In about 4 weeks (around October 8), after your rheumatology visit",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        49,
+        50,
+        51,
+        52
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Keep using acetaminophen for pain. Take up to two 500 mg tablets at a time, up to 3 times a day. Do not take more than 3,000 mg in a day.",
+      "confidence": "check_this",
+      "evidence": [
+        24,
+        28
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Do not restart naproxen.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        25,
+        26,
+        27,
+        30
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Soak your hands in warm water in the morning to help with stiffness.",
+      "confidence": "check_this",
+      "evidence": [
+        29,
+        30
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Call your doctor sooner if a joint becomes hot and very swollen or if you get a fever. Do not wait for the blood test results call.",
+      "confidence": "check_this",
+      "evidence": [
+        48,
+        49
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "You did not start any new medicine for your hands at this visit.",
+      "evidence": [
+        31,
+        32,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep taking Ramipril 10 mg every morning.",
+      "evidence": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Keep taking amlodipine 5 mg at night.",
+      "evidence": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "id": "unchanged-4",
+      "text": "Keep taking atorvastatin 20 mg at night.",
+      "evidence": [
+        36,
+        37
+      ]
+    },
+    {
+      "id": "unchanged-5",
+      "text": "Keep taking lansoprazole 30 mg before breakfast.",
+      "evidence": [
+        36,
+        37,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "unchanged-6",
+      "text": "Keep taking vitamin D 1,000 units a day.",
+      "evidence": [
+        36,
+        37,
+        38
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Do you have rheumatoid arthritis or another type of inflammatory arthritis?",
+      "resolvesWhen": "Your doctor ordered blood tests and hand X-rays and referred you to rheumatology to look into this.",
+      "evidence": [
+        14,
+        15,
+        19,
+        20,
+        22
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "What do your blood tests show?",
+      "resolvesWhen": "Your doctor said you would get a call when the results are back, in 3 or 4 days (September 13 or 14).",
+      "evidence": [
+        48,
+        51,
+        52
+      ]
+    },
+    {
+      "id": "openQuestion-3",
+      "text": "Will you need a stronger medicine for inflammation or a longer-term arthritis medicine? Methotrexate was mentioned as an example, not prescribed.",
+      "resolvesWhen": "The rheumatologist will decide with you.",
+      "evidence": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "id": "openQuestion-4",
+      "text": "Will your lansoprazole dose be lowered this fall?",
+      "resolvesWhen": "Your doctor wants to wait until after the rheumatology visit.",
+      "evidence": [
+        45,
+        46
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:59:03.928Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2904,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1582,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 294,
+      "engine_ttlt_ms": 17736,
+      "pre_inference_ms": 152,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 600,
+      "service_ttlt_ms": 18038,
+      "user_visible_ttft_ms": 449
+    },
+    "prompt_tokens": 2523,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2520,
+      "cached_tokens": 0
+    },
+    "total_tokens": 5427
+  }
+}

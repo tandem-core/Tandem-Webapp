@@ -1,0 +1,273 @@
+{
+  "conversationId": "history:04_blood_pressure_followup",
+  "generatedAt": "2026-11-27T21:52:37.687Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to keep taking the same morning dose used since June and corrected an initial slip from 20 to 10 milligrams.",
+      "doseStatements": [
+        {
+          "text": "20",
+          "unclear": false,
+          "evidence": [
+            39
+          ]
+        },
+        {
+          "text": "10 milligrams",
+          "unclear": false,
+          "evidence": [
+            39
+          ]
+        },
+        {
+          "text": "10 milligrams once a day in the morning",
+          "unclear": false,
+          "evidence": [
+            39
+          ]
+        },
+        {
+          "text": "10. You said 20 at first.",
+          "unclear": false,
+          "evidence": [
+            41
+          ]
+        },
+        {
+          "text": "10 milligrams, one capsule a day",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        },
+        {
+          "text": "Okay, 10. Good, because I've only got the 10s.",
+          "unclear": false,
+          "evidence": [
+            44
+          ]
+        },
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            45
+          ]
+        },
+        {
+          "text": "10, not 20",
+          "unclear": false,
+          "evidence": [
+            65
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": true,
+      "doseCorrectionNote": "The doctor first said “ramipril 20” and corrected it to “ramipril 10 milligrams once a day in the morning.”",
+      "evidence": [
+        10,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        65
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin",
+        "statin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to keep taking atorvastatin at night without a dose change because it was lowering LDL cholesterol.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            17,
+            45
+          ]
+        },
+        {
+          "text": "at night",
+          "unclear": false,
+          "evidence": [
+            65
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        13,
+        17,
+        45,
+        65
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "The doctor said to stop amlodipine to see if the ankle swelling goes away and to take the leftover tablets to the pharmacy for disposal.",
+      "doseStatements": [
+        {
+          "text": "10 milligram, uh, dose",
+          "unclear": false,
+          "evidence": [
+            32
+          ]
+        },
+        {
+          "text": "10 milligrams",
+          "unclear": false,
+          "evidence": [
+            45
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        31,
+        32,
+        33,
+        35,
+        36,
+        45,
+        47,
+        48,
+        49,
+        65
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to continue taking vitamin D every day.",
+      "doseStatements": [
+        {
+          "text": "1,000 units a day",
+          "unclear": false,
+          "evidence": [
+            45,
+            46
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        45,
+        46
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor said to continue taking acetaminophen as needed for the knee.",
+      "doseStatements": [
+        {
+          "text": "as needed",
+          "unclear": false,
+          "evidence": [
+            46
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        46
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

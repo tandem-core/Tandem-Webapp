@@ -1,0 +1,505 @@
+{
+  "conversationId": "history:11_medication_review",
+  "generatedAt": "2026-11-27T21:58:02.359Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "injection",
+      "spellings": [
+        "injection"
+      ],
+      "rxnorm": {
+        "rxcui": "1649574",
+        "name": "Injection",
+        "tty": "DF"
+      },
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Mary said the previous knee injection was still helping and a second injection was not needed yet.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        10,
+        11,
+        12
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine",
+        "Amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking her current dose at night and take the old higher-strength tablets to the pharmacy for disposal.",
+      "doseStatements": [
+        {
+          "text": "5 milligrams",
+          "unclear": false,
+          "evidence": [
+            34
+          ]
+        },
+        {
+          "text": "One at night",
+          "unclear": false,
+          "evidence": [
+            35
+          ]
+        },
+        {
+          "text": "5 milligrams once a day at night",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        },
+        {
+          "text": "Amlodipine 10 milligrams from last summer",
+          "unclear": false,
+          "evidence": [
+            40
+          ]
+        },
+        {
+          "text": "Your dose now is 5 milligrams, not 10.",
+          "unclear": false,
+          "evidence": [
+            44
+          ]
+        },
+        {
+          "text": "At night, amlodipine 5 milligrams",
+          "unclear": false,
+          "evidence": [
+            93
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        22,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        93,
+        96,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "Ramipril",
+      "spellings": [
+        "Ramipril",
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking ramipril every morning with breakfast for blood pressure.",
+      "doseStatements": [
+        {
+          "text": "10 milligram capsules",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        },
+        {
+          "text": "One every morning with breakfast.",
+          "unclear": false,
+          "evidence": [
+            31
+          ]
+        },
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            33
+          ]
+        },
+        {
+          "text": "ramipril 10 milligrams and vitamin D 1,000 units with breakfast",
+          "unclear": false,
+          "evidence": [
+            92
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        92,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking atorvastatin at night for cholesterol.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams",
+          "unclear": false,
+          "evidence": [
+            47
+          ]
+        },
+        {
+          "text": "one at night",
+          "unclear": false,
+          "evidence": [
+            49
+          ]
+        },
+        {
+          "text": "At night, amlodipine 5 milligrams and atorvastatin 20 milligrams.",
+          "unclear": false,
+          "evidence": [
+            93
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        47,
+        48,
+        49,
+        50,
+        93,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "lansoprazole",
+      "spellings": [
+        "lansoprazole"
+      ],
+      "rxnorm": {
+        "rxcui": "17128",
+        "name": "lansoprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking lansoprazole before breakfast for heartburn and discuss lowering the dose in the fall rather than stopping suddenly.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams",
+          "unclear": false,
+          "evidence": [
+            51
+          ]
+        },
+        {
+          "text": "30 milligrams once a day before breakfast",
+          "unclear": false,
+          "evidence": [
+            56
+          ]
+        },
+        {
+          "text": "keep it at 30 for now",
+          "unclear": false,
+          "evidence": [
+            58
+          ]
+        },
+        {
+          "text": "In the morning, lansoprazole 30 milligrams half an hour before breakfast",
+          "unclear": false,
+          "evidence": [
+            92
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        51,
+        52,
+        53,
+        55,
+        56,
+        57,
+        58,
+        92,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking vitamin D daily with breakfast for bone health.",
+      "doseStatements": [
+        {
+          "text": "1,000 units",
+          "unclear": false,
+          "evidence": [
+            59
+          ]
+        },
+        {
+          "text": "one a day",
+          "unclear": false,
+          "evidence": [
+            61
+          ]
+        },
+        {
+          "text": "vitamin D 1,000 units with breakfast",
+          "unclear": false,
+          "evidence": [
+            92
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        92,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-7",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen",
+        "Acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking acetaminophen as needed for knee pain, without exceeding the reviewed daily limit.",
+      "doseStatements": [
+        {
+          "text": "500 milligrams",
+          "unclear": false,
+          "evidence": [
+            64
+          ]
+        },
+        {
+          "text": "Usually 2 in the morning and 2 at night.",
+          "unclear": false,
+          "evidence": [
+            66
+          ]
+        },
+        {
+          "text": "On bad days, 2 at lunch too.",
+          "unclear": false,
+          "evidence": [
+            67
+          ]
+        },
+        {
+          "text": "Up to 2 tablets 3 times a day, no more than 3,000 milligrams in a day.",
+          "unclear": false,
+          "evidence": [
+            68
+          ]
+        },
+        {
+          "text": "Acetaminophen as needed, maximum 3000 milligrams a day.",
+          "unclear": false,
+          "evidence": [
+            94
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        94,
+        104
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-8",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Mary had already stopped naproxen a year earlier and will take the expired bottle to the pharmacy for disposal.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        69,
+        70,
+        71,
+        96,
+        97
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-9",
+      "heardAs": "sleeping pills",
+      "spellings": [
+        "sleeping pills",
+        "zolpidem",
+        "Jones pills"
+      ],
+      "rxnorm": {
+        "rxcui": "39993",
+        "name": "zolpidem",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "Mary had not taken Joan's zolpidem and was told not to take it because of the risk of falls and confusion.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        96,
+        97
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

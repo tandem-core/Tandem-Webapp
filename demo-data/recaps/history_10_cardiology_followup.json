@@ -1,0 +1,226 @@
+{
+  "conversationId": "history:10_cardiology_followup",
+  "headline": "Your blood pressure is still above goal, and your cardiologist wants you to restart amlodipine at a lower dose after your heart scan showed mild thickening.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Restart amlodipine after confirming the dose",
+      "detail": "The cardiologist first said “amlodipine 10” and corrected it to “5 milligrams.” The plan was to take it once a day. Listen to that part of the recording and confirm the dose with your pharmacist or doctor before you restart it.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "check_this",
+      "evidence": [
+        20,
+        23,
+        24,
+        25,
+        26,
+        62
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Check your blood pressure at home",
+      "detail": "Start on April 7, 2026. Check your blood pressure every morning and evening for one week.",
+      "dueBy": null,
+      "when": "In 2 weeks, for 1 week",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        44,
+        65
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Send your blood pressure readings",
+      "detail": "Lisa can email the readings to your cardiologist. The timing for sending them was not clear.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        44,
+        45,
+        46,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Arrange your cardiology follow-up",
+      "detail": "Your cardiologist wants to see you in late June or early July 2026. No exact date was given.",
+      "dueBy": null,
+      "when": "In three months, so late June or early July",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        46,
+        51,
+        66
+      ]
+    },
+    {
+      "id": "followUp-5",
+      "title": "Arrange your visit with Dr. Smith",
+      "detail": "Dr. Smith wants to see you in June 2026. Your cardiologist asked you to go to both visits.",
+      "dueBy": null,
+      "when": "In June",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        47,
+        49,
+        50,
+        51
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Your blood pressure goal is below 130/80, as long as you feel well at that level.",
+      "confidence": "check_this",
+      "evidence": [
+        18
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Take amlodipine at the same time each day. Night is fine, and you can take it with atorvastatin.",
+      "confidence": "check_this",
+      "evidence": [
+        27,
+        28,
+        29,
+        35,
+        36,
+        62
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "If your ankles swell again, call your cardiologist or Dr. Smith. Do not stop amlodipine on your own.",
+      "confidence": "check_this",
+      "evidence": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        64
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "If you feel dizzy when you stand up, sit down and let your cardiology team know. This is especially important in the first two weeks.",
+      "confidence": "check_this",
+      "evidence": [
+        52
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "Call 911 for chest pain, fainting, or a fast, irregular heartbeat.",
+      "confidence": "check_this",
+      "evidence": [
+        53
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "Avoid cold tablets with decongestants. They can raise your blood pressure.",
+      "confidence": "check_this",
+      "evidence": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking ramipril 10 milligrams in the morning.",
+      "evidence": [
+        29,
+        63
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep taking atorvastatin 20 milligrams at night.",
+      "evidence": [
+        31
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Keep taking lansoprazole 30 milligrams before breakfast.",
+      "evidence": [
+        32
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "When should you send your blood pressure readings? Your cardiologist said to check for a week and send them. At the end, you mentioned sending them in three months.",
+      "resolvesWhen": null,
+      "evidence": [
+        44,
+        45,
+        46,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Will you need a heart monitor for the thumping at night?",
+      "resolvesWhen": "Your cardiologist said to call if the thumping happens more often or feels fast and irregular. The plan then is to have you wear a monitor for a couple of days.",
+      "evidence": [
+        55,
+        57,
+        58,
+        59
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:57:17.224Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2509,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1313,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 151,
+      "engine_ttlt_ms": 14299,
+      "pre_inference_ms": 161,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 605,
+      "service_ttlt_ms": 14725,
+      "user_visible_ttft_ms": 444
+    },
+    "prompt_tokens": 2726,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2723,
+      "cached_tokens": 0
+    },
+    "total_tokens": 5235
+  }
+}

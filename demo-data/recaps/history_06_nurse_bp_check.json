@@ -1,0 +1,149 @@
+{
+  "conversationId": "history:06_nurse_bp_check",
+  "headline": "Your ankle swelling improved after you stopped amlodipine, but your blood pressure was still above Dr. Smith’s goal, so Nurse Rivera planned a referral to Dr. Patel in cardiology.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Book your cardiology visit when the office calls",
+      "detail": "Nurse Rivera said the referral to Dr. Patel would go in on October 28. Cardiology will call you to book. The usual wait is 4 to 6 weeks, roughly November 25 to December 9.",
+      "dueBy": null,
+      "when": "Usually 4 to 6 weeks",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        36,
+        37,
+        38,
+        39,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Bring your home blood pressure monitor",
+      "detail": "Bring it the next time you see Nurse Rivera. Nurse Rivera will compare it with the clinic’s monitor.",
+      "dueBy": null,
+      "when": "Next time",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Check your blood pressure at home before breakfast and again in the evening.",
+      "confidence": "check_this",
+      "evidence": [
+        17,
+        47
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Before you check your blood pressure, sit for 5 minutes. Keep your feet flat and rest your arm on a table at heart level. Don’t have coffee in the 30 minutes before you check.",
+      "confidence": "check_this",
+      "evidence": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Call the clinic if the top number is over 160 more than twice in a week, if you have a bad headache with blurry vision, or if you have any chest pain. Nurse Rivera said “more than twice,” but you repeated it as “twice.”",
+      "confidence": "check_this",
+      "evidence": [
+        53,
+        54,
+        55,
+        56
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "No medicine changes for now. You’re still off amlodipine. You take ramipril 10 mg and vitamin D in the morning, and atorvastatin 20 mg at night.",
+      "evidence": [
+        2,
+        26,
+        28,
+        29,
+        30,
+        42,
+        46
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Is your home blood pressure monitor accurate?",
+      "resolvesWhen": "When Nurse Rivera compares it with the clinic’s monitor.",
+      "evidence": [
+        11,
+        13
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "What blood pressure plan will work best for you now that you’re off amlodipine?",
+      "resolvesWhen": "When Dr. Patel reviews your blood pressure plan.",
+      "evidence": [
+        36,
+        37,
+        38,
+        42,
+        46
+      ]
+    },
+    {
+      "id": "openQuestion-3",
+      "text": "Will you need a heart scan?",
+      "resolvesWhen": "Dr. Patel may decide to order one.",
+      "evidence": [
+        38,
+        42,
+        43
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:54:08.513Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2090,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1321,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 194,
+      "engine_ttlt_ms": 13777,
+      "pre_inference_ms": 126,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 494,
+      "service_ttlt_ms": 14056,
+      "user_visible_ttft_ms": 368
+    },
+    "prompt_tokens": 2472,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2469,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4562
+  }
+}

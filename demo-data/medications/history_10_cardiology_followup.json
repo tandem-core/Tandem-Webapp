@@ -1,0 +1,284 @@
+{
+  "conversationId": "history:10_cardiology_followup",
+  "generatedAt": "2026-11-27T21:57:01.450Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "cold tablets",
+      "spellings": [
+        "cold tablets"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The pharmacist advised Mary not to take the cold tablets because of her blood pressure, and the doctor agreed.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        3,
+        4,
+        5
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine",
+        "Amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "Mary is restarting amlodipine at 5 milligrams once a day at night, half the dose that previously caused ankle swelling.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams",
+          "unclear": false,
+          "evidence": [
+            21
+          ]
+        },
+        {
+          "text": "10, no, sorry, I mean 5 milligrams",
+          "unclear": false,
+          "evidence": [
+            23
+          ]
+        },
+        {
+          "text": "5 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            24
+          ]
+        },
+        {
+          "text": "5, not 10",
+          "unclear": false,
+          "evidence": [
+            25
+          ]
+        },
+        {
+          "text": "5 milligrams once a day, half the dose you were on before",
+          "unclear": false,
+          "evidence": [
+            26
+          ]
+        },
+        {
+          "text": "the same time every day",
+          "unclear": false,
+          "evidence": [
+            27
+          ]
+        },
+        {
+          "text": "at night",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        },
+        {
+          "text": "Night is fine",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        },
+        {
+          "text": "together at night",
+          "unclear": false,
+          "evidence": [
+            35,
+            36
+          ]
+        },
+        {
+          "text": "5 milligrams once a day at night",
+          "unclear": false,
+          "evidence": [
+            62
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": true,
+      "doseCorrectionNote": "The doctor first said “amlodipine 10” and immediately corrected it to “5 milligrams.”",
+      "evidence": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        44,
+        62
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking ramipril 10 milligrams in the morning without any change.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams in the morning",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        },
+        {
+          "text": "10 in the morning",
+          "unclear": false,
+          "evidence": [
+            63
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        29,
+        34,
+        63
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "Atorvastatin",
+      "spellings": [
+        "Atorvastatin",
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking atorvastatin 20 milligrams at night and can take it at the same time as amlodipine.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            31
+          ]
+        },
+        {
+          "text": "together at night",
+          "unclear": false,
+          "evidence": [
+            35,
+            36
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        30,
+        31,
+        34,
+        35,
+        36
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "Lansoprazole",
+      "spellings": [
+        "Lansoprazole",
+        "lansop something"
+      ],
+      "rxnorm": {
+        "rxcui": "17128",
+        "name": "lansoprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary will keep taking lansoprazole 30 milligrams before breakfast without any change.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams before breakfast",
+          "unclear": false,
+          "evidence": [
+            32
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        30,
+        32,
+        33,
+        34
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

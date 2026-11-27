@@ -1,0 +1,363 @@
+{
+  "notes": "Questions across Mary's made-up appointment history (testing track). Same format as remember-questions.json; visits lists every appointment an answer may come from (visit is the first). Today is the date Remember treats as now. The ramipril question checks the answer surfaces both doses: the history raises it to 10 milligrams, but the older imported clip from October 20, 2026 says 5.",
+  "today": "2026-11-27",
+  "questions": [
+    {
+      "q": "What's my amlodipine dose now?",
+      "visit": "history_10_cardiology_followup",
+      "visits": [
+        "history_10_cardiology_followup",
+        "history_11_medication_review",
+        "history_12_stiff_painful_hands"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "5"
+      ]
+    },
+    {
+      "q": "Why did I stop the amlodipine?",
+      "visit": "history_04_blood_pressure_followup",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "swell|ankle"
+      ]
+    },
+    {
+      "q": "When did I start amlodipine again?",
+      "visit": "history_10_cardiology_followup",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "march"
+      ]
+    },
+    {
+      "q": "Am I still taking naproxen?",
+      "visit": "history_12_stiff_painful_hands",
+      "visits": [
+        "history_12_stiff_painful_hands",
+        "history_11_medication_review",
+        "history_01_blood_pressure_check"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "stop|not|no longer|don't"
+      ]
+    },
+    {
+      "q": "Why did the doctor stop my naproxen?",
+      "visit": "history_01_blood_pressure_check",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "blood pressure|kidney"
+      ]
+    },
+    {
+      "q": "What did they give me instead of naproxen?",
+      "visit": "history_01_blood_pressure_check",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "acetaminophen|tylenol"
+      ]
+    },
+    {
+      "q": "How much acetaminophen can I take in a day?",
+      "visit": "history_01_blood_pressure_check",
+      "visits": [
+        "history_01_blood_pressure_check",
+        "history_02_knee_xray_results",
+        "history_05_knee_injection",
+        "history_09_pharmacy_refill_call",
+        "history_11_medication_review",
+        "history_12_stiff_painful_hands"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "3,000|3000"
+      ]
+    },
+    {
+      "q": "When did my ramipril go up?",
+      "visit": "history_01_blood_pressure_check",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "june"
+      ]
+    },
+    {
+      "q": "What dose of ramipril do I take now?",
+      "visit": "history_12_stiff_painful_hands",
+      "visits": [
+        "history_12_stiff_painful_hands",
+        "history_11_medication_review",
+        "clip_03_prescription_refill_counseling",
+        "history_04_blood_pressure_followup",
+        "history_01_blood_pressure_check"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "10",
+        "5"
+      ]
+    },
+    {
+      "q": "What was my blood pressure at my last heart doctor visit?",
+      "visit": "history_10_cardiology_followup",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "150|145"
+      ]
+    },
+    {
+      "q": "What did Dr. Patel say at my heart appointment?",
+      "visit": null,
+      "status": [
+        "choose_visit"
+      ],
+      "mustMention": [],
+      "choices": [
+        "history_07_cardiology_first_visit",
+        "history_10_cardiology_followup"
+      ]
+    },
+    {
+      "q": "What did they do at my knee appointment?",
+      "visit": null,
+      "status": [
+        "choose_visit"
+      ],
+      "mustMention": [],
+      "choices": [
+        "history_02_knee_xray_results",
+        "history_05_knee_injection"
+      ]
+    },
+    {
+      "q": "What was my cholesterol number?",
+      "visit": "history_03_cholesterol_results",
+      "visits": [
+        "history_03_cholesterol_results",
+        "history_04_blood_pressure_followup",
+        "history_11_medication_review"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "248|162|95|88"
+      ]
+    },
+    {
+      "q": "When did I start the cholesterol pill?",
+      "visit": "history_03_cholesterol_results",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "july"
+      ]
+    },
+    {
+      "q": "How much vitamin D should I take?",
+      "visit": "history_03_cholesterol_results",
+      "visits": [
+        "history_03_cholesterol_results",
+        "history_11_medication_review",
+        "history_12_stiff_painful_hands"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "1,000|1000"
+      ]
+    },
+    {
+      "q": "Should I take Joan's arthritis pills?",
+      "visit": "history_02_knee_xray_results",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "not|don't|shouldn't"
+      ]
+    },
+    {
+      "q": "Can I take a cold medicine with pseudoephedrine?",
+      "visit": "history_09_pharmacy_refill_call",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "blood pressure"
+      ]
+    },
+    {
+      "q": "What did the pharmacist suggest for my stuffy nose?",
+      "visit": "history_09_pharmacy_refill_call",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "saline"
+      ]
+    },
+    {
+      "q": "When did I start the heartburn medicine?",
+      "visit": "history_08_heartburn",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "january"
+      ]
+    },
+    {
+      "q": "What dose of my heartburn pill do I take now?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "15"
+      ]
+    },
+    {
+      "q": "What medicines am I taking now?",
+      "visit": "history_12_stiff_painful_hands",
+      "visits": [
+        "history_12_stiff_painful_hands",
+        "history_11_medication_review",
+        "clip_01_medication_shared_decision",
+        "clip_02_methotrexate_full_consultation",
+        "clip_03_prescription_refill_counseling"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "ramipril",
+        "amlodipine"
+      ]
+    },
+    {
+      "q": "What did I need to do after the knee injection?",
+      "visit": "history_05_knee_injection",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "rest|ice|exercise"
+      ]
+    },
+    {
+      "q": "How often can I have a knee injection?",
+      "visit": "history_05_knee_injection",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "3 months|three months"
+      ]
+    },
+    {
+      "q": "What did the echo show?",
+      "visit": "history_10_cardiology_followup",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "thick|pump|valve"
+      ]
+    },
+    {
+      "q": "What should I do with Joan's sleeping pills?",
+      "visit": "history_11_medication_review",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "throw|dispose|get rid|pharmacy|bin"
+      ]
+    },
+    {
+      "q": "Did my ankle swelling go away after stopping the amlodipine?",
+      "visit": "history_06_nurse_bp_check",
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "gone|yes|better|went away"
+      ]
+    },
+    {
+      "q": "What did the doctor say about my stiff hands?",
+      "visit": "history_12_stiff_painful_hands",
+      "visits": [
+        "history_12_stiff_painful_hands",
+        "clip_02_methotrexate_full_consultation"
+      ],
+      "status": [
+        "answered",
+        "partly_answered"
+      ],
+      "mustMention": [
+        "rheumat|blood test|x-ray"
+      ]
+    },
+    {
+      "q": "Did the doctor check my eyesight?",
+      "visit": "clip_01_medication_shared_decision",
+      "status": [
+        "not_discussed",
+        "partly_answered",
+        "no_visit"
+      ],
+      "mustMention": []
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "conversationId": "history:01_blood_pressure_check",
+  "headline": "Your blood pressure was 152/90, so Dr. Smith raised your ramipril dose and asked you to stop naproxen.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Stop taking naproxen",
+      "detail": "Stop today. Do not take any more naproxen. The amount was corrected during the visit. You first said “220 on the box,” then corrected it to “the 500.” Dr. Smith said “500 milligrams twice a day.” Listen to that part of the visit and confirm the amount you were taking with your pharmacist or Dr. Smith.",
+      "dueBy": "2025-06-12",
+      "when": "Starting today",
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "check_this",
+      "evidence": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        51,
+        52,
+        90,
+        93
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Pick up your new ramipril prescription",
+      "detail": "Dr. Smith said the new prescription will be for 10 mg capsules.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        63,
+        65
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Get fasting blood work",
+      "detail": "Go in the morning for blood tests to check your kidneys, potassium, and cholesterol. Do not eat after midnight the night before. Water is fine.",
+      "dueBy": "2025-06-26",
+      "when": "In 2 weeks",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        94,
+        95
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Arrange a knee visit with Dr. Okafor",
+      "detail": "Dr. Okafor is the orthopedic specialist. Dr. Smith said the referral would be sent today. No appointment date was given.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "id": "followUp-5",
+      "title": "Book a blood pressure recheck",
+      "detail": "See Dr. Smith again to have your blood pressure checked.",
+      "dueBy": "2025-09-12",
+      "when": "In 3 months",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        77,
+        94,
+        95
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Your ramipril dose goes up from 5 mg to 10 mg once a day. Take one 10 mg capsule in the morning.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        63,
+        65,
+        67,
+        68,
+        91,
+        93
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "If you still have 5 mg ramipril capsules, you can take two together each morning until they run out. Then switch to one 10 mg capsule each morning.",
+      "confidence": "check_this",
+      "evidence": [
+        63,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Use plain acetaminophen (Tylenol) 500 mg tablets for your knee instead of naproxen. You can take up to 2 tablets at a time, up to 3 times a day. Do not take more than 6 tablets (3,000 mg) in a day.",
+      "confidence": "check_this",
+      "evidence": [
+        53,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        90,
+        93
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Check cold medicines and sleep aids for acetaminophen. Any acetaminophen in them counts toward your daily limit.",
+      "confidence": "check_this",
+      "evidence": [
+        59,
+        61
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "Check your blood pressure at home a few times a week and write down the numbers. Bring your notebook to the next visit. Dr. Smith wants your blood pressure below 140/90 and ideally closer to 130/80.",
+      "confidence": "check_this",
+      "evidence": [
+        30,
+        31,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "If you feel dizzy when you stand up, sit down for a moment and call the clinic. This is especially important in the first week on the higher ramipril dose.",
+      "confidence": "check_this",
+      "evidence": [
+        63,
+        96
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking amlodipine 10 mg once a day at night, as you have been.",
+      "evidence": [
+        33,
+        35,
+        36,
+        69,
+        92,
+        93
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Will you need a knee X-ray? Dr. Smith said Dr. Okafor would probably want one.",
+      "resolvesWhen": null,
+      "evidence": [
+        82,
+        83,
+        85
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:44:24.308Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2611,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1380,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 277,
+      "engine_ttlt_ms": 15977,
+      "pre_inference_ms": 141,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 577,
+      "service_ttlt_ms": 16272,
+      "user_visible_ttft_ms": 436
+    },
+    "prompt_tokens": 3595,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 3592,
+      "cached_tokens": 0
+    },
+    "total_tokens": 6206
+  }
+}

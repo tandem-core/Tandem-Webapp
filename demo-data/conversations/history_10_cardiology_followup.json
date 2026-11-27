@@ -1,0 +1,549 @@
+{
+  "id": "history:10_cardiology_followup",
+  "source": "history",
+  "sourceId": "10_cardiology_followup",
+  "title": "Cardiology follow-up",
+  "recordedAt": "2026-03-24T15:00:00.000Z",
+  "durationSec": 233,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 1.919,
+      "text": "Hello, Mary. Good to see you again."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.6,
+      "end": 4.039,
+      "text": "How have you been since December?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 4.4,
+      "end": 7.9,
+      "text": "Not bad. I had a horrible cold in February, but I'm over it."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 8.16,
+      "end": 13.159,
+      "text": "The pharmacist told me not to take the cold tablets because of my blood pressure."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 13.6,
+      "end": 14.519,
+      "text": "That was good advice."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 15.04,
+      "end": 16.679,
+      "text": "Decongestants can push it up."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 17.4,
+      "end": 19.6,
+      "text": "Thank you for sending your blood pressure diary."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 20.04,
+      "end": 21.08,
+      "text": "You were very thorough."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 21.4,
+      "end": 23.359,
+      "text": "Lisa typed it up on the computer for me."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 23.84,
+      "end": 25.08,
+      "text": "Please thank her for me."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 25.946,
+      "end": 31.746,
+      "text": "Your home readings average about 145 over 88, with the mornings a little higher."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 32.266,
+      "end": 35.906,
+      "text": "And here today, it's 150 over 86."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 36.466,
+      "end": 38.266,
+      "text": "Still too high, then."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 38.546,
+      "end": 40.066,
+      "text": "Yes, it's above where we want it."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 40.546,
+      "end": 48.226,
+      "text": "Your echocardiogram showed mild thickening of the heart's main pumping chamber, which fits with long-standing high blood pressure."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 48.652,
+      "end": 52.571,
+      "text": "The pumping function itself is normal, and the valves look fine."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 52.972,
+      "end": 54.251,
+      "text": "So my heart is okay?"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 54.932,
+      "end": 62.991,
+      "text": "Your heart is working well, but the thickening tells me we should bring your blood pressure lower to protect it."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 63.892,
+      "end": 68.652,
+      "text": "My target for you is under 130 over 80, if you feel well at that level."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 69.052,
+      "end": 69.691,
+      "text": "What do we do?"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 70.972,
+      "end": 73.879,
+      "text": "I'd like to add back amlodipine, but at a lower dose."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 74.359,
+      "end": 77.878,
+      "text": "Before you were on 10 milligrams, and that caused the ankle swelling."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 78.519,
+      "end": 81.398,
+      "text": "Swelling is much less common at lower doses."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 82.079,
+      "end": 86.479,
+      "text": "So amlodipine 10, no, sorry, I mean 5 milligrams."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 86.999,
+      "end": 90.318,
+      "text": "Amlodipine 5 milligrams once a day."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 90.919,
+      "end": 92.118,
+      "text": "5, not 10."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 92.639,
+      "end": 97.825,
+      "text": "Correct. 5 milligrams once a day, half the dose you were on before."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 98.265,
+      "end": 103.145,
+      "text": "You can take it at whatever time suits you, as long as it's the same time every day."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 103.585,
+      "end": 105.225,
+      "text": "I used to take the old one at night."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 105.745,
+      "end": 110.904,
+      "text": "Night is fine. Keep the ramipril 10 milligrams in the morning, unchanged."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 111.345,
+      "end": 115.225,
+      "text": "What about the cholesterol one and the heartburn one, the lansop something?"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 115.505,
+      "end": 119.011,
+      "text": "Atorvastatin 20 milligrams at night, unchanged."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 119.852,
+      "end": 124.151,
+      "text": "Lansoprazole 30 milligrams before breakfast, unchanged."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 124.931,
+      "end": 126.491,
+      "text": "Dr. Smith looks after that one."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 127.292,
+      "end": 130.412,
+      "text": "None of them interact with amlodipine in a way that matters."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 130.931,
+      "end": 134.412,
+      "text": "Can I take the amlodipine and the atorvastatin together at night?"
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 134.692,
+      "end": 135.851,
+      "text": "Yes, that's fine."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 136.492,
+      "end": 138.052,
+      "text": "And if my ankles swell up again?"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 138.452,
+      "end": 140.197,
+      "text": "Call if your ankles swell again."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 140.638,
+      "end": 142.278,
+      "text": "Don't just stop it on your own."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 142.758,
+      "end": 143.758,
+      "text": "Call me or Dr."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 143.878,
+      "end": 145.917,
+      "text": "Smith, and we'll look at the options."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 146.478,
+      "end": 148.918,
+      "text": "There are other medicines we can use instead."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 149.478,
+      "end": 149.878,
+      "text": "Okay."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 151.278,
+      "end": 159.638,
+      "text": "In 2 weeks, once the new tablet has settled in, check your blood pressure morning and evening for 1 week and send me the readings."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 160.198,
+      "end": 161.478,
+      "text": "Lisa can email them again."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 161.998,
+      "end": 166.464,
+      "text": "Perfect, and I'll see you back in three months, so late June or early July."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 166.744,
+      "end": 168.943,
+      "text": "Dr. Smith wants to see me in June too."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 169.184,
+      "end": 170.424,
+      "text": "Is that too many doctors?"
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 170.944,
+      "end": 172.383,
+      "text": "Not at all. Dr."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 172.464,
+      "end": 173.783,
+      "text": "Smith and I share notes."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 174.384,
+      "end": 175.424,
+      "text": "Please come to both."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 176.504,
+      "end": 182.424,
+      "text": "If you feel dizzy when standing up, especially in the first two weeks, sit down and let us know."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 183.144,
+      "end": 189.111,
+      "text": "And for chest pain, fainting, or a fast, irregular heartbeat, call 911."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 189.611,
+      "end": 189.731,
+      "text": "Can"
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 189.771,
+      "end": 192.251,
+      "text": "I ask about the thumping at night I told you about?"
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 192.771,
+      "end": 195.331,
+      "text": "Of course. Has it continued?"
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 195.931,
+      "end": 197.85,
+      "text": "Less. Maybe once a month now."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 198.331,
+      "end": 202.79,
+      "text": "Your ECG was normal, and the echo didn't show anything worrying."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 203.531,
+      "end": 210.436,
+      "text": "If it gets more frequent or feels fast and irregular, call and we'll put a heart monitor on you for a couple of days."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 210.997,
+      "end": 211.436,
+      "text": "All right."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 212.877,
+      "end": 215.757,
+      "text": "So let's review. What's new?"
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 216.117,
+      "end": 220.437,
+      "text": "Amlodipine again, but 5 milligrams once a day at night."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 220.917,
+      "end": 223.057,
+      "text": "The ramipril stays at 10 in the morning."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 223.517,
+      "end": 225.156,
+      "text": "Call if my ankles swell again."
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 225.637,
+      "end": 230.836,
+      "text": "Check my pressure in 2 weeks for a week and send it back in 3 months."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 231.357,
+      "end": 233.396,
+      "text": "Perfect, Mary. See you in the summer."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:56:50.310Z"
+}

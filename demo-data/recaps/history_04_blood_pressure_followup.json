@@ -1,0 +1,218 @@
+{
+  "conversationId": "history:04_blood_pressure_followup",
+  "headline": "Your blood pressure improved, and your doctor asked you to stop amlodipine to see if your ankle swelling goes down.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Stop taking amlodipine",
+      "detail": "Stop the amlodipine 10 milligram tablets completely.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        32,
+        35,
+        36,
+        45,
+        65
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Confirm your ramipril dose",
+      "detail": "At 2:18 in the recording, the doctor first said “ramipril 20” and corrected it to “ramipril 10 milligrams once a day in the morning.” Listen to that part and confirm the dose with your pharmacist or doctor.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Take leftover amlodipine to the pharmacy",
+      "detail": "The pharmacy can dispose of the tablets. Don’t keep them in the cupboard where they could get mixed up with your other pills.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Book a check with Nurse Rivera",
+      "detail": "See Nurse Rivera around October 21, 2025, to have your blood pressure and ankles checked.",
+      "dueBy": null,
+      "when": "in about 4 weeks",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        54,
+        56,
+        57,
+        65
+      ]
+    },
+    {
+      "id": "followUp-5",
+      "title": "See Dr. Okafor again",
+      "detail": "You said you’re seeing Dr. Okafor again in October 2025. No exact date was mentioned.",
+      "dueBy": null,
+      "when": "next month",
+      "status": "already_scheduled",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        57,
+        58,
+        59
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Keep checking your blood pressure at home at least 4 or 5 times a week.",
+      "confidence": "check_this",
+      "evidence": [
+        51
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Call the clinic if the top number of your blood pressure is over 160 more than twice in one week.",
+      "confidence": "check_this",
+      "evidence": [
+        52,
+        53,
+        65
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Call the clinic right away if you get short of breath or your swelling gets worse.",
+      "confidence": "check_this",
+      "evidence": [
+        55,
+        65,
+        66
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Put your feet up when you sit in the evening. You can use a footstool, or lie on the sofa with your feet at hip level for about half an hour.",
+      "confidence": "check_this",
+      "evidence": [
+        60,
+        61,
+        62,
+        63
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Your doctor said your ramipril prescription was not changing. The amount was corrected during the visit, so confirm it with your pharmacist or doctor.",
+      "evidence": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep taking atorvastatin 20 milligrams at night.",
+      "evidence": [
+        17,
+        45
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Keep taking vitamin D 1,000 units a day.",
+      "evidence": [
+        45,
+        46
+      ]
+    },
+    {
+      "id": "unchanged-4",
+      "text": "Keep using acetaminophen as needed for your knee.",
+      "evidence": [
+        46
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Will your ankle swelling go away after you stop amlodipine?",
+      "resolvesWhen": "Nurse Rivera will check your ankles in about 4 weeks.",
+      "evidence": [
+        31,
+        35,
+        54
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Will your blood pressure go up after you stop amlodipine?",
+      "resolvesWhen": "You’ll watch your readings at home, and Nurse Rivera will check your blood pressure in about 4 weeks.",
+      "evidence": [
+        35,
+        36,
+        37,
+        38,
+        51,
+        54
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:52:49.032Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 1913,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 811,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 5,
+      "engine_ttft_ms": 366,
+      "engine_ttlt_ms": 10244,
+      "pre_inference_ms": 191,
+      "service_tbt_ms": 5,
+      "service_ttft_ms": 716,
+      "service_ttlt_ms": 10591,
+      "user_visible_ttft_ms": 525
+    },
+    "prompt_tokens": 2830,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2827,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4743
+  }
+}

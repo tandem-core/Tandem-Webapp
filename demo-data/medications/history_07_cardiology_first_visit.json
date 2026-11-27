@@ -1,0 +1,238 @@
+{
+  "conversationId": "history:07_cardiology_first_visit",
+  "generatedAt": "2026-11-27T21:54:42.164Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Dr. Smith previously raised the dose, and Dr. Patel told Mary to keep taking her current dose.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams once daily",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        },
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            56
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        10,
+        37,
+        56
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "Mary stopped amlodipine in September after ankle swelling, and Dr. Patel discussed possibly restarting it at a lower dose later but did not restart it at this visit.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        10,
+        11,
+        12,
+        59,
+        60,
+        61,
+        62
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Atorvastatin was listed as a current medicine, with no change.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Vitamin D was listed as a current daily supplement, with no change.",
+      "doseStatements": [
+        {
+          "text": "1,000 units daily",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Acetaminophen was listed as a current medicine for Mary's knee, with no change.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "steroid shot",
+      "spellings": [
+        "steroid shot"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Mary reported having a steroid shot in her knee in October, but did not name the drug.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        39,
+        40
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-7",
+      "heardAs": "Ginseng",
+      "spellings": [
+        "Ginseng"
+      ],
+      "rxnorm": {
+        "rxcui": "325526",
+        "name": "ginseng preparation",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Dr. Patel asked whether Mary took ginseng as an herbal remedy, but she did not report taking it.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        41
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

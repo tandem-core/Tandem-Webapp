@@ -1,0 +1,239 @@
+{
+  "conversationId": "history:11_medication_review",
+  "headline": "At your yearly medication review, Dr. Smith kept your medicines the same and asked you to take old and borrowed pills to the pharmacy.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Take the disposal bag to the Elm Street pharmacy",
+      "detail": "Bring the old amlodipine 10 mg pills, the expired naproxen, and the borrowed sleeping pills. Your current amlodipine dose is 5 mg.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        39,
+        40,
+        42,
+        43,
+        44,
+        45,
+        69,
+        70,
+        73,
+        79,
+        96,
+        97
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Set up a weekly pill organizer",
+      "detail": "Use one with a morning row and a night row. Lisa can fill it for you on Sundays.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Keep your appointment with Dr. Patel",
+      "detail": "Your appointment is already arranged. No exact day or time was given at this visit.",
+      "dueBy": null,
+      "when": "Next month (July 2026)",
+      "status": "already_scheduled",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        98,
+        99
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Arrange your September visit with Dr. Smith",
+      "detail": "Dr. Smith asked you to come back to the same clinic. No exact day or time was given.",
+      "dueBy": null,
+      "when": "In 3 months (September 2026)",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        99,
+        100,
+        101
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take lansoprazole 30 mg half an hour before breakfast. Don’t stop it suddenly. Dr. Smith said the acid can come back worse for a while.",
+      "confidence": "check_this",
+      "evidence": [
+        55,
+        56,
+        92
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Don’t take the borrowed sleeping pills. Dr. Smith said they raise your risk of falls and confusion at night.",
+      "confidence": "check_this",
+      "evidence": [
+        73,
+        74,
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Go to bed at the same time every night. Don’t nap after 3 p.m. or drink tea or coffee after lunch. Try decaf in the afternoon and get some daylight in the morning.",
+      "confidence": "check_this",
+      "evidence": [
+        81,
+        82,
+        84,
+        86
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking one ramipril 10 mg capsule each morning with breakfast.",
+      "evidence": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        92,
+        95
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep taking amlodipine 5 mg once a day at night.",
+      "evidence": [
+        34,
+        35,
+        37,
+        38,
+        93,
+        95
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Keep taking one atorvastatin 20 mg tablet at night.",
+      "evidence": [
+        47,
+        49,
+        93,
+        95
+      ]
+    },
+    {
+      "id": "unchanged-4",
+      "text": "Keep taking lansoprazole 30 mg once a day before breakfast for now.",
+      "evidence": [
+        56,
+        57,
+        58,
+        92,
+        95
+      ]
+    },
+    {
+      "id": "unchanged-5",
+      "text": "Keep taking vitamin D, 1,000 units once a day with breakfast.",
+      "evidence": [
+        59,
+        61,
+        92,
+        95
+      ]
+    },
+    {
+      "id": "unchanged-6",
+      "text": "Keep using acetaminophen 500 mg tablets as needed for your knee. You can take up to 2 tablets at a time, up to 3 times a day. Don’t take more than 3,000 mg in a day.",
+      "evidence": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        94,
+        95
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Will you lower your lansoprazole dose?",
+      "resolvesWhen": "In fall 2026, you and Dr. Smith will talk about lowering the dose one step at a time.",
+      "evidence": [
+        53,
+        55,
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Will you need more help with sleep?",
+      "resolvesWhen": "If you’re still having trouble sleeping, tell Dr. Smith at your next visit.",
+      "evidence": [
+        80,
+        81,
+        82,
+        83,
+        100,
+        101
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:58:17.158Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2285,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1120,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 163,
+      "engine_ttlt_ms": 13427,
+      "pre_inference_ms": 286,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 790,
+      "service_ttlt_ms": 14023,
+      "user_visible_ttft_ms": 504
+    },
+    "prompt_tokens": 3614,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 3611,
+      "cached_tokens": 0
+    },
+    "total_tokens": 5899
+  }
+}

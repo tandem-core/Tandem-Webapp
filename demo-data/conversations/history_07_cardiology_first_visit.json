@@ -1,0 +1,557 @@
+{
+  "id": "history:07_cardiology_first_visit",
+  "source": "history",
+  "sourceId": "07_cardiology_first_visit",
+  "title": "First cardiology visit",
+  "recordedAt": "2025-12-09T19:00:00.000Z",
+  "durationSec": 242,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.16,
+      "end": 1.759,
+      "text": "Good afternoon, Mrs. James."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.2,
+      "end": 4.839,
+      "text": "I'm Dr. Patel, one of the cardiologists here."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 5.48,
+      "end": 8.72,
+      "text": "Dr. Smith referred you to me about your blood pressure."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 9.16,
+      "end": 10.56,
+      "text": "Hello, please call me Mary."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 10.72,
+      "end": 11.479,
+      "text": "Everyone does."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.08,
+      "end": 15.919,
+      "text": "Mary then. I've read through your notes, but I'd like to hear it from you."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 16.56,
+      "end": 18.559,
+      "text": "How long have you had high blood pressure?"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 18.96,
+      "end": 20.219,
+      "text": "Oh, about 15 years."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 20.4,
+      "end": 21.62,
+      "text": "It was fine with the 2 pills."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 22.12,
+      "end": 24.799,
+      "text": "Then this summer it went up, so Dr."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 24.84,
+      "end": 31.509,
+      "text": "Smith raised the, the ramipril, and then my ankle swelled up, so we stopped the other one."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 31.91,
+      "end": 38.55,
+      "text": "The amlodipine, yes. And since you stopped the amlodipine in September, the swelling has gone?"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 38.99,
+      "end": 39.59,
+      "text": "All gone."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 40.87,
+      "end": 46.709,
+      "text": "Good. Any chest pain, palpitations, shortness of breath, dizziness, or fainting?"
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 47.15,
+      "end": 50.06,
+      "text": "Sometimes I feel my heart thump when I lie down at night."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 50.9,
+      "end": 51.98,
+      "text": "Not every night."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 52.42,
+      "end": 57.1,
+      "text": "Does it race or feel irregular, or is it just a strong beat?"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 57.58,
+      "end": 59.46,
+      "text": "Just a strong beat, I think."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 59.62,
+      "end": 61.02,
+      "text": "It goes away after a minute."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 61.46,
+      "end": 65.139,
+      "text": "Okay. We did an ECG, the heart tracing, when you came in."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 65.58,
+      "end": 69.38,
+      "text": "It shows a regular rhythm at a normal rate, 72 beats a minute."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 69.86,
+      "end": 73.46,
+      "text": "There are some signs that the heart muscle may be a little thickened."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 74.011,
+      "end": 76.97,
+      "text": "That can happen after years of high blood pressure."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 77.291,
+      "end": 78.571,
+      "text": "Thickened? That sounds bad."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 79.131,
+      "end": 81.65,
+      "text": "It's common, and it's not an emergency."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 82.171,
+      "end": 84.651,
+      "text": "I'd like to confirm it with an echocardiogram."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 85.171,
+      "end": 87.05,
+      "text": "That's an ultrasound of the heart."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 87.891,
+      "end": 91.251,
+      "text": "No needles, just a probe with some gel on your chest."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 91.731,
+      "end": 92.811,
+      "text": "Okay, I can do that."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 93.611,
+      "end": 98.121,
+      "text": "Your blood pressure today is 148 over 88."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 98.561,
+      "end": 101.001,
+      "text": "It's always higher in a doctor's office."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 101.481,
+      "end": 106.601,
+      "text": "That's very common. That's why I want a more accurate picture before we change anything."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 107.041,
+      "end": 112.84,
+      "text": "I'd like you to keep a home blood pressure diary, twice a day, morning and evening, for 2 weeks."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 113.441,
+      "end": 119.161,
+      "text": "Sit quietly for 5 minutes first, take 2 readings each time, and write them all down."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 119.761,
+      "end": 124.112,
+      "text": "Twice a day, morning and evening, for 2 weeks."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 124.632,
+      "end": 127.832,
+      "text": "Then mail it in or have Lisa email it to the office."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 128.272,
+      "end": 129.432,
+      "text": "We'll put it in your chart."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 129.832,
+      "end": 143.831,
+      "text": "Now your medications. I have ramipril 10 milligrams once daily, atorvastatin 20 milligrams at night, vitamin D 1,000 units daily, and acetaminophen for the knee."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 144.702,
+      "end": 145.422,
+      "text": "Anything else?"
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 145.982,
+      "end": 149.982,
+      "text": "No. Oh, I had a steroid shot in my knee in October."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 150.542,
+      "end": 152.941,
+      "text": "Noted. Anything from the store?"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 153.662,
+      "end": 156.001,
+      "text": "Any herbal remedies? Ginseng?"
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 156.382,
+      "end": 156.981,
+      "text": "Licorice?"
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 157.342,
+      "end": 159.262,
+      "text": "Licorice? I do like licorice candy."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 160.182,
+      "end": 164.102,
+      "text": "Real black licorice in large amounts can raise blood pressure."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 164.622,
+      "end": 167.501,
+      "text": "A piece now and then is fine, just not a bag a day."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 167.972,
+      "end": 170.371,
+      "text": "Not a bag a day, just at Christmas."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 170.892,
+      "end": 173.052,
+      "text": "Perfect. How much salt do you eat?"
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 173.412,
+      "end": 175.092,
+      "text": "Canned soups, ready meals?"
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 175.612,
+      "end": 177.331,
+      "text": "I do eat soup most days."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 177.852,
+      "end": 179.331,
+      "text": "Lisa brings it in cans."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 179.812,
+      "end": 182.171,
+      "text": "Canned soups are often very salty."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 182.732,
+      "end": 184.532,
+      "text": "Look for the low sodium versions."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 185.172,
+      "end": 188.331,
+      "text": "That alone can bring your blood pressure down a few points."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 188.772,
+      "end": 189.492,
+      "text": "I'll tell her."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 190.652,
+      "end": 192.802,
+      "text": "For now, I'm not changing any medicines."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 193.403,
+      "end": 196.282,
+      "text": "Keep the ramipril at 10 milligrams once a day."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 197.043,
+      "end": 199.682,
+      "text": "I want the echo and the home diary first."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 200.163,
+      "end": 202.163,
+      "text": "Then we'll decide on a second medicine."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 202.723,
+      "end": 206.923,
+      "text": "That may be amlodipine again at a lower dose, or something different."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 207.363,
+      "end": 210.203,
+      "text": "Will the swelling come back if I take amlodipine again?"
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 210.603,
+      "end": 213.402,
+      "text": "At a lower dose, it's much less likely."
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 214.123,
+      "end": 217.232,
+      "text": "But let's decide once I have all the information."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 217.673,
+      "end": 220.952,
+      "text": "I'll see you again in about 3 months after the echo."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 221.313,
+      "end": 228.873,
+      "text": "If the thumping becomes fast and irregular, or you get chest pain or you faint, call 911 or go to the emergency room."
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 229.313,
+      "end": 236.833,
+      "text": "Okay. The echo, the diary twice a day for 2 weeks, low salt soup, and back in 3 months."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 237.353,
+      "end": 239.512,
+      "text": "Got it, Mary. It was nice to meet you."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 239.913,
+      "end": 241.553,
+      "text": "You too, doctor. Merry Christmas."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:54:31.785Z"
+}

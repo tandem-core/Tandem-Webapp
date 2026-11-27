@@ -1,0 +1,162 @@
+{
+  "conversationId": "history:02_knee_xray_results",
+  "headline": "Your X-ray showed moderate wear-and-tear arthritis in your right knee, and Dr. Okafor recommended physical therapy as the first step.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Book physical therapy",
+      "detail": "Dr. Okafor plans to refer you for physical therapy twice a week for 6 weeks. When you book with the clinic on Maple Avenue, ask the front desk about early morning or evening times so Lisa can drive you.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        28,
+        30,
+        31,
+        32,
+        33,
+        67,
+        68
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Book a follow-up with Dr. Okafor",
+      "detail": "See Dr. Okafor again to check how your knee is doing after physical therapy.",
+      "dueBy": "2025-10-08",
+      "when": "in 3 months",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        63,
+        64,
+        66,
+        67
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Do the home exercises your physical therapist gives you. Dr. Okafor said these exercises are the part that makes the most difference. Most people notice improvement after 4 to 6 weeks of exercises.",
+      "confidence": "check_this",
+      "evidence": [
+        29,
+        62
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Take up to 2 acetaminophen tablets (500 mg each) up to 3 times a day. Do not take more than 3,000 mg in a day. Take it regularly rather than waiting until the pain is bad. Try taking a dose about an hour before physical therapy.",
+      "confidence": "check_this",
+      "evidence": [
+        38,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Do not switch to Celebrex or take your friend's tablets. Dr. Okafor said Celebrex has the same blood pressure and kidney concerns as naproxen.",
+      "confidence": "check_this",
+      "evidence": [
+        44,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Use a warm pack in the morning for stiffness. If your knee is swollen in the evening, use ice for 15 minutes.",
+      "confidence": "check_this",
+      "evidence": [
+        53,
+        54
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "On bad days, use a cane in your left hand to take weight off your right knee. Your physical therapist can fit you for one.",
+      "confidence": "check_this",
+      "evidence": [
+        56,
+        57
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "Call Dr. Okafor's office if your knee becomes hot, red, and very swollen, or if you can't put weight on it.",
+      "confidence": "check_this",
+      "evidence": [
+        70
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking acetaminophen as Dr. Smith told you.",
+      "evidence": [
+        38,
+        69,
+        70
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Stay off naproxen. Dr. Okafor agreed with Dr. Smith's decision to stop it because of your blood pressure.",
+      "evidence": [
+        35,
+        38,
+        39,
+        40
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Will you need a steroid injection in your knee?",
+      "resolvesWhen": "Dr. Okafor can discuss it at your 3-month follow-up if your knee is still bothering you a lot after physical therapy.",
+      "evidence": [
+        63,
+        64,
+        66
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:49:43.469Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 1896,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1024,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 171,
+      "engine_ttlt_ms": 11201,
+      "pre_inference_ms": 147,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 588,
+      "service_ttlt_ms": 11614,
+      "user_visible_ttft_ms": 440
+    },
+    "prompt_tokens": 2735,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2732,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4631
+  }
+}
