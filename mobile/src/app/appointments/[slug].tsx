@@ -74,7 +74,15 @@ function AppointmentView({ visit, lisa, shared }: { visit: Visit; lisa: boolean;
           <Pressable onPress={() => setShared(visit.slug, !shared)} style={s.shareRow} accessibilityRole="switch" accessibilityState={{ checked: shared }}>
             <Ionicons name="people" size={24} color={colors.muted} />
             <Text style={[ui.body, { flex: 1 }]}>Share with Lisa</Text>
-            <Switch value={shared} onValueChange={(on) => setShared(visit.slug, on)} trackColor={{ true: colors.accent }} accessibilityLabel="Share with Lisa" />
+            <Switch
+              value={shared}
+              onValueChange={(on) => setShared(visit.slug, on)}
+              trackColor={{ true: colors.accent, false: colors.border }}
+              thumbColor="#fff"
+              // Web's own knob color when on; native uses thumbColor.
+              {...{ activeThumbColor: '#fff' }}
+              accessibilityLabel="Share with Lisa"
+            />
           </Pressable>
         )}
 

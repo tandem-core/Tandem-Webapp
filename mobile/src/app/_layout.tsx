@@ -1,7 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import { ComponentProps } from 'react';
-import { Platform, Text } from 'react-native';
+import { Platform, Text, useWindowDimensions } from 'react-native';
 
 import { useDemo } from '@/demo';
 import { colors } from '@/theme';
@@ -18,6 +18,9 @@ const TABS: [route: string, title: string, icon: IconName][] = [
 
 export default function Layout() {
   const { viewer } = useDemo();
+  const { width } = useWindowDimensions();
+  // Web can't shrink a label to fit, so size it from the tab width ("Appointments" is about 6.6 em wide).
+  const webLabelSize = Math.min(13, Math.floor(((width / (viewer === 'lisa' ? 4 : 5) - 4) / 6.6) * 2) / 2);
   return (
     <Tabs
       screenOptions={{
@@ -27,8 +30,8 @@ export default function Layout() {
         tabBarInactiveTintColor: colors.muted,
         // Web gives the bar a fixed height that clips labels under 30px icons.
         tabBarStyle: { paddingTop: 6, backgroundColor: '#fff', height: Platform.OS === 'web' ? 76 : undefined },
-        tabBarItemStyle: { paddingHorizontal: 2 },
-        tabBarLabelStyle: { fontSize: 13, fontWeight: '600' },
+        tabBarItemStyle: { paddingHorizontal: Platform.OS === 'web' ? 0 : 2 },
+        tabBarLabelStyle: { fontSize: webLabelSize, fontWeight: '600' },
       }}>
       {TABS.map(([name, title, icon]) => (
         <Tabs.Screen
