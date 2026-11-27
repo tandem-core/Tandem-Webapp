@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, clock, doseOf, labelChecks, markerPositions, otherChecks } from './format.ts';
+import { aboutMary, answerOf, clock, doseOf, isNewForLisa, labelChecks, markerPositions, otherChecks } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -44,6 +44,15 @@ test('answerOf replaces the misleading offline line but keeps real and saved ans
   assert.equal(answerOf(saved), 'Saved. Take 15 mg.');
   const live = { actions: [{ type: 'speak', text: 'Take 15 mg.' }, { type: 'play', text: 'quote' }, { type: 'listen' }], result: { status: 'answered' } };
   assert.equal(answerOf(live), 'Take 15 mg.');
+});
+
+test('isNewForLisa flags appointments recorded after sharing began, until Lisa opens them', () => {
+  const since = '2026-11-27T19:00:00.000Z';
+  const fresh = { slug: 'new', recordedAt: '2026-11-27T19:05:00.000Z' };
+  assert.equal(isNewForLisa(fresh, since, []), true);
+  assert.equal(isNewForLisa(fresh, since, ['new']), false);
+  assert.equal(isNewForLisa({ slug: 'old', recordedAt: '2026-11-03T15:00:00.000Z' }, since, []), false);
+  assert.equal(isNewForLisa(fresh, null, []), false);
 });
 
 test('aboutMary rewords a summary for Lisa', () => {

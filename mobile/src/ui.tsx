@@ -18,38 +18,35 @@ function DateTile({ iso }: { iso: string }) {
   );
 }
 
-export function AppointmentCard({ visit }: { visit: VisitSummary }) {
+/** One appointment in a list. Lisa sees "New" instead of Mary's "Check" flag. */
+export function AppointmentCard({ visit, lisa = false, isNew = false }: { visit: VisitSummary; lisa?: boolean; isNew?: boolean }) {
   const { month, day, weekday } = dateParts(visit.recordedAt);
+  const flag = !lisa && visit.medicationsToCheck > 0;
   return (
     <Link href={`/appointments/${visit.slug}`} asChild>
       <Pressable
-        style={styles.card}
+        // One object, not an array: Link passes it to the web element as-is.
+        style={StyleSheet.flatten([styles.card, isNew && styles.cardNew])}
         accessibilityRole="button"
-        accessibilityLabel={`${visit.title}, ${weekday} ${month} ${day}${visit.medicationsToCheck ? ', something to check' : ''}`}>
+        accessibilityLabel={`${isNew ? 'New: ' : ''}${visit.title}, ${weekday} ${month} ${day}${flag ? ', something to check' : ''}`}>
         <DateTile iso={visit.recordedAt} />
         <View style={{ flex: 1, gap: 6 }}>
           <Text style={styles.title}>{visit.title}</Text>
-          {visit.medicationsToCheck > 0 && (
+          {flag && (
             <View style={styles.flag}>
               <Ionicons name="alert-circle" size={20} color={colors.amber} />
               <Text style={styles.flagText}>Check</Text>
+            </View>
+          )}
+          {isNew && (
+            <View style={[styles.flag, { backgroundColor: colors.accent }]}>
+              <Text style={[styles.flagText, { color: '#fff' }]}>New</Text>
             </View>
           )}
         </View>
         <Ionicons name="chevron-forward" size={26} color={colors.muted} />
       </Pressable>
     </Link>
-  );
-}
-
-/** An appointment Mary hasn't shared: Lisa sees only its title and date. */
-export function NotSharedCard({ visit }: { visit: VisitSummary }) {
-  return (
-    <View style={[styles.card, { opacity: 0.6 }]} accessible accessibilityLabel={`${visit.title}, not shared`}>
-      <DateTile iso={visit.recordedAt} />
-      <Text style={[styles.title, { flex: 1 }]}>{visit.title}</Text>
-      <Ionicons name="lock-closed" size={24} color={colors.muted} />
-    </View>
   );
 }
 
@@ -80,7 +77,7 @@ export function ViewerSwitch() {
                 }}
                 style={styles.person}
                 accessibilityRole="radio"
-                accessibilityState={{ selected: viewer === id }}>
+                aria-checked={viewer === id}>
                 <View style={styles.avatar}>
                   <Text style={styles.avatarText}>{letter}</Text>
                 </View>
@@ -138,6 +135,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.border,
   },
+  cardNew: { borderColor: colors.accent, borderWidth: 2 },
   tile: { width: 68, borderRadius: 12, overflow: 'hidden', borderWidth: 1, borderColor: colors.border, alignItems: 'center' },
   tileMonth: {
     alignSelf: 'stretch',

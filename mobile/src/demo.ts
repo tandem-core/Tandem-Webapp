@@ -1,15 +1,19 @@
-// Demo state: who is using the app and which appointments Mary shares with Lisa.
-// Kept in memory on the phone, like the web family demo keeps it in the browser
-// (lib/family-demo-config.ts). shortcut: this is not access control. The API still
-// returns every appointment, so real sign-in must enforce sharing on the server.
+// Demo state: who is using the app, what Mary shares with Lisa, and what Lisa has opened.
+// Kept in memory on the phone, like the web family demo keeps it in the browser.
+// shortcut: this is not access control. The API still returns everything to anyone,
+// so real sign-in must enforce sharing on the server before real use.
 import { useSyncExternalStore } from 'react';
 
 export type Viewer = 'mary' | 'lisa';
+export type Parts = { summary: boolean; transcript: boolean; recording: boolean };
 
-// Same starting shares as the web demo's initialSharedSources.
 let state = {
   viewer: 'mary' as Viewer,
-  shared: ['clip_01_medication_shared_decision', 'clip_02_methotrexate_full_consultation'],
+  // Chosen once by Mary in setup and applied to every appointment. null until she chooses.
+  sharing: null as Parts | null,
+  sharingSince: null as string | null,
+  // Appointments Lisa has opened, so newly shared ones stand out until she does.
+  seen: [] as string[],
 };
 
 const listeners = new Set<() => void>();
@@ -24,5 +28,8 @@ const update = (next: Partial<typeof state>) => {
 
 export const useDemo = () => useSyncExternalStore(subscribe, () => state);
 export const setViewer = (viewer: Viewer) => update({ viewer });
-export const setShared = (slug: string, on: boolean) =>
-  update({ shared: on ? [...state.shared, slug] : state.shared.filter((s) => s !== slug) });
+export const setSharing = (sharing: Parts) => update({ sharing, sharingSince: state.sharingSince ?? new Date().toISOString() });
+export const markSeen = (slug: string) => !state.seen.includes(slug) && update({ seen: [...state.seen, slug] });
+
+export const NOTHING: Parts = { summary: false, transcript: false, recording: false };
+export const sharesAnything = (p: Parts | null) => Boolean(p && (p.summary || p.transcript || p.recording));

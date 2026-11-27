@@ -71,6 +71,17 @@ export function answerOf(turn: Turn) {
   return turn.actions.flatMap((a) => (a.type === 'speak' ? [a.text] : [])).join(' ');
 }
 
+/** "Summary, Recording", or "Nothing". */
+export function partsLabel(p: { summary: boolean; transcript: boolean; recording: boolean }) {
+  const names = [p.summary && 'Summary', p.transcript && 'Transcript', p.recording && 'Recording'].filter(Boolean);
+  return names.length ? names.join(', ') : 'Nothing';
+}
+
+/** An appointment stands out for Lisa when it was recorded after Mary set up sharing and Lisa hasn't opened it. */
+export function isNewForLisa(visit: { slug: string; recordedAt: string }, sharingSince: string | null, seen: string[]) {
+  return Boolean(sharingSince && visit.recordedAt > sharingSince && !seen.includes(visit.slug));
+}
+
 /** Summaries speak to Mary ("your medicine"); Lisa reads them about Mary. Same rules as familyVoice in lib/family-demo-config.ts. */
 export function aboutMary(text: string) {
   return text

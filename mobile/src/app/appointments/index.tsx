@@ -1,14 +1,16 @@
 import { RefreshControl, ScrollView, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { getHome, useLoad } from '@/api';
-import { useDemo } from '@/demo';
-import { AppointmentCard, LoadState, NotSharedCard, styles } from '@/ui';
+import { useHome } from '@/api';
+import { sharesAnything, useDemo } from '@/demo';
+import { isNewForLisa } from '@/format';
+import { AppointmentCard, LoadState, styles } from '@/ui';
 
 export default function Appointments() {
-  const { data, error, loading, reload } = useLoad(getHome);
-  const { viewer, shared } = useDemo();
+  const { data, error, loading, reload } = useHome();
+  const { viewer, sharing, sharingSince, seen } = useDemo();
   const lisa = viewer === 'lisa';
+  const hidden = lisa && !sharesAnything(sharing);
   return (
     <SafeAreaView style={styles.screen} edges={['top']}>
       <ScrollView contentContainerStyle={styles.content} refreshControl={<RefreshControl refreshing={false} onRefresh={reload} />}>
@@ -16,9 +18,9 @@ export default function Appointments() {
           {lisa ? 'Mary’s appointments' : 'Appointments'}
         </Text>
         <LoadState loading={loading} error={error} onRetry={reload} />
-        {data?.visits.map((v) =>
-          !lisa || shared.includes(v.slug) ? <AppointmentCard key={v.slug} visit={v} /> : <NotSharedCard key={v.slug} visit={v} />,
-        )}
+        {data && hidden && <Text style={styles.muted}>Mary hasn’t shared anything yet.</Text>}
+        {!hidden &&
+          data?.visits.map((v) => <AppointmentCard key={v.slug} visit={v} lisa={lisa} isNew={lisa && isNewForLisa(v, sharingSince, seen)} />)}
       </ScrollView>
     </SafeAreaView>
   );

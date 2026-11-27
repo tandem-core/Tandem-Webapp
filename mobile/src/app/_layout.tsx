@@ -35,8 +35,8 @@ export default function Layout() {
           name={name}
           options={{
             title,
-            // Lisa doesn't record Mary's appointments.
-            href: viewer === 'lisa' && name === 'record' ? null : undefined,
+            // Lisa doesn't record Mary's appointments. (href: null would break the route in this SDK.)
+            ...(viewer === 'lisa' && name === 'record' && { tabBarItemStyle: { display: 'none' }, tabBarButton: () => null }),
             tabBarIcon: ({ color }) => <Ionicons name={icon} size={30} color={color as string} />,
             // Five tabs on a narrow phone: shrink long labels a little instead of cutting them off.
             // Web can't shrink to fit, so it lets "Appointments" run slightly past its tab; its neighbors are short.
@@ -51,8 +51,10 @@ export default function Layout() {
           }}
         />
       ))}
-      {/* Opened from Home, not a tab. (href: null would also drop the route in this SDK.) */}
-      <Tabs.Screen name="ask" options={{ tabBarItemStyle: { display: 'none' }, tabBarButton: () => null }} />
+      {/* Opened from Home, not tabs. (href: null would also drop the route in this SDK.) */}
+      {['ask', 'sharing'].map((name) => (
+        <Tabs.Screen key={name} name={name} options={{ tabBarItemStyle: { display: 'none' }, tabBarButton: () => null }} />
+      ))}
     </Tabs>
   );
 }

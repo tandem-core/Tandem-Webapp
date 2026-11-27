@@ -1,5 +1,6 @@
 // Calls the Tandem web API. Shapes come from lib/summaries.mjs in the web app.
-import { useEffect, useState } from 'react';
+import { useFocusEffect } from 'expo-router';
+import { useCallback, useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 
 // The web build is served by the Next.js site at /phone, so it calls the API on the
@@ -40,7 +41,7 @@ export type SummaryItem = { id: string; text: string; evidence: number[] };
 
 export type Visit = VisitSummary & {
   audioUrl: string;
-  segments: { idx: number; start: number; end: number }[];
+  segments: { idx: number; start: number; end: number; text: string }[];
   followUps: { id: string; title: string; when: string | null; evidence: number[]; uncheckedMedication: boolean }[];
   instructions: SummaryItem[];
   unchanged: SummaryItem[];
@@ -55,6 +56,13 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const getHome = () => request<Home>('/api/home');
+
+/** The appointment list, refreshed whenever the screen comes back into view (for example after recording). */
+export function useHome() {
+  const home = useLoad(getHome);
+  useFocusEffect(home.reload);
+  return home;
+}
 export const getVisit = (slug: string) => request<Visit>(`/api/visits/${slug}`);
 
 export const answerMedication = (slug: string, medId: string, answer: Answer) =>
@@ -86,6 +94,31 @@ export const askTurn = (body: { event: 'question' | 'choose'; text?: string; slu
     body: JSON.stringify(body),
   });
 
+// Sends a phone recording to Joel's /api/recordings, which transcribes and summarizes it.
+export class RecordingError extends Error {
+  code: string;
+  constructor(code: string) {
+    super(code);
+    this.code = code;
+  }
+}
+
+export async function uploadRecording(uri: string): Promise<VisitSummary> {
+  const form = new FormData();
+  if (Platform.OS === 'web') {
+    // The browser records webm; send the plain type so the server stores it as .webm.
+    const blob = await (await fetch(uri)).blob();
+    form.append('audio', new File([blob], 'recording.webm', { type: 'audio/webm' }));
+  } else {
+    form.append('audio', { uri, name: 'recording.m4a', type: 'audio/mp4' } as unknown as Blob);
+  }
+  const res = await fetch(API_URL + '/api/recordings', { method: 'POST', body: form }).catch(() => null);
+  if (!res) throw new RecordingError('offline');
+  const body = await res.json().catch(() => null);
+  if (!res.ok) throw new RecordingError(body?.error?.code ?? String(res.status));
+  return body.visit;
+}
+
 /** Loads data once, with a reload function for retry and pull-to-refresh. */
 export function useLoad<T>(load: () => Promise<T>) {
   const [data, setData] = useState<T | null>(null);
@@ -102,9 +135,9 @@ export function useLoad<T>(load: () => Promise<T>) {
     };
   }, [load, attempt]);
 
-  const reload = () => {
+  const reload = useCallback(() => {
     setError(null);
     setAttempt((n) => n + 1);
-  };
+  }, []);
   return { data, error, loading: !data && !error, reload };
 }

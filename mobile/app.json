@@ -34,8 +34,8 @@
       [
         "expo-audio",
         {
-          "microphonePermission": false,
-          "recordAudioAndroid": false
+          "microphonePermission": "Tandem records your appointments so you can hear them again.",
+          "recordAudioAndroid": true
         }
       ],
       "expo-asset"
