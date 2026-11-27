@@ -25,7 +25,8 @@ export default function Layout() {
         sceneStyle: { backgroundColor: colors.background },
         tabBarActiveTintColor: colors.accent,
         tabBarInactiveTintColor: colors.muted,
-        tabBarStyle: { paddingTop: 6, backgroundColor: '#fff' },
+        // Web gives the bar a fixed height that clips labels under 30px icons.
+        tabBarStyle: { paddingTop: 6, backgroundColor: '#fff', height: Platform.OS === 'web' ? 76 : undefined },
         tabBarItemStyle: { paddingHorizontal: 2 },
         tabBarLabelStyle: { fontSize: 13, fontWeight: '600' },
       }}>
