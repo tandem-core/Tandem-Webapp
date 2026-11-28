@@ -15,12 +15,6 @@ export function shortDate(iso: string) {
   return `${month.slice(0, 3)} ${day}`;
 }
 
-/** A player marker: "2 Pick" for "Pick up the new prescription". */
-export function markerLabel(title: string, i: number) {
-  const word = title.match(/[A-Za-z][a-z]+/)?.[0] ?? '';
-  return `${i + 1} ${word.length <= 8 ? word : ''}`.trim();
-}
-
 export function clock(seconds: number) {
   const s = Math.max(0, Math.floor(seconds));
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;

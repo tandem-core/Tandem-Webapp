@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, amountOf, homeLine, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
+import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, amountOf, homeLine, labelChecks, otherChecks, shortDate } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -89,10 +89,8 @@ test('brief hides only a tail with no numbers, quotes or medicine names', () => 
   assert.equal(brief('Keep taking your blood pressure pills, and rest well this week.').short, 'Keep taking your blood pressure pills.');
 });
 
-test('shortDate and markerLabel stay short', () => {
+test('shortDate stays short', () => {
   assert.equal(shortDate('2026-11-03T15:00:00Z'), 'Nov 3');
-  assert.equal(markerLabel('Pick up the new prescription', 1), '2 Pick');
-  assert.equal(markerLabel('Rheumatology referral', 0), '1');
 });
 
 test('homeLine shows one short line and never cuts a dose', () => {

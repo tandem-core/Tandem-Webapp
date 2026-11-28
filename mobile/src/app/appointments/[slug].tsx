@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { API_URL, getVisit, useLoad, Visit } from '@/api';
 import { markSeen, NOTHING, Parts, sharesAnything, useDemo } from '@/demo';
-import { aboutMary, brief, clock, dateParts, labelChecks, markerLabel, otherChecks, shortDate } from '@/format';
+import { aboutMary, brief, clock, dateParts, labelChecks, otherChecks, shortDate } from '@/format';
 import { colors, fonts } from '@/theme';
 import { Card, Header, HearButton, LoadState, Locked, MedCheck, styles as ui } from '@/ui';
 
@@ -52,15 +52,7 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
   const startOf = (evidence: number[]) => visit.segments.find((seg) => seg.idx === evidence[0])?.start;
   // Without the recording, there is nothing to play (demo plan D7).
   const at = (evidence: number[]) => (parts.recording ? startOf(evidence) : undefined);
-  const moments = parts.recording
-    ? visit.followUps
-        .map((f) => ({ ...f, start: startOf(f.evidence) }))
-        .filter((m): m is typeof m & { start: number } => m.start !== undefined)
-        .sort((a, b) => a.start - b.start)
-        .slice(0, 4)
-    : [];
   const length = status.duration || visit.segments.at(-1)?.end || 0;
-  const current = status.currentTime > 0 ? moments.findLast((m) => m.start <= status.currentTime + 0.5) : undefined;
   const notShared = (Object.keys(PART_NAMES) as (keyof Parts)[]).filter((p) => !parts[p]).map((p) => PART_NAMES[p]);
   const names = visit.medications.flatMap((m) => [m.heardAs, m.suggestion?.name ?? '']);
 
@@ -104,22 +96,6 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
           <View style={s.track}>
             <View style={[s.fill, { width: `${length ? Math.min(100, (status.currentTime / length) * 100) : 0}%` }]} />
           </View>
-          {moments.length > 0 && (
-            <View style={{ flexDirection: 'row', gap: 6 }}>
-              {moments.map((m, i) => (
-                <Pressable
-                  key={m.id}
-                  onPress={() => playAt(m.start)}
-                  style={[s.marker, current?.id === m.id && s.markerOn]}
-                  accessibilityRole="button"
-                  accessibilityLabel={`${i + 1}: ${say(m.title)}, at ${clock(m.start)}`}>
-                  <Text style={[s.markerText, current?.id === m.id && { color: '#fff' }]} numberOfLines={1}>
-                    {markerLabel(m.title, i)}
-                  </Text>
-                </Pressable>
-              ))}
-            </View>
-          )}
         </View>
       )}
 
@@ -221,19 +197,6 @@ const s = StyleSheet.create({
   },
   track: { height: 6, borderRadius: 99, backgroundColor: '#EADFD1', marginVertical: 6, overflow: 'hidden' },
   fill: { height: 6, borderRadius: 99, backgroundColor: colors.forest },
-  marker: {
-    flex: 1,
-    minHeight: 38,
-    paddingHorizontal: 6,
-    borderRadius: 12,
-    borderWidth: 1.5,
-    borderColor: colors.line,
-    backgroundColor: colors.canvas,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  markerOn: { backgroundColor: colors.forest, borderColor: colors.forest },
-  markerText: { fontFamily: fonts.semibold, fontSize: 13.5, color: colors.forest },
   fold: { borderTopWidth: 1, borderTopColor: colors.line, marginTop: -1, paddingVertical: 4 },
   trigger: { minHeight: 56, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   foldTitle: { fontFamily: fonts.semibold, fontSize: 18, color: colors.forest },
