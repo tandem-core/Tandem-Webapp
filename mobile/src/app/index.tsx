@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { getHome, getVisit, useAllVisits, useLoad } from '@/api';
 import { NOTHING, setPerson, sharesAnything, useDemo } from '@/demo';
-import { aboutMary, brief, dateParts, isNewForLisa, shortDate } from '@/format';
+import { aboutMary, brief, homeLine, isNewForLisa, shortDate } from '@/format';
 import { colors, dockSpace, fonts } from '@/theme';
 import { Card, IconButton, LoadState, Locked, styles, ViewerSwitch, VisitRow } from '@/ui';
 
@@ -19,17 +19,18 @@ const greeting = () => {
   return h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening';
 };
 
-// The newest appointment, plus the full appointment that has the next open to-do.
+// The newest appointment in full, plus the appointment that has the next open to-do.
 async function loadHome() {
   const home = await getHome();
   const withTodo = home.visits.find((v) => v.todoCount > 0);
-  return { home, todoVisit: withTodo ? await getVisit(withTodo.slug) : null };
+  const [latest, todoVisit] = await Promise.all([home.visits[0] && getVisit(home.visits[0].slug), withTodo && getVisit(withTodo.slug)]);
+  return { home, latest: latest || null, todoVisit: todoVisit || null };
 }
 
 function MaryHome() {
   const { data, error, loading, reload } = useLoad(loadHome);
   const { done } = useDemo();
-  const latest = data?.home.visits[0];
+  const latest = data?.latest;
   const todo = data?.todoVisit?.followUps.find((f) => f.status === 'to_do' && !done.includes(f.id));
   return (
     <SafeAreaView style={styles.screen} edges={['top']}>
@@ -51,13 +52,10 @@ function MaryHome() {
           onPress={() => router.push('/ask')}
           style={({ pressed }) => [s.chat, pressed && styles.pressed]}
           accessibilityRole="button"
-          accessibilityLabel="Ask me about your visits">
-          <View style={[styles.row, { gap: 8 }]}>
-            <View style={s.dot} />
-            <Text style={[styles.body, { fontSize: 17, color: colors.forest }]}>Ask me about your visits</Text>
-          </View>
+          accessibilityLabel="Ask about your visits">
           <View style={s.field}>
-            <Text style={[styles.muted, { flex: 1 }]}>Type or tap mic…</Text>
+            <View style={s.dot} />
+            <Text style={[styles.body, { flex: 1, fontSize: 17, color: colors.forest }]}>Ask about your visits…</Text>
             <View style={s.mic}>
               <Ionicons name="mic-outline" size={20} color="#fff" />
             </View>
@@ -67,18 +65,12 @@ function MaryHome() {
         <LoadState loading={loading} error={error} onRetry={reload} />
         {latest && (
           <>
-            <Text style={styles.section}>Latest appointment</Text>
+            <Text style={styles.section}>Last visit</Text>
             <Card onPress={() => router.push(`/appointments/${latest.slug}`)} label={`${latest.title}, ${shortDate(latest.recordedAt)}`}>
               <Text style={styles.head}>{latest.title}</Text>
-              <Text style={[styles.muted, { marginTop: 4 }]}>
-                {dateParts(latest.recordedAt).weekday} · {shortDate(latest.recordedAt)}
-              </Text>
-              {latest.headline ? (
-                <>
-                  <View style={styles.divider} />
-                  <Text style={styles.body}>{brief(latest.headline).short}</Text>
-                </>
-              ) : null}
+              <Text style={[styles.muted, { marginTop: 4 }]}>{shortDate(latest.recordedAt)}</Text>
+              <View style={styles.divider} />
+              <Text style={styles.body}>{homeLine(latest)}</Text>
             </Card>
           </>
         )}
@@ -90,9 +82,8 @@ function MaryHome() {
                 <View style={s.box} />
                 <View style={{ flex: 1 }}>
                   <Text style={styles.body}>{todo.title}</Text>
-                  <Text style={styles.muted} numberOfLines={1}>
-                    {data.todoVisit.title} · {shortDate(data.todoVisit.recordedAt)}
-                  </Text>
+                  {/* Which visit, only when it isn't the one just above. */}
+                  {data.todoVisit.slug !== latest?.slug && <Text style={styles.muted}>{shortDate(data.todoVisit.recordedAt)}</Text>}
                 </View>
               </View>
             </Card>
@@ -209,13 +200,13 @@ const s = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    minHeight: 50,
+    minHeight: 56,
     backgroundColor: colors.canvas,
     borderWidth: 1,
     borderColor: colors.line,
     borderRadius: 16,
     padding: 6,
-    paddingLeft: 14,
+    paddingLeft: 16,
   },
   mic: { width: 44, height: 44, borderRadius: 13, backgroundColor: colors.forest, alignItems: 'center', justifyContent: 'center' },
   box: { width: 28, height: 28, borderRadius: 10, borderWidth: 2, borderColor: colors.forest, marginTop: 2 },

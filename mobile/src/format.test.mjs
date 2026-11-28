@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
+import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, homeLine, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -54,6 +54,10 @@ test('answerOf replaces the misleading offline line but keeps real and saved ans
     result: { status: 'answered' },
   };
   assert.equal(answerOf(offer), 'November 3: Book in a month. Would you like me to ask Lisa to help with this?');
+  const dated = { actions: [{ type: 'speak', text: 'From your Tuesday, November 3 recording. On November 3, you agreed to 15 mg.' }], result: { status: 'answered' } };
+  assert.equal(answerOf(dated), 'On November 3, you agreed to 15 mg.');
+  const many = { actions: [{ type: 'speak', text: 'From your recordings. Take 10 mg.' }], result: { status: 'answered' } };
+  assert.equal(answerOf(many), 'Take 10 mg.');
 });
 
 test('isNewForLisa flags appointments recorded after sharing began, until Lisa opens them', () => {
@@ -89,4 +93,12 @@ test('shortDate and markerLabel stay short', () => {
   assert.equal(shortDate('2026-11-03T15:00:00Z'), 'Nov 3');
   assert.equal(markerLabel('Pick up the new prescription', 1), '2 Pick');
   assert.equal(markerLabel('Rheumatology referral', 0), '1');
+});
+
+test('homeLine shows one short line and never cuts a dose', () => {
+  const med = { heardAs: 'Lenzaprazole', role: 'changed', suggestion: { name: 'lansoprazole' }, nameResolved: false, doseStatements: [{ text: '15 milligram daily', unclear: false }] };
+  const long = 'You and Dr. Smith agreed to lower your heartburn medicine from 30 mg to 15 mg daily for two weeks.';
+  assert.equal(homeLine({ headline: long, medications: [med], followUps: [] }), '“Lenzaprazole” 15 mg');
+  assert.equal(homeLine({ headline: 'Blood pressure is steady, keep going as you are.', medications: [], followUps: [] }), 'Blood pressure is steady, keep going as you are.');
+  assert.equal(homeLine({ headline: long, medications: [], followUps: [{ title: 'Book a follow-up' }] }), 'Book a follow-up');
 });

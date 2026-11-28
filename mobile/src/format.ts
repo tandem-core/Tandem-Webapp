@@ -75,15 +75,35 @@ export function checkReason(med: Medication) {
 export function answerOf(turn: Turn) {
   if (!turn.result && !turn.fromCache) return 'Answers aren’t available right now.';
   // The spoken lead-in and sign-off are for listeners; on screen, the date and "Hear it" say the same.
-  return (
-    turn.actions
-      .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
-      .join(' ')
-      .replace(/^From your (?:\w+, )?(\w+ \d+) recording\.\s*/, '$1: ')
-      .replace(/\s*Here's what was said\./g, '')
-      // Device instructions; the app shows buttons instead.
-      .replace(/\s*Hold the button[^.]*\./g, '')
-  );
+  const text = turn.actions
+    .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
+    .join(' ')
+    .replace(/\s*Here's what was said\./g, '')
+    // Device instructions; the app shows buttons instead.
+    .replace(/\s*Hold the button[^.]*\./g, '');
+  const intro = text.match(/^From your (?:(?:\w+, )?(\w+ \d+) )?recordings?\.\s*/);
+  if (!intro) return text;
+  const rest = text.slice(intro[0].length);
+  // Keep the date only when the answer doesn't already say it.
+  const date = intro[1];
+  return date && !new RegExp(`\\b${date}\\b`).test(rest) ? `${date}: ${rest}` : rest;
+}
+
+/**
+ * One short line for an appointment card: the opening of the headline when that alone is
+ * short and safe to show, otherwise the medicine started or changed with its dose, otherwise
+ * the first to-do. Never a cut-off dose (brief() keeps numbers whole).
+ */
+export function homeLine(visit: Visit) {
+  const names = visit.medications.flatMap((m) => [m.heardAs, m.suggestion?.name ?? '']);
+  const short = visit.headline ? brief(visit.headline, names).short : '';
+  if (short && short.split(/\s+/).length <= 10) return short;
+  const med = ['changed', 'started'].flatMap((role) => visit.medications.filter((m) => m.role === role && doseOf(m)))[0];
+  if (med) {
+    const name = med.nameResolved ? (med.suggestion?.name ?? med.heardAs) : `“${med.heardAs}”`;
+    return `${name.charAt(0).toUpperCase()}${name.slice(1)} ${doseOf(med)}`;
+  }
+  return visit.followUps[0]?.title ?? short;
 }
 
 /** "Summary, Recording", or "Nothing". */
