@@ -1,0 +1,565 @@
+{
+  "id": "history:04_blood_pressure_followup",
+  "source": "history",
+  "sourceId": "04_blood_pressure_followup",
+  "title": "Blood pressure follow-up",
+  "recordedAt": "2025-09-23T14:00:00.000Z",
+  "durationSec": 271,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 4.839,
+      "text": "Good morning, Mary. It's been 3 months, so this is our blood pressure follow-up."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 4.96,
+      "end": 5.719,
+      "text": "How have things been?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 5.96,
+      "end": 8.999,
+      "text": "Pretty good, doctor. I brought my notebook this time."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 9.28,
+      "end": 10.2,
+      "text": "Lisa made sure of it."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 10.76,
+      "end": 11.24,
+      "text": "Wonderful."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.96,
+      "end": 13.64,
+      "text": "Let me take a look."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 13.72,
+      "end": 19.6,
+      "text": "These are much better, mostly in the 130s over the low 80s."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 21.08,
+      "end": 28.561,
+      "text": "And here in the clinic today, I got 134 over 82."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 29.082,
+      "end": 29.761,
+      "text": "Is that good?"
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 30.882,
+      "end": 34.841,
+      "text": "That's a big improvement from 152 over 90 back in June."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 36.082,
+      "end": 39.042,
+      "text": "The higher dose of ramipril is working."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 39.282,
+      "end": 40.282,
+      "text": "Oh, that's a relief."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 41.122,
+      "end": 44.841,
+      "text": "And your blood test from early September came back."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 45.602,
+      "end": 54.004,
+      "text": "Your LDL cholesterol came down from 162 to 95, so the atorvastatin is doing its job."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 55.084,
+      "end": 55.964,
+      "text": "Any muscle aches?"
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 56.244,
+      "end": 57.284,
+      "text": "No, nothing like that."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 58.124,
+      "end": 60.203,
+      "text": "Excellent. Your liver test was normal too."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 60.324,
+      "end": 63.724,
+      "text": "Keep the atorvastatin at 20 milligrams at night, no change."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 64.244,
+      "end": 65.244,
+      "text": "There is one thing."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 65.844,
+      "end": 67.644,
+      "text": "My ankles have been swelling."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 69.844,
+      "end": 76.166,
+      "text": "Both of them. By the evening, my shoes are tight, and there are marks from my socks."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 76.686,
+      "end": 77.886,
+      "text": "How long has that been going on?"
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 78.646,
+      "end": 80.565,
+      "text": "Maybe since July, August."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 81.086,
+      "end": 82.766,
+      "text": "It mostly goes down overnight."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 83.246,
+      "end": 84.045,
+      "text": "Let me have a look."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 86.086,
+      "end": 88.165,
+      "text": "Can you slip your shoes off for me?"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 90.126,
+      "end": 92.526,
+      "text": "Yes, there's some swelling around both ankles."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 93.246,
+      "end": 95.166,
+      "text": "When I press, it leaves a little dent."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 95.446,
+      "end": 98.485,
+      "text": "Any shortness of breath, trouble lying flat at night?"
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 99.006,
+      "end": 103.527,
+      "text": "No, I sleep on one pillow, same as always, and I can walk to the shops fine."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 103.848,
+      "end": 106.508,
+      "text": "Good. Your heart sounds normal, and your lungs are clear."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 106.608,
+      "end": 109.607,
+      "text": "I think the most likely cause is the amlodipine."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 109.928,
+      "end": 116.528,
+      "text": "Ankle swelling is a very common side effect, particularly at the 10 milligram, uh, dose."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 116.808,
+      "end": 118.607,
+      "text": "But I've been taking that one for years."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 118.928,
+      "end": 122.447,
+      "text": "It can show up at any time, and it's often worse in summer heat."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 123.49,
+      "end": 129.729,
+      "text": "Since your blood pressure is in good shape now, I'd like to stop the amlodipine and see whether the swelling goes away."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 130.33,
+      "end": 132.929,
+      "text": "Stop it completely? Won't my pressure go back up?"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 133.33,
+      "end": 134.53,
+      "text": "It might go up somewhat."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 134.81,
+      "end": 136.449,
+      "text": "That's why we'll watch it closely."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 138.45,
+      "end": 149.852,
+      "text": "Keep taking the ramipril 20, uh, sorry, 10 milligrams, ramipril 10 milligrams once a day in the morning."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 150.813,
+      "end": 151.613,
+      "text": "That doesn't change."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 152.173,
+      "end": 154.772,
+      "text": "10. You said 20 at first."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 155.013,
+      "end": 155.933,
+      "text": "I did, my mistake."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 155.973,
+      "end": 160.653,
+      "text": "It's 10 milligrams, one capsule a day, the same as you've been taking since June."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 161.133,
+      "end": 164.132,
+      "text": "Okay, 10. Good, because I've only got the 10s."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 164.973,
+      "end": 183.014,
+      "text": "Exactly. So, to summarize, stop the amlodipine 10 milligrams, continue ramipril 10 milligrams once a day, continue atorvastatin 20 milligrams at night, and continue your vitamin D 1,000 units a"
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 183.095,
+      "end": 186.414,
+      "text": "day, and the acetaminophen as needed for the knee."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 186.735,
+      "end": 189.255,
+      "text": "What do I do with the amlodipine tablets I have left?"
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 189.735,
+      "end": 191.614,
+      "text": "Take them to the pharmacy and they'll dispose of them."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 192.295,
+      "end": 195.694,
+      "text": "Don't keep them in the cupboard where they can get mixed up with your other pills."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 195.975,
+      "end": 196.297,
+      "text": "All right."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 196.697,
+      "end": 200.337,
+      "text": "Keep checking your blood pressure at home at least 4 or 5 times a week."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 201.457,
+      "end": 205.697,
+      "text": "If the top number is over 160 more than twice in a week, call us."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 206.217,
+      "end": 208.496,
+      "text": "Over 160. Okay."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 208.937,
+      "end": 216.856,
+      "text": "I'd like you to see Nurse Rivera in about 4 weeks for a blood pressure check, and so she can look at your ankles."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 217.697,
+      "end": 224.578,
+      "text": "And if you get any shortness of breath or the swelling gets worse, call right away."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 224.979,
+      "end": 227.378,
+      "text": "Nurse Rivera, she's the one with the red glasses?"
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 227.619,
+      "end": 230.939,
+      "text": "That's her. And how's the knee doing with the therapy?"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 231.259,
+      "end": 232.999,
+      "text": "Better. I finished the 6 weeks."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 233.339,
+      "end": 236.259,
+      "text": "I see Dr. Okafor again next month."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 236.699,
+      "end": 239.619,
+      "text": "Good. Put your feet up when you sit in the evening too."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 240.059,
+      "end": 241.218,
+      "text": "That helps the swelling."
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 241.659,
+      "end": 242.499,
+      "text": "On a footstool?"
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 243.539,
+      "end": 248.701,
+      "text": "Yes, or better yet, on the sofa with your feet at hip level for half an hour or so."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 249.101,
+      "end": 250.741,
+      "text": "Can you tell me back what we changed today?"
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 251.261,
+      "end": 265.64,
+      "text": "Stop the amlodipine, keep the ramipril at 10, not 20, keep the statin at night, see the nurse in 4 weeks, call if it's over 160 or if I get"
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 265.741,
+      "end": 266.441,
+      "text": "short of breath."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 266.901,
+      "end": 269.02,
+      "text": "Perfect. You're a great patient, Mary."
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 269.421,
+      "end": 270.78,
+      "text": "Oh, you're just saying that."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:52:28.599Z"
+}

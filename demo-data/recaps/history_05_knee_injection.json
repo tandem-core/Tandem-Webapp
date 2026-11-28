@@ -1,0 +1,126 @@
+{
+  "conversationId": "history:05_knee_injection",
+  "headline": "You got a triamcinolone injection in your right knee, and Dr. Okafor plans to check how long it helped around February 2026.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Book your knee follow-up",
+      "detail": "See Dr. Okafor around February 2026 to review how long the injection helped.",
+      "dueBy": null,
+      "when": "In 4 months, around February",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        52,
+        53
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take it easy for the first 48 hours after the injection. Skip long walks. If your knee is sore, use ice for 15 minutes a few times a day. Go back to your home exercises after the 48 hours.",
+      "confidence": "check_this",
+      "evidence": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Over the next few days, call Dr. Okafor’s office right away if your knee gets hot, red, or very swollen, or if you get a fever.",
+      "confidence": "check_this",
+      "evidence": [
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Keep moving. Dr. Okafor said a short walk every day is good for your knee.",
+      "confidence": "check_this",
+      "evidence": [
+        55
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "You can get another knee injection, but not more often than every 3 months.",
+      "confidence": "check_this",
+      "evidence": [
+        51
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking your blood pressure medicine as usual.",
+      "evidence": [
+        32
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep using acetaminophen as before if you need it: up to 2 tablets three times a day. Do not take more than 6 tablets (3,000 mg) in a day.",
+      "evidence": [
+        11,
+        12,
+        45
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Your home exercises are still the most important part of treatment, even if the injection makes your knee feel much better.",
+      "evidence": [
+        40,
+        41,
+        42
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "How long will the injection ease your knee pain?",
+      "resolvesWhen": "Dr. Okafor will review this at your follow-up around February 2026.",
+      "evidence": [
+        21,
+        52
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:53:24.850Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 1115,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 512,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 219,
+      "engine_ttlt_ms": 6713,
+      "pre_inference_ms": 135,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 629,
+      "service_ttlt_ms": 7111,
+      "user_visible_ttft_ms": 494
+    },
+    "prompt_tokens": 2380,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2377,
+      "cached_tokens": 0
+    },
+    "total_tokens": 3495
+  }
+}

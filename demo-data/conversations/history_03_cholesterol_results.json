@@ -1,0 +1,461 @@
+{
+  "id": "history:03_cholesterol_results",
+  "source": "history",
+  "sourceId": "03_cholesterol_results",
+  "title": "Cholesterol test results",
+  "recordedAt": "2025-07-24T16:15:00.000Z",
+  "durationSec": 209,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.08,
+      "end": 1.359,
+      "text": "Hi, Mary. Nice to see you again."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 1.44,
+      "end": 2.2,
+      "text": "How's the knee doing?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 2.64,
+      "end": 5.2,
+      "text": "Hello, Dr. Smith. I've started the physical therapy."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 5.68,
+      "end": 9.8,
+      "text": "The young man is very bossy, but I think it's helping a little."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 10.28,
+      "end": 12.559,
+      "text": "Bossy is good. That means he's making you work."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 13.24,
+      "end": 17.679,
+      "text": "So I- I asked you to come in to go over your blood tests from the other week."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 17.96,
+      "end": 19.16,
+      "text": "The ones with no breakfast."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 19.32,
+      "end": 21.199,
+      "text": "I was starving by the time I got home."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 21.72,
+      "end": 22.6,
+      "text": "Thank you for doing that."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 22.76,
+      "end": 30.891,
+      "text": "First, your kidney function and your potassium are both fine, so the higher dose of ramipril is safe to continue, 10 milligrams once a day."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 31.332,
+      "end": 33.971,
+      "text": "Oh, good, and I haven't been dizzy at all."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 34.412,
+      "end": 43.891,
+      "text": "Great. Now, your cholesterol, your total cholesterol is 248, and your LDL, the bad cholesterol, is 162."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 44.332,
+      "end": 46.372,
+      "text": "Is that high? I hardly eat any butter."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 46.652,
+      "end": 49.983,
+      "text": "It's high, yes. Part of it is just genetics and age."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 51.304,
+      "end": 59.783,
+      "text": "With your blood pressure history, your risk of a heart attack or stroke over the next 10 years is high enough that I'd recommend a cholesterol medicine."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 60.224,
+      "end": 63.223,
+      "text": "A statin. Lisa says they give you sore muscles."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 63.784,
+      "end": 66.423,
+      "text": "Some people do get muscle aches, but most people don't."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 66.824,
+      "end": 71.717,
+      "text": "I'd like to start atorvastatin 20 milligrams, one tablet at night."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 72.037,
+      "end": 73.717,
+      "text": "At night. Why at night?"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 74.237,
+      "end": 82.716,
+      "text": "Atorvastatin works at any time of day, but bedtime is an easy routine to remember, and it keeps it separate from your morning pill."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 83.117,
+      "end": 86.296,
+      "text": "Ator- atorvastatin 20."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 86.757,
+      "end": 89.876,
+      "text": "Atorvastatin 20 milligrams once a day at bedtime."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 90.437,
+      "end": 93.648,
+      "text": "If you get muscle pain or weakness you can't explain, call me."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 94.249,
+      "end": 96.208,
+      "text": "Don't just stop it on your own, call first."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 96.689,
+      "end": 97.089,
+      "text": "All right."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 97.569,
+      "end": 100.929,
+      "text": "And avoid large amounts of grapefruit juice with it."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 101.569,
+      "end": 104.329,
+      "text": "A bit of grapefruit now and then is fine."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 104.769,
+      "end": 106.129,
+      "text": "I don't like grapefruit anyway."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 106.609,
+      "end": 112.089,
+      "text": "Then that's easy. We'll recheck your cholesterol and do a liver test in 6 weeks to see how it's working."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 112.569,
+      "end": 117.262,
+      "text": "One more result, your vitamin D level came back on the low side at 22."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 117.702,
+      "end": 118.942,
+      "text": "Is that why I'm so tired?"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 119.622,
+      "end": 126.942,
+      "text": "Possibly a little. It also matters for your bones and muscles, and at 75, we want to protect your bones."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 127.622,
+      "end": 132.982,
+      "text": "I'd like you to take vitamin D3, 1,000 international units once a day."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 133.062,
+      "end": 134.262,
+      "text": "You can buy it over the counter."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 134.742,
+      "end": 137.022,
+      "text": "1,000. Is that a lot?"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 137.502,
+      "end": 139.194,
+      "text": "The bottles all say different things."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 139.634,
+      "end": 145.713,
+      "text": "1000 IU international units is a standard daily amount."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 146.834,
+      "end": 151.193,
+      "text": "Look for a bottle that says 1000 IU or 25 micrograms."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 152.834,
+      "end": 154.594,
+      "text": "One a day with a meal."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 155.034,
+      "end": 155.713,
+      "text": "I'll write it down."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 156.314,
+      "end": 158.313,
+      "text": "Vitamin D 1000 once a day."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 158.834,
+      "end": 162.847,
+      "text": "Let me recap. New atorvastatin 20 milligrams at night."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 163.407,
+      "end": 165.527,
+      "text": "New vitamin D 1,000 units a day."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 165.927,
+      "end": 174.566,
+      "text": "The same as before, ramipril 10 milligrams in the morning, amlodipine 10 milligrams once a day, and acetaminophen as needed for the knee."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 175.007,
+      "end": 176.207,
+      "text": "And no naproxen."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 176.887,
+      "end": 183.767,
+      "text": "And no naproxen. Blood test in 6 weeks, and I'll still see you in September for your blood pressure as we planned."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 184.259,
+      "end": 187.178,
+      "text": "Can I do the blood test the same day as the blood pressure visit?"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 187.659,
+      "end": 188.619,
+      "text": "That would be a bit late."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 189.659,
+      "end": 192.259,
+      "text": "Let's keep it close to 6 weeks, so early September."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 193.059,
+      "end": 194.699,
+      "text": "Book it at the front desk on your way out."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 195.139,
+      "end": 196.979,
+      "text": "Okay. Early September."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 197.379,
+      "end": 198.259,
+      "text": "Any other questions?"
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 199.299,
+      "end": 201.018,
+      "text": "Will I be on the statin forever?"
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 201.499,
+      "end": 204.778,
+      "text": "Most likely long term, yes, as long as you're doing well on it."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 205.139,
+      "end": 206.978,
+      "text": "It's one of the best studied medicines we have."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 207.499,
+      "end": 208.898,
+      "text": "All right then. Thank you, doctor."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:50:56.523Z"
+}

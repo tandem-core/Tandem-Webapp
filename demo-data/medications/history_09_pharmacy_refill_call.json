@@ -1,0 +1,268 @@
+{
+  "conversationId": "history:09_pharmacy_refill_call",
+  "generatedAt": "2026-11-27T21:56:14.852Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The pharmacist agreed to refill Mary's blood pressure medication without changing the dose or schedule.",
+      "doseStatements": [
+        {
+          "text": "the 10",
+          "unclear": false,
+          "evidence": [
+            8
+          ]
+        },
+        {
+          "text": "10 milligram capsules, one once a day",
+          "unclear": false,
+          "evidence": [
+            10
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        3,
+        8,
+        9,
+        10,
+        11,
+        15,
+        31
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin",
+        "Atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The pharmacist agreed to refill Mary's cholesterol medication without changing the dose or schedule.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams, one at bedtime",
+          "unclear": false,
+          "evidence": [
+            14
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "lansoprazole",
+      "spellings": [
+        "lansoprazole"
+      ],
+      "rxnorm": {
+        "rxcui": "17128",
+        "name": "lansoprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary said it was helping her heartburn, and the pharmacist noted that she still had enough from the 90-day supply she received last month.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        17,
+        18,
+        19
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen",
+        "Acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The pharmacist said Mary could keep using her regular acetaminophen for knee pain, aches, or fever, but should skip the cold tablet that also contains it to avoid exceeding her daily limit.",
+      "doseStatements": [
+        {
+          "text": "325 milligrams",
+          "unclear": false,
+          "evidence": [
+            27
+          ]
+        },
+        {
+          "text": "2 tablets up to 3 times a day, mostly just morning and night now",
+          "unclear": false,
+          "evidence": [
+            35
+          ]
+        },
+        {
+          "text": "3,000 milligram daily limit",
+          "unclear": false,
+          "evidence": [
+            36
+          ]
+        },
+        {
+          "text": "staying under 3,000 milligrams a day in total",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        27,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        43
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "Pseudoephedrine",
+      "spellings": [
+        "Pseudoephedrine",
+        "pseudoephedrine"
+      ],
+      "rxnorm": {
+        "rxcui": "8896",
+        "name": "pseudoephedrine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The pharmacist advised Mary not to take the daytime cold and sinus tablet because its pseudoephedrine could raise her blood pressure and heart rate and work against her ramipril.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        23,
+        28,
+        29,
+        30,
+        31,
+        38
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "saltwater nasal spray",
+      "spellings": [
+        "saltwater nasal spray",
+        "saline",
+        "Saline spray"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The pharmacist recommended saline spray for Mary's stuffy nose and agreed to put one in the bag with her prescriptions.",
+      "doseStatements": [
+        {
+          "text": "as often as you like",
+          "unclear": false,
+          "evidence": [
+            41
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        41,
+        44,
+        45
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

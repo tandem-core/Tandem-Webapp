@@ -1,0 +1,297 @@
+{
+  "conversationId": "history:12_stiff_painful_hands",
+  "generatedAt": "2026-11-27T21:58:45.069Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen",
+        "Naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The doctor advised against restarting naproxen because it can raise blood pressure, affect the kidneys, and upset the stomach.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        25,
+        26,
+        27,
+        30
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor advised Mary to keep using acetaminophen for hand pain within the stated daily limit.",
+      "doseStatements": [
+        {
+          "text": "up to 2 tablets of 500 milligrams 3 times a day",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        },
+        {
+          "text": "no more than 3,000 milligrams in a day",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        28
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "Methotrexate",
+      "spellings": [
+        "Methotrexate"
+      ],
+      "rxnorm": {
+        "rxcui": "6851",
+        "name": "methotrexate",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "The doctor mentioned methotrexate as a common first choice for longer-term arthritis treatment but left the decision to rheumatology.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        34,
+        35
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "Ramipril",
+      "spellings": [
+        "Ramipril",
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept ramipril unchanged and said a prescription with refills would be sent because Mary was nearly out.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams every morning",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37,
+        39,
+        41
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept Mary's nighttime amlodipine dose unchanged.",
+      "doseStatements": [
+        {
+          "text": "5 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept Mary's nighttime atorvastatin dose unchanged.",
+      "doseStatements": [
+        {
+          "text": "20 milligrams at night",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-7",
+      "heardAs": "lansoprazole",
+      "spellings": [
+        "lansoprazole"
+      ],
+      "rxnorm": {
+        "rxcui": "17128",
+        "name": "lansoprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept lansoprazole unchanged and deferred considering a lower dose until after the rheumatology visit.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams before breakfast",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37,
+        45,
+        46
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-8",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept Mary's daily vitamin D dose unchanged.",
+      "doseStatements": [
+        {
+          "text": "1,000 units a day",
+          "unclear": false,
+          "evidence": [
+            37,
+            38
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        37,
+        38
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

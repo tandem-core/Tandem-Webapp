@@ -1,0 +1,437 @@
+{
+  "id": "history:12_stiff_painful_hands",
+  "source": "history",
+  "sourceId": "12_stiff_painful_hands",
+  "title": "Stiff, painful hands",
+  "recordedAt": "2026-09-10T16:45:00.000Z",
+  "durationSec": 237,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 2,
+      "text": "Hi, Mary. Good to see you."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.6,
+      "end": 6.56,
+      "text": "You're here for your 3-month check, but the note says you also have a new problem."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 6.8,
+      "end": 7.899,
+      "text": "It's my hands, doctor."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 8.04,
+      "end": 12.88,
+      "text": "They've been stiff and sore for about 2 months now, both of them."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 14.48,
+      "end": 16.32,
+      "text": "In the morning, I can't open the jam jar."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16.84,
+      "end": 19.439,
+      "text": "It takes an hour, sometimes more, before they loosen up."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 19.92,
+      "end": 22.479,
+      "text": "An hour or more of stiffness in the morning."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 23.44,
+      "end": 25.2,
+      "text": "Which joints exactly? Can you show me?"
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 25.68,
+      "end": 30.843,
+      "text": "These knuckles here and the middle ones and my wrists."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 31.724,
+      "end": 33.004,
+      "text": "They look puffy to me."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 33.324,
+      "end": 40.083,
+      "text": "Let me look. Yes, the knuckles at the base of the fingers and the middle finger joints are swollen and tender on both hands."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 40.964,
+      "end": 43.604,
+      "text": "Your wrists too. Have you been more tired than usual?"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 44.044,
+      "end": 44.723,
+      "text": "Any fevers?"
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 45.044,
+      "end": 46.644,
+      "text": "Tired, yes. No fevers."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 47.124,
+      "end": 56.088,
+      "text": "This pattern, both hands, the small joints, and long morning stiffness is different from the wear and tear arthritis in your knee."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 57.649,
+      "end": 63.729,
+      "text": "I'm concerned about an inflammatory arthritis, possibly rheumatoid arthritis."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 64.529,
+      "end": 66.088,
+      "text": "Rheumatoid, my mother had that."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 66.889,
+      "end": 68.929,
+      "text": "Her hands were all twisted at the end."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 69.209,
+      "end": 73.493,
+      "text": "Treatments are much better now than in your mother's day, and starting early makes a big difference."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 77.214,
+      "end": 78.893,
+      "text": "I want to do some blood tests today."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 79.494,
+      "end": 89.533,
+      "text": "Rheumatoid factor, anti-CCP antibodies, inflammation markers, a blood count, and kidney and liver tests, and X-rays of both hands."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 89.854,
+      "end": 90.333,
+      "text": "Today?"
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 91.694,
+      "end": 98.658,
+      "text": "Yes, the lab and X-ray are downstairs, no need to fast, And, uh, I'm referring you urgently to rheumatology."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 99.379,
+      "end": 101.459,
+      "text": "They should see you within 2 to 3 weeks."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 102.019,
+      "end": 104.939,
+      "text": "What can I take for the pain in the meantime?"
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 105.019,
+      "end": 107.779,
+      "text": "Could I go back on the naproxen just for a little while?"
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 108.099,
+      "end": 109.139,
+      "text": "I'd rather you didn't."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 109.659,
+      "end": 118.903,
+      "text": "Naproxen can raise your blood pressure and affect your kidneys, which is why we stopped it last year, and it could upset your stomach, which has given you trouble."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 119.384,
+      "end": 127.743,
+      "text": "Keep using acetaminophen up to 2 tablets of 500 milligrams 3 times a day, no more than 3,000 milligrams in a day."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 129.304,
+      "end": 133.584,
+      "text": "Soaking your hands in warm water in the morning helps the stiffness too."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 134.064,
+      "end": 136.464,
+      "text": "Okay, no naproxen, warm water."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 136.864,
+      "end": 141.704,
+      "text": "If the rheumatologist feels you need something stronger for the inflammation, they'll decide that with you."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 142.748,
+      "end": 146.228,
+      "text": "They may also start a longer term medicine to calm the arthritis down."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 146.748,
+      "end": 147.388,
+      "text": "Like what?"
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 148.508,
+      "end": 158.947,
+      "text": "There are several. Methotrexate is a common first choice, for example, but that's for the rheumatologist to decide, so let's not get ahead of ourselves."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 159.908,
+      "end": 160.708,
+      "text": "Nothing new today."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 161.068,
+      "end": 162.967,
+      "text": "And my other pills, do they stay the same?"
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 163.428,
+      "end": 179.773,
+      "text": "All the same. Ramipril 10 milligrams every morning, amlodipine 5 milligrams at night, atorvastatin 20 milligrams at night, lansoprazole 30 milligrams before breakfast, and your vitamin D 1,000 units a"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 179.793,
+      "end": 185.953,
+      "text": "day. Your blood pressure today is 132 over 80, which is good, so no changes there."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 186.393,
+      "end": 189.238,
+      "text": "The ramipril's almost out again, I think."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 189.878,
+      "end": 192.598,
+      "text": "Lisa checked the organizer on Sunday."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 192.838,
+      "end": 196.838,
+      "text": "I'll send a new prescription to Elm Street Pharmacy today with refills."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 197.558,
+      "end": 199.557,
+      "text": "Sam can go over it with you when you pick it up."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 199.998,
+      "end": 200.918,
+      "text": "Oh, I like Sam."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 200.998,
+      "end": 202.237,
+      "text": "He always has time for me."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 202.598,
+      "end": 206.438,
+      "text": "And about the lansoprazole, we said we'd think about stepping the dose down this fall."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 207.158,
+      "end": 212.083,
+      "text": "Let's wait until after the rheumatology visit, so we only change one thing at a time."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 212.563,
+      "end": 213.562,
+      "text": "That's fine with me."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 214.363,
+      "end": 217.643,
+      "text": "I'll call you when the blood results are back in 3 or 4 days."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 218.603,
+      "end": 228.023,
+      "text": "Call me sooner if a joint becomes hot and very swollen or if you get a fever, and please book a follow-up with me in about 4 weeks after you've"
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 228.043,
+      "end": 228.963,
+      "text": "seen rheumatology."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 229.363,
+      "end": 233.523,
+      "text": "4 weeks, and I wait for the phone call about the blood tests."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 234.083,
+      "end": 236.723,
+      "text": "Exactly. Now let's get you downstairs to the lab."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:58:36.140Z"
+}

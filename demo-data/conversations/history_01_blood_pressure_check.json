@@ -1,0 +1,805 @@
+{
+  "id": "history:01_blood_pressure_check",
+  "source": "history",
+  "sourceId": "01_blood_pressure_check",
+  "title": "Blood pressure check",
+  "recordedAt": "2025-06-12T15:00:00.000Z",
+  "durationSec": 333,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.16,
+      "end": 2.919,
+      "text": "Good afternoon, Mary. Come on in and have a seat."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 3.08,
+      "end": 3.879,
+      "text": "How have you been?"
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 4.2,
+      "end": 6.1,
+      "text": "Oh, not too bad, Dr."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 6.16,
+      "end": 10.159,
+      "text": "Smith. The heat's been getting to me a bit, and my knee's been playing up again."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 10.48,
+      "end": 11.019,
+      "text": "Sorry to hear that."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 11.04,
+      "end": 12.24,
+      "text": "We'll talk about the knee in a minute."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.36,
+      "end": 13.479,
+      "text": "Is Lisa with you today?"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 14.04,
+      "end": 14.939,
+      "text": "She dropped me off."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 15.2,
+      "end": 16.24,
+      "text": "She's parking the car."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16.52,
+      "end": 18.679,
+      "text": "She'll come in when she finds a spot, I expect."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 19.12,
+      "end": 21.24,
+      "text": "The lot is always full on Thursdays."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 21.96,
+      "end": 22.999,
+      "text": "Did you have a nice weekend?"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 23.4,
+      "end": 27.828,
+      "text": "Quiet. My granddaughter graduated from high school on Saturday, so we all went to watch."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 28.308,
+      "end": 31.108,
+      "text": "I sat for 3 hours on those metal benches."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 31.468,
+      "end": 32.787,
+      "text": "My knee did not thank me."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 33.228,
+      "end": 35.268,
+      "text": "Congratulations to her. What's she gonna do next?"
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 35.828,
+      "end": 37.508,
+      "text": "Nursing school in the fall."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 38.508,
+      "end": 40.188,
+      "text": "She wants to work in a hospital."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 40.828,
+      "end": 42.427,
+      "text": "I told her to come and work for you."
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 42.908,
+      "end": 43.988,
+      "text": "We'd be happy to have her."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 44.508,
+      "end": 46.467,
+      "text": "Now, are you still walking in the mornings?"
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 46.948,
+      "end": 48.147,
+      "text": "When the knee lets me."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 48.748,
+      "end": 50.877,
+      "text": "Around the block, maybe twice a week now."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 51.017,
+      "end": 52.057,
+      "text": "It used to be every day."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 52.297,
+      "end": 56.377,
+      "text": "That's fine. So the main reason for today is your blood pressure check."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 57.057,
+      "end": 60.097,
+      "text": "The nurse took it when you came in, and I took it again just now."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 60.177,
+      "end": 62.176,
+      "text": "It's 152 over 90."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 62.657,
+      "end": 65.616,
+      "text": "Is that bad? It always goes up when I come here, I think."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 65.857,
+      "end": 76.505,
+      "text": "A little of that is normal being in the clinic, but it was 150 over 88 last time too, and the readings you've been phoning in from home are mostly"
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 76.565,
+      "end": 80.365,
+      "text": "in the high 140s, so it's running higher than I'd like."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 80.605,
+      "end": 81.284,
+      "text": "What should it be?"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 82.445,
+      "end": 89.764,
+      "text": "For you, I'd like it under 140 over 90 at the very least, and ideally closer to 130 over 80."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 90.245,
+      "end": 92.245,
+      "text": "Let's go over what you're taking right now."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 92.805,
+      "end": 100.954,
+      "text": "I have ramipril 5 milligrams once a day and amlodipine 10 milligrams once a day."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 101.954,
+      "end": 102.554,
+      "text": "Is that right?"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 102.754,
+      "end": 111.433,
+      "text": "The Rami something, yes, the white one in the morning, and the Amlo, the other one, I take that at night."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 111.754,
+      "end": 113.413,
+      "text": "Ramipril and amlodipine, that's right."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 114.194,
+      "end": 116.474,
+      "text": "And are you taking anything else, anything from the store?"
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 116.954,
+      "end": 118.614,
+      "text": "Just the naproxen for my knee."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 118.674,
+      "end": 120.901,
+      "text": "I take one in the morning and one at night, usually."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 121.382,
+      "end": 125.081,
+      "text": "Is that the naproxen 500 milligrams twice a day?"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 125.502,
+      "end": 127.542,
+      "text": "I think it says 220 on the box."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 128.062,
+      "end": 131.501,
+      "text": "No, no, it's the ones you gave me last year, the 500."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 131.902,
+      "end": 132.821,
+      "text": "Right, I see it here."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 133.102,
+      "end": 136.821,
+      "text": "Naproxen 500 milligrams twice a day from last year."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 137.462,
+      "end": 139.582,
+      "text": "That's actually important for your blood pressure."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 140.022,
+      "end": 141.302,
+      "text": "How so? It's just for the knee."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 142.022,
+      "end": 144.49,
+      "text": "Naproxen is an anti-inflammatory."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 145.691,
+      "end": 155.011,
+      "text": "In older adults, it can push blood pressure up, it can make your body hold on to fluid, and over time it can be hard on the kidneys, especially combined"
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 155.091,
+      "end": 157.251,
+      "text": "with a blood pressure pill like ramipril."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 157.651,
+      "end": 159.67,
+      "text": "Oh, nobody told me that."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 160.131,
+      "end": 163.17,
+      "text": "So I'd like you to stop the naproxen starting today."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 163.851,
+      "end": 164.931,
+      "text": "Don't take any more of it."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 165.291,
+      "end": 167.08,
+      "text": "But what do I do about the knee?"
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 167.32,
+      "end": 169.199,
+      "text": "Some days I can barely get down the stairs."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 169.72,
+      "end": 171.599,
+      "text": "Instead, I'd like you to use acetaminophen."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 171.68,
+      "end": 175.759,
+      "text": "That's the plain Tylenol type, 500 milligram tablets."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 176.68,
+      "end": 178.839,
+      "text": "You can take up to 2 tablets 3 times a day."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 179.24,
+      "end": 183.52,
+      "text": "So that's no more than 6 tablets in a day, which is 3,000 milligrams."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 184.08,
+      "end": 188.76,
+      "text": "Please don't go over 3,000 milligrams in a day because too much can hurt the liver."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 189.04,
+      "end": 193.307,
+      "text": "2 tablets 3 times a day, and not more than 6."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 193.868,
+      "end": 202.228,
+      "text": "Exactly, and watch out for cold medicines or sleep aids that also contain acetaminophen, because those count toward the total."
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 202.628,
+      "end": 204.268,
+      "text": "I'll tell Lisa, she does the shopping."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 204.588,
+      "end": 212.388,
+      "text": "Good. Now, for the blood pressure itself, I'm going to increase your ramipril from 5 milligrams to 10 milligrams once a day."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 212.908,
+      "end": 214.297,
+      "text": "So 2 of the white ones?"
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 214.777,
+      "end": 219.657,
+      "text": "I'll send a new prescription for 10 milligram capsules, so it's 1 capsule once a day."
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 219.737,
+      "end": 225.577,
+      "text": "If you still have the 5 milligram ones at home, you can take 2 of those together until they run out, then switch to the new ones."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 225.897,
+      "end": 229.696,
+      "text": "Okay. 1 a day of the new one, same time in the morning?"
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 230.137,
+      "end": 231.496,
+      "text": "Yes, the morning is fine."
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 232.417,
+      "end": 236.377,
+      "text": "Keep the amlodipine at 10 milligrams once a day, the same as it is."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 236.657,
+      "end": 245.004,
+      "text": "Because ramipril can affect, uh, the kidneys and the potassium level, especially when we raise the dose, I want a blood test in 2 weeks."
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 245.525,
+      "end": 248.764,
+      "text": "That'll check your kidney function and your potassium."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 249.245,
+      "end": 250.924,
+      "text": "2 weeks. Do I have to fast?"
+    },
+    {
+      "idx": 73,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 251.165,
+      "end": 255.445,
+      "text": "Not for that part, but I'm also adding a cholesterol test since it's been over 2 years."
+    },
+    {
+      "idx": 74,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 256.405,
+      "end": 259.244,
+      "text": "For that one, please don't eat after midnight the night before."
+    },
+    {
+      "idx": 75,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 259.954,
+      "end": 260.713,
+      "text": "Water is fine."
+    },
+    {
+      "idx": 76,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 261.034,
+      "end": 264.473,
+      "text": "So I go in the morning, no breakfast in 2 weeks."
+    },
+    {
+      "idx": 77,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 264.754,
+      "end": 270.074,
+      "text": "That's it. Then I'd like to see you back in 3 months to recheck your blood pressure."
+    },
+    {
+      "idx": 78,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 270.714,
+      "end": 274.394,
+      "text": "Keep taking your readings at home a few times a week and write them down."
+    },
+    {
+      "idx": 79,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 274.834,
+      "end": 277.434,
+      "text": "I do. Lisa got me the machine with the cuff."
+    },
+    {
+      "idx": 80,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 277.914,
+      "end": 280.754,
+      "text": "Perfect. Bring the notebook next time so I can see them all."
+    },
+    {
+      "idx": 81,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 281.154,
+      "end": 284.621,
+      "text": "And the knee, doctor, it really is bad."
+    },
+    {
+      "idx": 82,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 285.062,
+      "end": 286.421,
+      "text": "I'd like you to see Dr."
+    },
+    {
+      "idx": 83,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 286.502,
+      "end": 289.262,
+      "text": "Okafor, our orthopedic specialist."
+    },
+    {
+      "idx": 84,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 290.262,
+      "end": 291.901,
+      "text": "Uh, I'll put the referral in today."
+    },
+    {
+      "idx": 85,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 292.422,
+      "end": 293.822,
+      "text": "He'll probably want an X-ray."
+    },
+    {
+      "idx": 86,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 294.062,
+      "end": 294.901,
+      "text": "Is he nice?"
+    },
+    {
+      "idx": 87,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 295.982,
+      "end": 297.122,
+      "text": "Very. Everyone likes Dr."
+    },
+    {
+      "idx": 88,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 297.182,
+      "end": 299.622,
+      "text": "Okafor. Let me just check I've explained it well."
+    },
+    {
+      "idx": 89,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 299.742,
+      "end": 300.781,
+      "text": "Can you tell me what's changing?"
+    },
+    {
+      "idx": 90,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 301.222,
+      "end": 308.051,
+      "text": "Stop the naproxen, take the Tylenol, the acetaminophen, 2 tablets up to 3 times a day, not more than 3,000."
+    },
+    {
+      "idx": 91,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 308.411,
+      "end": 311.691,
+      "text": "The ramipril goes up to 10 once a day."
+    },
+    {
+      "idx": 92,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 311.891,
+      "end": 313.41,
+      "text": "The amlodipine stays the same."
+    },
+    {
+      "idx": 93,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 313.851,
+      "end": 315.251,
+      "text": "That's perfect. And what else?"
+    },
+    {
+      "idx": 94,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 315.971,
+      "end": 321.051,
+      "text": "Blood test in 2 weeks, no breakfast, and come back in 3 months."
+    },
+    {
+      "idx": 95,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 321.371,
+      "end": 322.451,
+      "text": "Excellent. One more thing."
+    },
+    {
+      "idx": 96,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 323.851,
+      "end": 330.331,
+      "text": "If you feel dizzy when you stand up, especially in the first week on the higher dose, sit down for a moment and give us a call."
+    },
+    {
+      "idx": 97,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 330.811,
+      "end": 332.231,
+      "text": "I will. Thank you, Dr."
+    },
+    {
+      "idx": 98,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 332.331,
+      "end": 332.691,
+      "text": "Smith."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:43:52.058Z"
+}

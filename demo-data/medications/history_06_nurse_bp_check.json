@@ -1,0 +1,215 @@
+{
+  "conversationId": "history:06_nurse_bp_check",
+  "generatedAt": "2026-11-27T21:53:53.887Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine",
+        "amlo-"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "Mary had already stopped amlodipine, and her ankle swelling was mostly gone by this visit.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        2,
+        26,
+        37,
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary confirmed that she takes ramipril every morning, and no change was made.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams every morning",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        },
+        {
+          "text": "Every morning",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        28,
+        29
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary takes vitamin D with her morning ramipril, and no change was made.",
+      "doseStatements": [
+        {
+          "text": "Every morning with my vitamin D",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        29
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin",
+        "cholesterol one"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary takes atorvastatin at night, and no change was made.",
+      "doseStatements": [
+        {
+          "text": "at night",
+          "unclear": false,
+          "evidence": [
+            29
+          ]
+        },
+        {
+          "text": "20 milligrams",
+          "unclear": false,
+          "evidence": [
+            30
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        29,
+        30
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "shot in my knee",
+      "spellings": [
+        "shot in my knee"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "Mary said Dr. Okafor gave her an unnamed knee injection a couple of weeks earlier that helped her get out more.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        34
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "flu shot",
+      "spellings": [
+        "flu shot"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "Mary agreed to the flu shot, and the nurse gave it in her left arm during the visit.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

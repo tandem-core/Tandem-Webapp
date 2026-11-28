@@ -1,0 +1,176 @@
+{
+  "conversationId": "history:07_cardiology_first_visit",
+  "headline": "Dr. Patel kept your medicines the same for now and asked for a heart ultrasound and two weeks of home blood pressure readings.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Arrange your heart ultrasound",
+      "detail": "Book an echocardiogram to check whether your heart muscle is a little thickened. The test uses a probe and gel on your chest. There are no needles.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        21,
+        25,
+        26,
+        27,
+        57,
+        65
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Keep a home blood pressure diary",
+      "detail": "Check your blood pressure at home every morning and evening for 2 weeks. Write down all your readings.",
+      "dueBy": null,
+      "when": "Morning and evening for 2 weeks",
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        32,
+        33,
+        34,
+        65
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Send your blood pressure diary to the office",
+      "detail": "When you finish the 2 weeks of readings, mail the diary to Dr. Patel's office or ask Lisa to email it.",
+      "dueBy": null,
+      "when": "After 2 weeks of readings",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        32,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Book your follow-up with Dr. Patel",
+      "detail": "Plan to see Dr. Patel in about 3 months, around March 2026. Have your heart ultrasound before this visit.",
+      "dueBy": null,
+      "when": "In about 3 months, after the echo",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        63,
+        65
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Before each blood pressure check, sit quietly for 5 minutes. Take 2 readings each time and write down both.",
+      "confidence": "check_this",
+      "evidence": [
+        32,
+        33
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Choose canned soups labeled low sodium.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        51,
+        52,
+        65
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "A piece of real black licorice now and then is fine, but not a bag a day. Large amounts can raise your blood pressure.",
+      "confidence": "check_this",
+      "evidence": [
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "If your heart thumping becomes fast and irregular, or if you have chest pain or faint, call 911 or go to the emergency room.",
+      "confidence": "check_this",
+      "evidence": [
+        64
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Your medicines stay the same for now. Keep taking ramipril 10 mg once a day. There are no changes to atorvastatin 20 mg at night, vitamin D 1,000 units daily, or acetaminophen for your knee.",
+      "evidence": [
+        37,
+        55,
+        56
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Is your heart muscle a little thickened, as the heart tracing suggested?",
+      "resolvesWhen": "After Dr. Patel reviews your heart ultrasound.",
+      "evidence": [
+        19,
+        21,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Will you add a second blood pressure medicine? It could be amlodipine at a lower dose or a different medicine. Dr. Patel said swelling is much less likely at a lower dose.",
+      "resolvesWhen": "After Dr. Patel reviews your heart ultrasound and home blood pressure diary.",
+      "evidence": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:54:56.311Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 2253,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1299,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 233,
+      "engine_ttlt_ms": 12859,
+      "pre_inference_ms": 126,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 513,
+      "service_ttlt_ms": 13135,
+      "user_visible_ttft_ms": 386
+    },
+    "prompt_tokens": 2688,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2685,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4941
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "conversationId": "history:01_blood_pressure_check",
+  "generatedAt": "2026-11-27T21:44:07.115Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril",
+        "Ramipril",
+        "Rami something"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "changed",
+      "roleDetail": "The doctor increased ramipril from 5 milligrams to 10 milligrams once a day in the morning and said Mary could take two of her old capsules together until they run out.",
+      "doseStatements": [
+        {
+          "text": "5 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            33
+          ]
+        },
+        {
+          "text": "the white one in the morning",
+          "unclear": false,
+          "evidence": [
+            35
+          ]
+        },
+        {
+          "text": "from 5 milligrams to 10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            63
+          ]
+        },
+        {
+          "text": "So 2 of the white ones?",
+          "unclear": false,
+          "evidence": [
+            64
+          ]
+        },
+        {
+          "text": "10 milligram capsules, so it's 1 capsule once a day",
+          "unclear": false,
+          "evidence": [
+            65
+          ]
+        },
+        {
+          "text": "If you still have the 5 milligram ones at home, you can take 2 of those together until they run out, then switch to the new ones.",
+          "unclear": false,
+          "evidence": [
+            66
+          ]
+        },
+        {
+          "text": "1 a day of the new one, same time in the morning?",
+          "unclear": false,
+          "evidence": [
+            67
+          ]
+        },
+        {
+          "text": "Yes, the morning is fine.",
+          "unclear": false,
+          "evidence": [
+            68
+          ]
+        },
+        {
+          "text": "10 once a day",
+          "unclear": false,
+          "evidence": [
+            91
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        33,
+        35,
+        36,
+        49,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        70,
+        91,
+        96
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "amlodipine",
+      "spellings": [
+        "amlodipine",
+        "Amlo"
+      ],
+      "rxnorm": {
+        "rxcui": "17767",
+        "name": "amlodipine",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor kept amlodipine at 10 milligrams once a day, which Mary said she takes at night.",
+      "doseStatements": [
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            33
+          ]
+        },
+        {
+          "text": "I take that at night",
+          "unclear": false,
+          "evidence": [
+            35
+          ]
+        },
+        {
+          "text": "10 milligrams once a day",
+          "unclear": false,
+          "evidence": [
+            69
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        33,
+        35,
+        36,
+        69,
+        92
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen",
+        "Naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "The doctor told Mary to stop taking naproxen for her knee starting that day because it can raise blood pressure and affect the kidneys.",
+      "doseStatements": [
+        {
+          "text": "one in the morning and one at night, usually",
+          "unclear": false,
+          "evidence": [
+            39
+          ]
+        },
+        {
+          "text": "500 milligrams twice a day",
+          "unclear": false,
+          "evidence": [
+            40
+          ]
+        },
+        {
+          "text": "I think it says 220 on the box.",
+          "unclear": false,
+          "evidence": [
+            41
+          ]
+        },
+        {
+          "text": "the 500",
+          "unclear": false,
+          "evidence": [
+            42
+          ]
+        },
+        {
+          "text": "500 milligrams twice a day",
+          "unclear": false,
+          "evidence": [
+            44
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": true,
+      "doseCorrectionNote": "Mary first said “220 on the box” and then corrected it to “the 500”; the doctor confirmed “500 milligrams twice a day.”",
+      "evidence": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        44,
+        47,
+        51,
+        52,
+        90
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen",
+        "Tylenol"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The doctor chose acetaminophen to replace naproxen for knee pain and said that acetaminophen in cold medicines or sleep aids counts toward the daily limit.",
+      "doseStatements": [
+        {
+          "text": "500 milligram tablets",
+          "unclear": false,
+          "evidence": [
+            56
+          ]
+        },
+        {
+          "text": "up to 2 tablets 3 times a day",
+          "unclear": false,
+          "evidence": [
+            57
+          ]
+        },
+        {
+          "text": "no more than 6 tablets in a day, which is 3,000 milligrams",
+          "unclear": false,
+          "evidence": [
+            58
+          ]
+        },
+        {
+          "text": "don't go over 3,000 milligrams in a day",
+          "unclear": false,
+          "evidence": [
+            59
+          ]
+        },
+        {
+          "text": "2 tablets 3 times a day, and not more than 6.",
+          "unclear": false,
+          "evidence": [
+            60
+          ]
+        },
+        {
+          "text": "2 tablets up to 3 times a day, not more than 3,000.",
+          "unclear": false,
+          "evidence": [
+            90
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        90
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

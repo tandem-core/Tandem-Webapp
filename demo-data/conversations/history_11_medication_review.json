@@ -1,0 +1,861 @@
+{
+  "id": "history:11_medication_review",
+  "source": "history",
+  "sourceId": "11_medication_review",
+  "title": "Yearly medication review",
+  "recordedAt": "2026-06-16T14:30:00.000Z",
+  "durationSec": 347,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 2.68,
+      "text": "Good morning, Mary. It's your yearly review today."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.76,
+      "end": 3.879,
+      "text": "I see you brought the bag."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 4.4,
+      "end": 6.799,
+      "text": "Lisa said to bring everything in the cupboard, so I did."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 7.16,
+      "end": 7.92,
+      "text": "I hope that's right."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 8.28,
+      "end": 10.359,
+      "text": "It's heavier than I thought."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 10.84,
+      "end": 14.839,
+      "text": "That's exactly right. We'll go through it- it together, one bottle at a time."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 14.88,
+      "end": 15.68,
+      "text": "How have you been feeling?"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16.12,
+      "end": 17.52,
+      "text": "Pretty well, on the whole."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 18.2,
+      "end": 19.879,
+      "text": "I've been in the garden most days."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 20.32,
+      "end": 21.799,
+      "text": "The tomatoes are coming along."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 22.36,
+      "end": 24.16,
+      "text": "Wonderful. And the knee?"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 24.64,
+      "end": 27.513,
+      "text": "I saw Dr. Okafor's letter from February."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 27.953,
+      "end": 31.672,
+      "text": "He said the injection was still working, so no second one yet."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 32.233,
+      "end": 35.112,
+      "text": "I do the exercises with the chair while the kettle boils."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 35.513,
+      "end": 39.193,
+      "text": "It's not perfect, but I can get up and down the garden steps."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 39.673,
+      "end": 40.993,
+      "text": "That's a good trick, the kettle."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 41.393,
+      "end": 44.273,
+      "text": "Any falls or near falls since I last saw you?"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 44.553,
+      "end": 48.032,
+      "text": "No falls. I hold the rail, and I use the cane outside when it's wet."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 48.433,
+      "end": 49.913,
+      "text": "Good. And how are things at home?"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 49.953,
+      "end": 51.392,
+      "text": "Is Lisa still coming by?"
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 51.946,
+      "end": 54.845,
+      "text": "Most evenings. She does my shopping on Saturdays."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 55.186,
+      "end": 57.026,
+      "text": "She worries too much, but I don't mind."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 58.666,
+      "end": 63.546,
+      "text": "Oh, and my ankles are fine on the new amlodipine, no swelling at all."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 64.026,
+      "end": 64.905,
+      "text": "That's great to hear."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 65.306,
+      "end": 67.985,
+      "text": "Let me check your blood pressure first, then we'll do the bag."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 68.826,
+      "end": 70.586,
+      "text": "128 over 78."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 70.906,
+      "end": 72.146,
+      "text": "Is that the best it's been?"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 72.746,
+      "end": 76.299,
+      "text": "The best in a long time, and the home readings you sent Dr."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 76.379,
+      "end": 82.058,
+      "text": "Patel in April were in the low 130s too, so the combination is working."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 82.539,
+      "end": 87.538,
+      "text": "Okay, first bottle. Ramipril 10 milligram capsules."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 87.939,
+      "end": 88.938,
+      "text": "How are you taking these?"
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 89.379,
+      "end": 91.618,
+      "text": "One every morning with breakfast."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 92.099,
+      "end": 93.459,
+      "text": "Perfect. That stays the same."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 93.739,
+      "end": 96.139,
+      "text": "Ramipril 10 milligrams once a day."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 96.739,
+      "end": 98.699,
+      "text": "Next, amlodipine 5 milligrams."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 99.139,
+      "end": 100.432,
+      "text": "One at night. Dr."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 100.492,
+      "end": 101.092,
+      "text": "Patel's one."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 101.492,
+      "end": 104.451,
+      "text": "Right. Amlodipine 5 milligrams once a day at night."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 104.932,
+      "end": 106.251,
+      "text": "No change. Now, what's this one?"
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 107.612,
+      "end": 108.611,
+      "text": "This is an old bottle."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 109.292,
+      "end": 112.051,
+      "text": "Amlodipine 10 milligrams from last summer."
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 112.292,
+      "end": 114.492,
+      "text": "Oh, I kept those, just in case."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 114.932,
+      "end": 115.732,
+      "text": "Let's get rid of them."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 116.052,
+      "end": 118.291,
+      "text": "It would be too easy to pick up the wrong bottle."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 118.932,
+      "end": 122.132,
+      "text": "Your dose now is 5 milligrams, not 10."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 122.812,
+      "end": 126.404,
+      "text": "I'll put them in this bag for the pharmacy to dispose of."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 126.685,
+      "end": 128.164,
+      "text": "That's fair. They do look alike."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 128.605,
+      "end": 130.645,
+      "text": "Next, atorvastatin 20 milligrams."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 131.605,
+      "end": 139.365,
+      "text": "Your blood test from last week shows your LDL is 88, and your liver test is normal, so it's working well."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 140.365,
+      "end": 141.485,
+      "text": "Keep taking one at night."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 141.965,
+      "end": 143.125,
+      "text": "No muscle aches either."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 143.765,
+      "end": 146.845,
+      "text": "Good. Next, lansoprazole 30 milligrams."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 147.045,
+      "end": 147.844,
+      "text": "How's the heartburn?"
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 148.285,
+      "end": 151.038,
+      "text": "Gone, really. I was wondering if I could stop it now."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 151.478,
+      "end": 152.477,
+      "text": "I'm glad it's settled."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 152.598,
+      "end": 156.918,
+      "text": "I wouldn't stop it suddenly because the acid can bounce back worse for a while."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 158.238,
+      "end": 164.157,
+      "text": "For now, keep taking lansoprazole 30 milligrams once a day before breakfast."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 164.438,
+      "end": 169.438,
+      "text": "In the fall, we'll talk about stepping it down to a lower dose, one step at a time."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 169.918,
+      "end": 171.757,
+      "text": "All right, keep it at 30 for now."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 172.238,
+      "end": 174.791,
+      "text": "Next, vitamin D, 1,000 units."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 175.032,
+      "end": 178.832,
+      "text": "Your level is now 34, which is in the normal range."
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 179.432,
+      "end": 180.432,
+      "text": "Keep taking one a day."
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 180.792,
+      "end": 181.591,
+      "text": "It's an easy one."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 181.632,
+      "end": 182.791,
+      "text": "It's a little soft pill."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 183.192,
+      "end": 185.872,
+      "text": "Then acetaminophen, 500 milligrams."
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 186.432,
+      "end": 188.112,
+      "text": "How many are you taking in a day for the knee?"
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 188.432,
+      "end": 190.231,
+      "text": "Usually 2 in the morning and 2 at night."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 190.552,
+      "end": 192.071,
+      "text": "On bad days, 2 at lunch too."
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 192.472,
+      "end": 197.391,
+      "text": "That's fine. Up to 2 tablets 3 times a day, no more than 3,000 milligrams in a day."
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 198.105,
+      "end": 201.064,
+      "text": "No change. And here's an old bottle of naproxen."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 202.545,
+      "end": 207.185,
+      "text": "Expired too. You stopped this a year ago, so out it goes."
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 207.625,
+      "end": 208.745,
+      "text": "I forgot that was in there."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 209.465,
+      "end": 211.064,
+      "text": "And what's in this little envelope?"
+    },
+    {
+      "idx": 73,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 211.385,
+      "end": 213.744,
+      "text": "Oh, those are Joan's, her sleeping pills."
+    },
+    {
+      "idx": 74,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 214.345,
+      "end": 216.784,
+      "text": "She gave me a few when I said I wasn't sleeping well."
+    },
+    {
+      "idx": 75,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 217.025,
+      "end": 218.504,
+      "text": "I haven't taken any, I promise."
+    },
+    {
+      "idx": 76,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 219.025,
+      "end": 221.784,
+      "text": "Good. The label says zolpidem."
+    },
+    {
+      "idx": 77,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 222.618,
+      "end": 224.057,
+      "text": "I'd ask you not to take them."
+    },
+    {
+      "idx": 78,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 224.778,
+      "end": 233.138,
+      "text": "At your age, sleeping pills like that increase the risk of falls and confusion at night, especially living alone."
+    },
+    {
+      "idx": 79,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 233.978,
+      "end": 235.937,
+      "text": "Let's put those in the disposal bag too."
+    },
+    {
+      "idx": 80,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 236.338,
+      "end": 239.578,
+      "text": "Fine by me, but I do lie awake sometimes."
+    },
+    {
+      "idx": 81,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 240.138,
+      "end": 242.178,
+      "text": "Let's try some simple things first."
+    },
+    {
+      "idx": 82,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 242.858,
+      "end": 250.25,
+      "text": "Same bedtime every night, no naps after 3 o'clock, no tea or coffee after lunch, and get some daylight in the morning."
+    },
+    {
+      "idx": 83,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 250.931,
+      "end": 253.811,
+      "text": "If it's still a problem, tell me at the next visit."
+    },
+    {
+      "idx": 84,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 254.131,
+      "end": 255.31,
+      "text": "No coffee after lunch."
+    },
+    {
+      "idx": 85,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 255.571,
+      "end": 256.211,
+      "text": "That'll be hard."
+    },
+    {
+      "idx": 86,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 256.651,
+      "end": 258.33,
+      "text": "Try decaf in the afternoon."
+    },
+    {
+      "idx": 87,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 261.491,
+      "end": 267.73,
+      "text": "One more idea, a weekly pill organizer with a morning and a night row."
+    },
+    {
+      "idx": 88,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 270.211,
+      "end": 275.804,
+      "text": "Lisa could fill it on Sundays, that way you can see at a glance if you've taken everything."
+    },
+    {
+      "idx": 89,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 276.284,
+      "end": 277.244,
+      "text": "She's been saying that."
+    },
+    {
+      "idx": 90,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 277.724,
+      "end": 278.324,
+      "text": "I'll let her."
+    },
+    {
+      "idx": 91,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 278.724,
+      "end": 280.603,
+      "text": "So, to sum up."
+    },
+    {
+      "idx": 92,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 282.684,
+      "end": 295.564,
+      "text": "In the morning, lansoprazole 30 milligrams half an hour before breakfast, then ramipril 10 milligrams and vitamin D 1,000 units with breakfast."
+    },
+    {
+      "idx": 93,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 296.037,
+      "end": 300.317,
+      "text": "At night, amlodipine 5 milligrams and atorvastatin 20 milligrams."
+    },
+    {
+      "idx": 94,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 301.197,
+      "end": 304.917,
+      "text": "Acetaminophen as needed, maximum 3000 milligrams a day."
+    },
+    {
+      "idx": 95,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 305.557,
+      "end": 307.596,
+      "text": "Nothing new, nothing changed today."
+    },
+    {
+      "idx": 96,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 308.117,
+      "end": 313.117,
+      "text": "And the old amlodipine, the naproxen and Jones pills go to the pharmacy."
+    },
+    {
+      "idx": 97,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 313.437,
+      "end": 315.036,
+      "text": "Exactly. Elm Street will take them."
+    },
+    {
+      "idx": 98,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 315.237,
+      "end": 316.577,
+      "text": "Keep your appointment with Dr."
+    },
+    {
+      "idx": 99,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 316.677,
+      "end": 321.589,
+      "text": "Patel next month, and I'll see you back here in 3 months, in September."
+    },
+    {
+      "idx": 100,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 322.11,
+      "end": 323.569,
+      "text": "September. Thank you, Dr."
+    },
+    {
+      "idx": 101,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 323.63,
+      "end": 325.589,
+      "text": "Smith. That bag feels lighter already."
+    },
+    {
+      "idx": 102,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 326.15,
+      "end": 327.79,
+      "text": "One last question before you go."
+    },
+    {
+      "idx": 103,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 328.19,
+      "end": 331.229,
+      "text": "Can you tell me which pill is for what, in your own words?"
+    },
+    {
+      "idx": 104,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 331.51,
+      "end": 343.23,
+      "text": "Ramipril and amlodipine for blood pressure, atorvastatin for cholesterol, lansoprazole for the heartburn, vitamin D for my bones, and the acetaminophen for my knee."
+    },
+    {
+      "idx": 105,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 343.63,
+      "end": 346.709,
+      "text": "That's every one of them, better than most of my younger patients."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:57:46.070Z"
+}

@@ -1,0 +1,213 @@
+{
+  "conversationId": "history:08_heartburn",
+  "headline": "The clinician said your burning after meals and when you lie down sounds like acid reflux, started you on lansoprazole, and asked to see you again in 8 weeks.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Start lansoprazole",
+      "detail": "Take 30 mg once a day, about 30 minutes before breakfast.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        20,
+        21,
+        27,
+        28,
+        30,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Raise the head of your bed",
+      "detail": "Raise it a few inches. The clinician said blocks under the bed legs work better than extra pillows.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        36,
+        37
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Book your heartburn follow-up",
+      "detail": "The clinician wants to see how your heartburn is doing.",
+      "dueBy": "2026-03-17",
+      "when": "In 8 weeks",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        48,
+        52
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Go to your appointment with Dr. Patel",
+      "detail": "Dr. Patel will go over your heart scan (echo) report with you.",
+      "dueBy": null,
+      "when": "March",
+      "status": "already_scheduled",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        57,
+        58,
+        59,
+        60
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take lansoprazole 30 mg once a day on an empty stomach, about 30 minutes before breakfast. It can take a few days to work fully.",
+      "confidence": "check_this",
+      "evidence": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        64,
+        65
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "Take lansoprazole, not omeprazole. Don't borrow Ruth's pills.",
+      "confidence": "check_this",
+      "evidence": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "If you use an antacid tablet for heartburn, keep it a couple of hours apart from your other medicines.",
+      "confidence": "check_this",
+      "evidence": [
+        32
+      ]
+    },
+    {
+      "id": "instruction-4",
+      "text": "Try not to eat in the 3 hours before bed.",
+      "confidence": "check_this",
+      "evidence": [
+        35
+      ]
+    },
+    {
+      "id": "instruction-5",
+      "text": "Cut down on coffee, tomato sauces, and chocolate if you notice they bring on heartburn.",
+      "confidence": "check_this",
+      "evidence": [
+        37,
+        39,
+        40
+      ]
+    },
+    {
+      "id": "instruction-6",
+      "text": "The clinician said ibuprofen and naproxen can irritate your stomach and make your heartburn and blood pressure worse.",
+      "confidence": "stated_clearly",
+      "evidence": [
+        44,
+        47
+      ]
+    },
+    {
+      "id": "instruction-7",
+      "text": "Call sooner if you have trouble swallowing, vomit blood, see black stools, or get burning with exercise. These symptoms need to be checked quickly.",
+      "confidence": "check_this",
+      "evidence": [
+        53,
+        54,
+        55
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "You can still use antacid tablets if you get heartburn.",
+      "evidence": [
+        32
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "You can keep taking ramipril, atorvastatin, and vitamin D while you take lansoprazole.",
+      "evidence": [
+        41,
+        42
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Will you be able to lower your lansoprazole dose later? The clinician said not yet.",
+      "resolvesWhen": "The goal is the lowest dose that controls your heartburn. No date was set for lowering it.",
+      "evidence": [
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "What did your heart scan show? The clinician said there was nothing urgent in the report.",
+      "resolvesWhen": "Dr. Patel will review the report with you at your March appointment.",
+      "evidence": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:55:42.977Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 1869,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 805,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 178,
+      "engine_ttlt_ms": 10877,
+      "pre_inference_ms": 153,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 600,
+      "service_ttlt_ms": 11296,
+      "user_visible_ttft_ms": 448
+    },
+    "prompt_tokens": 2661,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2658,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4530
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "conversationId": "history:08_heartburn",
+  "generatedAt": "2026-11-27T21:55:31.061Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "antacids",
+      "spellings": [
+        "antacids",
+        "chalky tablets",
+        "antacid tablets"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary can keep using her antacid tablets for breakthrough heartburn, a couple of hours apart from her other medicines.",
+      "doseStatements": [
+        {
+          "text": "You can still use the antacid tablets if you get breakthrough symptoms, but keep them a couple of hours away from your other medicines.",
+          "unclear": false,
+          "evidence": [
+            32
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        17,
+        18,
+        32
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "lansoprazole",
+      "spellings": [
+        "lansoprazole",
+        "Lanzo",
+        "Lanzoprazole",
+        "Lansoprazole"
+      ],
+      "rxnorm": {
+        "rxcui": "17128",
+        "name": "lansoprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "started",
+      "roleDetail": "The clinician started lansoprazole for acid reflux and said a lower dose might be considered later, but not yet.",
+      "doseStatements": [
+        {
+          "text": "30 milligrams, once a day",
+          "unclear": false,
+          "evidence": [
+            27
+          ]
+        },
+        {
+          "text": "Take it in the morning, about 30 minutes before breakfast, on an empty stomach.",
+          "unclear": false,
+          "evidence": [
+            28
+          ]
+        },
+        {
+          "text": "Before breakfast, 30 milligrams, once a day.",
+          "unclear": false,
+          "evidence": [
+            30
+          ]
+        },
+        {
+          "text": "30, once a day, half an hour before breakfast",
+          "unclear": false,
+          "evidence": [
+            64
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        20,
+        21,
+        22,
+        24,
+        27,
+        28,
+        29,
+        30,
+        31,
+        41,
+        42,
+        49,
+        50,
+        51,
+        63,
+        64,
+        65
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "omeprazole",
+      "spellings": [
+        "omeprazole"
+      ],
+      "rxnorm": {
+        "rxcui": "7646",
+        "name": "omeprazole",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "avoid",
+      "roleDetail": "The clinician told Mary to take lansoprazole instead of borrowing her neighbor's omeprazole.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "ramipril",
+      "spellings": [
+        "ramipril"
+      ],
+      "rxnorm": {
+        "rxcui": "35296",
+        "name": "ramipril",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The clinician said Mary can take lansoprazole with her current ramipril.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-5",
+      "heardAs": "atorvastatin",
+      "spellings": [
+        "atorvastatin"
+      ],
+      "rxnorm": {
+        "rxcui": "83367",
+        "name": "atorvastatin",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The clinician said Mary can take lansoprazole with her current atorvastatin.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-6",
+      "heardAs": "vitamin D",
+      "spellings": [
+        "vitamin D"
+      ],
+      "rxnorm": {
+        "rxcui": "11253",
+        "name": "vitamin D",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The clinician said Mary can take lansoprazole with her current vitamin D.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        42
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-7",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "Mary said acetaminophen is the only medicine she is currently taking for her knee pain.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        43,
+        46
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-8",
+      "heardAs": "ibuprofen",
+      "spellings": [
+        "ibuprofen"
+      ],
+      "rxnorm": {
+        "rxcui": "5640",
+        "name": "ibuprofen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "The clinician warned that ibuprofen could worsen Mary's heartburn and blood pressure, and Mary said she was only taking acetaminophen for her knee.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        44,
+        47
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-9",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "discussed",
+      "roleDetail": "The clinician warned that naproxen could worsen Mary's heartburn and blood pressure, and Mary said she was only taking acetaminophen for her knee.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        44,
+        47
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}

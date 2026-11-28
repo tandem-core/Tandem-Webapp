@@ -1,0 +1,493 @@
+{
+  "id": "history:06_nurse_bp_check",
+  "source": "history",
+  "sourceId": "06_nurse_bp_check",
+  "title": "Nurse blood pressure check",
+  "recordedAt": "2025-10-28T15:30:00.000Z",
+  "durationSec": 206,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.08,
+      "end": 1.72,
+      "text": "Hi, Mary. Come on back."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 2.36,
+      "end": 5.999,
+      "text": "Dr. Smith wanted me to check your blood pressure and your ankles today."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 6.52,
+      "end": 13.28,
+      "text": "Hello, Nurse Rivera. Yes, it's been about 4 weeks since I stopped the amlo- the amlodipine."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 13.8,
+      "end": 16.959,
+      "text": "5 weeks, almost. How are the ankles?"
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 17.24,
+      "end": 19.4,
+      "text": "Much better. The swelling's mostly gone."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 19.84,
+      "end": 21.24,
+      "text": "I can wear my good shoes again."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 21.8,
+      "end": 25.932,
+      "text": "Let's see. Yes, no dent at all when I press."
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 26.772,
+      "end": 28.331,
+      "text": "That's a big difference."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 29.132,
+      "end": 35.332,
+      "text": "Now, blood pressure. Arm out on the table, feet flat, and don't talk for a moment."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 35.812,
+      "end": 38.691,
+      "text": "Okay, 146 over 86."
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 39.052,
+      "end": 40.811,
+      "text": "I'll do it again in a couple of minutes."
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 41.332,
+      "end": 43.732,
+      "text": "Is my machine at home any good, do you think?"
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 45.492,
+      "end": 46.932,
+      "text": "Lisa bought it at the pharmacy."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 47.412,
+      "end": 50.264,
+      "text": "Next time, bring it in, and I'll check it against ours."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 50.944,
+      "end": 59.984,
+      "text": "The main things are to sit for 5 minutes first, feet flat, arm resting on a table at heart level, and no coffee for half an hour before."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 60.424,
+      "end": 64.303,
+      "text": "Oh, I usually do it right after my coffee."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 64.744,
+      "end": 66.663,
+      "text": "That might be adding a few points."
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 67.224,
+      "end": 71.196,
+      "text": "Try doing it before breakfast instead, and again in the evening."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 71.717,
+      "end": 72.996,
+      "text": "Do you want my home readings?"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 73.397,
+      "end": 74.797,
+      "text": "Here I've been writing them down."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 75.157,
+      "end": 79.197,
+      "text": "Thanks. These are mostly in the 140s, a few at 150."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 79.837,
+      "end": 82.597,
+      "text": "One at 158 last Tuesday."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 83.037,
+      "end": 84.436,
+      "text": "That was the day the furnace broke."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 84.637,
+      "end": 85.276,
+      "text": "I was upset."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 85.757,
+      "end": 88.237,
+      "text": "That'll do it. Let's do the second one."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 88.837,
+      "end": 90.716,
+      "text": "144 over 86."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 91.197,
+      "end": 93.529,
+      "text": "It's gone up since I stopped the amlodipine, hasn't it?"
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 93.969,
+      "end": 97.829,
+      "text": "A bit, yes. It's not dangerous, but it's higher than Dr."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 97.969,
+      "end": 102.849,
+      "text": "Smith's goal. Are you still taking ramipril 10 milligrams every morning?"
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 103.129,
+      "end": 109.129,
+      "text": "Every morning with my vitamin D and the cholesterol one at night."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 109.369,
+      "end": 112.329,
+      "text": "The atorvastatin, 20 milligrams."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 113.049,
+      "end": 116.342,
+      "text": "Perfect. Let me get your weight too, while you're up."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 116.902,
+      "end": 119.982,
+      "text": "154 pounds, down 2 from June."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 120.462,
+      "end": 121.741,
+      "text": "That's the walking. Dr."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 121.782,
+      "end": 125.542,
+      "text": "Okafor gave me a shot in my knee a couple of weeks ago so I can get out more."
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 126.102,
+      "end": 129.321,
+      "text": "That's great. Walking helps your blood pressure too."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 129.822,
+      "end": 131.341,
+      "text": "Dr. Smith left a note."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 132.142,
+      "end": 138.913,
+      "text": "If your pressure stayed above 140 after stopping the amlodipine, I'm to refer you to Dr."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 139.074,
+      "end": 141.594,
+      "text": "Patel in cardiology for a review."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 142.274,
+      "end": 144.273,
+      "text": "So I'll put that referral through today."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 144.714,
+      "end": 147.153,
+      "text": "A heart doctor? Is something wrong with my heart?"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 147.674,
+      "end": 148.833,
+      "text": "Not that we know of."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 149.474,
+      "end": 154.914,
+      "text": "It's to find the best blood pressure plan for you now that the amlodipine didn't suit you."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 156.074,
+      "end": 159.526,
+      "text": "Dr. Patel might want a heart scan just to check everything."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 160.007,
+      "end": 161.567,
+      "text": "All right, how long will that take?"
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 162.167,
+      "end": 164.567,
+      "text": "Usually 4 to 6 weeks for an appointment."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 165.007,
+      "end": 169.366,
+      "text": "They'll phone you. In the meantime, no changes to your medicines."
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 170.007,
+      "end": 171.407,
+      "text": "Keep checking at home."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 171.727,
+      "end": 174.407,
+      "text": "While you're here, you're due for your flu shot."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 174.887,
+      "end": 175.887,
+      "text": "Would you like it today?"
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 176.287,
+      "end": 178.127,
+      "text": "Oh, yes. Lisa said I should get it."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 178.687,
+      "end": 181.687,
+      "text": "Left arm? Okay, little scratch."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 182.299,
+      "end": 185.939,
+      "text": "All done. Your arm might be a bit sore for a day."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 186.299,
+      "end": 197.898,
+      "text": "Last thing, call us if the top number is over 160 more than twice in a week, or if you get a bad headache with blurry vision or any chest"
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 198.019,
+      "end": 198.299,
+      "text": "pain."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 198.739,
+      "end": 200.718,
+      "text": "Over 160 twice. I remember Dr."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 200.779,
+      "end": 201.738,
+      "text": "Smith said that too."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 202.019,
+      "end": 203.779,
+      "text": "Great. Any questions for me?"
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 204.179,
+      "end": 205.259,
+      "text": "No, I think that's everything."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 205.379,
+      "end": 206.059,
+      "text": "Thank you, dear."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:53:44.630Z"
+}

@@ -1,0 +1,597 @@
+{
+  "id": "history:02_knee_xray_results",
+  "source": "history",
+  "sourceId": "02_knee_xray_results",
+  "title": "Knee X-ray results",
+  "recordedAt": "2025-07-08T14:30:00.000Z",
+  "durationSec": 217,
+  "language": "English",
+  "segments": [
+    {
+      "idx": 0,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 0.12,
+      "end": 1.179,
+      "text": "Hello, Mary. I'm Dr."
+    },
+    {
+      "idx": 1,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 1.24,
+      "end": 3.999,
+      "text": "Okafor. Dr. Smith sent you over about your knee."
+    },
+    {
+      "idx": 2,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 4.32,
+      "end": 5.12,
+      "text": "Please have a seat."
+    },
+    {
+      "idx": 3,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 5.6,
+      "end": 8,
+      "text": "Hello, doctor. Yes, it's the right one."
+    },
+    {
+      "idx": 4,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 8.12,
+      "end": 12.04,
+      "text": "It's been bad on and off for a couple of years, but worse since the spring."
+    },
+    {
+      "idx": 5,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 12.32,
+      "end": 13.12,
+      "text": "Tell me what it's like."
+    },
+    {
+      "idx": 6,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 14.12,
+      "end": 16.159,
+      "text": "When does it hurt the most?"
+    },
+    {
+      "idx": 7,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 16.64,
+      "end": 20.9,
+      "text": "Getting up out of a chair and stairs, going down especially."
+    },
+    {
+      "idx": 8,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 21,
+      "end": 27.831,
+      "text": "In the morning, it's stiff for maybe 15, 20 minutes, then it loosens up."
+    },
+    {
+      "idx": 9,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 28.151,
+      "end": 28.871,
+      "text": "Any swelling?"
+    },
+    {
+      "idx": 10,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 31.631,
+      "end": 33.631,
+      "text": "And does it ever lock or give way under you?"
+    },
+    {
+      "idx": 11,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 34.071,
+      "end": 35.67,
+      "text": "It swells a bit at the end of the day."
+    },
+    {
+      "idx": 12,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 35.751,
+      "end": 38.71,
+      "text": "It hasn't given way, but I hold on to the rail."
+    },
+    {
+      "idx": 13,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 38.991,
+      "end": 40.111,
+      "text": "Good that you hold the rail."
+    },
+    {
+      "idx": 14,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 40.351,
+      "end": 41.85,
+      "text": "We took an X-ray when you arrived."
+    },
+    {
+      "idx": 15,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 42.151,
+      "end": 43.311,
+      "text": "Let me show you on the screen."
+    },
+    {
+      "idx": 16,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 43.791,
+      "end": 51.601,
+      "text": "See here, the space between the bones on the inside of the knee is narrower than on the outside, and there are small bony spurs at the edges, here and"
+    },
+    {
+      "idx": 17,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 51.662,
+      "end": 51.902,
+      "text": "here."
+    },
+    {
+      "idx": 18,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 52.222,
+      "end": 52.902,
+      "text": "Is that bad?"
+    },
+    {
+      "idx": 19,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 54.062,
+      "end": 55.381,
+      "text": "It's osteoarthritis."
+    },
+    {
+      "idx": 20,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 57.102,
+      "end": 58.542,
+      "text": "Wear and tear arthritis."
+    },
+    {
+      "idx": 21,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 59.062,
+      "end": 62.221,
+      "text": "It's very common at your age, and yours is moderate, not severe."
+    },
+    {
+      "idx": 22,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 63.182,
+      "end": 65.941,
+      "text": "The good news is there's a lot we can do without surgery."
+    },
+    {
+      "idx": 23,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 66.502,
+      "end": 68.542,
+      "text": "My friend Joan had her knee replaced."
+    },
+    {
+      "idx": 24,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 68.822,
+      "end": 69.502,
+      "text": "I don't want that."
+    },
+    {
+      "idx": 25,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 69.782,
+      "end": 71.262,
+      "text": "You're a long way from needing that."
+    },
+    {
+      "idx": 26,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 71.862,
+      "end": 74.033,
+      "text": "The first and most important thing is physical therapy."
+    },
+    {
+      "idx": 27,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 74.873,
+      "end": 77.132,
+      "text": "Strengthening the thigh muscles takes pressure off the joint."
+    },
+    {
+      "idx": 28,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 77.453,
+      "end": 81.813,
+      "text": "I'm going to refer you to physical therapy twice a week for six weeks."
+    },
+    {
+      "idx": 29,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 82.293,
+      "end": 87.812,
+      "text": "They'll give you exercises to do at home as well, and those home exercises are the part that really makes the difference."
+    },
+    {
+      "idx": 30,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 88.413,
+      "end": 90.293,
+      "text": "Twice a week. Lisa will have to drive me."
+    },
+    {
+      "idx": 31,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 90.413,
+      "end": 91.132,
+      "text": "She works, though."
+    },
+    {
+      "idx": 32,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 91.373,
+      "end": 94.812,
+      "text": "The therapy clinic on Maple Avenue has early morning and evening times."
+    },
+    {
+      "idx": 33,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 95.213,
+      "end": 96.612,
+      "text": "Ask the front desk when you book."
+    },
+    {
+      "idx": 34,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 97.133,
+      "end": 99.883,
+      "text": "Now, what are you taking for the pain at the moment?"
+    },
+    {
+      "idx": 35,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 100.364,
+      "end": 104.224,
+      "text": "Dr. Smith took me off the naproxen because of my blood pressure."
+    },
+    {
+      "idx": 36,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 105.044,
+      "end": 106.603,
+      "text": "Now I take the acetaminophen."
+    },
+    {
+      "idx": 37,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 107.084,
+      "end": 109.644,
+      "text": "Two tablets, sometimes three times a day."
+    },
+    {
+      "idx": 38,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 109.924,
+      "end": 118.563,
+      "text": "That's right. Acetaminophen 500 milligrams, up to two tablets three times a day, and not more than 3,000 milligrams in a day."
+    },
+    {
+      "idx": 39,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 119.044,
+      "end": 119.983,
+      "text": "I agree with Dr."
+    },
+    {
+      "idx": 40,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 120.084,
+      "end": 121.594,
+      "text": "Smith. Is it helping?"
+    },
+    {
+      "idx": 41,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 122.115,
+      "end": 124.954,
+      "text": "Some, not as much as the naproxen did, if I'm honest."
+    },
+    {
+      "idx": 42,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 125.435,
+      "end": 131.235,
+      "text": "That's fair. Taking it regularly, rather than waiting until the pain is bad, often helps more."
+    },
+    {
+      "idx": 43,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 131.955,
+      "end": 134.714,
+      "text": "Try taking a dose about an hour before your therapy sessions, too."
+    },
+    {
+      "idx": 44,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 135.155,
+      "end": 137.555,
+      "text": "Joan takes something called celebrex."
+    },
+    {
+      "idx": 45,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 137.995,
+      "end": 139.434,
+      "text": "She says it's wonderful."
+    },
+    {
+      "idx": 46,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 140.155,
+      "end": 141.515,
+      "text": "Could I take that instead?"
+    },
+    {
+      "idx": 47,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 142.115,
+      "end": 146.705,
+      "text": "Celecoxib, that is. It's another anti-inflammatory, in the same family as naproxen."
+    },
+    {
+      "idx": 48,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 147.066,
+      "end": 151.126,
+      "text": "It has the same concerns for blood pressure and kidneys, so it's not a good choice for you."
+    },
+    {
+      "idx": 49,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 151.546,
+      "end": 152.906,
+      "text": "Please don't take Jones tablets."
+    },
+    {
+      "idx": 50,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 153.426,
+      "end": 154.666,
+      "text": "No, no, I wouldn't."
+    },
+    {
+      "idx": 51,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 155.346,
+      "end": 156.825,
+      "text": "I just wondered."
+    },
+    {
+      "idx": 52,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 157.226,
+      "end": 158.426,
+      "text": "It's a good question to ask."
+    },
+    {
+      "idx": 53,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 158.946,
+      "end": 160.105,
+      "text": "Ice or heat can help too."
+    },
+    {
+      "idx": 54,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 160.586,
+      "end": 165.306,
+      "text": "A warm pack in the morning for the stiffness, and ice for 15 minutes in the evening if it's swollen."
+    },
+    {
+      "idx": 55,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 165.746,
+      "end": 166.426,
+      "text": "I can do that."
+    },
+    {
+      "idx": 56,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 167.666,
+      "end": 171.756,
+      "text": "Also, a cane in your left hand would take some weight off the right knee on bad days."
+    },
+    {
+      "idx": 57,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 172.177,
+      "end": 173.976,
+      "text": "The physical therapist can fit you for one."
+    },
+    {
+      "idx": 58,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 174.337,
+      "end": 175.977,
+      "text": "A cane. I suppose I'm old enough."
+    },
+    {
+      "idx": 59,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 177.537,
+      "end": 179.296,
+      "text": "Plenty of people half your age use one."
+    },
+    {
+      "idx": 60,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 179.777,
+      "end": 180.696,
+      "text": "Any questions so far?"
+    },
+    {
+      "idx": 61,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 181.137,
+      "end": 182.417,
+      "text": "How long until it's better?"
+    },
+    {
+      "idx": 62,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 183.017,
+      "end": 186.596,
+      "text": "Most people notice an improvement after 4 to 6 weeks of exercises."
+    },
+    {
+      "idx": 63,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 187.057,
+      "end": 188.717,
+      "text": "I'd like to see you back in 3 months."
+    },
+    {
+      "idx": 64,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 189.817,
+      "end": 194.167,
+      "text": "If it's still bothering you a lot then, we can talk about a steroid injection into the knee."
+    },
+    {
+      "idx": 65,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 194.488,
+      "end": 195.527,
+      "text": "A needle in the knee?"
+    },
+    {
+      "idx": 66,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 196.328,
+      "end": 201.168,
+      "text": "It's quick, and it can give relief for a few months, but let's see how you do with the therapy first."
+    },
+    {
+      "idx": 67,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 201.688,
+      "end": 206.008,
+      "text": "All right, 3 months, and the physical therapy twice a week."
+    },
+    {
+      "idx": 68,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 206.368,
+      "end": 207.408,
+      "text": "For 6 weeks, yes."
+    },
+    {
+      "idx": 69,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 208.088,
+      "end": 209.668,
+      "text": "And keep up the acetaminophen as Dr."
+    },
+    {
+      "idx": 70,
+      "speaker": "SPEAKER_00",
+      "speakerName": null,
+      "start": 209.688,
+      "end": 215.128,
+      "text": "Smith told you. Call us if the knee becomes hot, red, and very swollen, or if you can't put weight on it."
+    },
+    {
+      "idx": 71,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 215.528,
+      "end": 216.767,
+      "text": "I will. Thank you, Dr."
+    },
+    {
+      "idx": 72,
+      "speaker": "SPEAKER_01",
+      "speakerName": null,
+      "start": 216.848,
+      "end": 217.447,
+      "text": "Okafor."
+    }
+  ],
+  "vendorSummary": null,
+  "ingestedAt": "2026-11-27T21:49:20.762Z"
+}

@@ -1,0 +1,185 @@
+{
+  "conversationId": "history:03_cholesterol_results",
+  "headline": "Dr. Smith reviewed your blood tests and recommended starting atorvastatin for high cholesterol and vitamin D for a low vitamin D level.",
+  "followUps": [
+    {
+      "id": "followUp-1",
+      "title": "Start atorvastatin",
+      "detail": "Take one 20 mg tablet once a day at bedtime.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": false,
+      "confidence": "stated_clearly",
+      "evidence": [
+        17,
+        21,
+        41
+      ]
+    },
+    {
+      "id": "followUp-2",
+      "title": "Buy vitamin D3",
+      "detail": "You can buy it without a prescription. Look for a bottle that says 1,000 IU (international units) or 25 micrograms.",
+      "dueBy": null,
+      "when": null,
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        32,
+        33,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "followUp-3",
+      "title": "Book your cholesterol and liver blood tests",
+      "detail": "Book the blood draw at the front desk. Get it done in early September rather than waiting for your blood pressure visit.",
+      "dueBy": "2025-09-04",
+      "when": "In 6 weeks, in early September",
+      "status": "to_do",
+      "delegable": true,
+      "confidence": "check_this",
+      "evidence": [
+        28,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "id": "followUp-4",
+      "title": "Keep your blood pressure visit",
+      "detail": "Your September visit with Dr. Smith is still planned.",
+      "dueBy": null,
+      "when": "September",
+      "status": "already_scheduled",
+      "delegable": true,
+      "confidence": "stated_clearly",
+      "evidence": [
+        45,
+        46,
+        47
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "id": "instruction-1",
+      "text": "Take vitamin D3, 1,000 IU once a day with a meal.",
+      "confidence": "check_this",
+      "evidence": [
+        32,
+        37,
+        38,
+        40,
+        42
+      ]
+    },
+    {
+      "id": "instruction-2",
+      "text": "If you get muscle pain or weakness you can’t explain, call Dr. Smith before stopping atorvastatin.",
+      "confidence": "check_this",
+      "evidence": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "instruction-3",
+      "text": "Avoid large amounts of grapefruit juice while taking atorvastatin. A little grapefruit now and then is fine.",
+      "confidence": "check_this",
+      "evidence": [
+        25,
+        26
+      ]
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "unchanged-1",
+      "text": "Keep taking ramipril 10 mg once a day in the morning.",
+      "evidence": [
+        9,
+        43
+      ]
+    },
+    {
+      "id": "unchanged-2",
+      "text": "Keep taking amlodipine 10 mg once a day.",
+      "evidence": [
+        43
+      ]
+    },
+    {
+      "id": "unchanged-3",
+      "text": "Keep using acetaminophen as needed for your knee.",
+      "evidence": [
+        43
+      ]
+    },
+    {
+      "id": "unchanged-4",
+      "text": "Continue to avoid naproxen.",
+      "evidence": [
+        44,
+        45
+      ]
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "openQuestion-1",
+      "text": "Is low vitamin D part of why you feel tired? Dr. Smith said it might be a small part of the reason.",
+      "resolvesWhen": null,
+      "evidence": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "openQuestion-2",
+      "text": "Will you need atorvastatin forever? Dr. Smith said you’ll most likely take it long term.",
+      "resolvesWhen": "As long as you’re doing well on it.",
+      "evidence": [
+        52,
+        53
+      ]
+    }
+  ],
+  "warnings": [],
+  "generatedAt": "2026-11-27T21:51:22.253Z",
+  "model": "gpt-6.2-sol-2026-11-17",
+  "usage": {
+    "completion_tokens": 1887,
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 1024,
+      "rejected_prediction_tokens": 0
+    },
+    "latency_checkpoint": {
+      "engine_tbt_ms": 6,
+      "engine_ttft_ms": 156,
+      "engine_ttlt_ms": 12056,
+      "pre_inference_ms": 74,
+      "service_tbt_ms": 6,
+      "service_ttft_ms": 724,
+      "service_ttlt_ms": 12621,
+      "user_visible_ttft_ms": 651
+    },
+    "prompt_tokens": 2478,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cache_write_tokens": 2475,
+      "cached_tokens": 0
+    },
+    "total_tokens": 4365
+  }
+}

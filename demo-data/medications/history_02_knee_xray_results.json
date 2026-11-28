@@ -1,0 +1,153 @@
+{
+  "conversationId": "history:02_knee_xray_results",
+  "generatedAt": "2026-11-27T21:49:30.991Z",
+  "medications": [
+    {
+      "id": "med-1",
+      "heardAs": "naproxen",
+      "spellings": [
+        "naproxen"
+      ],
+      "rxnorm": {
+        "rxcui": "7258",
+        "name": "naproxen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "stopped",
+      "roleDetail": "Dr. Smith had already stopped naproxen because of Mary's blood pressure.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        35,
+        41,
+        47
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-2",
+      "heardAs": "acetaminophen",
+      "spellings": [
+        "acetaminophen",
+        "Acetaminophen"
+      ],
+      "rxnorm": {
+        "rxcui": "161",
+        "name": "acetaminophen",
+        "tty": "IN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "existing",
+      "roleDetail": "The doctor confirmed Mary's current dosing limits and suggested taking it regularly, including about an hour before physical therapy.",
+      "doseStatements": [
+        {
+          "text": "Two tablets, sometimes three times a day.",
+          "unclear": false,
+          "evidence": [
+            37
+          ]
+        },
+        {
+          "text": "500 milligrams, up to two tablets three times a day, and not more than 3,000 milligrams in a day.",
+          "unclear": false,
+          "evidence": [
+            38
+          ]
+        },
+        {
+          "text": "a dose about an hour before your therapy sessions",
+          "unclear": false,
+          "evidence": [
+            43
+          ]
+        }
+      ],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        36,
+        37,
+        38,
+        42,
+        43,
+        69,
+        70
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-3",
+      "heardAs": "celebrex",
+      "spellings": [
+        "celebrex",
+        "Celecoxib"
+      ],
+      "rxnorm": {
+        "rxcui": "215927",
+        "name": "Celebrex",
+        "tty": "BN"
+      },
+      "lexicalMatches": [],
+      "kind": "specific",
+      "nameState": "clear",
+      "suggestion": null,
+      "role": "not_chosen",
+      "roleDetail": "The doctor advised against switching to celecoxib because of blood pressure and kidney concerns and told Mary not to take Joan's tablets.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        44,
+        46,
+        47,
+        48,
+        49
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    },
+    {
+      "id": "med-4",
+      "heardAs": "steroid injection",
+      "spellings": [
+        "steroid injection"
+      ],
+      "rxnorm": null,
+      "lexicalMatches": [],
+      "kind": "family",
+      "nameState": "general",
+      "suggestion": null,
+      "role": "proposed",
+      "roleDetail": "The doctor raised a steroid injection into the knee as an option if the pain was still bothersome at the three-month follow-up.",
+      "doseStatements": [],
+      "doseConflict": false,
+      "doseConflictNote": null,
+      "doseCorrected": false,
+      "doseCorrectionNote": null,
+      "evidence": [
+        63,
+        64,
+        65,
+        66
+      ],
+      "ownerAnswer": null,
+      "careTeamNote": null
+    }
+  ]
+}
