@@ -5,14 +5,20 @@ import { ComponentRef, useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { API_URL, askSpoken, askTurn, RECORDING, RecordingError, Turn } from '@/api';
+import { API_URL, askForHelp, askSpoken, askTurn, RECORDING, RecordingError, Turn } from '@/api';
 import { answerOf, shortDate } from '@/format';
 import { colors, fonts } from '@/theme';
 import { Button, Header, HearButton, styles as ui, Wave } from '@/ui';
 
 const SUGGESTIONS = ['My current dose?', 'What changed last time?', 'Next visit?'];
 
-type Entry = { question: string; turn?: Turn; failed?: string; readOnly?: boolean };
+// reply: an answer made on the phone (asking Lisa) or an error, shown in place of a turn.
+type Entry = { question: string; turn?: Turn; reply?: string; readOnly?: boolean };
+
+const HELP_FAILED: Record<string, string> = {
+  unchecked_medication: 'Check the medicine first. Then I can ask Lisa.',
+  offline: 'Couldn’t send. Check your internet.',
+};
 
 export default function Chat() {
   const [entries, setEntries] = useState<Entry[]>([]);
@@ -63,7 +69,7 @@ export default function Chat() {
       if (speak) say(turn, `turn:${index}`);
     } catch (err) {
       const failed = err instanceof RecordingError && err.code !== 'offline' ? 'Voice isn’t working. Please type.' : 'Couldn’t send. Check your internet.';
-      setEntries((e) => [...e.slice(0, -1), { question: shown, failed }]);
+      setEntries((e) => [...e.slice(0, -1), { question: shown, reply: failed }]);
     } finally {
       setBusy(false);
       setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 100);
@@ -73,6 +79,26 @@ export default function Chat() {
     if (!busy && shown.trim()) run(shown, () => askTurn({ ...body, sessionId: session.current }));
   };
   const ask = (q: string) => send(q, { event: 'question', text: q });
+
+  // The answer to "Would you like me to ask Lisa?", sent straight to Joel's requests route.
+  const answerHelp = async (turn: Turn, yes: boolean) => {
+    const slug = turn.result?.visit?.slug;
+    const itemId = turn.result?.nextStep?.followUpId;
+    if (!yes) return setEntries((e) => [...e, { question: 'No', reply: 'Okay.' }]);
+    if (!slug || !itemId) return send('Yes, ask Lisa', { event: 'question', text: 'Yes' });
+    setBusy(true);
+    setEntries((e) => [...e, { question: 'Yes, ask Lisa' }]);
+    const res = await askForHelp(slug, itemId);
+    const reply =
+      'error' in res
+        ? (HELP_FAILED[res.error] ?? 'Couldn’t ask Lisa. Try again.')
+        : res.existing
+          ? 'Lisa already has this one.'
+          : 'Okay. I’ve asked Lisa to help.';
+    setEntries((e) => [...e.slice(0, -1), { question: 'Yes, ask Lisa', reply }]);
+    setBusy(false);
+    setTimeout(() => scroll.current?.scrollToEnd({ animated: true }), 100);
+  };
 
   const talk = async () => {
     if (listening) {
@@ -107,12 +133,12 @@ export default function Chat() {
           {entries.map((entry, i) => (
             <View key={i} style={{ gap: 14 }}>
               <Text style={s.user}>{entry.question}</Text>
-              {entry.failed && (
+              {entry.reply && (
                 <View style={s.bot}>
-                  <Text style={s.botText}>{entry.failed}</Text>
+                  <Text style={s.botText}>{entry.reply}</Text>
                 </View>
               )}
-              {!entry.turn && !entry.failed && (
+              {!entry.turn && !entry.reply && (
                 <View style={[s.bot, { paddingVertical: 18 }]} accessibilityLabel="Thinking">
                   <Wave />
                 </View>
@@ -148,8 +174,8 @@ export default function Chat() {
                     ))}
                   {entry.turn === last && last.expect === 'yes_no' && (
                     <View style={{ flexDirection: 'row', gap: 8, marginTop: 4 }}>
-                      <Button label="Yes, ask Lisa" onPress={() => send('Yes, ask Lisa', { event: 'question', text: 'Yes' })} />
-                      <Button label="No" kind="ghost" onPress={() => send('No', { event: 'question', text: 'No' })} />
+                      <Button label="Yes, ask Lisa" disabled={busy} onPress={() => answerHelp(last, true)} />
+                      <Button label="No" kind="ghost" disabled={busy} onPress={() => answerHelp(last, false)} />
                     </View>
                   )}
                   {entry.turn === last &&

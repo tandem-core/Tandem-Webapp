@@ -46,6 +46,14 @@ test('answerOf replaces the misleading offline line but keeps real and saved ans
   assert.equal(answerOf(live), 'Take 15 mg.');
   const spoken = { actions: [{ type: 'speak', text: "From your Tuesday, November 3 recording. Take 15 mg daily. Here's what was said." }], result: { status: 'answered' } };
   assert.equal(answerOf(spoken), 'November 3: Take 15 mg daily.');
+  const offer = {
+    actions: [
+      { type: 'speak', text: "From your Tuesday, November 3 recording. Book in a month. Here's what was said." },
+      { type: 'speak', text: 'Would you like me to ask Lisa to help with this? Hold the button and say yes or no.' },
+    ],
+    result: { status: 'answered' },
+  };
+  assert.equal(answerOf(offer), 'November 3: Book in a month. Would you like me to ask Lisa to help with this?');
 });
 
 test('isNewForLisa flags appointments recorded after sharing began, until Lisa opens them', () => {

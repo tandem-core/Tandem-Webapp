@@ -72,6 +72,21 @@ export function useHome() {
 }
 export const getVisit = (slug: string) => request<Visit>(`/api/visits/${slug}`);
 
+/**
+ * Joel's help request (lib/requests.mjs): asks Lisa to take on one to-do. Called directly
+ * because the voice turn's yes/no lives in one server instance's memory, which a second
+ * request on Vercel may not reach. Resolves to the error code on failure.
+ */
+export async function askForHelp(slug: string, itemId: string): Promise<{ existing?: boolean } | { error: string }> {
+  const res = await fetch(`${API_URL}/api/visits/${slug}/requests`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ itemId, helperId: 'lisa', message: 'Could you help me with this?', includeHeadline: false }),
+  }).catch(() => null);
+  const body = await res?.json().catch(() => null);
+  return res?.ok ? body : { error: body?.error?.code ?? 'offline' };
+}
+
 /** Every appointment in full, newest first (for to-dos, which come from each one). */
 export async function getAllVisits() {
   const { visits } = await getHome();
@@ -109,7 +124,13 @@ export type Turn = {
   heard: string;
   expect: 'question' | 'yes_no' | 'choice';
   actions: TurnAction[];
-  result: { status: string; options?: { slug: string; title: string; recordedAt: string }[]; clips?: { quote?: string }[] } | null;
+  result: {
+    status: string;
+    options?: { slug: string; title: string; recordedAt: string }[];
+    clips?: { quote?: string }[];
+    visit?: { slug: string } | null;
+    nextStep?: { type: string; followUpId?: string } | null;
+  } | null;
   fromCache?: boolean;
 };
 

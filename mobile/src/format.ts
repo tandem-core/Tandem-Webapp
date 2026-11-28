@@ -80,7 +80,7 @@ export function answerOf(turn: Turn) {
       .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
       .join(' ')
       .replace(/^From your (?:\w+, )?(\w+ \d+) recording\.\s*/, '$1: ')
-      .replace(/\s*Here's what was said\.$/, '')
+      .replace(/\s*Here's what was said\./g, '')
       // Device instructions; the app shows buttons instead.
       .replace(/\s*Hold the button[^.]*\./g, '')
   );
