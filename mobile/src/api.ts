@@ -34,6 +34,8 @@ export type Medication = {
   needsReview: boolean;
   nameResolved: boolean;
   doseNeedsCheck: boolean;
+  // How the server names it without claiming more certainty than it has (lib/medications.mjs).
+  displayName?: string;
 };
 
 export type SummaryItem = { id: string; text: string; evidence: number[] };
@@ -102,8 +104,21 @@ export function useAllVisits() {
 export const clipUrl = (slug: string, start: number, end: number) => `${API_URL}/api/audio/${slug}/clip?start=${start.toFixed(2)}&end=${end.toFixed(2)}`;
 
 // The running medicine list (testing track: /api/meds, built by lib/med-log.mjs).
-export type MedEntry = { medicine: string; change: string; detail: string; dose: string | null; date: string; slug: string; title: string };
-export type Meds = { current: MedEntry[]; checks: { slug: string; title: string; recordedAt: string; med: Medication }[] };
+// The running medicine list (testing track: /api/meds, built by lib/med-log.mjs). `med` is the
+// medicine's record from that appointment, as on the visit page.
+export type MedEntry = {
+  medicine: string;
+  change: string;
+  detail: string;
+  dose: string | null;
+  date: string;
+  slug: string;
+  title: string;
+  med: Medication | null;
+  nameUnclear: boolean;
+  amountUnclear: boolean;
+};
+export type Meds = { current: MedEntry[] };
 export const getMeds = () => request<Meds>('/api/meds');
 
 export const answerMedication = (slug: string, medId: string, answer: Answer) =>

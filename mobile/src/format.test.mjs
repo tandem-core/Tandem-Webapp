@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, homeLine, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
+import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, amountOf, homeLine, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -101,4 +101,9 @@ test('homeLine shows one short line and never cuts a dose', () => {
   assert.equal(homeLine({ headline: long, medications: [med], followUps: [] }), '“Lenzaprazole” 15 mg');
   assert.equal(homeLine({ headline: 'Blood pressure is steady, keep going as you are.', medications: [], followUps: [] }), 'Blood pressure is steady, keep going as you are.');
   assert.equal(homeLine({ headline: long, medications: [], followUps: [{ title: 'Book a follow-up' }] }), 'Book a follow-up');
+});
+
+test('amountOf keeps thousands whole', () => {
+  assert.equal(amountOf('no more than 3,000 milligrams in a day'), '3,000 mg');
+  assert.equal(amountOf('100 my grams'), null);
 });

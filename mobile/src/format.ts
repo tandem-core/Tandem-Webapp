@@ -30,7 +30,7 @@ const UNITS: Record<string, string> = { milligram: 'mg', mg: 'mg', microgram: 'm
 
 /** "15 milligram daily for two weeks" -> "15 mg". */
 export function amountOf(text: string) {
-  const m = text.match(/(\d+(?:\.\d+)?)\s*(milligram|mg|microgram|mcg)/i);
+  const m = text.match(/(\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?)\s*(milligram|mg|microgram|mcg)/i);
   return m ? `${m[1]} ${UNITS[m[2].toLowerCase()]}` : null;
 }
 

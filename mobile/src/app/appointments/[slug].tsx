@@ -7,9 +7,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { API_URL, getVisit, useLoad, Visit } from '@/api';
 import { markSeen, NOTHING, Parts, sharesAnything, useDemo } from '@/demo';
-import { aboutMary, brief, checkReason, clock, dateParts, labelChecks, markerLabel, otherChecks, shortDate } from '@/format';
+import { aboutMary, brief, clock, dateParts, labelChecks, markerLabel, otherChecks, shortDate } from '@/format';
 import { colors, fonts } from '@/theme';
-import { Card, Header, HearButton, LabelCheck, LoadState, Locked, styles as ui } from '@/ui';
+import { Card, Header, HearButton, LoadState, Locked, MedCheck, styles as ui } from '@/ui';
 
 export default function AppointmentScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -124,16 +124,9 @@ function AppointmentView({ visit, lisa, parts }: { visit: Visit; lisa: boolean; 
       )}
 
       {/* Safety checks come before the details, so Mary sees them without scrolling. */}
-      {parts.summary && labelChecks(visit).map((med) => <LabelCheck key={med.id} slug={visit.slug} med={med} lisa={lisa} hear={hear(med.evidence)} />)}
       {parts.summary &&
-        otherChecks(visit).map((med) => (
-          <View key={med.id} style={ui.amber}>
-            <Text style={ui.amberTitle}>{checkReason(med)}</Text>
-            {hear(med.evidence)}
-            <Text style={[ui.body, { color: colors.amberInk }]}>
-              {lisa ? 'Mary should ask her pharmacist first.' : 'Ask your pharmacist before changing anything.'}
-            </Text>
-          </View>
+        [...labelChecks(visit), ...otherChecks(visit)].map((med) => (
+          <MedCheck key={med.id} slug={visit.slug} med={med} lisa={lisa} hear={hear(med.evidence)} />
         ))}
       {lisa && notShared.length > 0 && <Locked title={notShared.join(' & ')} note="Not shared by Mary" />}
 

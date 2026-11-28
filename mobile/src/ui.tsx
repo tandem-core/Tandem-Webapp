@@ -5,7 +5,7 @@ import { ActivityIndicator, Animated, Easing, Modal, Platform, Pressable, StyleS
 
 import { Answer, answerMedication, Medication, VisitSummary } from '@/api';
 import { setViewer, useDemo, Viewer } from '@/demo';
-import { clock, dateParts, doseOf } from '@/format';
+import { checkReason, clock, dateParts, doseOf, isLabelCheck } from '@/format';
 import { colors, fonts, radius, touch } from '@/theme';
 
 type IconName = ComponentProps<typeof Ionicons>['name'];
@@ -216,6 +216,20 @@ export function LabelCheck({ slug, med, lisa = false, hear }: { slug: string; me
         </Text>
       )}
       {failed && <Text style={[styles.body, { color: colors.coralDeep }]}>Not saved. Try again.</Text>}
+    </View>
+  );
+}
+
+/** A medicine the recording left unclear: the label check when there's a likely name, otherwise what's unclear. Both end at the pharmacist. */
+export function MedCheck({ slug, med, lisa = false, hear }: { slug: string; med: Medication; lisa?: boolean; hear?: ReactNode }) {
+  if (isLabelCheck(med)) return <LabelCheck slug={slug} med={med} lisa={lisa} hear={hear} />;
+  return (
+    <View style={styles.amber}>
+      <Text style={styles.amberTitle}>{checkReason(med)}</Text>
+      {hear}
+      <Text style={[styles.body, { color: colors.amberInk }]}>
+        {lisa ? 'Mary should ask her pharmacist first.' : 'Ask your pharmacist before changing anything.'}
+      </Text>
     </View>
   );
 }
