@@ -5,15 +5,20 @@
 import { useSyncExternalStore } from 'react';
 
 export type Viewer = 'mary' | 'lisa';
+// The people Lisa supports. Only Mary has recordings; Arthur shows how switching works.
+export type Person = 'mary' | 'arthur';
 export type Parts = { summary: boolean; transcript: boolean; recording: boolean };
 
 let state = {
   viewer: 'mary' as Viewer,
+  person: 'mary' as Person,
   // Chosen once by Mary in setup and applied to every appointment. null until she chooses.
   sharing: null as Parts | null,
   sharingSince: null as string | null,
   // Appointments Lisa has opened, so newly shared ones stand out until she does.
   seen: [] as string[],
+  // To-dos Mary has ticked off on this phone.
+  done: [] as string[],
 };
 
 const listeners = new Set<() => void>();
@@ -27,9 +32,11 @@ const update = (next: Partial<typeof state>) => {
 };
 
 export const useDemo = () => useSyncExternalStore(subscribe, () => state);
-export const setViewer = (viewer: Viewer) => update({ viewer });
+export const setViewer = (viewer: Viewer) => update({ viewer, person: 'mary' });
+export const setPerson = (person: Person) => update({ person });
 export const setSharing = (sharing: Parts) => update({ sharing, sharingSince: state.sharingSince ?? new Date().toISOString() });
 export const markSeen = (slug: string) => !state.seen.includes(slug) && update({ seen: [...state.seen, slug] });
+export const toggleDone = (id: string) => update({ done: state.done.includes(id) ? state.done.filter((d) => d !== id) : [...state.done, id] });
 
 export const NOTHING: Parts = { summary: false, transcript: false, recording: false };
 export const sharesAnything = (p: Parts | null) => Boolean(p && (p.summary || p.transcript || p.recording));

@@ -9,29 +9,36 @@ export function dateParts(iso: string) {
   return { month: MONTHS[d.getMonth()], day: d.getDate(), weekday: DAYS[d.getDay()] };
 }
 
+/** "Nov 3" */
+export function shortDate(iso: string) {
+  const { month, day } = dateParts(iso);
+  return `${month.slice(0, 3)} ${day}`;
+}
+
+/** A player marker: "2 Pick" for "Pick up the new prescription". */
+export function markerLabel(title: string, i: number) {
+  const word = title.match(/[A-Za-z][a-z]+/)?.[0] ?? '';
+  return `${i + 1} ${word.length <= 8 ? word : ''}`.trim();
+}
+
 export function clock(seconds: number) {
   const s = Math.max(0, Math.floor(seconds));
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 }
 
-/** Percent positions along the player track, nudged apart so close moments don't hide each other. */
-export function markerPositions(starts: number[], length: number, gap = 8) {
-  const out: number[] = [];
-  for (const start of starts) {
-    const at = length ? (start / length) * 100 : 0;
-    out.push(out.length ? Math.max(at, out[out.length - 1] + gap) : at);
-  }
-  // Then pull back from the end of the track if that pushed any past it.
-  for (let i = out.length - 1; i >= 0; i--) out[i] = Math.min(out[i], i === out.length - 1 ? 100 : out[i + 1] - gap);
-  return out;
+const UNITS: Record<string, string> = { milligram: 'mg', mg: 'mg', microgram: 'mcg', mcg: 'mcg' };
+
+/** "15 milligram daily for two weeks" -> "15 mg". */
+export function amountOf(text: string) {
+  const m = text.match(/(\d+(?:\.\d+)?)\s*(milligram|mg|microgram|mcg)/i);
+  return m ? `${m[1]} ${UNITS[m[2].toLowerCase()]}` : null;
 }
 
-/** "15 milligram daily for two weeks" -> "15 mg". Uses the last clear amount mentioned. */
+/** The last clear amount mentioned for a medicine. */
 export function doseOf(med: Medication) {
-  const units: Record<string, string> = { milligram: 'mg', mg: 'mg', microgram: 'mcg', mcg: 'mcg' };
   for (const s of [...med.doseStatements].reverse()) {
-    const m = !s.unclear && s.text.match(/(\d+(?:\.\d+)?)\s*(milligram|mg|microgram|mcg)/i);
-    if (m) return `${m[1]} ${units[m[2].toLowerCase()]}`;
+    const amount = !s.unclear && amountOf(s.text);
+    if (amount) return amount;
   }
   return null;
 }
@@ -40,9 +47,8 @@ export function doseOf(med: Medication) {
 const SKIP_ROLES = ['not_chosen', 'discussed'];
 
 /** Medicines Mary should check against her label. */
-export function labelChecks(visit: Visit) {
-  return visit.medications.filter((m) => m.needsReview && m.suggestion && !SKIP_ROLES.includes(m.role));
-}
+export const isLabelCheck = (m: Medication) => Boolean(m.needsReview && m.suggestion && !SKIP_ROLES.includes(m.role));
+export const labelChecks = (visit: Visit) => visit.medications.filter(isLabelCheck);
 
 /**
  * Other medicines Mary takes or was told to take that the server says need a check
@@ -69,11 +75,15 @@ export function checkReason(med: Medication) {
 export function answerOf(turn: Turn) {
   if (!turn.result && !turn.fromCache) return 'Answers aren’t available right now.';
   // The spoken lead-in and sign-off are for listeners; on screen, the date and "Hear it" say the same.
-  return turn.actions
-    .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
-    .join(' ')
-    .replace(/^From your (?:\w+, )?(\w+ \d+) recording\.\s*/, '$1: ')
-    .replace(/\s*Here's what was said\.$/, '');
+  return (
+    turn.actions
+      .flatMap((a) => (a.type === 'speak' ? [a.text] : []))
+      .join(' ')
+      .replace(/^From your (?:\w+, )?(\w+ \d+) recording\.\s*/, '$1: ')
+      .replace(/\s*Here's what was said\.$/, '')
+      // Device instructions; the app shows buttons instead.
+      .replace(/\s*Hold the button[^.]*\./g, '')
+  );
 }
 
 /** "Summary, Recording", or "Nothing". */

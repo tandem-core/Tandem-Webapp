@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, labelChecks, markerPositions, otherChecks } from './format.ts';
+import { aboutMary, answerOf, brief, clock, doseOf, isNewForLisa, labelChecks, markerLabel, otherChecks, shortDate } from './format.ts';
 
 const med = (overrides) => ({
   id: 'med-1',
@@ -66,11 +66,6 @@ test('clock formats seconds as m:ss', () => {
   assert.equal(clock(-3), '0:00');
 });
 
-test('markerPositions keeps close moments apart', () => {
-  assert.deepEqual(markerPositions([10, 150, 155], 300), [10 / 3, 50, 58]);
-  assert.deepEqual(markerPositions([290, 299], 300), [92, 100]);
-});
-
 test('brief hides only a tail with no numbers, quotes or medicine names', () => {
   const headline = "You and Dr. Smith agreed to lower your heartburn medicine (the one that sounded like 'Lenzaprazole') from 30 mg to 15 mg daily for two weeks, instead of stopping it right away.";
   assert.deepEqual(brief(headline), {
@@ -80,4 +75,10 @@ test('brief hides only a tail with no numbers, quotes or medicine names', () => 
   assert.equal(brief('Take it daily. Stop if you feel dizzy. Call about the 2 pm test.').rest, '');
   assert.equal(brief('Keep taking it as before, and avoid ibuprofen for now.', ['ibuprofen']).rest, '');
   assert.equal(brief('Keep taking your blood pressure pills, and rest well this week.').short, 'Keep taking your blood pressure pills.');
+});
+
+test('shortDate and markerLabel stay short', () => {
+  assert.equal(shortDate('2026-11-03T15:00:00Z'), 'Nov 3');
+  assert.equal(markerLabel('Pick up the new prescription', 1), '2 Pick');
+  assert.equal(markerLabel('Rheumatology referral', 0), '1');
 });

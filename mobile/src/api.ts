@@ -15,12 +15,10 @@ export type VisitSummary = {
   headline: string | null;
   reviewed: boolean;
   medicationsToCheck: number;
+  todoCount: number;
 };
 
-export type Home = {
-  owner: { name: string };
-  visits: VisitSummary[];
-};
+export type Home = { owner: { name: string }; visits: VisitSummary[] };
 
 export type Answer = 'yes' | 'no' | 'unsure';
 
@@ -43,7 +41,15 @@ export type SummaryItem = { id: string; text: string; evidence: number[] };
 export type Visit = VisitSummary & {
   audioUrl: string;
   segments: { idx: number; start: number; end: number; text: string }[];
-  followUps: { id: string; title: string; when: string | null; evidence: number[]; uncheckedMedication: boolean }[];
+  followUps: {
+    id: string;
+    title: string;
+    when: string | null;
+    evidence: number[];
+    uncheckedMedication: boolean;
+    status: string;
+    request: { status: string; helperName: string } | null;
+  }[];
   instructions: SummaryItem[];
   unchanged: SummaryItem[];
   openQuestions: (SummaryItem & { resolvesWhen: string | null })[];
@@ -66,6 +72,25 @@ export function useHome() {
 }
 export const getVisit = (slug: string) => request<Visit>(`/api/visits/${slug}`);
 
+/** Every appointment in full, newest first (for to-dos, which come from each one). */
+export async function getAllVisits() {
+  const { visits } = await getHome();
+  return Promise.all(visits.map((v) => getVisit(v.slug)));
+}
+export function useAllVisits() {
+  const all = useLoad(getAllVisits);
+  useFocusEffect(all.reload);
+  return all;
+}
+
+/** A playable excerpt of a recording: the lines from `start` to `end` seconds. */
+export const clipUrl = (slug: string, start: number, end: number) => `${API_URL}/api/audio/${slug}/clip?start=${start.toFixed(2)}&end=${end.toFixed(2)}`;
+
+// The running medicine list (testing track: /api/meds, built by lib/med-log.mjs).
+export type MedEntry = { medicine: string; change: string; detail: string; dose: string | null; date: string; slug: string; title: string };
+export type Meds = { current: MedEntry[]; checks: { slug: string; title: string; recordedAt: string; med: Medication }[] };
+export const getMeds = () => request<Meds>('/api/meds');
+
 export const answerMedication = (slug: string, medId: string, answer: Answer) =>
   request<{ medication: Medication }>(`/api/visits/${slug}/medications/${medId}`, {
     method: 'POST',
@@ -76,7 +101,7 @@ export const answerMedication = (slug: string, medId: string, answer: Answer) =>
 // One turn of Joel's voice conversation (app/api/voice/turn, lib/voice.mjs), typed instead of spoken.
 export type TurnAction =
   | { type: 'speak'; text: string; url: string | null }
-  | { type: 'play'; url: string; text: string; speaker: string; visit: string }
+  | { type: 'play'; url: string; text: string; speaker: string; visit: string; start: number }
   | { type: 'listen'; expect: 'question' | 'yes_no' | 'choice' };
 
 export type Turn = {
@@ -84,16 +109,12 @@ export type Turn = {
   heard: string;
   expect: 'question' | 'yes_no' | 'choice';
   actions: TurnAction[];
-  result: { status: string; options?: { slug: string; title: string; recordedAt: string }[] } | null;
+  result: { status: string; options?: { slug: string; title: string; recordedAt: string }[]; clips?: { quote?: string }[] } | null;
   fromCache?: boolean;
 };
 
 export const askTurn = (body: { event: 'question' | 'choose'; text?: string; slug?: string; sessionId?: string }) =>
-  request<Turn>('/api/voice/turn', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
+  request<Turn>('/api/voice/turn', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
 
 // Sends a phone recording to Joel's /api/recordings, which transcribes and summarizes it.
 export class RecordingError extends Error {
@@ -105,12 +126,7 @@ export class RecordingError extends Error {
 }
 
 // Mono speech at 48 kbps, for appointments and spoken questions.
-export const RECORDING = {
-  ...RecordingPresets.HIGH_QUALITY,
-  numberOfChannels: 1,
-  bitRate: 48000,
-  web: { mimeType: 'audio/webm', bitsPerSecond: 48000 },
-};
+export const RECORDING = { ...RecordingPresets.HIGH_QUALITY, numberOfChannels: 1, bitRate: 48000, web: { mimeType: 'audio/webm', bitsPerSecond: 48000 } };
 
 async function audioForm(uri: string) {
   const form = new FormData();
